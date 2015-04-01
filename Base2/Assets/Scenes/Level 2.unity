@@ -3553,6 +3553,7 @@ MonoBehaviour:
   platformMovingSound: {fileID: 8300000, guid: 0af60eaef26ec7a40ba4c67a9e6a4313, type: 3}
   buttonPressedSound: {fileID: 8300000, guid: efd2b0ab041a1fd48ae8e8624a3ffaf1, type: 3}
   buttonReleasedSound: {fileID: 8300000, guid: 8feef4f428c65c943859d5b224819e02, type: 3}
+  buttonGazedSound: {fileID: 8300000, guid: 384301568d9d54d4a9ba727b74332e82, type: 3}
 --- !u!4 &882891496
 Transform:
   m_PrefabParentObject: {fileID: 487848, guid: a42dfa69a8e6b3a4cb205d2fcfccd7e1, type: 2}
@@ -5025,11 +5026,11 @@ Prefab:
       objectReference: {fileID: 8300000, guid: c4195fdd7a0350c41ba86f3b4c8697f9, type: 3}
     - target: {fileID: 455906, guid: 86925217ef00c26489bfec73a81d6a13, type: 2}
       propertyPath: m_LocalPosition.z
-      value: .660000026
+      value: -41.5
       objectReference: {fileID: 0}
     - target: {fileID: 455906, guid: 86925217ef00c26489bfec73a81d6a13, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -.360000014
+      value: 16.2000008
       objectReference: {fileID: 0}
     - target: {fileID: 455906, guid: 86925217ef00c26489bfec73a81d6a13, type: 2}
       propertyPath: m_LocalRotation.y
@@ -5041,7 +5042,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 455906, guid: 86925217ef00c26489bfec73a81d6a13, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 1.96000004
+      value: 8.30000019
       objectReference: {fileID: 0}
     - target: {fileID: 413452, guid: 86925217ef00c26489bfec73a81d6a13, type: 2}
       propertyPath: m_LocalPosition.y

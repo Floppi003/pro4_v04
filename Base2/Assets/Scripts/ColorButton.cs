@@ -70,6 +70,10 @@ public class ColorButton : MonoBehaviour {
 		if (!pushed) {
 			alive = lifetime;
 			if (oldMaterial == null) {
+				// play audio sound
+				AudioFilesLevel2 audioFiles = GameObject.Find ("GM").GetComponent<AudioFilesLevel2>();
+				AudioManager.instance.playSoundEffect (audioFiles.buttonGazedSound);
+
 				changeColor (buttonFrame);
 			}
 		}
