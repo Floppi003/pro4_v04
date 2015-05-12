@@ -12,12 +12,9 @@ using UnityEngine;
 public class GazePointDataComponent : MonoBehaviour
 {
     public GazePointDataMode gazePointDataMode = GazePointDataMode.LightlyFiltered;
-	public SphereCollider colorCollider;
 
     private EyeXHost _eyexHost;
     private IEyeXDataProvider<EyeXGazePoint> _dataProvider;
-	private RaycastHit gazeRaycastHit;
-
 
     /// <summary>
     /// Gets the last gaze point.
