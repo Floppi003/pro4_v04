@@ -120,7 +120,7 @@ public class Level1 : MonoBehaviour {
 		// open the door if the time is right!
 		if (elapsedTime > timeTillFirstDoorOpens && !openFirstDoorAnimationStarted) {
 			openFirstDoorAnimationStarted = true;
-			GameObject.Find ("FirstDoor").GetComponent<Animator>().Play ("OpenDoor");
+			GameObject.Find ("newFirstDoor").GetComponent<Animator>().Play ("OpenDoor");
 		}
 
 

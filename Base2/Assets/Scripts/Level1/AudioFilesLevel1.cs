@@ -3,7 +3,6 @@ using System.Collections;
 
 public class AudioFilesLevel1 : MonoBehaviour {
 
-	public AudioClip emptyAudioClip;
 	public AudioClip wakeupAudioClip;
 	public AudioClip firstWallAudioClip;
 
