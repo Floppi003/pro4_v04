@@ -18,6 +18,7 @@ TagManager:
   - Interaction
   - LevelButton
   - Exploder
+  - WallLight_Level1
   layers:
   - Default
   - TransparentFX

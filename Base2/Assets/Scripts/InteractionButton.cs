@@ -29,6 +29,8 @@ public class InteractionButton : MonoBehaviour {
 	}
 
 	public void TriggerGoal() {
-		goalDoor.GetComponent<Animator> ().Play ("Open");
+		if (goalDoor != null) {
+			goalDoor.GetComponent<Animator> ().Play ("Open");
+		}
 	}
 }

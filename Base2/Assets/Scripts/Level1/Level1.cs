@@ -34,6 +34,7 @@ public class Level1 : MonoBehaviour {
 	private float timeTillWallSoundStarts;
 	private float timeEyesAreClosed; // when eyes are closed this will count up. when eyes are opened it will get reset
 	private float blinkingLightCounter; // counts up, when reached a certain number it will be reset and a light will start to blink
+
 	private int blinkingLightIndex; //stores the index of the current blinking light
 
 	public float standardColorLerpTime;
@@ -49,6 +50,12 @@ public class Level1 : MonoBehaviour {
 	private float continuesPanelDisgazeCounter;
 	private EyeXGazePoint previousGazePoint;
 
+	public Color wallLightColor1;
+	public Color wallLightColor2;
+	public Color wallLightColor3;
+	public Color wallLightColor4;
+	private string lastGazedWallLightName;
+
 	protected void OnEnable() {
 		eyePositionDataProvider.Start();
 		gazePointDataProvider.Start ();
@@ -56,7 +63,7 @@ public class Level1 : MonoBehaviour {
 
 	void Awake() {
 		eyexHost = EyeXHost.GetInstance();
-		gazePointDataProvider = eyexHost.GetGazePointDataProvider (GazePointDataMode.Unfiltered);
+		gazePointDataProvider = eyexHost.GetGazePointDataProvider (GazePointDataMode.LightlyFiltered);
 		eyePositionDataProvider = eyexHost.GetEyePositionDataProvider();
 
 		timeTillFirstDoorOpens = 0.0f; //9.0f;
@@ -70,15 +77,15 @@ public class Level1 : MonoBehaviour {
 		wallTriggerStarted = false;
 		wallSoundPlayed = false;
 
-		currentLerpTime = 0.0f;
-		currentLerpTimePaused = false;
-		
 
 		// load the blinking lights
 		blinkingLights = new ArrayList ();
 		blinkingLights.Add (GameObject.Find ("Panel_01"));
 		blinkingLights.Add (GameObject.Find ("Panel_02"));
 		blinkingLights.Add (GameObject.Find ("Panel_03"));
+		
+		// set a deafult name for lastGazedWallLightName
+		this.lastGazedWallLightName = "";
 
 		Debug.Log ("Awake: " + this.ToString());
 	}
@@ -101,6 +108,12 @@ public class Level1 : MonoBehaviour {
 		GameObject.Find ("Level_1_Obstacle_Wall_02").GetComponent<MeshRenderer>().enabled = false;
 		GameObject.Find ("Level_1_Obstacle_Wall_03").GetComponent<MeshRenderer>().enabled = false;
 		GameObject.Find ("Level_1_Obstacle_Wall_04").GetComponent<MeshRenderer>().enabled = false;
+
+		// set all wall lights to first color
+		GameObject[] wallLights = GameObject.FindGameObjectsWithTag ("WallLight_Level1");
+		foreach (GameObject wallLight in wallLights) {
+			wallLight.GetComponentInChildren<MeshRenderer>().material.color = this.wallLightColor1;
+		}
 
 		Debug.Log ("Start");
 	}
@@ -132,6 +145,8 @@ public class Level1 : MonoBehaviour {
 		//if (wallsVisible) {
 			this.handlePanelRiddle();
 		//}
+
+		this.handleWallLights ();
 	}
 
 
@@ -193,28 +208,18 @@ public class Level1 : MonoBehaviour {
 		// check if both eyes are opened, only then retreive the last gazePoint
 		if (!gazePoint.Screen.Equals (this.previousGazePoint.Screen)) {
 			Vector2 screenCoordinates = gazePoint.Screen;
-			
+
 			Ray gazeRay = Camera.main.ScreenPointToRay (new Vector3 (screenCoordinates.x, screenCoordinates.y, 0));
-			Debug.DrawRay (gazeRay.origin, gazeRay.direction, Color.magenta, 120.0f);
-			
+			Debug.DrawRay(gazeRay.origin, gazeRay.direction, Color.magenta, 120.0f);
 			if (Physics.Raycast (gazeRay.origin, gazeRay.direction, out gazeRaycastHit, 40.0f)) {
-				
+
 				string gazedObject = gazeRaycastHit.collider.gameObject.name;
-				// check if the gazed panel is the one that is currently lerping
-				if (gazedObject == ((GameObject)blinkingLights [blinkingLightIndex]).name) {
-					// the gazed object is the one that is currently lerping
-					if (currentLerpTimePaused == false) {
-						currentLerpTimePaused = true;
-						gazeStartedPanelColor = ((GameObject)blinkingLights [blinkingLightIndex]).GetComponentInChildren<MeshRenderer> ().material.color;
-						this.continuesPanelDisgazeCounter = 0.0f;
-					}
-				} else {
-					this.continuesPanelDisgazeCounter += Time.deltaTime;
+
+				if (gazedObject.Contains ("Panel_Colored")) {
+					//Debug.Log ("Panel gazed");
 				}
-			} else {
-				Debug.Log ("else from raycast if");
-				this.continuesPanelDisgazeCounter += Time.deltaTime;
 			}
+
 		} else {
 			this.continuesPanelDisgazeCounter += Time.deltaTime;
 			Debug.Log ("equal locations");
@@ -282,6 +287,40 @@ public class Level1 : MonoBehaviour {
 					this.activatePanel();
 				}
 			}*/
+	}
+
+
+	private void handleWallLights() {
+		EyeXGazePoint gazePoint = gazePointDataProvider.Last;
+		Vector2 screenCoordinates = gazePoint.Screen;
+			
+		Ray gazeRay = Camera.main.ScreenPointToRay (new Vector3 (screenCoordinates.x, screenCoordinates.y, 0));
+		Debug.DrawRay (gazeRay.origin, gazeRay.direction, Color.magenta, 40.0f);
+			
+		if (Physics.Raycast (gazeRay.origin, gazeRay.direction, out gazeRaycastHit, 40.0f)) {
+			// get the gazed object
+			GameObject gazedObject = gazeRaycastHit.collider.gameObject;
+
+			if (gazedObject.name.Contains ("Panel") && !gazedObject.name.Equals (this.lastGazedWallLightName)) {
+				// now check which color it has, set it to another color
+				Color gazedObjectColor = gazedObject.GetComponentInChildren<MeshRenderer>().material.color;
+
+				if (gazedObjectColor.Equals(this.wallLightColor1)) {
+					gazedObject.GetComponentInChildren<MeshRenderer>().material.color = this.wallLightColor2;
+
+				}/* else if (gazedObjectColor.Equals (this.wallLightColor2)) {
+					gazedObject.GetComponentInChildren<MeshRenderer>().material.color = this.wallLightColor3;
+
+				}  else if (gazedObjectColor.Equals (this.wallLightColor3)) {
+					gazedObject.GetComponentInChildren<MeshRenderer>().material.color = this.wallLightColor4;
+
+				}  else if (gazedObjectColor.Equals (this.wallLightColor4)) {
+					gazedObject.GetComponentInChildren<MeshRenderer>().material.color = this.wallLightColor1;
+				}*/
+			}
+
+			this.lastGazedWallLightName = gazedObject.name;
+		}
 	}
 
 	// picks randomly a new panel to start blinking

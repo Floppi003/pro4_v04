@@ -18604,6 +18604,34 @@ Prefab:
       propertyPath: m_LocalRotation.w
       value: .674621105
       objectReference: {fileID: 0}
+    - target: {fileID: 11497280, guid: 86925217ef00c26489bfec73a81d6a13, type: 2}
+      propertyPath: wallLightColor1.r
+      value: .250980407
+      objectReference: {fileID: 0}
+    - target: {fileID: 11497280, guid: 86925217ef00c26489bfec73a81d6a13, type: 2}
+      propertyPath: wallLightColor1.b
+      value: .874509811
+      objectReference: {fileID: 0}
+    - target: {fileID: 11497280, guid: 86925217ef00c26489bfec73a81d6a13, type: 2}
+      propertyPath: wallLightColor1.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11497280, guid: 86925217ef00c26489bfec73a81d6a13, type: 2}
+      propertyPath: wallLightColor1.g
+      value: .356862754
+      objectReference: {fileID: 0}
+    - target: {fileID: 11497280, guid: 86925217ef00c26489bfec73a81d6a13, type: 2}
+      propertyPath: wallLightColor2.r
+      value: .95588237
+      objectReference: {fileID: 0}
+    - target: {fileID: 11497280, guid: 86925217ef00c26489bfec73a81d6a13, type: 2}
+      propertyPath: wallLightColor2.g
+      value: .850405753
+      objectReference: {fileID: 0}
+    - target: {fileID: 11497280, guid: 86925217ef00c26489bfec73a81d6a13, type: 2}
+      propertyPath: wallLightColor2.b
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 86925217ef00c26489bfec73a81d6a13, type: 2}
   m_IsPrefabParent: 0
