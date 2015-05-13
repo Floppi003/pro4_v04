@@ -47,6 +47,7 @@ public class Level1 : MonoBehaviour {
 	public Color gazePanelColor;
 	public Color activatedPanelColor;
 	private float continuesPanelDisgazeCounter;
+	private EyeXGazePoint previousGazePoint;
 
 	protected void OnEnable() {
 		eyePositionDataProvider.Start();
@@ -93,6 +94,8 @@ public class Level1 : MonoBehaviour {
 		gazePointDataProvider.Start ();
 		eyePositionDataProvider.Start ();
 
+		this.previousGazePoint = this.gazePointDataProvider.Last;
+
 		// disable the rendering of the invisible walls
 		GameObject.Find ("Level_1_Obstacle_Wall_01").GetComponent<MeshRenderer>().enabled = false;
 		GameObject.Find ("Level_1_Obstacle_Wall_02").GetComponent<MeshRenderer>().enabled = false;
@@ -105,70 +108,90 @@ public class Level1 : MonoBehaviour {
 	void Update() {
 		elapsedTime += Time.deltaTime;
 
-
 		// play the wakeup sound
-		if (timeTillWakeupSoundStarts < elapsedTime && wakeupSoundPlayed == false) {
-			wakeupSoundPlayed = true;
-
-			//Debug.Log ("Wakeup sound queued");
-			AudioManager.instance.queueAudioClip(audioFiles.wakeupAudioClip);
-		}
-
-
-		// If the wall trigger was triggered then start the countdown till the voice should start
-		if (wallTriggerStarted) {
-			timeTillWallSoundStarts -= Time.deltaTime;
-
-			if (wallSoundPlayed == false && timeTillWallSoundStarts < 0) {
-				// play Audio Sound
-				wallSoundPlayed = true;
-				AudioManager.instance.queueAudioClip(audioFiles.firstWallAudioClip);
-			}
-		}
-
+		/*if (timeTillWakeupSoundStarts < elapsedTime && wakeupSoundPlayed == false) {
+			this.playWakeupSound();
+		}*/
 
 		// open the door if the time is right!
 		if (elapsedTime > timeTillFirstDoorOpens && !openFirstDoorAnimationStarted) {
-			openFirstDoorAnimationStarted = true;
-			GameObject.Find ("FirstDoor").GetComponent<Animator>().Play ("OpenDoor");
+			this.openFirstDoor();
 		}
 
-
+		// If the wall trigger was triggered then start the countdown till the voice should start
+		if (wallTriggerStarted) {
+			this.startWallTrigger();
+		}
+		
 		// after the firstWallAudioClip was played check if the player closes his eyes for a second
 		if (wallSoundPlayed && !wallsVisible) {
-
-			// check whether left and right eye are closed
-			EyeXEyePosition lastEyePosition = eyePositionDataProvider.Last;
-
-			//Debug.Log ("lastEyePosition: " + lastEyePosition);
-
-			if (!lastEyePosition.RightEye.IsValid && !lastEyePosition.LeftEye.IsValid) {
-				timeEyesAreClosed += Time.deltaTime;
-			} else {
-				timeEyesAreClosed = 0.0f;
-			}
-
-			if (timeEyesAreClosed > 1.0f) {
-				// show the walls
-				GameObject.Find ("Level_1_Obstacle_Wall_01").GetComponent<MeshRenderer>().enabled = true;
-				GameObject.Find ("Level_1_Obstacle_Wall_02").GetComponent<MeshRenderer>().enabled = true;
-				GameObject.Find ("Level_1_Obstacle_Wall_03").GetComponent<MeshRenderer>().enabled = true;
-				GameObject.Find ("Level_1_Obstacle_Wall_04").GetComponent<MeshRenderer>().enabled = true;
-
-				wallsVisible = true;
-			}
+			this.showInvisibleWallsOnEyeClose();
 		}
-
-
-		/*
+		
 		// if the walls are passed send out rays to check whether the player is looking at a "solar panel"
 		//if (wallsVisible) {
+			this.handlePanelRiddle();
+		//}
+	}
 
+
+
+
+
+	// plays the wake-up sound at the beginning of the level
+	private void playWakeupSound() {
+		wakeupSoundPlayed = true;
+		AudioManager.instance.queueAudioClip(audioFiles.wakeupAudioClip);
+	}
+
+	// opens the first door in the first room where you wake up
+	private void openFirstDoor() {
+		openFirstDoorAnimationStarted = true;
+		GameObject.Find ("FirstDoor").GetComponent<Animator>().Play ("OpenDoor");
+	}
+
+	// when the first invisible wall will be touched this trigger will fire and the method will get called. it plays the "close your eyes" sound
+	private void startWallTrigger() {
+		timeTillWallSoundStarts -= Time.deltaTime;
+		
+		if (wallSoundPlayed == false && timeTillWallSoundStarts < 0) {
+			// play Audio Sound
+			wallSoundPlayed = true;
+			AudioManager.instance.queueAudioClip(audioFiles.firstWallAudioClip);
+		}
+	}
+
+	// shows the invisible walls when the user closed his eyes
+	private void showInvisibleWallsOnEyeClose() {
+		// check whether left and right eye are closed
+		EyeXEyePosition lastEyePosition = eyePositionDataProvider.Last;
+		
+		//Debug.Log ("lastEyePosition: " + lastEyePosition);
+		
+		if (!lastEyePosition.RightEye.IsValid && !lastEyePosition.LeftEye.IsValid) {
+			timeEyesAreClosed += Time.deltaTime;
+		} else {
+			timeEyesAreClosed = 0.0f;
+		}
+		
+		if (timeEyesAreClosed > 1.0f) {
+			// show the walls
+			GameObject.Find ("Level_1_Obstacle_Wall_01").GetComponent<MeshRenderer>().enabled = true;
+			GameObject.Find ("Level_1_Obstacle_Wall_02").GetComponent<MeshRenderer>().enabled = true;
+			GameObject.Find ("Level_1_Obstacle_Wall_03").GetComponent<MeshRenderer>().enabled = true;
+			GameObject.Find ("Level_1_Obstacle_Wall_04").GetComponent<MeshRenderer>().enabled = true;
+			
+			wallsVisible = true;
+		}
+	}
+
+	private void handlePanelRiddle() {
+		
 		EyeXGazePoint gazePoint = gazePointDataProvider.Last;
 		EyeXEyePosition eyePosition = this.eyePositionDataProvider.Last;
-
+		
 		// check if both eyes are opened, only then retreive the last gazePoint
-		if (eyePosition.LeftEye.IsValid && eyePosition.RightEye.IsValid) {
+		if (!gazePoint.Screen.Equals (this.previousGazePoint.Screen)) {
 			Vector2 screenCoordinates = gazePoint.Screen;
 			
 			Ray gazeRay = Camera.main.ScreenPointToRay (new Vector3 (screenCoordinates.x, screenCoordinates.y, 0));
@@ -194,42 +217,45 @@ public class Level1 : MonoBehaviour {
 			}
 		} else {
 			this.continuesPanelDisgazeCounter += Time.deltaTime;
-			Debug.Log ("not valid");
+			Debug.Log ("equal locations");
 		}
-*/
-
-
-		if (this.continuesPanelDisgazeCounter > 0.5    ) {
+		
+		this.previousGazePoint = gazePoint;
+		
+		if (this.continuesPanelDisgazeCounter > 0.3) {
+			this.continuesPanelDisgazeCounter = 0.0f;
 			this.currentLerpTimePaused = false;
 			this.currentGazedLerpTime = 0.0f;
 		}
-			
-		//}
-
-
+		
+		
+		
 		if (currentLerpTimePaused) {
 			// if the current lerp time is paused this means the user is looking at the panel
 			float lerpValue = this.currentGazedLerpTime / this.gazedColorLerpTime;
-			((GameObject) blinkingLights[this.blinkingLightIndex]).GetComponentInChildren<MeshRenderer>().material.color = Color.Lerp (this.gazeStartedPanelColor, this.gazePanelColor, lerpValue);
-
-		} else if (currentLerpTime < standardColorLerpTime / 2.0f) {
+			//((GameObject) blinkingLights[this.blinkingLightIndex]).GetComponentInChildren<MeshRenderer>().material.color = Color.Lerp (this.gazeStartedPanelColor, this.gazePanelColor, lerpValue);
+			// if the line above is in comment it is the version without lerping
+			
+		}/* else */ /* without else: version without lerping, with else: version with lerping when staring at the panel*/if (currentLerpTime < standardColorLerpTime / 2.0f) {
 			// fade-in lerp animation
 			float lerpValue = this.currentLerpTime / (this.standardColorLerpTime / 2.0f);
 			((GameObject)blinkingLights [blinkingLightIndex]).GetComponentInChildren<MeshRenderer> ().material.color = Color.Lerp (this.standardPanelColor, this.highlightedPanelColor, lerpValue);
-		
+			
 		} else {
 			//Debug.Log("lerp out");
 			((GameObject)blinkingLights [blinkingLightIndex]).GetComponentInChildren<MeshRenderer> ().material.color = Color.Lerp (this.highlightedPanelColor, this.standardPanelColor, this.currentLerpTime / (this.standardColorLerpTime / 2.0f) - 1.0f);
 		}
-
-		if (!currentLerpTimePaused) {
-			currentLerpTime += Time.deltaTime;
-			if (currentLerpTime > standardColorLerpTime) {
-				currentLerpTime = 0.0f;
-				blinkLight ();
-			}
-
-		} else {
+		
+		
+		
+		// Version where you stare at the light without lerping the color while watching
+		currentLerpTime += Time.deltaTime;
+		if (currentLerpTime > standardColorLerpTime) {
+			currentLerpTime = 0.0f;
+			blinkLight ();
+		}
+		
+		if (currentLerpTimePaused) {
 			// lerp time paused, use the gazedLerpTime
 			this.currentGazedLerpTime += Time.deltaTime;
 			if (this.currentGazedLerpTime > gazedColorLerpTime) {
@@ -237,21 +263,55 @@ public class Level1 : MonoBehaviour {
 				this.activatePanel();
 			}
 		}
-		// set the current blinking light to the correct color via lerp
+		
+		
+		/*
+			// version where you stare at the light and it lerps
+			if (!currentLerpTimePaused) {
+				currentLerpTime += Time.deltaTime;
+				if (currentLerpTime > standardColorLerpTime) {
+					currentLerpTime = 0.0f;
+					blinkLight ();
+				}
+
+			} else {
+				// lerp time paused, use the gazedLerpTime
+				this.currentGazedLerpTime += Time.deltaTime;
+				if (this.currentGazedLerpTime > gazedColorLerpTime) {
+					// call the method to delete the object from the array and mark it as done!
+					this.activatePanel();
+				}
+			}*/
 	}
 
-	void blinkLight() {
-		blinkingLightIndex = Random.Range (0, blinkingLights.Count);
-		Debug.Log ("index: " + blinkingLightIndex);
+	// picks randomly a new panel to start blinking
+	private void blinkLight() {
+		// if there are still lights left then find randomly a new one that should blink
+		if (this.blinkingLights.Count != 0) {
+			blinkingLightIndex = Random.Range (0, blinkingLights.Count);
+		}
 	}
 
-	void activatePanel() {
+	private void activatePanel() {
 		((GameObject)blinkingLights [this.blinkingLightIndex]).GetComponentInChildren<MeshRenderer> ().material.color = this.activatedPanelColor;
 		this.currentLerpTime = 0.0f;
 		this.currentGazedLerpTime = 0.0f;
 		this.currentLerpTimePaused = false;
 		this.blinkingLights.RemoveAt (this.blinkingLightIndex);
 		blinkLight ();
+		
+		// if it was the last activated panel open the door and play special sound
+		if (this.blinkingLights.Count == 0) {
+			this.openGoalDoor ();
+			AudioManager.instance.playAudioClipForced(this.audioFiles.lastActivated);
+		} else {
+			// it wasn't the last one, play normal activate sound
+			AudioManager.instance.playAudioClipForced (this.audioFiles.activated);
+		}
+	}
+
+	private void openGoalDoor() {
+		GameObject.Find ("GoalDoor").GetComponent<Animator> ().Play ("Open");
 	}
 
 	public void setWallTriggerStarted(bool didStart) {
