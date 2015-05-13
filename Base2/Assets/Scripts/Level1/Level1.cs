@@ -34,19 +34,7 @@ public class Level1 : MonoBehaviour {
 	private float timeTillWallSoundStarts;
 	private float timeEyesAreClosed; // when eyes are closed this will count up. when eyes are opened it will get reset
 	private float blinkingLightCounter; // counts up, when reached a certain number it will be reset and a light will start to blink
-	private int blinkingLightIndex; //stores the index of the current blinking light
 
-	public float standardColorLerpTime;
-	public float gazedColorLerpTime;
-	private float currentLerpTime;
-	private float currentGazedLerpTime;
-	private bool currentLerpTimePaused;
-	public Color standardPanelColor;
-	public Color highlightedPanelColor;
-	private Color gazeStartedPanelColor;
-	public Color gazePanelColor;
-	public Color activatedPanelColor;
-	private float continuesPanelDisgazeCounter;
 
 	protected void OnEnable() {
 		eyePositionDataProvider.Start();
@@ -55,7 +43,7 @@ public class Level1 : MonoBehaviour {
 
 	void Awake() {
 		eyexHost = EyeXHost.GetInstance();
-		gazePointDataProvider = eyexHost.GetGazePointDataProvider (GazePointDataMode.Unfiltered);
+		gazePointDataProvider = eyexHost.GetGazePointDataProvider (GazePointDataMode.LightlyFiltered);
 		eyePositionDataProvider = eyexHost.GetEyePositionDataProvider();
 
 		timeTillFirstDoorOpens = 0.0f; //9.0f;
@@ -69,15 +57,18 @@ public class Level1 : MonoBehaviour {
 		wallTriggerStarted = false;
 		wallSoundPlayed = false;
 
-		currentLerpTime = 0.0f;
-		currentLerpTimePaused = false;
-		
 
 		// load the blinking lights
 		blinkingLights = new ArrayList ();
-		blinkingLights.Add (GameObject.Find ("Panel_01"));
-		blinkingLights.Add (GameObject.Find ("Panel_02"));
-		blinkingLights.Add (GameObject.Find ("Panel_03"));
+		blinkingLights.Add (GameObject.Find ("Panel_Colored_01"));
+		blinkingLights.Add (GameObject.Find ("Panel_Colored_02"));
+		blinkingLights.Add (GameObject.Find ("Panel_Colored_03"));
+		blinkingLights.Add (GameObject.Find ("Panel_Colored_04"));
+		blinkingLights.Add (GameObject.Find ("Panel_Colored_05"));
+		blinkingLights.Add (GameObject.Find ("Panel_Colored_06"));
+		blinkingLights.Add (GameObject.Find ("Panel_Colored_07"));
+		blinkingLights.Add (GameObject.Find ("Panel_Colored_08"));
+		blinkingLights.Add (GameObject.Find ("Panel_Colored_09"));
 
 		Debug.Log ("Awake: " + this.ToString());
 	}
@@ -89,9 +80,6 @@ public class Level1 : MonoBehaviour {
 
 	void Start() {
 		audioFiles = GameObject.Find ("GM").GetComponent<AudioFilesLevel1> ();
-
-		gazePointDataProvider.Start ();
-		eyePositionDataProvider.Start ();
 
 		// disable the rendering of the invisible walls
 		GameObject.Find ("Level_1_Obstacle_Wall_01").GetComponent<MeshRenderer>().enabled = false;
@@ -159,100 +147,40 @@ public class Level1 : MonoBehaviour {
 			}
 		}
 
-
-		/*
 		// if the walls are passed send out rays to check whether the player is looking at a "solar panel"
-		//if (wallsVisible) {
+		if (wallsVisible) {
 
-		EyeXGazePoint gazePoint = gazePointDataProvider.Last;
-		EyeXEyePosition eyePosition = this.eyePositionDataProvider.Last;
 
-		// check if both eyes are opened, only then retreive the last gazePoint
-		if (eyePosition.LeftEye.IsValid && eyePosition.RightEye.IsValid) {
+			EyeXGazePoint gazePoint = gazePointDataProvider.Last;
+			//Debug.Log ("last Gaze Point: " + gazePoint);
 			Vector2 screenCoordinates = gazePoint.Screen;
-			
+
 			Ray gazeRay = Camera.main.ScreenPointToRay (new Vector3 (screenCoordinates.x, screenCoordinates.y, 0));
-			Debug.DrawRay (gazeRay.origin, gazeRay.direction, Color.magenta, 120.0f);
-			
+			Debug.DrawRay(gazeRay.origin, gazeRay.direction, Color.magenta, 120.0f);
 			if (Physics.Raycast (gazeRay.origin, gazeRay.direction, out gazeRaycastHit, 40.0f)) {
-				
+
 				string gazedObject = gazeRaycastHit.collider.gameObject.name;
-				// check if the gazed panel is the one that is currently lerping
-				if (gazedObject == ((GameObject)blinkingLights [blinkingLightIndex]).name) {
-					// the gazed object is the one that is currently lerping
-					if (currentLerpTimePaused == false) {
-						currentLerpTimePaused = true;
-						gazeStartedPanelColor = ((GameObject)blinkingLights [blinkingLightIndex]).GetComponentInChildren<MeshRenderer> ().material.color;
-						this.continuesPanelDisgazeCounter = 0.0f;
-					}
-				} else {
-					this.continuesPanelDisgazeCounter += Time.deltaTime;
+
+				if (gazedObject.Contains ("Panel_Colored")) {
+					//Debug.Log ("Panel gazed");
 				}
-			} else {
-				Debug.Log ("else from raycast if");
-				this.continuesPanelDisgazeCounter += Time.deltaTime;
-			}
-		} else {
-			this.continuesPanelDisgazeCounter += Time.deltaTime;
-			Debug.Log ("not valid");
-		}
-*/
-
-
-		if (this.continuesPanelDisgazeCounter > 0.5    ) {
-			this.currentLerpTimePaused = false;
-			this.currentGazedLerpTime = 0.0f;
-		}
-			
-		//}
-
-
-		if (currentLerpTimePaused) {
-			// if the current lerp time is paused this means the user is looking at the panel
-			float lerpValue = this.currentGazedLerpTime / this.gazedColorLerpTime;
-			((GameObject) blinkingLights[this.blinkingLightIndex]).GetComponentInChildren<MeshRenderer>().material.color = Color.Lerp (this.gazeStartedPanelColor, this.gazePanelColor, lerpValue);
-
-		} else if (currentLerpTime < standardColorLerpTime / 2.0f) {
-			// fade-in lerp animation
-			float lerpValue = this.currentLerpTime / (this.standardColorLerpTime / 2.0f);
-			((GameObject)blinkingLights [blinkingLightIndex]).GetComponentInChildren<MeshRenderer> ().material.color = Color.Lerp (this.standardPanelColor, this.highlightedPanelColor, lerpValue);
-		
-		} else {
-			//Debug.Log("lerp out");
-			((GameObject)blinkingLights [blinkingLightIndex]).GetComponentInChildren<MeshRenderer> ().material.color = Color.Lerp (this.highlightedPanelColor, this.standardPanelColor, this.currentLerpTime / (this.standardColorLerpTime / 2.0f) - 1.0f);
-		}
-
-		if (!currentLerpTimePaused) {
-			currentLerpTime += Time.deltaTime;
-			if (currentLerpTime > standardColorLerpTime) {
-				currentLerpTime = 0.0f;
-				blinkLight ();
-			}
-
-		} else {
-			// lerp time paused, use the gazedLerpTime
-			this.currentGazedLerpTime += Time.deltaTime;
-			if (this.currentGazedLerpTime > gazedColorLerpTime) {
-				// call the method to delete the object from the array and mark it as done!
-				this.activatePanel();
 			}
 		}
-		// set the current blinking light to the correct color via lerp
+
+		blinkingLightCounter += Time.deltaTime;
+
+		if (blinkingLightCounter > 2.75f) {
+			blinkingLightCounter = 0.0f;
+			blinkLight ();
+		}
 	}
 
 	void blinkLight() {
-		blinkingLightIndex = Random.Range (0, blinkingLights.Count);
-		Debug.Log ("index: " + blinkingLightIndex);
+		int index = Random.Range (0, blinkingLights.Count);
+		Debug.Log ("index: " + index);
+		((GameObject) blinkingLights [index]).GetComponent<Animator> ().Play ("WallLight_Anim");
 	}
 
-	void activatePanel() {
-		((GameObject)blinkingLights [this.blinkingLightIndex]).GetComponentInChildren<MeshRenderer> ().material.color = this.activatedPanelColor;
-		this.currentLerpTime = 0.0f;
-		this.currentGazedLerpTime = 0.0f;
-		this.currentLerpTimePaused = false;
-		this.blinkingLights.RemoveAt (this.blinkingLightIndex);
-		blinkLight ();
-	}
 
 	public void setWallTriggerStarted(bool didStart) {
 		wallTriggerStarted = didStart;

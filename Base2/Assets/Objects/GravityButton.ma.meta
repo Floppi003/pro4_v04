@@ -8,15 +8,25 @@ ModelImporter:
     100000: //RootNode
     100002: pCube55
     100004: pCube56
+    100006: Arrow
+    100008: Base
     400000: //RootNode
     400002: pCube55
     400004: pCube56
+    400006: Arrow
+    400008: Base
     2300000: pCube55
     2300002: pCube56
+    2300004: Arrow
+    2300006: Base
     3300000: pCube55
     3300002: pCube56
+    3300004: Arrow
+    3300006: Base
     4300000: pCube55
     4300002: pCube56
+    4300004: Base
+    4300006: Arrow
     7400000: Take 001
     9500000: //RootNode
   materials:
@@ -28,7 +38,7 @@ ModelImporter:
     bakeSimulation: 0
     optimizeGameObjects: 0
     motionNodeName: 
-    animationCompression: 0
+    animationCompression: 1
     animationRotationError: .5
     animationPositionError: .5
     animationScaleError: .5
