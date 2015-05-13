@@ -1706,7 +1706,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67668ca632f190c4cb82e769d61ed471, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  manager: {fileID: 0}
+  manager: {fileID: 11492244}
   mouseSensitivityX: 250
   mouseSensitivityY: 250
   walkSpeed: 6

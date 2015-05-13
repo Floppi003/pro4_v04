@@ -148,7 +148,7 @@ public class Level1 : MonoBehaviour {
 		}
 
 
-
+		/*
 		// if the walls are passed send out rays to check whether the player is looking at a "solar panel"
 		if (wallsVisible) {
 
@@ -168,7 +168,7 @@ public class Level1 : MonoBehaviour {
 				}
 			}
 		}
-
+*/
 
 		blinkingLightCounter += Time.deltaTime;
 

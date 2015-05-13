@@ -6,7 +6,7 @@ public class GameManager : MonoBehaviour {
 	// Count
 	private int maxLevels = 4; //amount of levels in game (!=max id = maxLevels - 1)
 	private int currentLevel = 1; //start with 1 = id 0
-	private int unlockedLevel = 1; //start with 1 = id 0
+	private int unlockedLevel = 2; //start with 1 = id 0
 	
 	// Timer variables
 	//public Rect timerRect;
