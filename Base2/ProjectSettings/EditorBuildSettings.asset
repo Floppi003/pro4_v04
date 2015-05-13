@@ -10,20 +10,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Level 1.unity
   - enabled: 1
-    path: Assets/Scenes/_Old Scenes/Level 2 O.unity
+    path: Assets/Scenes/Level 2.unity
   - enabled: 1
-    path: Assets/Scenes/_Old Scenes/Level 1 O.unity
+    path: Assets/Scenes/Level 3.unity
   - enabled: 1
-    path: Assets/Scenes/_Old Scenes/Level 3 O.unity
-  - enabled: 1
-    path: Assets/Scenes/_Old Scenes/Level 4 O.unity
-  - enabled: 1
-    path: Assets/Scenes/_Old Scenes/Level 5 O.unity
-  - enabled: 1
-    path: Assets/Scenes/_Old Scenes/Level 6 O.unity
-  - enabled: 1
-    path: Assets/Scenes/_Old Scenes/Level 7 O.unity
-  - enabled: 1
-    path: Assets/Scenes/_Old Scenes/world_select O.unity
-  - enabled: 1
-    path: Assets/Scenes/_Old Scenes/main_menu O.unity
+    path: Assets/Scenes/Level 4.unity
