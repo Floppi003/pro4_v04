@@ -208,18 +208,28 @@ public class Level1 : MonoBehaviour {
 		// check if both eyes are opened, only then retreive the last gazePoint
 		if (!gazePoint.Screen.Equals (this.previousGazePoint.Screen)) {
 			Vector2 screenCoordinates = gazePoint.Screen;
-
+			
 			Ray gazeRay = Camera.main.ScreenPointToRay (new Vector3 (screenCoordinates.x, screenCoordinates.y, 0));
-			Debug.DrawRay(gazeRay.origin, gazeRay.direction, Color.magenta, 120.0f);
+			Debug.DrawRay (gazeRay.origin, gazeRay.direction, Color.magenta, 120.0f);
+			
 			if (Physics.Raycast (gazeRay.origin, gazeRay.direction, out gazeRaycastHit, 40.0f)) {
-
+				
 				string gazedObject = gazeRaycastHit.collider.gameObject.name;
-
-				if (gazedObject.Contains ("Panel_Colored")) {
-					//Debug.Log ("Panel gazed");
+				// check if the gazed panel is the one that is currently lerping
+				if (gazedObject == ((GameObject)blinkingLights [blinkingLightIndex]).name) {
+					// the gazed object is the one that is currently lerping
+					if (currentLerpTimePaused == false) {
+						currentLerpTimePaused = true;
+						gazeStartedPanelColor = ((GameObject)blinkingLights [blinkingLightIndex]).GetComponentInChildren<MeshRenderer> ().material.color;
+						this.continuesPanelDisgazeCounter = 0.0f;
+					}
+				} else {
+					this.continuesPanelDisgazeCounter += Time.deltaTime;
 				}
+			} else {
+				Debug.Log ("else from raycast if");
+				this.continuesPanelDisgazeCounter += Time.deltaTime;
 			}
-
 		} else {
 			this.continuesPanelDisgazeCounter += Time.deltaTime;
 			Debug.Log ("equal locations");
