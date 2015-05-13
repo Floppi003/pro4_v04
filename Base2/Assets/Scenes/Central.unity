@@ -9602,7 +9602,7 @@ Transform:
   - {fileID: 318385396}
   - {fileID: 829422628}
   m_Father: {fileID: 0}
-  m_RootOrder: 51
+  m_RootOrder: 52
 --- !u!95 &1642904181
 Animator:
   serializedVersion: 3
@@ -9840,7 +9840,7 @@ Transform:
   - {fileID: 1936154502}
   - {fileID: 449239646}
   m_Father: {fileID: 0}
-  m_RootOrder: 52
+  m_RootOrder: 53
 --- !u!1001 &1696065807
 Prefab:
   m_ObjectHideFlags: 0
