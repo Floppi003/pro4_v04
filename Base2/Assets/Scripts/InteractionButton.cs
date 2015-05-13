@@ -5,8 +5,8 @@ public class InteractionButton : MonoBehaviour {
 	
 	private string loadPrompt;
 	private bool pressButton;
-	public GameObject explo;
-	GameObject[] exploder;
+	public GameObject exploder;
+	public GameObject goalDoor;
 
 	// Use this for initialization
 	void Start () {
@@ -18,18 +18,17 @@ public class InteractionButton : MonoBehaviour {
 
 	public void ButtonPressed() {
 		if (Input.GetButtonDown ("ButtonPressed")) {
-			transform.gameObject.GetComponentInParent<Animator> ().Play ("Push");
+			transform.gameObject.GetComponentInParent<Animator> ().Play ("PushStay");
 		}
 	}
 
 	public void TriggerExploder() {
-		exploder = GameObject.FindGameObjectsWithTag ("Exploder");
-		if (exploder.Length > 0) {
-			explo.GetComponent<Explosion>().Explode();
+		if (exploder != null) {
+			exploder.GetComponent<Explosion>().Explode();
 		}
 	}
 
 	public void TriggerGoal() {
-		Debug.Log ("Goal!!");
+		goalDoor.GetComponent<Animator> ().Play ("Open");
 	}
 }
