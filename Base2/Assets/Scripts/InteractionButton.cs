@@ -5,7 +5,8 @@ public class InteractionButton : MonoBehaviour {
 	
 	private string loadPrompt;
 	private bool pressButton;
-	public GameObject exploder;
+	public GameObject explo;
+	GameObject[] exploder;
 
 	// Use this for initialization
 	void Start () {
@@ -15,13 +16,20 @@ public class InteractionButton : MonoBehaviour {
 	public void Update () {
 	}
 
-	public void playAnimation() {
+	public void ButtonPressed() {
 		if (Input.GetButtonDown ("ButtonPressed")) {
-			GetComponent<Animator> ().Play ("Push");
-		//	Debug.Log("Button pressed.");
-
-		// öffne die Tür
-			exploder.GetComponent<Explosion>().Explode();
+			transform.gameObject.GetComponentInParent<Animator> ().Play ("Push");
 		}
+	}
+
+	public void TriggerExploder() {
+		exploder = GameObject.FindGameObjectsWithTag ("Exploder");
+		if (exploder.Length > 0) {
+			explo.GetComponent<Explosion>().Explode();
+		}
+	}
+
+	public void TriggerGoal() {
+		Debug.Log ("Goal!!");
 	}
 }
