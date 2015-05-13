@@ -29,8 +29,8 @@ public class Level1 : MonoBehaviour {
 	private bool wakeupSoundPlayed;
 	private bool wallsVisible; // default is false, when user closed eyes for a certain amount of time it will be true
 
-	private float timeTillWakeupSoundStarts;
-	private float timeTillFirstDoorOpens;
+	public float timeTillWakeupSoundStarts = 0.0f;
+	public float timeTillFirstDoorOpens = 9.0f;
 	private float timeTillWallSoundStarts;
 	private float timeEyesAreClosed; // when eyes are closed this will count up. when eyes are opened it will get reset
 	private float blinkingLightCounter; // counts up, when reached a certain number it will be reset and a light will start to blink
@@ -49,12 +49,14 @@ public class Level1 : MonoBehaviour {
 	public Color activatedPanelColor;
 	private float continuesPanelDisgazeCounter;
 	private EyeXGazePoint previousGazePoint;
+	private bool playerInPanelArea;
 
 	public Color wallLightColor1;
 	public Color wallLightColor2;
 	public Color wallLightColor3;
 	public Color wallLightColor4;
 	private string lastGazedWallLightName;
+	private bool playerInWallLightsArea;
 
 	protected void OnEnable() {
 		eyePositionDataProvider.Start();
@@ -66,9 +68,7 @@ public class Level1 : MonoBehaviour {
 		gazePointDataProvider = eyexHost.GetGazePointDataProvider (GazePointDataMode.LightlyFiltered);
 		eyePositionDataProvider = eyexHost.GetEyePositionDataProvider();
 
-		timeTillFirstDoorOpens = 0.0f; //9.0f;
 		timeTillWallSoundStarts = 0.0f; //3.0f;
-		timeTillWakeupSoundStarts = 0.0f; //2.0f;
 		timeEyesAreClosed = 0.0f;
 		blinkingLightCounter = 0.0f;
 		
@@ -122,9 +122,9 @@ public class Level1 : MonoBehaviour {
 		elapsedTime += Time.deltaTime;
 
 		// play the wakeup sound
-		/*if (timeTillWakeupSoundStarts < elapsedTime && wakeupSoundPlayed == false) {
+		if (timeTillWakeupSoundStarts < elapsedTime && wakeupSoundPlayed == false) {
 			this.playWakeupSound();
-		}*/
+		}
 
 		// open the door if the time is right!
 		if (elapsedTime > timeTillFirstDoorOpens && !openFirstDoorAnimationStarted) {
@@ -142,11 +142,13 @@ public class Level1 : MonoBehaviour {
 		}
 		
 		// if the walls are passed send out rays to check whether the player is looking at a "solar panel"
-		//if (wallsVisible) {
+		if (this.playerInPanelArea) {
 			this.handlePanelRiddle();
-		//}
+		}
 
-		this.handleWallLights ();
+		if (this.playerInWallLightsArea) {
+			this.handleWallLights ();
+		}
 	}
 
 
@@ -365,5 +367,13 @@ public class Level1 : MonoBehaviour {
 
 	public void setWallTriggerStarted(bool didStart) {
 		wallTriggerStarted = didStart;
+	}
+
+	public void setPlayerInPanelArea(bool state) {
+		this.playerInPanelArea = state;
+	}
+
+	public void setPlayerInWallLightsArea(bool state) {
+		this.playerInWallLightsArea = state;
 	}
 }

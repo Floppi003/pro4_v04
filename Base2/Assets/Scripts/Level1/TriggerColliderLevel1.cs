@@ -17,7 +17,14 @@ public class TriggerColliderLevel1 : MonoBehaviour {
 	// Triggers
 	void OnTriggerEnter(Collider other) {
 		Debug.Log ("OnTriggerEnter");
-		GameObject.Find ("GM").GetComponent<Level1> ().setWallTriggerStarted (true);
+
+		if (this.name.Equals ("WallCollider")) {
+			GameObject.Find ("GM").GetComponent<Level1> ().setWallTriggerStarted (true);
+		} else if (this.name.Equals ("WallLightsCollider")) {
+			GameObject.Find ("GM").GetComponent<Level1> ().setPlayerInWallLightsArea(true);
+		} else if (this.name.Equals ("PanelCollider")) {
+			GameObject.Find ("GM").GetComponent<Level1>().setPlayerInPanelArea(true);
+		}
 	}
 	
 	void OnTriggerStay(Collider other) {
@@ -26,5 +33,11 @@ public class TriggerColliderLevel1 : MonoBehaviour {
 	
 	void OnTriggerExit(Collider other) {
 		Debug.Log ("OnTriggerExit");
+
+		if (this.name.Equals ("WallLightsCollider")) {
+			GameObject.Find ("GM").GetComponent<Level1> ().setPlayerInWallLightsArea(false);
+		} else if (this.name.Equals ("PanelCollider")) {
+			GameObject.Find ("GM").GetComponent<Level1>().setPlayerInPanelArea(false);
+		}
 	}
 }
