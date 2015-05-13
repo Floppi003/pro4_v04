@@ -100,14 +100,14 @@ public class GameManager : MonoBehaviour {
 		if (unlockedLevel < currentLevel) {
 			unlockedLevel = currentLevel;
 			PlayerPrefs.SetInt ("Level Unlocked", unlockedLevel);
-			PlayerPrefs.SetInt ("Current Level", currentLevel);
 		}
+		PlayerPrefs.SetInt ("Current Level", currentLevel);
 	}
 
 	public void ToCenter(){
 		//currentLevel += 1;
 		SaveGame ();
-		Application.LoadLevel("main_menu");
+		Application.LoadLevel("Central");
 		Time.timeScale = 1f;
 	}
 
