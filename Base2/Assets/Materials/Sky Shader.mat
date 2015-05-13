@@ -7,7 +7,7 @@ Material:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: Sky Shader
-  m_Shader: {fileID: 106, guid: 0000000000000000f000000000000000, type: 0}
+  m_Shader: {fileID: 104, guid: 0000000000000000f000000000000000, type: 0}
   m_ShaderKeywords: 
   m_LightmapFlags: 5
   m_CustomRenderQueue: -1
@@ -95,42 +95,42 @@ Material:
         first:
           name: _FrontTex
         second:
-          m_Texture: {fileID: 0}
+          m_Texture: {fileID: 2800000, guid: b5f16cceab65b1a4a8be0ebf4d36e659, type: 3}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
       data:
         first:
           name: _BackTex
         second:
-          m_Texture: {fileID: 0}
+          m_Texture: {fileID: 2800000, guid: b5f16cceab65b1a4a8be0ebf4d36e659, type: 3}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
       data:
         first:
           name: _LeftTex
         second:
-          m_Texture: {fileID: 0}
+          m_Texture: {fileID: 2800000, guid: b5f16cceab65b1a4a8be0ebf4d36e659, type: 3}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
       data:
         first:
           name: _RightTex
         second:
-          m_Texture: {fileID: 0}
+          m_Texture: {fileID: 2800000, guid: b5f16cceab65b1a4a8be0ebf4d36e659, type: 3}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
       data:
         first:
           name: _UpTex
         second:
-          m_Texture: {fileID: 0}
+          m_Texture: {fileID: 2800000, guid: 849a1db938501124abfcbb53876ce04e, type: 3}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
       data:
         first:
           name: _DownTex
         second:
-          m_Texture: {fileID: 0}
+          m_Texture: {fileID: 2800000, guid: b5e91b728e215f441951eeec3c264e4d, type: 3}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
     m_Floats:
@@ -141,7 +141,7 @@ Material:
       data:
         first:
           name: _Exposure
-        second: 8
+        second: 1
       data:
         first:
           name: _SunSize
@@ -149,7 +149,7 @@ Material:
       data:
         first:
           name: _AtmosphereThickness
-        second: .400000006
+        second: .550000012
       data:
         first:
           name: _SrcBlend
@@ -218,11 +218,11 @@ Material:
       data:
         first:
           name: _SkyTint
-        second: {r: 1, g: .88908726, b: .674509823, a: 1}
+        second: {r: .211937711, g: .360294104, b: .33573854, a: 1}
       data:
         first:
           name: _GroundColor
-        second: {r: 1, g: 1, b: 1, a: 1}
+        second: {r: .399653971, g: .471119106, b: .485294104, a: 1}
       data:
         first:
           name: _EmissionColorUI
