@@ -14,8 +14,8 @@ public class CameraRaycast : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		Debug.DrawRay (cam.transform.position, cam.gameObject.transform.forward, Color.cyan, 2);
-		if (Physics.Raycast (cam.transform.position, cam.gameObject.transform.forward, out interactionRaycastHit, 2)) {
+		Debug.DrawRay (cam.transform.position, cam.gameObject.transform.forward, Color.cyan, 3);
+		if (Physics.Raycast (cam.transform.position, cam.gameObject.transform.forward, out interactionRaycastHit, 3)) {
 		
 			if (interactionRaycastHit.collider.gameObject.tag == "Interaction") {
 				loadPrompt = "Press [F] for Interaction";
