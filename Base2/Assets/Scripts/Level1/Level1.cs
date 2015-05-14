@@ -25,7 +25,7 @@ public class Level1 : MonoBehaviour {
 	private float elapsedTime;
 	private bool openFirstDoorAnimationStarted;
 	private bool wallTriggerStarted;
-	private bool wallSoundPlayed;
+	private bool waitForEyeClose;
 	private bool wakeupSoundPlayed;
 	private bool wallsVisible; // default is false, when user closed eyes for a certain amount of time it will be true
 
@@ -75,7 +75,7 @@ public class Level1 : MonoBehaviour {
 		wakeupSoundPlayed = false;
 		openFirstDoorAnimationStarted = false;
 		wallTriggerStarted = false;
-		wallSoundPlayed = false;
+		waitForEyeClose = false;
 
 
 		// load the blinking lights
@@ -137,7 +137,7 @@ public class Level1 : MonoBehaviour {
 		}
 		
 		// after the firstWallAudioClip was played check if the player closes his eyes for a second
-		if (wallSoundPlayed && !wallsVisible) {
+		if (waitForEyeClose && !wallsVisible) {
 			this.showInvisibleWallsOnEyeClose();
 		}
 		
@@ -171,9 +171,11 @@ public class Level1 : MonoBehaviour {
 	private void startWallTrigger() {
 		timeTillWallSoundStarts -= Time.deltaTime;
 		
-		if (wallSoundPlayed == false && timeTillWallSoundStarts < 0) {
+		if (timeTillWallSoundStarts < 0) {
 			// play Audio Sound
-			wallSoundPlayed = true;
+			waitForEyeClose = true;
+			wallTriggerStarted = false;
+			timeTillWallSoundStarts = 1.0f;
 			AudioManager.instance.queueAudioClip(audioFiles.firstWallAudioClip);
 		}
 	}

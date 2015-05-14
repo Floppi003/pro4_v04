@@ -3,9 +3,15 @@ using System.Collections;
 
 public class TriggerColliderLevel1 : MonoBehaviour {
 
+	private GameManager gm;
+	private AudioFilesLevel1 audioFiles;
+	private Level1 level1;
+
 	// Use this for initialization
 	void Start () {
-	
+		this.gm = GameObject.Find ("GM").GetComponent<GameManager> ();
+		this.audioFiles = GameObject.Find ("GM").GetComponent<AudioFilesLevel1> ();
+		this.level1 = GameObject.Find ("GM").GetComponent<Level1> ();
 	}
 	
 	// Update is called once per frame
@@ -19,11 +25,16 @@ public class TriggerColliderLevel1 : MonoBehaviour {
 		Debug.Log ("OnTriggerEnter");
 
 		if (this.name.Equals ("WallCollider")) {
-			GameObject.Find ("GM").GetComponent<Level1> ().setWallTriggerStarted (true);
+			AudioManager.instance.playAudioClipForced (audioFiles.wallHit);
+			this.level1.setWallTriggerStarted (true);
+
 		} else if (this.name.Equals ("WallLightsCollider")) {
-			GameObject.Find ("GM").GetComponent<Level1> ().setPlayerInWallLightsArea(true);
+			level1.setPlayerInWallLightsArea (true);
+
 		} else if (this.name.Equals ("PanelCollider")) {
-			GameObject.Find ("GM").GetComponent<Level1>().setPlayerInPanelArea(true);
+			level1.setPlayerInPanelArea (true);
+		} else if (this.name.Equals ("CowCollider")) {
+			AudioManager.instance.playAudioClipForced(audioFiles.cow);
 		}
 	}
 	
@@ -35,9 +46,9 @@ public class TriggerColliderLevel1 : MonoBehaviour {
 		Debug.Log ("OnTriggerExit");
 
 		if (this.name.Equals ("WallLightsCollider")) {
-			GameObject.Find ("GM").GetComponent<Level1> ().setPlayerInWallLightsArea(false);
+			level1.setPlayerInWallLightsArea(false);
 		} else if (this.name.Equals ("PanelCollider")) {
-			GameObject.Find ("GM").GetComponent<Level1>().setPlayerInPanelArea(false);
+			level1.setPlayerInPanelArea(false);
 		}
 	}
 }
