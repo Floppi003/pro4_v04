@@ -4,11 +4,11 @@ using System.Collections;
 public class GravityButton : MonoBehaviour {
 
 	public Vector3 gravityVector;
-	public GravityBody player;
+	private GravityBody player;
 
 	// Use this for initialization
 	void Start () {
-	
+		player = GameObject.FindGameObjectWithTag ("Player").GetComponent<GravityBody>();
 	}
 	
 	// Update is called once per frame
