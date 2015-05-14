@@ -321,6 +321,9 @@ public class Level1 : MonoBehaviour {
 		Ray gazeRay = Camera.main.ScreenPointToRay (new Vector3 (screenCoordinates.x, screenCoordinates.y, 0));
 		Debug.DrawRay (gazeRay.origin, gazeRay.direction, Color.magenta, 40.0f);
 			
+		if (gazePoint.Equals (this.previousGazePoint)) {
+			return; // do nothing if no new gaze point is available
+		}
 		if (Physics.Raycast (gazeRay.origin, gazeRay.direction, out gazeRaycastHit, 40.0f)) {
 			// get the gazed object
 			GameObject gazedObject = gazeRaycastHit.collider.gameObject;
@@ -345,6 +348,8 @@ public class Level1 : MonoBehaviour {
 
 			this.lastGazedWallLightName = gazedObject.name;
 		}
+
+		this.previousGazePoint = gazePoint;
 	}
 
 	// picks randomly a new panel to start blinking
