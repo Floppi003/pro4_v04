@@ -32,6 +32,7 @@ public class Level1 : MonoBehaviour {
 	public float timeTillWakeupSoundStarts = 0.0f;
 	public float timeTillFirstDoorOpens = 9.0f;
 	private float timeTillWallSoundStarts;
+	private float timeWhenLastWallSoundWasQueued;
 	private float timeEyesAreClosed; // when eyes are closed this will count up. when eyes are opened it will get reset
 	private float blinkingLightCounter; // counts up, when reached a certain number it will be reset and a light will start to blink
 
@@ -174,10 +175,13 @@ public class Level1 : MonoBehaviour {
 		if (timeTillWallSoundStarts < 0) {
 			// play Audio Sound
 			waitForEyeClose = true;
-			wallTriggerStarted = false;
-			timeTillWallSoundStarts = 1.0f;
+			timeTillWallSoundStarts = 12.0f;
 			AudioManager.instance.queueAudioClip(audioFiles.firstWallAudioClip);
 		}
+	}
+
+	public void pushPlayerBack() {
+		GameObject.Find ("Player").GetComponent<Rigidbody>().AddForce((transform.forward) * 1500);
 	}
 
 	// shows the invisible walls when the user closed his eyes
@@ -199,7 +203,13 @@ public class Level1 : MonoBehaviour {
 			GameObject.Find ("Level_1_Obstacle_Wall_02").GetComponent<MeshRenderer>().enabled = true;
 			GameObject.Find ("Level_1_Obstacle_Wall_03").GetComponent<MeshRenderer>().enabled = true;
 			GameObject.Find ("Level_1_Obstacle_Wall_04").GetComponent<MeshRenderer>().enabled = true;
-			
+
+			// disable the wall collider
+			GameObject.Find ("WallCollider").GetComponent<BoxCollider>().enabled = false;
+
+			// set walltriggerstarted to false so that no new audio clip will get queued saying that you should close your eyes
+			this.wallTriggerStarted = false;
+
 			wallsVisible = true;
 		}
 	}
@@ -356,10 +366,10 @@ public class Level1 : MonoBehaviour {
 		// if it was the last activated panel open the door and play special sound
 		if (this.blinkingLights.Count == 0) {
 			this.openGoalDoor ();
-			AudioManager.instance.playAudioClipForced(this.audioFiles.lastActivated);
+			AudioManager.instance.playSoundEffect(this.audioFiles.lastActivated);
 		} else {
 			// it wasn't the last one, play normal activate sound
-			AudioManager.instance.playAudioClipForced (this.audioFiles.activated);
+			AudioManager.instance.playSoundEffect(this.audioFiles.activated);
 		}
 	}
 

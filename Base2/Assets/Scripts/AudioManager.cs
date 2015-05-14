@@ -95,6 +95,10 @@ public class AudioManager : MonoBehaviour {
 		audioSource.PlayOneShot (audioClip);
 	}
 
+	public void playSoundEffect(AudioClip audioClip) {
+		audioSource.PlayOneShot (audioClip);
+	}
+
 
 	private void playNextClipInQueue() {
 		Debug.Log ("Playing next shot out of queue: ");
