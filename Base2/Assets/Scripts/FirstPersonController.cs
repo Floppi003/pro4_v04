@@ -27,6 +27,8 @@ public class FirstPersonController : MonoBehaviour {
 	public bool debug = true;
 	//
 
+	private Vector3 previousPosition;
+
 	private float timeSinceLastButtonAudioPlay = 0.0f;
 
 	// System vars
@@ -42,10 +44,26 @@ public class FirstPersonController : MonoBehaviour {
 		Screen.lockCursor = true;
 		cameraTransform = Camera.main.transform;
 		spawn = transform.position;
+		previousPosition = transform.position;
 	}
 	
 	void Update() {
-		
+		// test for footstep sound
+		Vector3 distance = transform.position - previousPosition;
+		previousPosition = transform.position;
+		Debug.Log ("distance.magnitude: " + distance.magnitude);
+
+		AudioSource audioSource = GetComponent<AudioSource> ();
+
+		if (distance.magnitude > 0.15 && IsGrounded()) {
+			if (audioSource.isPlaying == false) {
+				GetComponent<AudioSource> ().Play ();
+			}
+		} else {
+			GetComponent<AudioSource>().Stop ();
+		}
+
+
 		timeSinceLastButtonAudioPlay += Time.deltaTime;
 		// set dampig dependend if grounded or not
 		float damping;

@@ -120,6 +120,7 @@ public class Level1 : MonoBehaviour {
 	}
 
 	void Update() {
+
 		elapsedTime += Time.deltaTime;
 
 		// play the wakeup sound
