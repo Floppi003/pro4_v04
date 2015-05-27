@@ -29,7 +29,7 @@ public class SceneFadeIn : MonoBehaviour {
 				StartScene ();
 			}
 		}
-		
+
 		timePassed += Time.deltaTime;
 	}
 	
