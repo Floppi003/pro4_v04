@@ -557,6 +557,7 @@ GameObject:
   - 114: {fileID: 11400410}
   - 114: {fileID: 11419492}
   - 114: {fileID: 11419836}
+  - 82: {fileID: 8203620}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -990,6 +991,75 @@ AudioListener:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 195446}
   m_Enabled: 1
+--- !u!82 &8203620
+AudioSource:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 187564}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: .349999994
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!82 &8237158
 AudioSource:
   m_ObjectHideFlags: 1
@@ -1825,6 +1895,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wakeupAudioClip: {fileID: 8300000, guid: 984c95975c1f43041bbf74747e1ed60e, type: 3}
   firstWallAudioClip: {fileID: 8300000, guid: 031139b423e2bbd41b3575fa5da4321e, type: 3}
+  wallHit: {fileID: 0}
+  activated: {fileID: 0}
+  lastActivated: {fileID: 0}
+  cow: {fileID: 0}
 --- !u!114 &11461736
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2100,6 +2174,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 87f57cf5360c8284e89b008da65e1b98, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  timeTillWakeupSoundStarts: 0
+  timeTillFirstDoorOpens: 9
+  standardColorLerpTime: 0
+  gazedColorLerpTime: 0
+  standardPanelColor: {r: 0, g: 0, b: 0, a: 0}
+  highlightedPanelColor: {r: 0, g: 0, b: 0, a: 0}
+  gazePanelColor: {r: 0, g: 0, b: 0, a: 0}
+  activatedPanelColor: {r: 0, g: 0, b: 0, a: 0}
+  wallLightColor1: {r: 0, g: 0, b: 0, a: 0}
+  wallLightColor2: {r: 0, g: 0, b: 0, a: 0}
+  wallLightColor3: {r: 0, g: 0, b: 0, a: 0}
+  wallLightColor4: {r: 0, g: 0, b: 0, a: 0}
 --- !u!114 &11497608
 MonoBehaviour:
   m_ObjectHideFlags: 1
