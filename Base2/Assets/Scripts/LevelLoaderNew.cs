@@ -20,9 +20,15 @@ public class LevelLoaderNew : MonoBehaviour {
 		}
 
 		canLoadLevel = levelToLoad <= unlockedLevel ? true : false;
-		if(!canLoadLevel)
-		{
-			Instantiate (padlock, new Vector3(transform.position.x - 0.7f, 1.5f, transform.position.z), Quaternion.identity);
+		if (canLoadLevel) {
+			//Instantiate (padlock, new Vector3(transform.position.x - 0.7f, 1.5f, transform.position.z), Quaternion.identity);
+			MeshRenderer rendererLock = transform.Find ("pCube1").Find ("LevelLock").GetComponent<MeshRenderer> ();
+			rendererLock.enabled = false;
+			MeshRenderer rendererWhite = transform.Find ("pCube1").Find ("LevelWhite").GetComponent<MeshRenderer> ();
+			rendererWhite.enabled = false;
+		} else {
+			MeshRenderer rendererNumber = transform.Find ("pCube1").Find ("LevelNumber").GetComponent<MeshRenderer> ();
+			rendererNumber.enabled = false;
 		}
 	}
 
@@ -45,7 +51,7 @@ public class LevelLoaderNew : MonoBehaviour {
 	public string GetText(){
 		string levelText = "";
 		if (levelToLoad.ToString () == "0") {
-			levelText = "Press [F] to start a new game";
+			levelText = "Press [F] to clear the game";
 		}else if (canLoadLevel) {
 			levelText = "Press [F] to load level " + levelToLoad.ToString ();
 		} else {
