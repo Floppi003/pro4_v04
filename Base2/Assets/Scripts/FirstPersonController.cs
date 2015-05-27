@@ -1,6 +1,7 @@
-﻿using UnityEngine;
+using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
+using System.Collections.Generic;
 
 [RequireComponent (typeof (GravityBody))]
 public class FirstPersonController : MonoBehaviour {
@@ -27,6 +28,8 @@ public class FirstPersonController : MonoBehaviour {
 	public bool debug = true;
 	//
 
+	private Queue<float> walkingDistanceQueue;
+
 	private Vector3 previousPosition;
 
 	private float timeSinceLastButtonAudioPlay = 0.0f;
@@ -45,23 +48,45 @@ public class FirstPersonController : MonoBehaviour {
 		cameraTransform = Camera.main.transform;
 		spawn = transform.position;
 		previousPosition = transform.position;
+		walkingDistanceQueue = new Queue<float> ();
+		walkingDistanceQueue.Enqueue (0.0f);
+		walkingDistanceQueue.Enqueue (0.0f);
+		walkingDistanceQueue.Enqueue (0.0f);
+		walkingDistanceQueue.Enqueue (0.0f);
+		walkingDistanceQueue.Enqueue (0.0f);
 	}
 	
 	void Update() {
 		// test for footstep sound
 		Vector3 distance = transform.position - previousPosition;
 		previousPosition = transform.position;
-		Debug.Log ("distance.magnitude: " + distance.magnitude);
 
+		// enqueue the current distance
+		walkingDistanceQueue.Enqueue (distance.magnitude);
+
+		// sum up the walking Distance
+		float[] walkingDistanceArray = walkingDistanceQueue.ToArray ();
+		float totalWalkingDistance = 0.0f;
+		foreach (float walkingDistance in walkingDistanceArray) {
+			totalWalkingDistance += walkingDistance;
+		}
+
+		// calculate average
+		float averageWalkingDistance = totalWalkingDistance / walkingDistanceQueue.Count;
+		Debug.Log ("average Walking Distance: " + averageWalkingDistance);
+
+		// play the walking sound if player walked enough
 		AudioSource audioSource = GetComponent<AudioSource> ();
-
-		if (distance.magnitude > 0.15 && IsGrounded()) {
+		if (averageWalkingDistance > 0.05f && IsGrounded()) {
 			if (audioSource.isPlaying == false) {
 				GetComponent<AudioSource> ().Play ();
 			}
 		} else {
 			GetComponent<AudioSource>().Stop ();
 		}
+
+		// dequeue a walkingdistance
+		walkingDistanceQueue.Dequeue ();
 
 
 		timeSinceLastButtonAudioPlay += Time.deltaTime;

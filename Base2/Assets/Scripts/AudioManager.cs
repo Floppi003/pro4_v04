@@ -38,8 +38,8 @@ public class AudioManager : MonoBehaviour {
 			_instance = this;
 			audioQueue = new Queue<AudioClip>();
 			AudioSource[] audioSources = GameObject.Find ("GM").GetComponents<AudioSource>();
-			audioSource = audioSources[0];
-			backgroundAudioSource = audioSources[1];
+			audioSource = audioSources[1];
+			backgroundAudioSource = audioSources[0];
 
 			//DontDestroyOnLoad(this);
 		}
