@@ -175,6 +175,7 @@ public class Level1 : MonoBehaviour {
 	private void openFirstDoor() {
 		openFirstDoorAnimationStarted = true;
 		GameObject.Find ("FirstDoor").GetComponent<Animator>().Play ("OpenDoor");
+		AudioManager.instance.playSoundEffect (this.audioFiles.doorOpens);
 	}
 	
 	// when the first invisible wall will be touched this trigger will fire and the method will get called. it plays the "close your eyes" sound

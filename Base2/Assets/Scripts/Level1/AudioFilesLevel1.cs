@@ -10,6 +10,7 @@ public class AudioFilesLevel1 : MonoBehaviour {
 	public AudioClip lastActivated;
 	public AudioClip cow;
 	public AudioClip paula;
+	public AudioClip doorOpens;
 	
 	
 	public AudioClip[] wakeupAudioClips_Stage01;

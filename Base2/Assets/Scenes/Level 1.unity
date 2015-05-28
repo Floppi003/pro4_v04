@@ -19049,6 +19049,10 @@ Prefab:
       propertyPath: paula
       value: 
       objectReference: {fileID: 8300000, guid: e42c428254e9e484faf2061879b6a788, type: 3}
+    - target: {fileID: 11460482, guid: 86925217ef00c26489bfec73a81d6a13, type: 2}
+      propertyPath: doorOpens
+      value: 
+      objectReference: {fileID: 8300000, guid: f63f0f59bc20d1540a8851b16a013b29, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 86925217ef00c26489bfec73a81d6a13, type: 2}
   m_IsPrefabParent: 0
