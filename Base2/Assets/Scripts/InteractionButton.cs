@@ -7,6 +7,7 @@ public class InteractionButton : MonoBehaviour {
 	private bool pressButton;
 	public GameObject exploder;
 	public GameObject goalDoor;
+	public bool pushPop;
 
 	// Use this for initialization
 	void Start () {
@@ -18,7 +19,11 @@ public class InteractionButton : MonoBehaviour {
 
 	public void ButtonPressed() {
 		if (Input.GetButtonDown ("ButtonPressed")) {
-			transform.gameObject.GetComponentInParent<Animator> ().Play ("PushStay");
+			if(pushPop){
+				transform.gameObject.GetComponentInParent<Animator> ().Play ("Push");
+			}else{
+				transform.gameObject.GetComponentInParent<Animator> ().Play ("PushStay");
+			}
 		}
 	}
 
