@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 
 public class TriggerColliderLevel1 : MonoBehaviour {
@@ -26,46 +26,41 @@ public class TriggerColliderLevel1 : MonoBehaviour {
 	
 	// Triggers
 	void OnTriggerEnter(Collider other) {
-		Debug.Log ("OnTriggerEnter");
-		
+
 		if (this.name.Equals ("WallCollider")) {
 			// play wall sound
-			AudioManager.instance.playSoundEffect(audioFiles.wallHit);
+			AudioManager.instance.playSoundEffect (audioFiles.wallHit);
 			
 			// also change the value in level1 script
 			this.level1.setWallTriggerStarted (true);
 			
 			// also call the method to push the player back
-			this.level1.pushPlayerBack();
+			this.level1.pushPlayerBack ();
 			
 		} else if (this.name.Equals ("WallBehindCollider")) {
 			if (didTouchWallBehindCollider == false) {
-				AudioManager.instance.queueAudioClip(audioFiles.getSleepingBeauty_Stage01_AudioClip());
+				AudioManager.instance.queueAudioClip (audioFiles.getSleepingBeauty_Stage01_AudioClip (), 1.0f);
 				didTouchWallBehindCollider = true;
 			}
 			
 		} else if (this.name.Equals ("WallLightsCollider")) {
+			Debug.Log ("JAJAJAJAJAJJAA");
 			level1.setPlayerInWallLightsArea (true);
+			level1.setPlayerInPanelArea(false);
 			
 		} else if (this.name.Equals ("PanelCollider")) {
 			level1.setPlayerInPanelArea (true);
+			level1.setPlayerInWallLightsArea(false);
 			
 		} else if (this.name.Equals ("CowCollider")) {
-			AudioManager.instance.playSoundEffect(audioFiles.paula);
+			AudioManager.instance.playAudioClipIfFree (audioFiles.paula);
 		}
 	}
 	
 	void OnTriggerStay(Collider other) {
-		Debug.Log ("OnTriggerStay");
 	}
 	
 	void OnTriggerExit(Collider other) {
-		Debug.Log ("OnTriggerExit");
 		
-		if (this.name.Equals ("WallLightsCollider")) {
-			level1.setPlayerInWallLightsArea(false);
-		} else if (this.name.Equals ("PanelCollider")) {
-			level1.setPlayerInPanelArea(false);
-		}
 	}
 }

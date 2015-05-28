@@ -27,8 +27,9 @@ public class Level1 : MonoBehaviour {
 	private bool wallTriggerStarted;
 	private bool waitForEyeClose;
 	private bool wakeupSoundPlayed;
-	private bool wallsVisible; // default is false, when user closed eyes for a certain amount of time it will be true
-	
+	private bool wallsVisible; // default is false, when user closed eyes for a certain amount of time it will be true 
+	private int wallRiddleHintsPlayed; // amount of hint audio clips that have been played so far
+
 	public float timeTillWakeupSoundStarts = 0.0f;
 	public float timeTillFirstDoorOpens = 9.0f;
 	private float timeTillWallSoundStarts;
@@ -59,6 +60,12 @@ public class Level1 : MonoBehaviour {
 	private string lastGazedWallLightName;
 	private bool playerInWallLightsArea;
 	private int wallLightsColored;
+
+	// variables for panel riddle
+	private int panelRiddleHintsPlayed;
+	private float timeSinceLastPanelRiddleHint;
+	private bool goalOpened = false;
+	private float timeSinceLastGoalOpenedClip;
 	
 	protected void OnEnable() {
 		eyePositionDataProvider.Start();
@@ -148,6 +155,10 @@ public class Level1 : MonoBehaviour {
 		if (this.playerInWallLightsArea) {
 			this.handleWallLights ();
 		}
+
+		if (this.goalOpened) {
+			this.handleGoalOpened();
+		}
 	}
 	
 	
@@ -173,8 +184,18 @@ public class Level1 : MonoBehaviour {
 		if (timeTillWallSoundStarts < 0) {
 			// play Audio Sound
 			waitForEyeClose = true;
-			timeTillWallSoundStarts = 12.0f;
-			AudioManager.instance.queueAudioClip(audioFiles.getRubEyes_Stage01_AudioClip());
+			timeTillWallSoundStarts = 11.0f + Random.Range (0, 6);
+
+			if (this.wallRiddleHintsPlayed == 0) {
+				// first time the riddle sound is played
+				AudioManager.instance.queueAudioClip(audioFiles.getRubEyes_Stage01_AudioClip());
+			
+			} else {
+				// the riddle hint audio files is being played now already more than once
+				AudioManager.instance.queueAudioClip (audioFiles.getRubEyes_Stage02_AudioClip());
+			}
+
+			this.wallRiddleHintsPlayed++;
 		}
 	}
 	
@@ -213,6 +234,8 @@ public class Level1 : MonoBehaviour {
 	}
 	
 	private void handlePanelRiddle() {
+
+		this.timeSinceLastPanelRiddleHint += Time.deltaTime;
 		
 		EyeXGazePoint gazePoint = gazePointDataProvider.Last;
 		EyeXEyePosition eyePosition = this.eyePositionDataProvider.Last;
@@ -238,6 +261,25 @@ public class Level1 : MonoBehaviour {
 				} else {
 					this.continuesPanelDisgazeCounter += Time.deltaTime;
 				}
+
+				// check if player gazed the goal
+				if (gazedObject.Equals ("Outer") || gazedObject.Equals ("GoalDoor")) {
+
+					// if goal collider was gazed play a hint
+					if (this.panelRiddleHintsPlayed == 0) {
+						AudioManager.instance.playAudioClipIfFree (audioFiles.getLocked_Stage01_AudioClip());
+						this.panelRiddleHintsPlayed++;
+					
+					} else {
+
+						if (this.timeSinceLastPanelRiddleHint > 10.0f) {
+							AudioManager.instance.playAudioClipIfFree (audioFiles.getLocked_Stage02_AudioClip());
+							this.timeSinceLastPanelRiddleHint = 0.0f;
+							this.panelRiddleHintsPlayed++;
+						}
+					}
+				}
+
 			} else {
 				Debug.Log ("else from raycast if");
 				this.continuesPanelDisgazeCounter += Time.deltaTime;
@@ -385,10 +427,21 @@ public class Level1 : MonoBehaviour {
 		// if it was the last activated panel open the door and play special sound
 		if (this.blinkingLights.Count == 0) {
 			this.openGoalDoor ();
+			this.goalOpened = true;
 			AudioManager.instance.playSoundEffect(this.audioFiles.lastActivated);
+			AudioManager.instance.queueAudioClip (this.audioFiles.getGoal_Stage01_AudioClip(), 0.5f);
 		} else {
 			// it wasn't the last one, play normal activate sound
 			AudioManager.instance.playSoundEffect(this.audioFiles.activated);
+		}
+	}
+
+	private void handleGoalOpened() {
+		this.timeSinceLastGoalOpenedClip += Time.deltaTime;
+
+		if (this.timeSinceLastGoalOpenedClip > 11.0f) {
+			AudioManager.instance.playAudioClipIfFree(this.audioFiles.getGoal_Stage02_AudioClip());
+			this.timeSinceLastGoalOpenedClip = 0.0f;
 		}
 	}
 	

@@ -3173,11 +3173,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 195898784}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -114.769997, y: 6.42000008, z: -78.3399963}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -104.910004, y: 7.01999998, z: -75.3499985}
+  m_LocalScale: {x: .0505581647, y: 1.64332867, z: .472514749}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 17
 --- !u!114 &195898787
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7000,7 +7000,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 18
+  m_RootOrder: 19
 --- !u!1001 &475658912
 Prefab:
   m_ObjectHideFlags: 0
@@ -10587,6 +10587,58 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 474702, guid: 49c86870cff89e34ba4045640d543dab, type: 2}
   m_PrefabInternal: {fileID: 683671310}
+--- !u!1 &685209250
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 685209253}
+  - 65: {fileID: 685209252}
+  - 114: {fileID: 685209251}
+  m_Layer: 0
+  m_Name: WallLightsCollider
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &685209251
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 685209250}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07100acf31b24f24bb92aa64b674c731, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &685209252
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 685209250}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 77.567955, y: 2.28370667, z: 23.0073395}
+  m_Center: {x: -11.2220306, y: .641852856, z: 9.54208374}
+--- !u!4 &685209253
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 685209250}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -53.8100014, y: 6.25, z: -81.8600006}
+  m_LocalScale: {x: .0187603645, y: 1.7709012, z: .627173185}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 16
 --- !u!1001 &689107391
 Prefab:
   m_ObjectHideFlags: 0
@@ -18791,15 +18843,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 455906, guid: 86925217ef00c26489bfec73a81d6a13, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -49
+      value: -50.9300003
       objectReference: {fileID: 0}
     - target: {fileID: 455906, guid: 86925217ef00c26489bfec73a81d6a13, type: 2}
       propertyPath: m_LocalPosition.z
-      value: .800000012
+      value: .839999974
       objectReference: {fileID: 0}
     - target: {fileID: 455906, guid: 86925217ef00c26489bfec73a81d6a13, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 2.99000001
+      value: 1.76999998
       objectReference: {fileID: 0}
     - target: {fileID: 11497280, guid: 86925217ef00c26489bfec73a81d6a13, type: 2}
       propertyPath: standardPanelColor.r
@@ -25354,8 +25406,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1501841694}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -74.9199982, y: 6.30999994, z: -81.4700012}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -49.1100006, y: 6.0999999, z: -69.0299988}
+  m_LocalScale: {x: .070703648, y: 1.7709012, z: .0617367178}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 15
@@ -36526,11 +36578,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2104090846}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -117.980003, y: 6.5999999, z: -78.6999969}
+  m_LocalPosition: {x: -117.980003, y: 21.6299992, z: -78.6999969}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 17
+  m_RootOrder: 18
 --- !u!1001 &2104505083
 Prefab:
   m_ObjectHideFlags: 0

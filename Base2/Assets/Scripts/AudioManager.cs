@@ -56,11 +56,11 @@ public class AudioManager : MonoBehaviour {
 	}
 
 
-	public void queueAudioClip(AudioClip audioClip) {
+	public void queueAudioClip(AudioClip audioClip, float delay = 0.0f) {
 		Debug.Log ("queue audio clip called");
 		// calculate time for next audio playback
 		AudioClip[] audioClips = audioQueue.ToArray();
-		float totalWaitingTime = 0.0f; // seconds
+		float totalWaitingTime = delay; // seconds
 		foreach (AudioClip ac in audioClips) {
 			totalWaitingTime += ac.length;
 		}

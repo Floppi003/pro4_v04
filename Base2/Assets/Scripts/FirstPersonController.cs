@@ -73,7 +73,6 @@ public class FirstPersonController : MonoBehaviour {
 
 		// calculate average
 		float averageWalkingDistance = totalWalkingDistance / walkingDistanceQueue.Count;
-		Debug.Log ("average Walking Distance: " + averageWalkingDistance);
 
 		// play the walking sound if player walked enough
 		AudioSource audioSource = GetComponent<AudioSource> ();
