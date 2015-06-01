@@ -18,6 +18,7 @@ GameObject:
   - 114: {fileID: 11489476}
   - 114: {fileID: 11489540}
   - 114: {fileID: 11421088}
+  - 114: {fileID: 11493926}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -270,6 +271,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fixationDataMode: 0
+--- !u!114 &11493926
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 107054}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5be35953bff503e42b0927fac66c31aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  jumpSound: {fileID: 8300000, guid: 44200f1c0cb393d4ca47b07685a2cd2f, type: 3}
 --- !u!124 &12442522
 Behaviour:
   m_ObjectHideFlags: 1

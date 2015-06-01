@@ -558,6 +558,7 @@ GameObject:
   - 114: {fileID: 11419492}
   - 114: {fileID: 11419836}
   - 82: {fileID: 8203620}
+  - 114: {fileID: 11474948}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -1899,6 +1900,20 @@ MonoBehaviour:
   activated: {fileID: 0}
   lastActivated: {fileID: 0}
   cow: {fileID: 0}
+  paula: {fileID: 0}
+  doorOpens: {fileID: 0}
+  wakeupSound: {fileID: 0}
+  wakeupAudioClips_Stage01: []
+  rubEyes_Stage01: []
+  rubEyes_Stage02: []
+  sleepingBeauty_Stage01: []
+  wallOfLights_Stage01: []
+  wallOfLights_Stage02: []
+  wallOfLightsOver_Stage01: []
+  locked_Stage01: []
+  locked_Stage02: []
+  goal_Stage01: []
+  goal_Stage02: []
 --- !u!114 &11461736
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2039,6 +2054,18 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: Central
+--- !u!114 &11474948
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 187564}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5be35953bff503e42b0927fac66c31aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  jumpSound: {fileID: 8300000, guid: 44200f1c0cb393d4ca47b07685a2cd2f, type: 3}
 --- !u!114 &11484760
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -26,7 +26,10 @@ public class FirstPersonController : MonoBehaviour {
 	public float speed = 0;
 	public bool inAir;
 	public bool debug = true;
-	//
+
+	// General Audio
+	private AudioSource audioSource;
+	private GeneralAudioFiles audioFiles;
 
 	private Queue<float> walkingDistanceQueue;
 
@@ -54,6 +57,9 @@ public class FirstPersonController : MonoBehaviour {
 		walkingDistanceQueue.Enqueue (0.0f);
 		walkingDistanceQueue.Enqueue (0.0f);
 		walkingDistanceQueue.Enqueue (0.0f);
+
+		this.audioSource = GetComponent<AudioSource> ();
+		this.audioFiles = GetComponent<GeneralAudioFiles> ();
 	}
 	
 	void Update() {
@@ -75,13 +81,12 @@ public class FirstPersonController : MonoBehaviour {
 		float averageWalkingDistance = totalWalkingDistance / walkingDistanceQueue.Count;
 
 		// play the walking sound if player walked enough
-		AudioSource audioSource = GetComponent<AudioSource> ();
 		if (averageWalkingDistance > 0.05f && IsGrounded()) {
 			if (audioSource.isPlaying == false) {
-				GetComponent<AudioSource> ().Play ();
+				this.audioSource.Play ();
 			}
 		} else {
-			GetComponent<AudioSource>().Stop ();
+			this.audioSource.Stop ();
 		}
 
 		// dequeue a walkingdistance
@@ -125,6 +130,9 @@ public class FirstPersonController : MonoBehaviour {
 				inAir = true;
 				GetComponent<Rigidbody>().AddForce(transform.up * jumpForce);
 
+				Debug.Log ("!!!!!!!!!!!!!!!!!!!!!");
+				// also play audio sound
+				AudioManager.instance.playSoundEffect(audioFiles.jumpSound);
 			}
 		}
 
