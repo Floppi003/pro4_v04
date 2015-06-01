@@ -43,6 +43,7 @@ public class InteractionButton : MonoBehaviour {
 	public void TriggerPlatform() {
 		if (platform != null) {
 			platform.GetComponent<Patrol>().NextPatrolPoint();
+			Debug.Log ("Get Component Patrol");
 			//goalDoor.GetComponent<Animator> ().Play ("Open");
 		}
 	}

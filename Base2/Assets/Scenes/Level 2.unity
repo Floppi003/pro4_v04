@@ -1074,6 +1074,10 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 136788, guid: a4a4ba2bda6fa9043879f773948e15e1, type: 2}
       propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
+    - target: {fileID: 101380, guid: a4a4ba2bda6fa9043879f773948e15e1, type: 2}
+      propertyPath: m_TagString
       value: DoorButton
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -7010,8 +7014,16 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 136788, guid: a4a4ba2bda6fa9043879f773948e15e1, type: 2}
       propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
+    - target: {fileID: 101380, guid: a4a4ba2bda6fa9043879f773948e15e1, type: 2}
+      propertyPath: m_TagString
       value: PlatformButton
       objectReference: {fileID: 0}
+    - target: {fileID: 11470822, guid: a4a4ba2bda6fa9043879f773948e15e1, type: 2}
+      propertyPath: platform
+      value: 
+      objectReference: {fileID: 1988284715}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a4a4ba2bda6fa9043879f773948e15e1, type: 2}
   m_IsPrefabParent: 0
@@ -8102,7 +8114,6 @@ MonoBehaviour:
   patrolPoints:
   - {fileID: 1365394248}
   - {fileID: 836605452}
-  moveSpeed: 100
 --- !u!4 &1996374494
 Transform:
   m_PrefabParentObject: {fileID: 471762, guid: 3c00a16e0a813234696a12daf760fdc9, type: 2}
