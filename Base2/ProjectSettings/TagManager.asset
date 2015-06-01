@@ -19,8 +19,6 @@ TagManager:
   - LevelButton
   - Exploder
   - WallLight_Level1
-  - DoorButton
-  - PlatformButton
   layers:
   - Default
   - TransparentFX
