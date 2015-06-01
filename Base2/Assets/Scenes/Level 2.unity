@@ -1070,7 +1070,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 136788, guid: a4a4ba2bda6fa9043879f773948e15e1, type: 2}
       propertyPath: m_Name
-      value: InteractionButton 1
+      value: DoorButton
+      objectReference: {fileID: 0}
+    - target: {fileID: 136788, guid: a4a4ba2bda6fa9043879f773948e15e1, type: 2}
+      propertyPath: m_TagString
+      value: DoorButton
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a4a4ba2bda6fa9043879f773948e15e1, type: 2}
@@ -6614,6 +6618,14 @@ Prefab:
     - target: {fileID: 11470822, guid: a4a4ba2bda6fa9043879f773948e15e1, type: 2}
       propertyPath: pushPop
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 136788, guid: a4a4ba2bda6fa9043879f773948e15e1, type: 2}
+      propertyPath: m_Name
+      value: PlatformButton
+      objectReference: {fileID: 0}
+    - target: {fileID: 136788, guid: a4a4ba2bda6fa9043879f773948e15e1, type: 2}
+      propertyPath: m_TagString
+      value: PlatformButton
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a4a4ba2bda6fa9043879f773948e15e1, type: 2}
