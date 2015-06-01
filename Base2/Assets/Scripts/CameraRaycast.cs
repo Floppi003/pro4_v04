@@ -18,7 +18,7 @@ public class CameraRaycast : MonoBehaviour {
 		if (Physics.Raycast (cam.transform.position, cam.gameObject.transform.forward, out interactionRaycastHit, 3)) {
 		
 			if (interactionRaycastHit.collider.gameObject.tag == "Interaction") {
-				loadPrompt = "Press [F] for Interaction";
+				loadPrompt = "Press [F] to interact";
 				showHint = true;
 				interactionRaycastHit.collider.gameObject.GetComponent<InteractionButton>().ButtonPressed();
 
@@ -32,10 +32,19 @@ public class CameraRaycast : MonoBehaviour {
 				interactionRaycastHit.collider.gameObject.GetComponent<LevelLoaderNew>().LevelButtonPressed();
 		
 			} else if (interactionRaycastHit.collider.gameObject.tag == "Exploder"){
-				loadPrompt = "Press [F] for Interaction";
+				loadPrompt = "Press [F] for explosions";
 				showHint = true;
 				interactionRaycastHit.collider.gameObject.GetComponent<Explosion>().Explode();
 		
+			}else if (interactionRaycastHit.collider.gameObject.tag == "PlatformButton"){
+				loadPrompt = "Press [F] to move the platform";
+				showHint = true;
+				interactionRaycastHit.collider.gameObject.GetComponent<InteractionButton>().ButtonPressed();
+				
+				if (interactionRaycastHit.collider.gameObject.transform.parent.name == "GoalButton") {
+					interactionRaycastHit.collider.gameObject.GetComponent<InteractionButton>().TriggerPlatform();
+				}
+				
 			}else {
 				loadPrompt = "";
 				showHint = false;

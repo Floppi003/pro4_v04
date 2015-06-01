@@ -3,9 +3,8 @@ using System.Collections;
 
 public class Patrol : MonoBehaviour {
 	public Transform[] patrolPoints;
-	public float moveSpeed;
+	float moveSpeed = 20;
 	private int currentPoint;
-
 
 	// Use this for initialization
 	void Start () {
@@ -15,10 +14,9 @@ public class Patrol : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-
 		if (transform.position == patrolPoints[currentPoint].position)
 		{
-			currentPoint++;
+			//currentPoint++;
 		}
 
 		if (currentPoint >= patrolPoints.Length)
@@ -27,5 +25,10 @@ public class Patrol : MonoBehaviour {
 		}
 
 		transform.position = Vector3.MoveTowards(transform.position, patrolPoints[currentPoint].position, moveSpeed * Time.deltaTime);
+	}
+
+	public void NextPatrolPoint(){
+		Debug.Log ("Next Patrol Point");
+		currentPoint++;
 	}
 }

@@ -42,7 +42,8 @@ public class InteractionButton : MonoBehaviour {
 
 	public void TriggerPlatform() {
 		if (platform != null) {
-			goalDoor.GetComponent<Animator> ().Play ("Open");
+			platform.GetComponent<Patrol>().NextPatrolPoint();
+			//goalDoor.GetComponent<Animator> ().Play ("Open");
 		}
 	}
 }
