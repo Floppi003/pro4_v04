@@ -18,16 +18,24 @@ public class ColorButton : MonoBehaviour {
 	void Update () {
 		if (alive > 0) {
 			alive -= Time.deltaTime;
+			if (alive <= 0) {	
+				this.transform.GetChild (1).GetChild(0).GetComponent<Renderer> ().material = oldMaterial;
+				oldMaterial = null;
+			}
 		}
 	}
 
 	void OnTriggerEnter(Collider col) {
 		alive = 1;
-		Debug.Log ("drin");
+		if (oldMaterial == null) {
+			oldMaterial = this.transform.GetChild (1).GetChild (0).GetComponent<Renderer> ().material;
+
+			this.transform.GetChild (1).GetChild (0).GetComponent<Renderer> ().material = selectedMaterial;
+		}
 	}
 
 	void OnTriggerStay(Collider col) {
-		Debug.Log ("jetzt");
+		alive = 1;
 		/*if (col.tag == "RedButton") {
 			col.GetComponent<Renderer> ().material = selectedMaterial;
 		} else if (col.tag == "GreenButton") {
@@ -38,14 +46,7 @@ public class ColorButton : MonoBehaviour {
 	}
 
 	void OnTriggerExit(Collider col) {
-		if (col.tag == "RedButton") {
-			col.GetComponent<Renderer> ().material = defaultMaterial;
-			
-			col.transform.parent.gameObject.GetComponent<Animator> ().Play("ButtonPress");
-		} else if (col.tag == "GreenButton") {
-			
-		} else if (col.tag == "BlueButton") {
-			
-		}
+		
+		Debug.Log ("weg");
 	}
 }
