@@ -7,6 +7,7 @@ public class InteractionButton : MonoBehaviour {
 	private bool pressButton;
 	public GameObject exploder;
 	public GameObject goalDoor;
+	public GameObject platform;
 	public bool pushPop;
 
 	// Use this for initialization
@@ -35,6 +36,12 @@ public class InteractionButton : MonoBehaviour {
 
 	public void TriggerGoal() {
 		if (goalDoor != null) {
+			goalDoor.GetComponent<Animator> ().Play ("Open");
+		}
+	}
+
+	public void TriggerPlatform() {
+		if (platform != null) {
 			goalDoor.GetComponent<Animator> ().Play ("Open");
 		}
 	}
