@@ -6998,7 +6998,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 465336, guid: a4a4ba2bda6fa9043879f773948e15e1, type: 2}
       propertyPath: m_RootOrder
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 9596054, guid: a4a4ba2bda6fa9043879f773948e15e1, type: 2}
       propertyPath: m_Controller
@@ -7018,7 +7018,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 101380, guid: a4a4ba2bda6fa9043879f773948e15e1, type: 2}
       propertyPath: m_TagString
-      value: PlatformButton
+      value: Interaction
       objectReference: {fileID: 0}
     - target: {fileID: 11470822, guid: a4a4ba2bda6fa9043879f773948e15e1, type: 2}
       propertyPath: platform

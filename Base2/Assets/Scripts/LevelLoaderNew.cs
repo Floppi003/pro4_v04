@@ -34,7 +34,7 @@ public class LevelLoaderNew : MonoBehaviour {
 
 	public void LevelButtonPressed()
 	{
-		if (canLoadLevel && Input.GetButtonDown ("ButtonPressed")) {
+		if (canLoadLevel && Input.GetButtonDown ("Interaction")) {
 			if (levelToLoad.ToString () == "0") {	//Reset Game
 				PlayerPrefs.SetInt("Level Unlocked", 1);
 				PlayerPrefs.SetInt ("Current Level", 1);

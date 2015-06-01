@@ -14,21 +14,29 @@ public class Patrol : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		/*
 		if (transform.position == patrolPoints[currentPoint].position)
 		{
-			//currentPoint++;
+			currentPoint++;
 		}
 
 		if (currentPoint >= patrolPoints.Length)
 		{
 			currentPoint = 0;
+			Debug.Log ("Reset Point" + currentPoint);
 		}
-
+		*/
 		transform.position = Vector3.MoveTowards(transform.position, patrolPoints[currentPoint].position, moveSpeed * Time.deltaTime);
 	}
 
 	public void NextPatrolPoint(){
-		Debug.Log ("Next Patrol Point");
+		Debug.Log ("Next Patrol Point" + currentPoint);
 		currentPoint++;
+
+		if (currentPoint >= patrolPoints.Length)
+		{
+			currentPoint = 0;
+			Debug.Log ("Reset Point" + currentPoint);
+		}
 	}
 }
