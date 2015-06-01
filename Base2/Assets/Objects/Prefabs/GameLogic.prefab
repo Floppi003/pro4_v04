@@ -604,6 +604,7 @@ GameObject:
   - 114: {fileID: 11419492}
   - 114: {fileID: 11419836}
   - 82: {fileID: 8203620}
+  - 114: {fileID: 11423506}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -1589,6 +1590,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f996fd5f9f1eb74b93bfe719bf3737e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hintMenu: {fileID: 0}
   cam: {fileID: 2085090}
 --- !u!114 &11420836
 MonoBehaviour:
@@ -1626,6 +1628,18 @@ MonoBehaviour:
   m_MinZ: .100000001
   m_SSAOShader: {fileID: 4800000, guid: 43ca18288c424f645aaa1e9e07f04c50, type: 3}
   m_RandomTexture: {fileID: 2800000, guid: a181ca8e3c62f3e4b8f183f6c586b032, type: 3}
+--- !u!114 &11423506
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 187564}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5be35953bff503e42b0927fac66c31aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  jumpSound: {fileID: 8300000, guid: 44200f1c0cb393d4ca47b07685a2cd2f, type: 3}
 --- !u!114 &11425132
 MonoBehaviour:
   m_ObjectHideFlags: 1
