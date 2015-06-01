@@ -65,12 +65,4 @@ public class CameraRaycast : MonoBehaviour {
 			hintMenu.GetComponent<Canvas>().enabled = false;
 		}
 	}
-
-	void OnGUI()
-	{
-		if (showHint) {			
-			Rect interactionRect = new Rect(2*Screen.width/3, 2*Screen.height/3, Screen.width/2/2, Screen.height/6/2);
-			GUI.Box(interactionRect, loadPrompt);
-		}
-	}
 }
