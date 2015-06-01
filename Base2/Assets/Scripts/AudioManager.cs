@@ -55,6 +55,10 @@ public class AudioManager : MonoBehaviour {
 		timeSinceLastPlay += Time.deltaTime;
 	}
 
+	public void startBackgroundAudio() {
+		backgroundAudioSource.Play ();
+	}
+
 
 	public void queueAudioClip(AudioClip audioClip, float delay = 0.0f) {
 		Debug.Log ("queue audio clip called");

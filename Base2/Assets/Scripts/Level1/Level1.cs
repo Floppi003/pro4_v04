@@ -128,6 +128,7 @@ public class Level1 : MonoBehaviour {
 		// play the wakeup sound
 		if (timeTillWakeupSoundStarts < elapsedTime && wakeupSoundPlayed == false) {
 			this.playWakeupSound();
+			AudioManager.instance.playSoundEffect(this.audioFiles.wakeupSound);
 		}
 		
 		// open the door if the time is right!
@@ -165,6 +166,10 @@ public class Level1 : MonoBehaviour {
 	
 	// plays the wake-up sound at the beginning of the level
 	private void playWakeupSound() {
+		if (wakeupSoundPlayed == false) {
+			AudioManager.instance.startBackgroundAudio();
+		}
+
 		wakeupSoundPlayed = true;
 		AudioManager.instance.queueAudioClip(audioFiles.getWakeup_Stage01_AudioClip());
 	}
