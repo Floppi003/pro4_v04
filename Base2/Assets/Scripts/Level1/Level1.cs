@@ -5,7 +5,6 @@ using Tobii.EyeX.Framework;
 
 //[AddComponentMenu("Tobii EyeX/Eye Position Data")]
 [AddComponentMenu("Tobii EyeX/Gaze Point Data")]
-
 public class Level1 : MonoBehaviour { 
 	
 	// eye stuff
@@ -85,8 +84,7 @@ public class Level1 : MonoBehaviour {
 		openFirstDoorAnimationStarted = false;
 		wallTriggerStarted = false;
 		waitForEyeClose = false;
-		
-		
+			
 		// load the blinking lights
 		blinkingLights = new ArrayList ();
 		blinkingLights.Add (GameObject.Find ("Panel_01"));
