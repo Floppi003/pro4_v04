@@ -3,7 +3,7 @@ using System.Collections;
 
 public class Patrol : MonoBehaviour {
 	public Transform[] patrolPoints;
-	float moveSpeed = 20;
+	float moveSpeed = 10;
 	private int currentPoint;
 
 	// Use this for initialization
