@@ -8,6 +8,7 @@ public class InteractionButton : MonoBehaviour {
 	public GameObject exploder;
 	public GameObject goalDoor;
 	public GameObject platform;
+	public GameObject wallDoor;
 	public bool pushPop;
 
 	// Use this for initialization
@@ -43,8 +44,14 @@ public class InteractionButton : MonoBehaviour {
 	public void TriggerPlatform() {
 		if (platform != null) {
 			platform.GetComponent<Patrol>().NextPatrolPoint();
-			Debug.Log ("Get Component Patrol");
-			//goalDoor.GetComponent<Animator> ().Play ("Open");
+		}
+	}
+
+	public void TriggerDoor() {
+		if (wallDoor != null) {
+			//wallDoor.transform.localScale.x += 5;
+			Debug.Log ("OPEN the door!");
+			wallDoor.GetComponent<Door>().move = true;
 		}
 	}
 }

@@ -3,7 +3,7 @@ using System.Collections;
 
 public class Patrol : MonoBehaviour {
 	public Transform[] patrolPoints;
-	float moveSpeed = 10;
+	float moveSpeed = 8;
 	private int currentPoint;
 
 	// Use this for initialization
@@ -30,7 +30,6 @@ public class Patrol : MonoBehaviour {
 	}
 
 	public void NextPatrolPoint(){
-		Debug.Log ("Next Patrol Point" + currentPoint);
 		currentPoint++;
 
 		if (currentPoint >= patrolPoints.Length)

@@ -26,8 +26,9 @@ public class CameraRaycast : MonoBehaviour {
 					if (interactionRaycastHit.collider.gameObject.transform.parent.name == "GoalButton") {
 						interactionRaycastHit.collider.gameObject.GetComponent<InteractionButton>().TriggerGoal();
 					}else if (interactionRaycastHit.collider.gameObject.transform.parent.name == "PlatformButton") {
-						Debug.Log (interactionRaycastHit.collider.gameObject.ToString());
 						interactionRaycastHit.collider.gameObject.GetComponent<InteractionButton>().TriggerPlatform();
+					}else if (interactionRaycastHit.collider.gameObject.transform.parent.name == "DoorButton") {
+						interactionRaycastHit.collider.gameObject.GetComponent<InteractionButton>().TriggerDoor();
 					}
 				}
 
