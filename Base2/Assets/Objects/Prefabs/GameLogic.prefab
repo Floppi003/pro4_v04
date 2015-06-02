@@ -116,6 +116,23 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &116528
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 438494}
+  - 65: {fileID: 6587758}
+  - 114: {fileID: 11401166}
+  m_Layer: 0
+  m_Name: PortalZone
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &117930
 GameObject:
   m_ObjectHideFlags: 0
@@ -839,11 +856,12 @@ Transform:
   m_LocalPosition: {x: -65, y: 0, z: 9}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 458488}
+  - {fileID: 438494}
   - {fileID: 493946}
-  - {fileID: 495010}
   - {fileID: 498732}
+  - {fileID: 458488}
   - {fileID: 407930}
+  - {fileID: 495010}
   m_Father: {fileID: 427088}
   m_RootOrder: 4
 --- !u!4 &427088
@@ -862,6 +880,18 @@ Transform:
   - {fileID: 22426474}
   - {fileID: 413452}
   m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!4 &438494
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 116528}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -7, z: 0}
+  m_LocalScale: {x: 1.20000005, y: .5, z: 1.20000005}
+  m_Children: []
+  m_Father: {fileID: 413452}
   m_RootOrder: 0
 --- !u!4 &455906
 Transform:
@@ -887,7 +917,7 @@ Transform:
   m_LocalScale: {x: 1.20000005, y: .5, z: 1.20000005}
   m_Children: []
   m_Father: {fileID: 413452}
-  m_RootOrder: 0
+  m_RootOrder: 3
 --- !u!4 &482120
 Transform:
   m_ObjectHideFlags: 1
@@ -923,7 +953,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 413452}
-  m_RootOrder: 2
+  m_RootOrder: 5
 --- !u!4 &498732
 Transform:
   m_ObjectHideFlags: 1
@@ -935,7 +965,7 @@ Transform:
   m_LocalScale: {x: 4.80000019, y: 3, z: 4.80000019}
   m_Children: []
   m_Father: {fileID: 413452}
-  m_RootOrder: 3
+  m_RootOrder: 2
 --- !u!20 &2085090
 Camera:
   m_ObjectHideFlags: 1
@@ -1130,6 +1160,18 @@ BoxCollider:
   m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!65 &6587758
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 116528}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3.5, y: 4.5, z: 3.5}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!81 &8135594
 AudioListener:
@@ -1394,6 +1436,17 @@ MonoBehaviour:
   speed: 0
   inAir: 0
   debug: 1
+--- !u!114 &11401166
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 116528}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa5e1ea2e7b0cd842b92c535c6e52922, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &11402466
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2115,6 +2168,7 @@ MonoBehaviour:
   paula: {fileID: 0}
   doorOpens: {fileID: 0}
   wakeupSound: {fileID: 0}
+  clickSound: {fileID: 0}
   wakeupAudioClips_Stage01: []
   rubEyes_Stage01: []
   rubEyes_Stage02: []
@@ -2446,7 +2500,7 @@ MonoBehaviour:
   m_MinValue: 20
   m_MaxValue: 500
   m_WholeNumbers: 1
-  m_Value: 244
+  m_Value: 260
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
@@ -3855,7 +3909,7 @@ RectTransform:
   m_RootOrder: 0
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 21, y: 0}
+  m_AnchoredPosition: {x: 10, y: 0}
   m_SizeDelta: {x: 20, y: 0}
   m_Pivot: {x: .5, y: .5}
 --- !u!224 &22410498
@@ -4257,7 +4311,7 @@ RectTransform:
   m_RootOrder: 0
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 10, y: 0}
   m_SizeDelta: {x: 20, y: 0}
   m_Pivot: {x: .5, y: .5}
 --- !u!224 &22464628
@@ -4412,7 +4466,7 @@ RectTransform:
   m_RootOrder: 0
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 3, y: 0}
+  m_AnchoredPosition: {x: 10, y: 0}
   m_SizeDelta: {x: 20, y: 0}
   m_Pivot: {x: .5, y: .5}
 --- !u!224 &22483394
