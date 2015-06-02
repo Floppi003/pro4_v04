@@ -73,8 +73,9 @@ public class GazePointDataComponent : MonoBehaviour
 
 				// set collider to gazed position (used for multiple buttons that will be colored due to the collider then)
 				if (gazeRaycastHit.transform.gameObject.tag == "ColorButton") {
-					colorCollider.transform.position = gazeRaycastHit.transform.position;
-					colliderAlive = 0.5f;
+					gazeRaycastHit.collider.gameObject.GetComponent<ColorButton>().hit(gazeRaycastHit.collider);
+					//colorCollider.transform.position = gazeRaycastHit.transform.position;
+					//colliderAlive = 0.5f;
 				}
 
 				/*--------AudioFilesLevelFloppi afFloppi = GameObject.Find ("AudioFilesLevelFloppi").GetComponent<AudioFilesLevelFloppi>();
