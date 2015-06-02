@@ -73,9 +73,9 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 121520}
-  m_LocalRotation: {x: -.707106829, y: 0, z: 0, w: .707106709}
-  m_LocalPosition: {x: 27.6241722, y: 3.70610523, z: 35.9499969}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -.353553325, y: .612372458, z: .612372577, w: .353553265}
+  m_LocalPosition: {x: 11.0699997, y: 3.5, z: -47.5999985}
+  m_LocalScale: {x: .400000393, y: .400000036, z: .526183963}
   m_Children:
   - {fileID: 459494}
   - {fileID: 428960}
@@ -128,7 +128,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_Materials:
-  - {fileID: 2100000, guid: 2374531b0253eb24f805742a11557b87, type: 2}
+  - {fileID: 2100000, guid: e1e0f6606ab5c15429d074ddd6a55aeb, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 1
@@ -208,8 +208,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08233e1cea16d944ba587fe7ea5d4b18, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  activeMaterial: {fileID: 2100000, guid: ee3fd5e8ef2b5cd45b1006e8f090b72b, type: 2}
-  lifetime: 0
+  activeMaterial: {fileID: 2100000, guid: 9edd85367553df44484f9e87e2a27cc1, type: 2}
+  lifetime: .5
 --- !u!135 &13521540
 SphereCollider:
   m_ObjectHideFlags: 1

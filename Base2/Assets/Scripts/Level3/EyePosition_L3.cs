@@ -1,7 +1,9 @@
-﻿using UnityEngine;
+﻿using Tobii.EyeX.Framework;
+using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 
+[AddComponentMenu("Tobii EyeX/Eye Position Data")]
 public class EyePosition_L3 : MonoBehaviour {
 
 	enum EyesOpened{None, Left, Right, Both};
@@ -15,17 +17,21 @@ public class EyePosition_L3 : MonoBehaviour {
 
 
 
-	protected void awake() {
-		eyexHost = EyeXHost.GetInstance();
-		dataProvider = eyexHost.GetEyePositionDataProvider();
+	protected void Awake () {
+		Debug.Log ("awake");
+		this.eyexHost = EyeXHost.GetInstance();
+		this.dataProvider = eyexHost.GetEyePositionDataProvider();
+		this.eyesOpenedQueue = new Queue<EyesOpened> ();
 	}
 
 	protected void OnEnable() {
-		dataProvider.Start();
+		Debug.Log ("Enable");
+		this.dataProvider.Start();
 	}
 	
 	protected void OnDisable() {
-		dataProvider.Stop();
+		Debug.Log ("Disable");
+		this.dataProvider.Stop();
 	}
 
 
@@ -37,6 +43,7 @@ public class EyePosition_L3 : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		lastEyePosition = dataProvider.Last;
+		//EyeXEyePosition lastEyePosition = GetComponent<EyePositionDataComponent>().LastEyePosition;
 
 
 		if (!lastEyePosition.LeftEye.IsValid && !lastEyePosition.RightEye.IsValid) {
@@ -62,10 +69,11 @@ public class EyePosition_L3 : MonoBehaviour {
 
 		// check whether bridge should be broad or not
 		// make bridge wider if both eyes are closed
-		GameObject bridge = GameObject.Find ("bridge");
-		
+		GameObject bridge = GameObject.Find ("Bridge");
+		Debug.Log ("eyesClosedCounter: " + eyesClosedCounter);
+
 		if (eyesClosedCounter > 24) {
-			bridge.transform.localScale = new Vector3(1, 1, 6);
+			bridge.transform.localScale = new Vector3(1, 1, 8);
 			GameObject.Find ("BridgeCollider").GetComponent<BoxCollider>().enabled = false;
 			//GetComponent<BridgeCollider>().enabled = false;
 		} else {
