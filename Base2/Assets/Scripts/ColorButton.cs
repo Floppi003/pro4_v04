@@ -31,19 +31,19 @@ public class ColorButton : MonoBehaviour {
 	}
 
 	void OnTriggerEnter(Collider col) {
-		alive = lifetime;
-		if (oldMaterial == null) {
-			oldMaterial = buttonFrame.GetComponent<Renderer> ().material;
+		if (col.name == "ColorSphere") {
+			alive = lifetime;
+			if (oldMaterial == null) {
+				oldMaterial = buttonFrame.GetComponent<Renderer> ().material;
 
-			buttonFrame.GetComponent<Renderer> ().material = activeMaterial;
+				buttonFrame.GetComponent<Renderer> ().material = activeMaterial;
+			}
 		}
 	}
 
 	void OnTriggerStay(Collider col) {
-		alive = lifetime;
-	}
-
-	void OnTriggerExit(Collider col) {
-
+		if (col.name == "ColorSphere") {
+			alive = lifetime;
+		}
 	}
 }
