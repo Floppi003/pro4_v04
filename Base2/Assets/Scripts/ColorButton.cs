@@ -3,40 +3,47 @@ using System.Collections;
 
 public class ColorButton : MonoBehaviour {
 
-	public Material selectedMaterial;
+	public Material activeMaterial;
+	public float lifetime = 1; // 0 = infinity
+
 	private Material oldMaterial;
-	public Material defaultMaterial;
-	private float alive = 1;
+	private Material defaultMaterial;
+	private Transform buttonFrame;
+
+	private float alive; 
 
 	// Use this for initialization
 	void Start () {
-	
+		alive = 0;
+		buttonFrame = this.transform.GetChild (1).GetChild (0);
+		//defaultMaterial = this.transform.GetChild (1).GetChild(0).GetComponent<Renderer> ().material;
 	}
 	
 	// Update is called once per frame
 	void Update () {
+		if (alive > 0) {
+			alive -= Time.deltaTime;
+			if (alive <= 0) {	
+				buttonFrame.GetComponent<Renderer> ().material = oldMaterial;
+				oldMaterial = null;
+			}
+		}
+	}
+
+	void OnTriggerEnter(Collider col) {
+		alive = lifetime;
+		if (oldMaterial == null) {
+			oldMaterial = buttonFrame.GetComponent<Renderer> ().material;
+
+			buttonFrame.GetComponent<Renderer> ().material = activeMaterial;
+		}
 	}
 
 	void OnTriggerStay(Collider col) {
-		
-		if (col.tag == "RedButton") {
-			col.GetComponent<Renderer> ().material = selectedMaterial;
-		} else if (col.tag == "GreenButton") {
-			
-		} else if (col.tag == "BlueButton") {
-
-		}
+		alive = lifetime;
 	}
 
 	void OnTriggerExit(Collider col) {
-		if (col.tag == "RedButton") {
-			col.GetComponent<Renderer> ().material = defaultMaterial;
-			
-			col.transform.parent.gameObject.GetComponent<Animator> ().Play("ButtonPress");
-		} else if (col.tag == "GreenButton") {
-			
-		} else if (col.tag == "BlueButton") {
-			
-		}
+
 	}
 }

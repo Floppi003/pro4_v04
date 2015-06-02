@@ -130,7 +130,6 @@ public class FirstPersonController : MonoBehaviour {
 				inAir = true;
 				GetComponent<Rigidbody>().AddForce(transform.up * jumpForce);
 
-				Debug.Log ("!!!!!!!!!!!!!!!!!!!!!");
 				// also play audio sound
 				AudioManager.instance.playSoundEffect(audioFiles.jumpSound);
 			}

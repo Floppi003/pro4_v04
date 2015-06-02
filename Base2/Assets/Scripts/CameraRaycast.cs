@@ -1,8 +1,10 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class CameraRaycast : MonoBehaviour {
 
+	public GameObject hintMenu;
 	public Camera cam;
 	private RaycastHit interactionRaycastHit;
 	private string loadPrompt;
@@ -53,13 +55,14 @@ public class CameraRaycast : MonoBehaviour {
 			loadPrompt = "";
 			showHint = false;
 		}
-	}
 
-	void OnGUI()
-	{
-		if (showHint) {			
-			Rect interactionRect = new Rect(2*Screen.width/3, 2*Screen.height/3, Screen.width/2/2, Screen.height/6/2);
-			GUI.Box(interactionRect, loadPrompt);
+
+		if (showHint) {
+			hintMenu.GetComponent<Canvas>().enabled = true;
+			Text hintText = hintMenu.transform.Find("Panel").Find("HintText").GetComponent<Text>();
+			hintText.text = loadPrompt;
+		} else {
+			hintMenu.GetComponent<Canvas>().enabled = false;
 		}
 	}
 }
