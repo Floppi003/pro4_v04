@@ -8,6 +8,7 @@ public class LevelLoaderNew : MonoBehaviour {
 	//private bool inRange;
 	private int unlockedLevel = 1;
 	private bool canLoadLevel = true;
+	private string doorText;
 
 	void Start()
 	{
@@ -43,7 +44,14 @@ public class LevelLoaderNew : MonoBehaviour {
 				PlayerPrefs.SetInt ("Current Level", levelToLoad);
 				PlayerPrefs.SetInt("Chosen Level", levelToLoad);
 		//		Application.LoadLevel ("Level " + levelToLoad.ToString ()); //load by name instead of id
+
+				if (levelToLoad == unlockedLevel) {
+					doorText = "Continue";
+				} else {
+					doorText = "Level 0" + levelToLoad.ToString();
+				}
 			}
+			GameObject.Find("ContinueDoor").GetComponent<TextMesh>().text = doorText;
 			playAnimation();
 		}
 	}
