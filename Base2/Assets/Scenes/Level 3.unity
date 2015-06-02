@@ -13477,7 +13477,9 @@ Prefab:
       propertyPath: m_AnchorMax.y
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 11497280, guid: 86925217ef00c26489bfec73a81d6a13, type: 2}
+    - {fileID: 11460482, guid: 86925217ef00c26489bfec73a81d6a13, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 86925217ef00c26489bfec73a81d6a13, type: 2}
   m_IsPrefabParent: 0
 --- !u!4 &1398913502
@@ -15131,6 +15133,21 @@ Transform:
 Transform:
   m_PrefabParentObject: {fileID: 428050, guid: 36b8526d0e4ba7140a01716bfac01d66, type: 2}
   m_PrefabInternal: {fileID: 731410389}
+--- !u!1 &1536390387
+GameObject:
+  m_PrefabParentObject: {fileID: 123434, guid: 86925217ef00c26489bfec73a81d6a13, type: 2}
+  m_PrefabInternal: {fileID: 1395460923}
+--- !u!114 &1536390391
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1536390387}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e44968abba5452b4cb0e852b5a53ac37, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1537814555
 Transform:
   m_PrefabParentObject: {fileID: 471762, guid: 3c00a16e0a813234696a12daf760fdc9, type: 2}

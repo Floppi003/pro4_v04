@@ -137,19 +137,12 @@ public class EyePosition_L3 : MonoBehaviour {
 					this.hideRightEyeObjects ();
 				}
 			
-				// check if eyes were closed 
-				if (leftCount == 0 && rightCount == 0 && bothCount == 0) {
-				
-					// both eyes were closed for a while, if you are in felldown mode respawn
-					FirstPersonController fps = GameObject.Find ("Player").GetComponent<FirstPersonController> ();
-				}
-			
 				this.eyesOpenedQueue.Dequeue ();
 			}
 
 			// check whether bridge should be broad or not
 			// make bridge wider if both eyes are closed
-			GameObject bridge = GameObject.Find ("bridge");
+			GameObject bridge = GameObject.Find ("Bridge");
 		
 			if (eyesClosedCounter > 24) {
 				bridge.transform.localScale = new Vector3 (1, 1, 6);
@@ -167,8 +160,12 @@ public class EyePosition_L3 : MonoBehaviour {
 		GameObject[] leftEyeObjects = GameObject.FindGameObjectsWithTag ("LeftEye");
 		
 		foreach (GameObject leftEyeObject in leftEyeObjects) {
-			//leftEyeObject.GetComponent<MeshCollider>().enabled = true;
-			leftEyeObject.GetComponent<MeshRenderer>().enabled = true;
+			//rightEyeObject.GetComponent<MeshCollider>().enabled = true;
+			MeshRenderer[] meshRenderers = (MeshRenderer[]) leftEyeObject.GetComponentsInChildren<MeshRenderer>();
+			
+			foreach (MeshRenderer meshRenderer in meshRenderers) {
+				meshRenderer.enabled = true;
+			}
 		}
 	}
 	
@@ -177,7 +174,11 @@ public class EyePosition_L3 : MonoBehaviour {
 		
 		foreach (GameObject rightEyeObject in rightEyeObjects) {
 			//rightEyeObject.GetComponent<MeshCollider>().enabled = true;
-			rightEyeObject.GetComponent<MeshRenderer>().enabled = true;
+			MeshRenderer[] meshRenderers = (MeshRenderer[]) rightEyeObject.GetComponentsInChildren<MeshRenderer>();
+
+			foreach (MeshRenderer meshRenderer in meshRenderers) {
+				meshRenderer.enabled = true;
+			}
 		}
 	}
 	
@@ -185,8 +186,12 @@ public class EyePosition_L3 : MonoBehaviour {
 		GameObject[] leftEyeObjects = GameObject.FindGameObjectsWithTag ("LeftEye");
 		
 		foreach (GameObject leftEyeObject in leftEyeObjects) {
-			//leftEyeObject.GetComponent<MeshCollider>().enabled = false;
-			leftEyeObject.GetComponent<MeshRenderer>().enabled = false;
+			//rightEyeObject.GetComponent<MeshCollider>().enabled = true;
+			MeshRenderer[] meshRenderers = (MeshRenderer[]) leftEyeObject.GetComponentsInChildren<MeshRenderer>();
+			
+			foreach (MeshRenderer meshRenderer in meshRenderers) {
+				meshRenderer.enabled = false;
+			}
 		}
 	}
 	
@@ -194,8 +199,11 @@ public class EyePosition_L3 : MonoBehaviour {
 		GameObject[] rightEyeObjects = GameObject.FindGameObjectsWithTag ("RightEye");
 		
 		foreach (GameObject rightEyeObject in rightEyeObjects) {
-			//rightEyeObject.GetComponent<MeshCollider>().enabled = false;
-			rightEyeObject.GetComponent<MeshRenderer>().enabled = false;
+			MeshRenderer[] meshRenderers = (MeshRenderer[]) rightEyeObject.GetComponentsInChildren<MeshRenderer>();
+			
+			foreach (MeshRenderer meshRenderer in meshRenderers) {
+				meshRenderer.enabled = false;
+			}
 		}
 	}
 }
