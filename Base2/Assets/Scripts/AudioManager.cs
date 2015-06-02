@@ -17,6 +17,7 @@ public class AudioManager : MonoBehaviour {
 	private static AudioSource backgroundAudioSource;
 	private static float timeSinceLastPlay; // in seconds
 	private float timeOfLastPlayedClip; // in seconds
+	private static AudioSource footStepsAudioSource;
  
 	// Singleton Methods
 	public static AudioManager instance {
@@ -40,6 +41,7 @@ public class AudioManager : MonoBehaviour {
 			AudioSource[] audioSources = GameObject.Find ("GM").GetComponents<AudioSource>();
 			audioSource = audioSources[1];
 			backgroundAudioSource = audioSources[0];
+			footStepsAudioSource = GameObject.Find ("Player").GetComponent<AudioSource>();
 
 			//DontDestroyOnLoad(this);
 		}
@@ -121,6 +123,7 @@ public class AudioManager : MonoBehaviour {
 		//AudioListener.volume = soundVolume;
 		Debug.Log ("Sound Volume changed!");
 		audioSource.volume = soundVolume;
+		footStepsAudioSource.volume = soundVolume;
 		// Best tutorial:
 		// http://answers.unity3d.com/questions/306684/how-to-change-volume-on-many-audio-objects-with-sp.html
 	}

@@ -379,7 +379,9 @@ public class Level1 : MonoBehaviour {
 				if (gazedObjectColor.Equals(this.wallLightColor1)) {
 					// color the wall light
 					gazedObject.GetComponentInChildren<MeshRenderer>().material.color = this.wallLightColor2;
-					
+					// play audio sound
+					AudioManager.instance.playSoundEffect(this.audioFiles.clickSound);
+
 					// if it is the first colored panel, play a sound
 					if (wallLightsColored == 0) {
 						AudioManager.instance.playAudioClipForced(audioFiles.getWallOfLights_Stage01_AudioClip());
@@ -451,6 +453,8 @@ public class Level1 : MonoBehaviour {
 	
 	private void openGoalDoor() {
 		GameObject.Find ("GoalDoor").GetComponent<Animator> ().Play ("Open");
+		// Play sound
+		AudioManager.instance.playSoundEffect (this.audioFiles.doorOpens);
 	}
 	
 	public void setWallTriggerStarted(bool didStart) {
