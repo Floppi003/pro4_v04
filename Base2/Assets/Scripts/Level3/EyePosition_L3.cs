@@ -2,7 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 
-public class EyePosition : MonoBehaviour {
+public class EyePosition_L3 : MonoBehaviour {
 
 	enum EyesOpened{None, Left, Right, Both};
 
