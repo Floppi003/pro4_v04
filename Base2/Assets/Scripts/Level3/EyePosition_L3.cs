@@ -1,7 +1,9 @@
-﻿using UnityEngine;
+﻿using Tobii.EyeX.Framework;
+using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 
+[AddComponentMenu("Tobii EyeX/Eye Position Data")]
 public class EyePosition_L3 : MonoBehaviour {
 
 	enum EyesOpened{None, Left, Right, Both};
@@ -12,18 +14,22 @@ public class EyePosition_L3 : MonoBehaviour {
 
 	private Queue<EyesOpened> eyesOpenedQueue;
 	private int eyesClosedCounter;
-	
-	protected void awake() {
-		eyexHost = EyeXHost.GetInstance();
-		dataProvider = eyexHost.GetEyePositionDataProvider();
+
+	protected void Awake () {
+		Debug.Log ("awake");
+		this.eyexHost = EyeXHost.GetInstance();
+		this.dataProvider = eyexHost.GetEyePositionDataProvider();
+		this.eyesOpenedQueue = new Queue<EyesOpened> ();
 	}
 
 	protected void OnEnable() {
-		dataProvider.Start();
+		Debug.Log ("Enable");
+		this.dataProvider.Start();
 	}
 	
 	protected void OnDisable() {
-		dataProvider.Stop();
+		Debug.Log ("Disable");
+		this.dataProvider.Stop();
 	}
 
 
@@ -34,6 +40,7 @@ public class EyePosition_L3 : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		lastEyePosition = dataProvider.Last;
+		//EyeXEyePosition lastEyePosition = GetComponent<EyePositionDataComponent>().LastEyePosition;
 
 		if (lastEyePosition.IsValid) {
 			// Get the position of the left eye.
@@ -106,6 +113,7 @@ public class EyePosition_L3 : MonoBehaviour {
 						}
 					}
 				}
+
 
 				// check which left-eye / right-eye objects should be visible
 				if (noneCount >= leftCount && noneCount >= rightCount && noneCount >= bothCount) {
