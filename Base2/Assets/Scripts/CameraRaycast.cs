@@ -46,6 +46,14 @@ public class CameraRaycast : MonoBehaviour {
 				showHint = true;
 				interactionRaycastHit.collider.gameObject.GetComponent<Explosion>().Explode();
 		
+			} else if(interactionRaycastHit.collider.gameObject.tag == "ColorButton") { 	// Color Buttons
+				loadPrompt = "Press [F] to push the button";
+				showHint = true;
+				if(Input.GetButtonDown ("ButtonPressed")) {
+					Debug.Log("active");
+					interactionRaycastHit.collider.gameObject.GetComponent<ColorButton>().push();
+				}
+
 			}else {
 				loadPrompt = "";
 				showHint = false;
