@@ -9,8 +9,7 @@ public class BridgeCollider_L3 : MonoBehaviour {
 	}
 	
 	void OnTriggerStay(Collider other) {
-		Debug.Log ("onTriggerStay");
-		
+
 		// if it is the bridge, move the player slightly
 		if (objectName.Equals ("Bridge")) {
 			float randomNumber = Random.Range (-0.1f, 0.00f);
