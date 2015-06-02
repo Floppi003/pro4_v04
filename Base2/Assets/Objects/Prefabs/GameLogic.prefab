@@ -132,7 +132,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &117930
 GameObject:
   m_ObjectHideFlags: 0
@@ -436,23 +436,6 @@ GameObject:
   - 114: {fileID: 11444080}
   m_Layer: 5
   m_Name: Panel
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!1 &160340
-GameObject:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 458488}
-  - 65: {fileID: 6548304}
-  - 114: {fileID: 11434396}
-  m_Layer: 0
-  m_Name: PortalZone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -845,7 +828,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 413452}
-  m_RootOrder: 4
+  m_RootOrder: 3
 --- !u!4 &413452
 Transform:
   m_ObjectHideFlags: 1
@@ -853,17 +836,16 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 160048}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -65, y: 0, z: 9}
+  m_LocalPosition: {x: -129, y: 6.07999992, z: -77}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 438494}
   - {fileID: 493946}
   - {fileID: 498732}
-  - {fileID: 458488}
   - {fileID: 407930}
   - {fileID: 495010}
   m_Father: {fileID: 427088}
-  m_RootOrder: 4
+  m_RootOrder: 0
 --- !u!4 &427088
 Transform:
   m_ObjectHideFlags: 1
@@ -874,11 +856,11 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 22410790}
-  - {fileID: 407796}
-  - {fileID: 455906}
-  - {fileID: 22426474}
   - {fileID: 413452}
+  - {fileID: 407796}
+  - {fileID: 22426474}
+  - {fileID: 22410790}
+  - {fileID: 455906}
   m_Father: {fileID: 0}
   m_RootOrder: 0
 --- !u!4 &438494
@@ -899,25 +881,13 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 187564}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -64.3099976, y: 1.26999998, z: -6.53000021}
+  m_LocalRotation: {x: 0, y: -.999780118, z: 0, w: .0209688395}
+  m_LocalPosition: {x: -49.7000008, y: 2.5, z: -0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 482120}
   m_Father: {fileID: 427088}
-  m_RootOrder: 2
---- !u!4 &458488
-Transform:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 160340}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -7, z: 0}
-  m_LocalScale: {x: 1.20000005, y: .5, z: 1.20000005}
-  m_Children: []
-  m_Father: {fileID: 413452}
-  m_RootOrder: 3
+  m_RootOrder: 4
 --- !u!4 &482120
 Transform:
   m_ObjectHideFlags: 1
@@ -953,7 +923,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 413452}
-  m_RootOrder: 5
+  m_RootOrder: 4
 --- !u!4 &498732
 Transform:
   m_ObjectHideFlags: 1
@@ -1137,18 +1107,6 @@ MeshCollider:
   serializedVersion: 2
   m_Convex: 0
   m_Mesh: {fileID: 4300000, guid: fa1fca45dbe906b42bbe7f0178e7924e, type: 3}
---- !u!65 &6548304
-BoxCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 160340}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 3.5, y: 4.5, z: 3.5}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!65 &6570754
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -1156,8 +1114,8 @@ BoxCollider:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 168210}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
+  m_IsTrigger: 1
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -1189,7 +1147,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 514e29601e0f2ab408f391a076837eca, type: 3}
   m_PlayOnAwake: 0
   m_Volume: .349999994
   m_Pitch: 1
@@ -1258,9 +1216,9 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
-  m_Volume: 1
+  m_audioClip: {fileID: 8300000, guid: 63a1a2b17de3c374884fad096f84426d, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: .0670000017
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -1853,17 +1811,6 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
---- !u!114 &11434396
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 160340}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fa5e1ea2e7b0cd842b92c535c6e52922, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &11438386
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2161,25 +2108,38 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wakeupAudioClip: {fileID: 8300000, guid: 984c95975c1f43041bbf74747e1ed60e, type: 3}
   firstWallAudioClip: {fileID: 8300000, guid: 031139b423e2bbd41b3575fa5da4321e, type: 3}
-  wallHit: {fileID: 0}
-  activated: {fileID: 0}
-  lastActivated: {fileID: 0}
-  cow: {fileID: 0}
-  paula: {fileID: 0}
-  doorOpens: {fileID: 0}
-  wakeupSound: {fileID: 0}
-  clickSound: {fileID: 0}
-  wakeupAudioClips_Stage01: []
-  rubEyes_Stage01: []
-  rubEyes_Stage02: []
-  sleepingBeauty_Stage01: []
-  wallOfLights_Stage01: []
-  wallOfLights_Stage02: []
-  wallOfLightsOver_Stage01: []
-  locked_Stage01: []
-  locked_Stage02: []
-  goal_Stage01: []
-  goal_Stage02: []
+  wallHit: {fileID: 8300000, guid: 21738b5fbc2852c448fc988e437022cc, type: 3}
+  activated: {fileID: 8300000, guid: 63529d0a98b10d5439b854b33f411fe0, type: 3}
+  lastActivated: {fileID: 8300000, guid: 635c1067acd08864697d86a582860568, type: 3}
+  cow: {fileID: 8300000, guid: 011fc2524365070419b3f222231693d4, type: 3}
+  paula: {fileID: 8300000, guid: e42c428254e9e484faf2061879b6a788, type: 3}
+  doorOpens: {fileID: 8300000, guid: e4ff1fda98e5c0f44949fac92f7eefe2, type: 3}
+  wakeupSound: {fileID: 8300000, guid: 12abefe76fd834f42b93bc1e48c241dc, type: 3}
+  clickSound: {fileID: 8300000, guid: 384301568d9d54d4a9ba727b74332e82, type: 3}
+  wakeupAudioClips_Stage01:
+  - {fileID: 8300000, guid: 3848893e02ed9da40916339bdf5af4bb, type: 3}
+  rubEyes_Stage01:
+  - {fileID: 8300000, guid: 4113dfc264151a440930a22fd2456ab8, type: 3}
+  rubEyes_Stage02:
+  - {fileID: 8300000, guid: 59e761e46957a034582dc2951beffae1, type: 3}
+  - {fileID: 8300000, guid: 43ac3c31f490fde49b72498840613a89, type: 3}
+  - {fileID: 8300000, guid: 6bcd6cdf32a47b148b6a947c4c8f973f, type: 3}
+  sleepingBeauty_Stage01:
+  - {fileID: 8300000, guid: 8d5da33dafac64b45ad906217587559b, type: 3}
+  wallOfLights_Stage01:
+  - {fileID: 8300000, guid: 0b4f43e5fc2afa547b02da6bd3d47f2a, type: 3}
+  wallOfLights_Stage02:
+  - {fileID: 8300000, guid: 2b70ca5eb19ec7445b26b0e10915735a, type: 3}
+  wallOfLightsOver_Stage01:
+  - {fileID: 8300000, guid: 244b19a007566ad4bbaa302fddefa88c, type: 3}
+  locked_Stage01:
+  - {fileID: 8300000, guid: 6510ec18261243b4b86f96b663950c5d, type: 3}
+  locked_Stage02:
+  - {fileID: 8300000, guid: a4761d81dc5b60b4e8e9bbaf6f8259d5, type: 3}
+  goal_Stage01:
+  - {fileID: 8300000, guid: d42a6321925a6234bb8cea3bf99b4c3c, type: 3}
+  goal_Stage02:
+  - {fileID: 8300000, guid: d726a336c0913574a94681c61c41dfcb, type: 3}
 --- !u!114 &11461736
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2581,16 +2541,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 87f57cf5360c8284e89b008da65e1b98, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeTillWakeupSoundStarts: 0
-  timeTillFirstDoorOpens: 9
-  standardColorLerpTime: 0
-  gazedColorLerpTime: 0
-  standardPanelColor: {r: 0, g: 0, b: 0, a: 0}
-  highlightedPanelColor: {r: 0, g: 0, b: 0, a: 0}
-  gazePanelColor: {r: 0, g: 0, b: 0, a: 0}
-  activatedPanelColor: {r: 0, g: 0, b: 0, a: 0}
-  wallLightColor1: {r: 0, g: 0, b: 0, a: 0}
-  wallLightColor2: {r: 0, g: 0, b: 0, a: 0}
+  timeTillWakeupSoundStarts: 2
+  timeTillFirstDoorOpens: 11
+  standardColorLerpTime: 3
+  gazedColorLerpTime: .400000006
+  standardPanelColor: {r: .0862745121, g: 0, b: .301960796, a: 1}
+  highlightedPanelColor: {r: .139705896, g: .928803205, b: 1, a: 1}
+  gazePanelColor: {r: 0, g: .95588237, b: .599898517, a: 0}
+  activatedPanelColor: {r: 0, g: .816176474, b: .275811464, a: 0}
+  wallLightColor1: {r: .250980407, g: .356862754, b: .874509811, a: 1}
+  wallLightColor2: {r: .95588237, g: .850405753, b: 0, a: 0}
   wallLightColor3: {r: 0, g: 0, b: 0, a: 0}
   wallLightColor4: {r: 0, g: 0, b: 0, a: 0}
 --- !u!114 &11497638
@@ -3941,7 +3901,7 @@ RectTransform:
   m_Children:
   - {fileID: 22492688}
   m_Father: {fileID: 427088}
-  m_RootOrder: 0
+  m_RootOrder: 3
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
@@ -4062,7 +4022,7 @@ RectTransform:
   m_Children:
   - {fileID: 22493628}
   m_Father: {fileID: 427088}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}

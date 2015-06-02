@@ -70,6 +70,11 @@ public class Player : MonoBehaviour {
 			//Time.timeScale = 0f;
 			manager.CompleteLevel();
 		}
+		if (other.transform.tag == "Respawn")
+		{
+			Debug.Log("Respawn hit");
+			Die();
+		}
 	}
 
 	void PlaySound(int clip)
@@ -80,7 +85,9 @@ public class Player : MonoBehaviour {
 
 	void Die()
 	{
+		PlaySound (1);
 		Instantiate(deathParticles, transform.position, Quaternion.Euler(270,0,0));
 		transform.position = spawn;
+		Debug.Log("Respawn moved");
 	}
 }

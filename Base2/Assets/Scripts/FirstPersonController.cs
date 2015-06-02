@@ -163,19 +163,11 @@ public class FirstPersonController : MonoBehaviour {
 		GetComponent<Rigidbody>().MovePosition(GetComponent<Rigidbody>().position + localMove);
 	}
 	
-	
-	void OnCollisionEnter(Collision other)
-	{
-		if (other.transform.tag == "Enemy")
-		{
-			Die ();
-		}
-	}
-	
 	void OnTriggerEnter(Collider other)
 	{
 		if (other.transform.tag == "Enemy")
 		{
+			Debug.Log("Enemyyy");
 			Die ();
 		}
 		if (other.transform.tag == "Goal")
