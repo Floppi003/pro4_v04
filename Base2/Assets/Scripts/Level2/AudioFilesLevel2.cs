@@ -4,6 +4,7 @@ using System.Collections;
 public class AudioFilesLevel2 : MonoBehaviour {
 
 	public AudioClip firstRiddleSuccessSound;
+	public AudioClip platformMovingSound;
 
 	// Use this for initialization
 	void Start () {

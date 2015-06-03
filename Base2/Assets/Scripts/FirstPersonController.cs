@@ -180,47 +180,6 @@ public class FirstPersonController : MonoBehaviour {
 			}
 			Debug.Log ("Camera Transform " + cameraTransform.localPosition.y);
 		}
-
-		///////
-		/// 
-		/*
-		if (IsGrounded ()) {
-			if (upwards) {
-				if (time <= 1) {
-					time += Time.deltaTime / duration;
-				}
-				float yPos = transform.Find ("Main Camera").localPosition.y;
-				transform.Find ("Main Camera").localPosition = new Vector3 (0, Mathf.Lerp (yPos, maximum, time), 0);
-				if(yPos >= maximum){
-					upwards = false;
-
-				}
-			}else{
-				if (time <= 1) {
-					time += Time.deltaTime / duration;
-				}
-				float yPos = transform.Find ("Main Camera").localPosition.y;
-				transform.Find ("Main Camera").localPosition = new Vector3 (0, Mathf.Lerp (yPos, minimum, 2-time), 0);
-				if(yPos <= minimum){
-					upwards = true;
-					time = 0;
-				}
-			}
-		}
-*/
-		/*
-		if (IsGrounded ()) {
-			Debug.Log ("Headbob");
-			Vector3 local_target = new Vector3(0,0,0) - transform.Find ("Main Camera").transform.position;
-			transform.Find ("Main Camera").transform.localPosition =  Vector3.MoveTowards(transform.Find ("Main Camera").transform.localPosition, nextPos, moveSpeed * Time.deltaTime);
-
-			/*
-			//transform.Find ("Main Camera").localPosition =  Vector3.MoveTowards(transform.Find ("Main Camera").localPosition, nextPos, moveSpeed * Time.deltaTime);
-			if(transform.Find ("Main Camera").localPosition == nextPos){
-				nextPos = (nextPos == downPos)? upPos : downPos;
-			}
-
-		}*/
 	}
 	
 	bool IsGrounded ()
