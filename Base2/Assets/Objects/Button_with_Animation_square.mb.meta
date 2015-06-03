@@ -11,18 +11,23 @@ ModelImporter:
     100006: //RootNode
     100008: left
     100010: pCylinder3
+    100012: Border
     400000: back
     400002: Button
     400004: Button_Border
     400006: //RootNode
     400008: left
     400010: pCylinder3
+    400012: Border
     2300000: Button
     2300002: pCylinder3
+    2300004: Border
     3300000: Button
     3300002: pCylinder3
+    3300004: Border
     4300000: Button
     4300002: pCylinder3
+    4300004: Border
     7400000: Take 001
     9500000: //RootNode
   materials:
