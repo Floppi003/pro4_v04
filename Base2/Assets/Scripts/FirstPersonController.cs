@@ -5,6 +5,14 @@ using System.Collections.Generic;
 
 [RequireComponent (typeof (GravityBody))]
 public class FirstPersonController : MonoBehaviour {
+	// head bob movement
+	float minimum = 0.624F;
+	float maximum = 0.67F;
+	float time = 0;
+	float duration = 3.2F;
+	bool upwards = true;
+
+	// references
 	public GameManager manager;
 	private Vector3 spawn;
 	
@@ -148,7 +156,71 @@ public class FirstPersonController : MonoBehaviour {
 			}
 			timePassed += Time.deltaTime;
 		}
-		//
+
+
+
+
+		/////////
+
+		if (IsGrounded () && ((Input.GetAxisRaw("Vertical")!= 0) || Input.GetAxisRaw("Horizontal")!= 0)) {
+			if (upwards) {
+				cameraTransform.localPosition += new Vector3 (0, Time.deltaTime/duration, 0);
+				float yPos = cameraTransform.localPosition.y;
+				if(yPos >= maximum){
+					upwards = false;
+					time = 0;
+				}
+			}else{
+				cameraTransform.localPosition -= new Vector3 (0, Time.deltaTime/duration, 0);
+				float yPos = cameraTransform.localPosition.y;
+				if(yPos <= minimum){
+					upwards = true;
+					time = 0;
+				}
+			}
+			Debug.Log ("Camera Transform " + cameraTransform.localPosition.y);
+		}
+
+		///////
+		/// 
+		/*
+		if (IsGrounded ()) {
+			if (upwards) {
+				if (time <= 1) {
+					time += Time.deltaTime / duration;
+				}
+				float yPos = transform.Find ("Main Camera").localPosition.y;
+				transform.Find ("Main Camera").localPosition = new Vector3 (0, Mathf.Lerp (yPos, maximum, time), 0);
+				if(yPos >= maximum){
+					upwards = false;
+
+				}
+			}else{
+				if (time <= 1) {
+					time += Time.deltaTime / duration;
+				}
+				float yPos = transform.Find ("Main Camera").localPosition.y;
+				transform.Find ("Main Camera").localPosition = new Vector3 (0, Mathf.Lerp (yPos, minimum, 2-time), 0);
+				if(yPos <= minimum){
+					upwards = true;
+					time = 0;
+				}
+			}
+		}
+*/
+		/*
+		if (IsGrounded ()) {
+			Debug.Log ("Headbob");
+			Vector3 local_target = new Vector3(0,0,0) - transform.Find ("Main Camera").transform.position;
+			transform.Find ("Main Camera").transform.localPosition =  Vector3.MoveTowards(transform.Find ("Main Camera").transform.localPosition, nextPos, moveSpeed * Time.deltaTime);
+
+			/*
+			//transform.Find ("Main Camera").localPosition =  Vector3.MoveTowards(transform.Find ("Main Camera").localPosition, nextPos, moveSpeed * Time.deltaTime);
+			if(transform.Find ("Main Camera").localPosition == nextPos){
+				nextPos = (nextPos == downPos)? upPos : downPos;
+			}
+
+		}*/
 	}
 	
 	bool IsGrounded ()
@@ -167,7 +239,6 @@ public class FirstPersonController : MonoBehaviour {
 	{
 		if (other.transform.tag == "Enemy")
 		{
-			Debug.Log("Enemyyy");
 			Die ();
 		}
 		if (other.transform.tag == "Goal")

@@ -13,7 +13,6 @@ public class Door : MonoBehaviour {
 		if (move) {
 			if (time <= 1) {
 				time += Time.deltaTime/duration;
-				Debug.Log ("Door Time: " + time);
 			}
 			transform.localScale = new Vector3 (1, Mathf.Lerp (minimum, maximum, time), 1);
 		}
