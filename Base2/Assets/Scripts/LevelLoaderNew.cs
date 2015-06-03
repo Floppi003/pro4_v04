@@ -15,6 +15,9 @@ public class LevelLoaderNew : MonoBehaviour {
 		unlockedLevel = PlayerPrefs.GetInt ("Level Unlocked");
 		PlayerPrefs.SetInt("Chosen Level", unlockedLevel);
 
+		doorText = "Level " + unlockedLevel + " fortsetzen";
+		GameObject.Find("ContinueDoor").GetComponent<TextMesh>().text = doorText;
+
 		if (unlockedLevel == 0) 
 		{
 			unlockedLevel = 1;
@@ -43,15 +46,12 @@ public class LevelLoaderNew : MonoBehaviour {
 			} else {
 				PlayerPrefs.SetInt ("Current Level", levelToLoad);
 				PlayerPrefs.SetInt("Chosen Level", levelToLoad);
-		//		Application.LoadLevel ("Level " + levelToLoad.ToString ()); //load by name instead of id
 
-				if (levelToLoad == unlockedLevel) {
-					doorText = "Continue";
-				} else {
-					doorText = "Level 0" + levelToLoad.ToString();
-				}
+				doorText = "Level " + levelToLoad.ToString() + " starten";
+				
+				GameObject.Find("ContinueDoor").GetComponent<TextMesh>().text = doorText;
 			}
-			GameObject.Find("ContinueDoor").GetComponent<TextMesh>().text = doorText;
+		
 			playAnimation();
 		}
 	}
@@ -59,11 +59,11 @@ public class LevelLoaderNew : MonoBehaviour {
 	public string GetText(){
 		string levelText = "";
 		if (levelToLoad.ToString () == "0") {
-			levelText = "Press [F] to clear the game";
+			levelText = "[F]  Spielstand löschen";
 		}else if (canLoadLevel) {
-			levelText = "Press [F] to load level " + levelToLoad.ToString ();
+			levelText = "[F]  Level " + levelToLoad.ToString () + " laden";
 		} else {
-			levelText = "Level " + levelToLoad.ToString () + " is locked";
+			levelText = "Level gesperrt";
 		}
 		return levelText;
 	}

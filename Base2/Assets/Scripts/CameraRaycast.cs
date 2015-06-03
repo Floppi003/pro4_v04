@@ -20,7 +20,7 @@ public class CameraRaycast : MonoBehaviour {
 		if (Physics.Raycast (cam.transform.position, cam.gameObject.transform.forward, out interactionRaycastHit, 3)) {
 		
 			if (interactionRaycastHit.collider.gameObject.tag == "Interaction") {
-				loadPrompt = "Press [F] to interact";
+				loadPrompt = "[F]  Knopf drücken";
 				showHint = true;
 				interactionRaycastHit.collider.gameObject.GetComponent<InteractionButton>().ButtonPressed();
 
@@ -42,12 +42,12 @@ public class CameraRaycast : MonoBehaviour {
 				}
 
 			} else if (interactionRaycastHit.collider.gameObject.tag == "Exploder"){
-				loadPrompt = "Press [F] for explosions";
+				loadPrompt = "[F]  Explosion";
 				showHint = true;
 				interactionRaycastHit.collider.gameObject.GetComponent<Explosion>().Explode();
 		
 			} else if(interactionRaycastHit.collider.gameObject.tag == "ColorButton") { 	// Color Buttons
-				loadPrompt = "Press [F] to push the button";
+				loadPrompt = "[F]  Knopf drücken";
 				showHint = true;
 				if(Input.GetButtonDown ("ButtonPressed")) {
 					Debug.Log("active");
