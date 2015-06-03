@@ -5,6 +5,7 @@ public class ColorButton : MonoBehaviour {
 
 	public Material activeMaterial;
 	public float lifetime = 1; // 0 = infinity
+	public GameObject door;
 
 	private Material oldMaterial;
 	private Transform buttonFrame;
@@ -17,8 +18,9 @@ public class ColorButton : MonoBehaviour {
 	void Start () {
 		alive = 0;
 		pushed = false;
-		buttonFrame = this.transform.GetChild (1).GetChild (0);
-		buttonCenter = this.transform.GetChild (0);
+		buttonFrame = this.transform.GetChild (1);
+		buttonCenter = this.transform.GetChild (2);
+		door = GameObject.Find ("Door ColorButtons");
 		//defaultMaterial = this.transform.GetChild (1).GetChild(0).GetComponent<Renderer> ().material;
 	}
 	
@@ -34,22 +36,8 @@ public class ColorButton : MonoBehaviour {
 		}
 	}
 
-/*	void OnTriggerEnter(Collider col) {
-		if (col.name == "ColorSphere") {
-			alive = lifetime;
-			if (oldMaterial == null) {
-				changeColor(buttonFrame);
-			}
-		}
-	}
-
-	void OnTriggerStay(Collider col) {
-		if (col.name == "ColorSphere") {
-			alive = lifetime;
-		}
-	}
-*/
 	private void changeColor(Transform obj) {
+
 		oldMaterial = obj.GetComponent<Renderer> ().material;
 			
 		obj.GetComponent<Renderer> ().material = activeMaterial;
@@ -66,9 +54,12 @@ public class ColorButton : MonoBehaviour {
 				changeColor (buttonFrame);
 			}
 			changeColor (buttonCenter);
+
+			door.GetComponent<ColorButtonManager>().pushButton(activeMaterial);
 		} else {
 			// animate raus
 			this.GetComponent<Animator> ().Play ("Pop");
+			door.GetComponent<ColorButtonManager>().popButton(activeMaterial);
 
 			pushed = false;
 			alive = 0.001f;
