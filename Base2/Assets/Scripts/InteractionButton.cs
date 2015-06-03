@@ -22,6 +22,9 @@ public class InteractionButton : MonoBehaviour {
 	public void ButtonPressed() {
 		if (Input.GetButtonDown ("ButtonPressed")) {
 			if(pushPop){
+				// load audio files level 2
+				AudioFilesLevel2 audioFiles = GameObject.Find ("GM").GetComponent<AudioFilesLevel2>();
+				AudioManager.instance.playSoundEffect(audioFiles.platformMovingSound);
 				transform.gameObject.GetComponentInParent<Animator> ().Play ("Push");
 			}else{
 				transform.gameObject.GetComponentInParent<Animator> ().Play ("PushStay");

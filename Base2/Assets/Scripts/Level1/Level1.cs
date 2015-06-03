@@ -65,7 +65,7 @@ public class Level1 : MonoBehaviour {
 	private float timeSinceLastPanelRiddleHint;
 	private bool goalOpened = false;
 	private float timeSinceLastGoalOpenedClip;
-	
+
 	protected void OnEnable() {
 		eyePositionDataProvider.Start();
 		gazePointDataProvider.Start ();
@@ -90,6 +90,9 @@ public class Level1 : MonoBehaviour {
 		blinkingLights.Add (GameObject.Find ("Panel_01"));
 		blinkingLights.Add (GameObject.Find ("Panel_02"));
 		blinkingLights.Add (GameObject.Find ("Panel_03"));
+		blinkingLights.Add (GameObject.Find ("Panel_04"));
+		blinkingLights.Add (GameObject.Find ("Panel_05"));
+		blinkingLights.Add (GameObject.Find ("Panel_06"));
 		
 		// set a deafult name for lastGazedWallLightName
 		this.lastGazedWallLightName = "";
@@ -254,6 +257,13 @@ public class Level1 : MonoBehaviour {
 			if (Physics.Raycast (gazeRay.origin, gazeRay.direction, out gazeRaycastHit, 40.0f)) {
 				
 				string gazedObject = gazeRaycastHit.collider.gameObject.name;
+
+				// colorize the border of the wall-panel
+				if (gazedObject.Contains ("Panel")) {
+					gazeRaycastHit.collider.gameObject.GetComponent<GazePanel>().didGazePanel();
+				}
+
+
 				// check if the gazed panel is the one that is currently lerping
 				if (gazedObject == ((GameObject)blinkingLights [blinkingLightIndex]).name) {
 					// the gazed object is the one that is currently lerping
@@ -295,7 +305,7 @@ public class Level1 : MonoBehaviour {
 		
 		this.previousGazePoint = gazePoint;
 		
-		if (this.continuesPanelDisgazeCounter > 0.3) {
+		if (this.continuesPanelDisgazeCounter > 0.3f) {
 			this.continuesPanelDisgazeCounter = 0.0f;
 			this.currentLerpTimePaused = false;
 			this.currentGazedLerpTime = 0.0f;
@@ -356,7 +366,6 @@ public class Level1 : MonoBehaviour {
 				}
 			}*/
 	}
-	
 	
 	private void handleWallLights() {
 		EyeXGazePoint gazePoint = gazePointDataProvider.Last;
