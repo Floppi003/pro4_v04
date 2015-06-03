@@ -52,6 +52,10 @@ public class InteractionButton : MonoBehaviour {
 			//wallDoor.transform.localScale.x += 5;
 			Debug.Log ("OPEN the door!");
 			wallDoor.GetComponent<Door>().move = true;
+
+			// play sound effect
+			AudioFilesLevel2 audioFiles = GameObject.Find ("GM").GetComponent<AudioFilesLevel2>();
+			AudioManager.instance.playSoundEffect(audioFiles.firstRiddleSuccessSound);
 		}
 	}
 }

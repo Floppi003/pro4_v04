@@ -4712,6 +4712,23 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: dcc12297069952b468ddcdfd65c01cc5, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &778353944
+GameObject:
+  m_PrefabParentObject: {fileID: 123434, guid: 86925217ef00c26489bfec73a81d6a13, type: 2}
+  m_PrefabInternal: {fileID: 1136042049}
+--- !u!114 &778353953
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 778353944}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76876cacafe81d14cadf52f04d463b1e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  firstRiddleSuccessSound: {fileID: 8300000, guid: 70ff6b969a7a3b9488334ad294fba2eb,
+    type: 3}
 --- !u!1001 &779503122
 Prefab:
   m_ObjectHideFlags: 0
@@ -7611,7 +7628,9 @@ Prefab:
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 11460482, guid: 86925217ef00c26489bfec73a81d6a13, type: 2}
+    - {fileID: 11497280, guid: 86925217ef00c26489bfec73a81d6a13, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 86925217ef00c26489bfec73a81d6a13, type: 2}
   m_IsPrefabParent: 0
 --- !u!1001 &1136624851
