@@ -46,12 +46,9 @@ public class LevelLoaderNew : MonoBehaviour {
 			} else {
 				PlayerPrefs.SetInt ("Current Level", levelToLoad);
 				PlayerPrefs.SetInt("Chosen Level", levelToLoad);
-
-				doorText = "Level " + levelToLoad.ToString() + " starten";
-				
+				doorText = "Level " + levelToLoad.ToString() + " starten";				
 				GameObject.Find("ContinueDoor").GetComponent<TextMesh>().text = doorText;
-			}
-		
+			}	
 			playAnimation();
 		}
 	}
