@@ -104,6 +104,7 @@ public class Level1 : MonoBehaviour {
 	}
 	
 	void Start() {
+		Debug.Log ("Start()");
 		audioFiles = GameObject.Find ("GM").GetComponent<AudioFilesLevel1> ();
 		
 		gazePointDataProvider.Start ();

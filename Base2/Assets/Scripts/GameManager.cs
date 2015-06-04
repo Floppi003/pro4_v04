@@ -51,6 +51,8 @@ public class GameManager : MonoBehaviour {
 	{
 		pauseMenu.enabled = false;
 
+		// TODO: set default values for music volume, sound volume and mouse sensitivity if no playerprefs could be loaded
+
 		GameObject sensitivitySlider = pauseMenu.transform.Find("BG Panel").Find("Panel").Find("SensitivitySlider").gameObject;
 		sensitivitySlider.GetComponent<Slider>().value = PlayerPrefs.GetFloat("Sensitivity");
 		GameObject musicSlider = pauseMenu.transform.Find("BG Panel").Find("Panel").Find("MusicSlider").gameObject;
