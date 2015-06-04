@@ -132,7 +132,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &117930
 GameObject:
   m_ObjectHideFlags: 0
@@ -199,8 +199,6 @@ GameObject:
   - 82: {fileID: 8284584}
   - 114: {fileID: 11461736}
   - 114: {fileID: 11497638}
-  - 114: {fileID: 11428572}
-  - 114: {fileID: 11448016}
   m_Layer: 0
   m_Name: GM
   m_TagString: Untagged
@@ -507,7 +505,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &169896
 GameObject:
   m_ObjectHideFlags: 0
@@ -837,7 +835,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 160048}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -123, y: 6.96000004, z: -77}
+  m_LocalPosition: {x: -65, y: -.180000007, z: 9}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 438494}
@@ -882,8 +880,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 187564}
-  m_LocalRotation: {x: 0, y: .999981701, z: 0, w: .0060486435}
-  m_LocalPosition: {x: -92.6999969, y: 8.30000019, z: -77.8000031}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -65, y: 1, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 482120}
@@ -1219,7 +1217,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 63a1a2b17de3c374884fad096f84426d, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: .0670000017
+  m_Volume: .230000004
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -1812,29 +1810,6 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
---- !u!114 &11428572
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 123434}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 87f57cf5360c8284e89b008da65e1b98, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  timeTillWakeupSoundStarts: 2
-  timeTillFirstDoorOpens: 11
-  standardColorLerpTime: 4
-  gazedColorLerpTime: .800000012
-  standardPanelColor: {r: .404411793, g: 0, b: 0, a: 0}
-  highlightedPanelColor: {r: 1, g: .0509803928, b: 0, a: 0}
-  gazePanelColor: {r: 0, g: 1, b: .00689673424, a: 0}
-  activatedPanelColor: {r: 0, g: .808823526, b: .172920838, a: 0}
-  wallLightColor1: {r: 0, g: .336866289, b: .669117689, a: 0}
-  wallLightColor2: {r: 1, g: .889655113, b: 0, a: 0}
-  wallLightColor3: {r: 0, g: 0, b: 0, a: 0}
-  wallLightColor4: {r: 0, g: 0, b: 0, a: 0}
 --- !u!114 &11431700
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2053,51 +2028,6 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
---- !u!114 &11448016
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 123434}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fd824c92812d6db4497b42676ae7f09d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  wakeupAudioClip: {fileID: 8300000, guid: 3848893e02ed9da40916339bdf5af4bb, type: 3}
-  firstWallAudioClip: {fileID: 8300000, guid: 4113dfc264151a440930a22fd2456ab8, type: 3}
-  wallHit: {fileID: 8300000, guid: 21738b5fbc2852c448fc988e437022cc, type: 3}
-  activated: {fileID: 8300000, guid: 63529d0a98b10d5439b854b33f411fe0, type: 3}
-  lastActivated: {fileID: 8300000, guid: 635c1067acd08864697d86a582860568, type: 3}
-  cow: {fileID: 8300000, guid: 011fc2524365070419b3f222231693d4, type: 3}
-  paula: {fileID: 8300000, guid: e42c428254e9e484faf2061879b6a788, type: 3}
-  doorOpens: {fileID: 8300000, guid: f63f0f59bc20d1540a8851b16a013b29, type: 3}
-  wakeupSound: {fileID: 8300000, guid: 12abefe76fd834f42b93bc1e48c241dc, type: 3}
-  clickSound: {fileID: 8300000, guid: 384301568d9d54d4a9ba727b74332e82, type: 3}
-  wakeupAudioClips_Stage01:
-  - {fileID: 8300000, guid: 3848893e02ed9da40916339bdf5af4bb, type: 3}
-  rubEyes_Stage01:
-  - {fileID: 8300000, guid: 4113dfc264151a440930a22fd2456ab8, type: 3}
-  rubEyes_Stage02:
-  - {fileID: 8300000, guid: 59e761e46957a034582dc2951beffae1, type: 3}
-  - {fileID: 8300000, guid: 43ac3c31f490fde49b72498840613a89, type: 3}
-  - {fileID: 8300000, guid: 6bcd6cdf32a47b148b6a947c4c8f973f, type: 3}
-  sleepingBeauty_Stage01:
-  - {fileID: 8300000, guid: 8d5da33dafac64b45ad906217587559b, type: 3}
-  wallOfLights_Stage01:
-  - {fileID: 8300000, guid: 0b4f43e5fc2afa547b02da6bd3d47f2a, type: 3}
-  wallOfLights_Stage02:
-  - {fileID: 8300000, guid: 2b70ca5eb19ec7445b26b0e10915735a, type: 3}
-  wallOfLightsOver_Stage01:
-  - {fileID: 8300000, guid: 244b19a007566ad4bbaa302fddefa88c, type: 3}
-  locked_Stage01:
-  - {fileID: 8300000, guid: 6510ec18261243b4b86f96b663950c5d, type: 3}
-  locked_Stage02:
-  - {fileID: 8300000, guid: a4761d81dc5b60b4e8e9bbaf6f8259d5, type: 3}
-  goal_Stage01:
-  - {fileID: 8300000, guid: d42a6321925a6234bb8cea3bf99b4c3c, type: 3}
-  goal_Stage02:
-  - {fileID: 8300000, guid: d726a336c0913574a94681c61c41dfcb, type: 3}
 --- !u!114 &11449884
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2186,7 +2116,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: Exit Game
+  m_Text: Beenden
 --- !u!114 &11461736
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2224,7 +2154,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Continue
+  m_Text: Fortsetzen
 --- !u!114 &11467172
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2250,7 +2180,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: paused
+  m_Text: pause
 --- !u!114 &11470222
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2550,7 +2480,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: Central
+  m_Text: Hub
 --- !u!114 &11493458
 MonoBehaviour:
   m_ObjectHideFlags: 1
