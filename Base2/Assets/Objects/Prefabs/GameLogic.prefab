@@ -2681,7 +2681,7 @@ ParticleSystem:
   InitialModule:
     enabled: 1
     startLifetime:
-      scalar: 3
+      scalar: 4.80000019
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -2696,7 +2696,7 @@ ParticleSystem:
         serializedVersion: 2
         m_Curve:
         - time: 0
-          value: .166666672
+          value: .104166664
           inSlope: 0
           outSlope: 0
           tangentMode: 0
@@ -2976,7 +2976,7 @@ ParticleSystem:
   RotationModule:
     enabled: 1
     curve:
-      scalar: 6.28318501
+      scalar: 8.72664642
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -3026,10 +3026,10 @@ ParticleSystem:
         key7:
           serializedVersion: 2
           rgba: 0
-        ctime0: 26792
-        ctime1: 36044
-        ctime2: 40670
-        ctime3: 45104
+        ctime0: 30840
+        ctime1: 47995
+        ctime2: 50115
+        ctime3: 52235
         ctime4: 65535
         ctime5: 65535
         ctime6: 65535

@@ -2874,7 +2874,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 444924, guid: 005d3f7678259bf4cb8b376fa40c14aa, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 3
+      value: .460000008
       objectReference: {fileID: 0}
     - target: {fileID: 444924, guid: 005d3f7678259bf4cb8b376fa40c14aa, type: 2}
       propertyPath: m_LocalRotation.x
@@ -2899,6 +2899,10 @@ Prefab:
     - target: {fileID: 156600, guid: 005d3f7678259bf4cb8b376fa40c14aa, type: 2}
       propertyPath: m_Name
       value: Floor 8x9
+      objectReference: {fileID: 0}
+    - target: {fileID: 444924, guid: 005d3f7678259bf4cb8b376fa40c14aa, type: 2}
+      propertyPath: m_LocalScale.z
+      value: .683053851
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 005d3f7678259bf4cb8b376fa40c14aa, type: 2}
