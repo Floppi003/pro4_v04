@@ -3778,8 +3778,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b7d55bc9e31c38e4681c372dffde7480, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  standardGazePanelColor: {r: .220588207, g: .220588207, b: .220588207, a: 1}
-  highlightedGazePanelColor: {r: .433823526, g: .433823526, b: .433823526, a: 1}
+  standardGazePanelColor: {r: .191176474, g: .191176474, b: .191176474, a: 1}
+  highlightedGazePanelColor: {r: 1, g: 1, b: 1, a: 1}
   highlightTime: .5
 --- !u!1001 &204078720
 Prefab:
@@ -5193,11 +5193,11 @@ MonoBehaviour:
   standardColorLerpTime: 4
   gazedColorLerpTime: .800000012
   standardPanelColor: {r: .404411793, g: 0, b: 0, a: 0}
-  highlightedPanelColor: {r: 1, g: .310344845, b: 0, a: 0}
+  highlightedPanelColor: {r: 1, g: .0509803928, b: 0, a: 0}
   gazePanelColor: {r: 0, g: 1, b: .00689673424, a: 0}
-  activatedPanelColor: {r: 0, g: 1, b: .213793039, a: 0}
-  wallLightColor1: {r: 0, g: .627586365, b: 1, a: 0}
-  wallLightColor2: {r: 1, g: .68275857, b: 0, a: 0}
+  activatedPanelColor: {r: 0, g: .808823526, b: .172920838, a: 0}
+  wallLightColor1: {r: 0, g: .336866289, b: .669117689, a: 0}
+  wallLightColor2: {r: 1, g: .889655113, b: 0, a: 0}
   wallLightColor3: {r: 0, g: 0, b: 0, a: 0}
   wallLightColor4: {r: 0, g: 0, b: 0, a: 0}
 --- !u!114 &301431855
@@ -5664,8 +5664,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b7d55bc9e31c38e4681c372dffde7480, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  standardGazePanelColor: {r: .220588207, g: .220588207, b: .220588207, a: 1}
-  highlightedGazePanelColor: {r: .433823526, g: .433823526, b: .433823526, a: 1}
+  standardGazePanelColor: {r: .191176474, g: .191176474, b: .191176474, a: 1}
+  highlightedGazePanelColor: {r: 1, g: 1, b: 1, a: 1}
   highlightTime: .5
 --- !u!1001 &330432898
 Prefab:
@@ -5828,8 +5828,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b7d55bc9e31c38e4681c372dffde7480, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  standardGazePanelColor: {r: .220588207, g: .220588207, b: .220588207, a: 1}
-  highlightedGazePanelColor: {r: .433823526, g: .433823526, b: .433823526, a: 1}
+  standardGazePanelColor: {r: .191176474, g: .191176474, b: .191176474, a: 1}
+  highlightedGazePanelColor: {r: 1, g: 1, b: 1, a: 1}
   highlightTime: .5
 --- !u!1001 &360093544
 Prefab:
@@ -14390,11 +14390,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 455906, guid: 86925217ef00c26489bfec73a81d6a13, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -49.1599998
+      value: -92.6999969
       objectReference: {fileID: 0}
     - target: {fileID: 455906, guid: 86925217ef00c26489bfec73a81d6a13, type: 2}
       propertyPath: m_LocalPosition.z
-      value: .829999983
+      value: -77.8000031
       objectReference: {fileID: 0}
     - target: {fileID: 413452, guid: 86925217ef00c26489bfec73a81d6a13, type: 2}
       propertyPath: m_LocalPosition.z
@@ -14438,15 +14438,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 455906, guid: 86925217ef00c26489bfec73a81d6a13, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -49.1599998
+      value: -92.6999969
       objectReference: {fileID: 0}
     - target: {fileID: 455906, guid: 86925217ef00c26489bfec73a81d6a13, type: 2}
       propertyPath: m_LocalPosition.z
-      value: .829999983
+      value: -77.8000031
       objectReference: {fileID: 0}
     - target: {fileID: 455906, guid: 86925217ef00c26489bfec73a81d6a13, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 2.79999995
+      value: 8.30000019
       objectReference: {fileID: 0}
     - target: {fileID: 11497280, guid: 86925217ef00c26489bfec73a81d6a13, type: 2}
       propertyPath: panelGazeTime
@@ -14494,15 +14494,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 455906, guid: 86925217ef00c26489bfec73a81d6a13, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -49.1599998
+      value: -92.6999969
       objectReference: {fileID: 0}
     - target: {fileID: 455906, guid: 86925217ef00c26489bfec73a81d6a13, type: 2}
       propertyPath: m_LocalPosition.z
-      value: .829999983
+      value: -77.8000031
       objectReference: {fileID: 0}
     - target: {fileID: 455906, guid: 86925217ef00c26489bfec73a81d6a13, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 2.79999995
+      value: 8.30000019
       objectReference: {fileID: 0}
     - target: {fileID: 11497280, guid: 86925217ef00c26489bfec73a81d6a13, type: 2}
       propertyPath: panelGazeTime
@@ -20212,8 +20212,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b7d55bc9e31c38e4681c372dffde7480, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  standardGazePanelColor: {r: .220588207, g: .220588207, b: .220588207, a: 1}
-  highlightedGazePanelColor: {r: .433823526, g: .433823526, b: .433823526, a: 1}
+  standardGazePanelColor: {r: .191176474, g: .191176474, b: .191176474, a: 1}
+  highlightedGazePanelColor: {r: 1, g: 1, b: 1, a: 1}
   highlightTime: .5
 --- !u!1001 &1121682333
 Prefab:
@@ -26791,8 +26791,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b7d55bc9e31c38e4681c372dffde7480, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  standardGazePanelColor: {r: .220588207, g: .220588207, b: .220588207, a: 1}
-  highlightedGazePanelColor: {r: .433823526, g: .433823526, b: .433823526, a: 1}
+  standardGazePanelColor: {r: .191176474, g: .191176474, b: .191176474, a: 1}
+  highlightedGazePanelColor: {r: 1, g: 1, b: 1, a: 1}
   highlightTime: .5
 --- !u!1001 &1476123493
 Prefab:
@@ -38333,8 +38333,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b7d55bc9e31c38e4681c372dffde7480, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  standardGazePanelColor: {r: .220588207, g: .220588207, b: .220588207, a: 1}
-  highlightedGazePanelColor: {r: .433823526, g: .433823526, b: .433823526, a: 1}
+  standardGazePanelColor: {r: .191176474, g: .191176474, b: .191176474, a: 1}
+  highlightedGazePanelColor: {r: 1, g: 1, b: 1, a: 1}
   highlightTime: .5
 --- !u!1001 &2059789267
 Prefab:
