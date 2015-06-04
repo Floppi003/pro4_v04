@@ -204,6 +204,10 @@ public class FirstPersonController : MonoBehaviour {
 		{
 			manager.CompleteLevel();
 		}
+		if (other.transform.tag == "SavePoint")
+		{
+			spawn = other.transform.position;
+		}
 	}
 
 	public void Die()

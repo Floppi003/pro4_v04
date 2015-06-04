@@ -25,6 +25,8 @@ public class InteractionButton : MonoBehaviour {
 				// load audio files level 2
 				AudioFilesLevel2 audioFiles = GameObject.Find ("GM").GetComponent<AudioFilesLevel2>();
 				AudioManager.instance.playSoundEffect(audioFiles.platformMovingSound);
+				Invoke ("playButtonReleaseDelayed", 0.35f);
+
 				transform.gameObject.GetComponentInParent<Animator> ().Play ("Push");
 			}else{
 				transform.gameObject.GetComponentInParent<Animator> ().Play ("PushStay");
@@ -57,8 +59,17 @@ public class InteractionButton : MonoBehaviour {
 			wallDoor.GetComponent<Door>().move = true;
 
 			// play sound effect
-			AudioFilesLevel2 audioFiles = GameObject.Find ("GM").GetComponent<AudioFilesLevel2>();
-			AudioManager.instance.playSoundEffect(audioFiles.firstRiddleSuccessSound);
+			Invoke ("playRiddleSolvedSoundDelayed", 3.0f);
 		}
+	}
+
+	private void playButtonReleaseDelayed() {
+		AudioFilesLevel2 audioFiles = GameObject.Find ("GM").GetComponent<AudioFilesLevel2>();
+		AudioManager.instance.playSoundEffect (audioFiles.buttonReleasedSound);
+	}
+
+	private void playRiddleSolvedSoundDelayed() {
+		AudioFilesLevel2 audioFiles = GameObject.Find ("GM").GetComponent<AudioFilesLevel2>();
+		AudioManager.instance.playSoundEffect (audioFiles.firstRiddleSuccessSound);
 	}
 }
