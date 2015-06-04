@@ -14511,11 +14511,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 455906, guid: 86925217ef00c26489bfec73a81d6a13, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -92.6999969
+      value: -50
       objectReference: {fileID: 0}
     - target: {fileID: 455906, guid: 86925217ef00c26489bfec73a81d6a13, type: 2}
       propertyPath: m_LocalPosition.z
-      value: -77.8000031
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 413452, guid: 86925217ef00c26489bfec73a81d6a13, type: 2}
       propertyPath: m_LocalPosition.z
@@ -14559,15 +14559,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 455906, guid: 86925217ef00c26489bfec73a81d6a13, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -92.6999969
+      value: -50
       objectReference: {fileID: 0}
     - target: {fileID: 455906, guid: 86925217ef00c26489bfec73a81d6a13, type: 2}
       propertyPath: m_LocalPosition.z
-      value: -77.8000031
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 455906, guid: 86925217ef00c26489bfec73a81d6a13, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 8.30000019
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 11497280, guid: 86925217ef00c26489bfec73a81d6a13, type: 2}
       propertyPath: panelGazeTime
@@ -14615,15 +14615,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 455906, guid: 86925217ef00c26489bfec73a81d6a13, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -92.6999969
+      value: -50
       objectReference: {fileID: 0}
     - target: {fileID: 455906, guid: 86925217ef00c26489bfec73a81d6a13, type: 2}
       propertyPath: m_LocalPosition.z
-      value: -77.8000031
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 455906, guid: 86925217ef00c26489bfec73a81d6a13, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 8.30000019
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 11497280, guid: 86925217ef00c26489bfec73a81d6a13, type: 2}
       propertyPath: panelGazeTime
@@ -14635,11 +14635,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 455906, guid: 86925217ef00c26489bfec73a81d6a13, type: 2}
       propertyPath: m_LocalRotation.y
-      value: .999981701
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 455906, guid: 86925217ef00c26489bfec73a81d6a13, type: 2}
       propertyPath: m_LocalRotation.w
-      value: .0060486435
+      value: -1.62920685e-07
       objectReference: {fileID: 0}
     - target: {fileID: 11478386, guid: 86925217ef00c26489bfec73a81d6a13, type: 2}
       propertyPath: m_Enabled
