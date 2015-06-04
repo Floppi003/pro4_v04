@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour {
 	public Canvas pauseMenu;
@@ -49,8 +50,15 @@ public class GameManager : MonoBehaviour {
 	void Start()
 	{
 		pauseMenu.enabled = false;
-		//		totalTokenCount = tokenParent.transform.childCount;
-		
+
+		GameObject sensitivitySlider = pauseMenu.transform.Find("BG Panel").Find("Panel").Find("SensitivitySlider").gameObject;
+		sensitivitySlider.GetComponent<Slider>().value = PlayerPrefs.GetFloat("Sensitivity");
+		GameObject musicSlider = pauseMenu.transform.Find("BG Panel").Find("Panel").Find("MusicSlider").gameObject;
+		musicSlider.GetComponent<Slider>().value = PlayerPrefs.GetFloat("MusicVolume");
+		GameObject soundSlider = pauseMenu.transform.Find("BG Panel").Find("Panel").Find("SoundSlider").gameObject;
+		soundSlider.GetComponent<Slider>().value = PlayerPrefs.GetFloat("SoundVolume");
+		Debug.Log ("Soundvolume " + PlayerPrefs.GetFloat("SoundVolume"));
+
 		if (PlayerPrefs.GetInt("Level Unlocked") > 1) //if there are more levels unlocked than level 1, let him play them
 		{
 			unlockedLevel = PlayerPrefs.GetInt("Level Unlocked");

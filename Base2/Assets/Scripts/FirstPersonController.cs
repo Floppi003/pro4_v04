@@ -247,6 +247,7 @@ public class FirstPersonController : MonoBehaviour {
 	public void ChangeMouseSensitivity(float sensitivity){
 		mouseSensitivityX = sensitivity;
 		mouseSensitivityY = sensitivity;
-		string sensitivityString = sensitivity.ToString ();
+		string sensitivityString = sensitivity.ToString ();	
+		PlayerPrefs.SetFloat("Sensitivity", sensitivity);
 	}
 }

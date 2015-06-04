@@ -124,6 +124,7 @@ public class AudioManager : MonoBehaviour {
 		Debug.Log ("Sound Volume changed!");
 		audioSource.volume = soundVolume;
 		footStepsAudioSource.volume = soundVolume;
+		PlayerPrefs.SetFloat("SoundVolume", (float) soundVolume);
 		// Best tutorial:
 		// http://answers.unity3d.com/questions/306684/how-to-change-volume-on-many-audio-objects-with-sp.html
 	}
@@ -132,7 +133,7 @@ public class AudioManager : MonoBehaviour {
 		//change volume of background music
 		Debug.Log ("Music volume changed!");
 		backgroundAudioSource.volume = musicVolume;
-
+		PlayerPrefs.SetFloat("MusicVolume", (float) musicVolume);
 		// Best tutorial:
 		// http://answers.unity3d.com/questions/306684/how-to-change-volume-on-many-audio-objects-with-sp.html
 	}
