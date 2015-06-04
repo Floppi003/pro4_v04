@@ -29,8 +29,8 @@ public class Level1 : MonoBehaviour {
 	private bool wallsVisible; // default is false, when user closed eyes for a certain amount of time it will be true 
 	private int wallRiddleHintsPlayed; // amount of hint audio clips that have been played so far
 
-	public float timeTillWakeupSoundStarts = 0.0f;
-	public float timeTillFirstDoorOpens = 9.0f;
+	public float timeTillWakeupSoundStarts = 2.0f;
+	public float timeTillFirstDoorOpens = 11.0f;
 	private float timeTillWallSoundStarts;
 	private float timeWhenLastWallSoundWasQueued;
 	private float timeEyesAreClosed; // when eyes are closed this will count up. when eyes are opened it will get reset
@@ -38,8 +38,8 @@ public class Level1 : MonoBehaviour {
 	
 	private int blinkingLightIndex; //stores the index of the current blinking light
 	
-	public float standardColorLerpTime;
-	public float gazedColorLerpTime;
+	public float standardColorLerpTime = 4.0f;
+	public float gazedColorLerpTime = 0.8f;
 	private float currentLerpTime;
 	private float currentGazedLerpTime;
 	private bool currentLerpTimePaused;

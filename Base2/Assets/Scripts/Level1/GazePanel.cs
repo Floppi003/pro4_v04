@@ -7,7 +7,7 @@ public class GazePanel : MonoBehaviour {
 	public Color highlightedGazePanelColor = Color.cyan;
 
 	public float highlightTime = 0.5f;
-	private float leftHighlightTime = 0.0f; //the current highlight time that is left before it will de-colorize
+	private float leftHighlightTime = 0.1f; //the current highlight time that is left before it will de-colorize
 
 	// Use this for initialization
 	void Start () {
