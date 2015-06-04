@@ -139,7 +139,6 @@ public class FirstPersonController : MonoBehaviour {
 		}
 		
 		if (Input.GetButtonDown("Jump")) {
-
 			if (IsGrounded()) {
 				jumpStart = GetComponent<Rigidbody>().position; //-----------
 				inAir = true;
@@ -195,15 +194,25 @@ public class FirstPersonController : MonoBehaviour {
 		return (ground || IsStairGrounded ()); //letzter Parameter groundedMask
 	}
 
-	bool IsStairGrounded(){
-		//Debug.DrawRay (transform.position, -transform.up, Color.magenta, 1.5F);
-		if (Physics.Raycast (transform.position, -transform.up, out stairRaycast, 1.5F)) {
-			Debug.Log (stairRaycast.collider.gameObject.name);
-			if (stairRaycast.collider.gameObject.name == "Slope Collider") {
-				return true;
-			}
+	bool IsStairGrounded(){ 
+		Vector3 second  = transform.position;
+		second.x += 0.05F;
+		if (Physics.Raycast (transform.position, -transform.up, out stairRaycast, 1.5F) &&
+		        (stairRaycast.collider.gameObject.name == "Slope Collider")) {
+				firstStairCast = true;
 		} else {
-			//Debug.LogError ("No hit");
+			firstStairCast = false;
+		}
+
+		if (Physics.Raycast (second, -transform.up, out stairRaycast2, 1.5F) &&
+		    (stairRaycast2.collider.gameObject.name == "Slope Collider")) {
+			secondStairCast = true;
+		}else{
+			secondStairCast = false;
+		}
+
+		if(secondStairCast && firstStairCast){
+			return true;
 		}
 		return false;
 	}

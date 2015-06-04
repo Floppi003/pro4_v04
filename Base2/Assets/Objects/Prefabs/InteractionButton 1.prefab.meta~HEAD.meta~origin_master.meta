@@ -1,6 +1,11 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Base2/Assets/Objects/Prefabs/InteractionButton 1.prefab.meta~HEAD.meta~origin_master.meta
 guid: f537e86dab6c41749b800df4b72b93b1
 timeCreated: 1433426120
+=======
+guid: e51ad6079da2d3b459d3f2757d5e8724
+timeCreated: 1433417008
+>>>>>>> origin/master:Base2/Assets/Objects/Prefabs/InteractionButton 1.prefab.meta~HEAD.meta~origin_master.meta
 licenseType: Free
 DefaultImporter:
   userData: 

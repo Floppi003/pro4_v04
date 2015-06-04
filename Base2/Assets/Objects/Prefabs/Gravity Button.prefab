@@ -27,8 +27,8 @@ GameObject:
   - 4: {fileID: 426834}
   - 33: {fileID: 3315610}
   - 23: {fileID: 2357918}
-  - 136: {fileID: 13613938}
   - 114: {fileID: 11483972}
+  - 135: {fileID: 13504122}
   m_Layer: 0
   m_Name: Arrow
   m_TagString: Untagged
@@ -181,8 +181,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gravityVector: {x: 0, y: -1, z: 0}
---- !u!136 &13613938
-CapsuleCollider:
+--- !u!135 &13504122
+SphereCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -190,10 +190,9 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
-  m_Radius: .500000119
-  m_Height: 1.00000072
-  m_Direction: 1
-  m_Center: {x: -.166666687, y: .00138075429, z: .166666716}
+  serializedVersion: 2
+  m_Radius: 1
+  m_Center: {x: -.166666731, y: .00138041051, z: .166666746}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
