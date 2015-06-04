@@ -199,8 +199,7 @@ GameObject:
   - 82: {fileID: 8284584}
   - 114: {fileID: 11461736}
   - 114: {fileID: 11497638}
-  - 114: {fileID: 11460482}
-  - 114: {fileID: 11497280}
+  - 114: {fileID: 11432032}
   m_Layer: 0
   m_Name: GM
   m_TagString: Untagged
@@ -766,6 +765,7 @@ GameObject:
   - 114: {fileID: 11421728}
   - 114: {fileID: 11478386}
   - 114: {fileID: 11476198}
+  - 114: {fileID: 11431700}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -818,7 +818,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 427088}
-  m_RootOrder: 1
+  m_RootOrder: 2
 --- !u!4 &407930
 Transform:
   m_ObjectHideFlags: 1
@@ -838,7 +838,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 160048}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -.119999997, y: -.600000024, z: -177.460007}
+  m_LocalPosition: {x: 17.7999992, y: 3.79999995, z: -67.0999985}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 438494}
@@ -847,7 +847,7 @@ Transform:
   - {fileID: 407930}
   - {fileID: 495010}
   m_Father: {fileID: 427088}
-  m_RootOrder: 0
+  m_RootOrder: 3
 --- !u!4 &427088
 Transform:
   m_ObjectHideFlags: 1
@@ -855,14 +855,14 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 169896}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.03999996, y: 0, z: -2.92000008}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 413452}
-  - {fileID: 407796}
-  - {fileID: 22426474}
-  - {fileID: 22410790}
   - {fileID: 455906}
+  - {fileID: 22410790}
+  - {fileID: 407796}
+  - {fileID: 413452}
+  - {fileID: 22426474}
   m_Father: {fileID: 0}
   m_RootOrder: 0
 --- !u!4 &438494
@@ -883,13 +883,13 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 187564}
-  m_LocalRotation: {x: 0, y: -.999780118, z: 0, w: .0209688395}
-  m_LocalPosition: {x: 1.11000001, y: 2.5, z: -17.5599995}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -.100000001, y: 2, z: -.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 482120}
   m_Father: {fileID: 427088}
-  m_RootOrder: 4
+  m_RootOrder: 0
 --- !u!4 &482120
 Transform:
   m_ObjectHideFlags: 1
@@ -1813,6 +1813,43 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+--- !u!114 &11431700
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 195446}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd6d4281e5d7cd44d8c6e38bc2c1b8d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mode: 0
+  intensity: .5
+  chromaticAberration: .200000003
+  axialAberration: .5
+  blur: 0
+  blurSpread: .75
+  luminanceDependency: .25
+  blurDistance: 2.5
+  vignetteShader: {fileID: 4800000, guid: 627943dc7a9a74286b70a4f694a0acd5, type: 3}
+  separableBlurShader: {fileID: 4800000, guid: e97c14fbb5ea04c3a902cc533d7fc5d1, type: 3}
+  chromAberrationShader: {fileID: 4800000, guid: 2b4f29398d9484ccfa9fd220449f5eee,
+    type: 3}
+--- !u!114 &11432032
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 123434}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76876cacafe81d14cadf52f04d463b1e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  firstRiddleSuccessSound: {fileID: 8300000, guid: 70ff6b969a7a3b9488334ad294fba2eb,
+    type: 3}
+  platformMovingSound: {fileID: 8300000, guid: e249154ca27da5e4ea60aa39797cdda3, type: 3}
 --- !u!114 &11438386
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2097,51 +2134,6 @@ MonoBehaviour:
     m_VerticalOverflow: 1
     m_LineSpacing: 1
   m_Text: Exit Game
---- !u!114 &11460482
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 123434}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fd824c92812d6db4497b42676ae7f09d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  wakeupAudioClip: {fileID: 8300000, guid: 984c95975c1f43041bbf74747e1ed60e, type: 3}
-  firstWallAudioClip: {fileID: 8300000, guid: 031139b423e2bbd41b3575fa5da4321e, type: 3}
-  wallHit: {fileID: 8300000, guid: 21738b5fbc2852c448fc988e437022cc, type: 3}
-  activated: {fileID: 8300000, guid: 63529d0a98b10d5439b854b33f411fe0, type: 3}
-  lastActivated: {fileID: 8300000, guid: 635c1067acd08864697d86a582860568, type: 3}
-  cow: {fileID: 8300000, guid: 011fc2524365070419b3f222231693d4, type: 3}
-  paula: {fileID: 8300000, guid: e42c428254e9e484faf2061879b6a788, type: 3}
-  doorOpens: {fileID: 8300000, guid: e4ff1fda98e5c0f44949fac92f7eefe2, type: 3}
-  wakeupSound: {fileID: 8300000, guid: 12abefe76fd834f42b93bc1e48c241dc, type: 3}
-  clickSound: {fileID: 8300000, guid: 384301568d9d54d4a9ba727b74332e82, type: 3}
-  wakeupAudioClips_Stage01:
-  - {fileID: 8300000, guid: 3848893e02ed9da40916339bdf5af4bb, type: 3}
-  rubEyes_Stage01:
-  - {fileID: 8300000, guid: 4113dfc264151a440930a22fd2456ab8, type: 3}
-  rubEyes_Stage02:
-  - {fileID: 8300000, guid: 59e761e46957a034582dc2951beffae1, type: 3}
-  - {fileID: 8300000, guid: 43ac3c31f490fde49b72498840613a89, type: 3}
-  - {fileID: 8300000, guid: 6bcd6cdf32a47b148b6a947c4c8f973f, type: 3}
-  sleepingBeauty_Stage01:
-  - {fileID: 8300000, guid: 8d5da33dafac64b45ad906217587559b, type: 3}
-  wallOfLights_Stage01:
-  - {fileID: 8300000, guid: 0b4f43e5fc2afa547b02da6bd3d47f2a, type: 3}
-  wallOfLights_Stage02:
-  - {fileID: 8300000, guid: 2b70ca5eb19ec7445b26b0e10915735a, type: 3}
-  wallOfLightsOver_Stage01:
-  - {fileID: 8300000, guid: 244b19a007566ad4bbaa302fddefa88c, type: 3}
-  locked_Stage01:
-  - {fileID: 8300000, guid: 6510ec18261243b4b86f96b663950c5d, type: 3}
-  locked_Stage02:
-  - {fileID: 8300000, guid: a4761d81dc5b60b4e8e9bbaf6f8259d5, type: 3}
-  goal_Stage01:
-  - {fileID: 8300000, guid: d42a6321925a6234bb8cea3bf99b4c3c, type: 3}
-  goal_Stage02:
-  - {fileID: 8300000, guid: d726a336c0913574a94681c61c41dfcb, type: 3}
 --- !u!114 &11461736
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2578,29 +2570,6 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: Sound Volume
---- !u!114 &11497280
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 123434}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 87f57cf5360c8284e89b008da65e1b98, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  timeTillWakeupSoundStarts: 2
-  timeTillFirstDoorOpens: 11
-  standardColorLerpTime: 3
-  gazedColorLerpTime: .400000006
-  standardPanelColor: {r: .0862745121, g: 0, b: .301960796, a: 1}
-  highlightedPanelColor: {r: .139705896, g: .928803205, b: 1, a: 1}
-  gazePanelColor: {r: 0, g: .95588237, b: .599898517, a: 0}
-  activatedPanelColor: {r: 0, g: .816176474, b: .275811464, a: 0}
-  wallLightColor1: {r: .250980407, g: .356862754, b: .874509811, a: 1}
-  wallLightColor2: {r: .95588237, g: .850405753, b: 0, a: 0}
-  wallLightColor3: {r: 0, g: 0, b: 0, a: 0}
-  wallLightColor4: {r: 0, g: 0, b: 0, a: 0}
 --- !u!114 &11497638
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2681,7 +2650,7 @@ ParticleSystem:
   InitialModule:
     enabled: 1
     startLifetime:
-      scalar: 3
+      scalar: 4.80000019
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -2696,7 +2665,7 @@ ParticleSystem:
         serializedVersion: 2
         m_Curve:
         - time: 0
-          value: .166666672
+          value: .104166664
           inSlope: 0
           outSlope: 0
           tangentMode: 0
@@ -2976,7 +2945,7 @@ ParticleSystem:
   RotationModule:
     enabled: 1
     curve:
-      scalar: 6.28318501
+      scalar: 8.72664642
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -3026,10 +2995,10 @@ ParticleSystem:
         key7:
           serializedVersion: 2
           rgba: 0
-        ctime0: 26792
-        ctime1: 36044
-        ctime2: 40670
-        ctime3: 45104
+        ctime0: 30840
+        ctime1: 47995
+        ctime2: 50115
+        ctime3: 52235
         ctime4: 65535
         ctime5: 65535
         ctime6: 65535
@@ -3949,7 +3918,7 @@ RectTransform:
   m_Children:
   - {fileID: 22492688}
   m_Father: {fileID: 427088}
-  m_RootOrder: 3
+  m_RootOrder: 1
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
@@ -4070,7 +4039,7 @@ RectTransform:
   m_Children:
   - {fileID: 22493628}
   m_Father: {fileID: 427088}
-  m_RootOrder: 2
+  m_RootOrder: 4
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
@@ -4556,7 +4525,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 128898}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: .00024414061}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 22462040}
