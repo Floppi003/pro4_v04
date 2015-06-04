@@ -3187,15 +3187,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 466580, guid: 49bf5176c56b87441891c2e6ff4a9b05, type: 2}
       propertyPath: m_LocalPosition.z
-<<<<<<< HEAD
-<<<<<<< HEAD
-      value: -1
-=======
       value: .460000008
->>>>>>> origin/master
-=======
-      value: .460000008
->>>>>>> origin/master
       objectReference: {fileID: 0}
     - target: {fileID: 466580, guid: 49bf5176c56b87441891c2e6ff4a9b05, type: 2}
       propertyPath: m_LocalRotation.x
@@ -3220,6 +3212,10 @@ Prefab:
     - target: {fileID: 147428, guid: 49bf5176c56b87441891c2e6ff4a9b05, type: 2}
       propertyPath: m_Name
       value: Floor 2x25
+      objectReference: {fileID: 0}
+    - target: {fileID: 444924, guid: 005d3f7678259bf4cb8b376fa40c14aa, type: 2}
+      propertyPath: m_LocalScale.z
+      value: .683053851
       objectReference: {fileID: 0}
     - target: {fileID: 444924, guid: 005d3f7678259bf4cb8b376fa40c14aa, type: 2}
       propertyPath: m_LocalScale.z
