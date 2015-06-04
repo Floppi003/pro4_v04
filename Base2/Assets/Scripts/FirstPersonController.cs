@@ -5,6 +5,12 @@ using System.Collections.Generic;
 
 [RequireComponent (typeof (GravityBody))]
 public class FirstPersonController : MonoBehaviour {
+	// stair grounded
+	private RaycastHit stairRaycast;
+	bool firstStairCast = false;
+	private RaycastHit stairRaycast2;
+	bool secondStairCast = false;
+	
 	// head bob movement
 	float minimum = 0.624F;
 	float maximum = 0.67F;
@@ -72,6 +78,7 @@ public class FirstPersonController : MonoBehaviour {
 	
 	void Update() {
 		// test for footstep sound
+		/*
 		Vector3 distance = transform.position - previousPosition;
 		previousPosition = transform.position;
 
@@ -87,9 +94,9 @@ public class FirstPersonController : MonoBehaviour {
 
 		// calculate average
 		float averageWalkingDistance = totalWalkingDistance / walkingDistanceQueue.Count;
-
+*/
 		// play the walking sound if player walked enough
-		if (averageWalkingDistance > 0.05f && IsGrounded()) {
+		if (IsGrounded() && ((Input.GetAxisRaw("Vertical")!= 0) || Input.GetAxisRaw("Horizontal")!= 0)) {
 			if (audioSource.isPlaying == false) {
 				this.audioSource.Play ();
 			}
@@ -98,7 +105,7 @@ public class FirstPersonController : MonoBehaviour {
 		}
 
 		// dequeue a walkingdistance
-		walkingDistanceQueue.Dequeue ();
+//		walkingDistanceQueue.Dequeue ();
 
 
 		timeSinceLastButtonAudioPlay += Time.deltaTime;
@@ -178,16 +185,29 @@ public class FirstPersonController : MonoBehaviour {
 					time = 0;
 				}
 			}
-			Debug.Log ("Camera Transform " + cameraTransform.localPosition.y);
 		}
 	}
 	
 	bool IsGrounded ()
 	{
 		//Physics.Raycast(ray, out hit, 1 + .2f, groundedMask
-		return (Physics.Raycast (transform.position, - transform.up, 1 + 0.3f, groundedMask)); //letzter Parameter groundedMask
+		bool ground = Physics.Raycast (transform.position, - transform.up, 1 + 0.3f, groundedMask);
+		return (ground || IsStairGrounded ()); //letzter Parameter groundedMask
 	}
-	
+
+	bool IsStairGrounded(){
+		//Debug.DrawRay (transform.position, -transform.up, Color.magenta, 1.5F);
+		if (Physics.Raycast (transform.position, -transform.up, out stairRaycast, 1.5F)) {
+			Debug.Log (stairRaycast.collider.gameObject.name);
+			if (stairRaycast.collider.gameObject.name == "Slope Collider") {
+				return true;
+			}
+		} else {
+			//Debug.LogError ("No hit");
+		}
+		return false;
+	}
+
 	void FixedUpdate() {
 		// Apply movement to rigidbody
 		Vector3 localMove = transform.TransformDirection(moveAmount) * Time.deltaTime; //transform to local space (instead of world space - move on the surface of the sphere)
