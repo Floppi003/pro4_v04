@@ -51,15 +51,14 @@ public class GameManager : MonoBehaviour {
 	{
 		pauseMenu.enabled = false;
 
-		// TODO: set default values for music volume, sound volume and mouse sensitivity if no playerprefs could be loaded
+		//PlayerPrefs.DeleteAll (); // use this to clear your PlayerPrefs
 
 		GameObject sensitivitySlider = pauseMenu.transform.Find("BG Panel").Find("Panel").Find("SensitivitySlider").gameObject;
-		sensitivitySlider.GetComponent<Slider>().value = PlayerPrefs.GetFloat("Sensitivity");
+		sensitivitySlider.GetComponent<Slider>().value = PlayerPrefs.GetFloat("Sensitivity", 260.0F); //260.0F
 		GameObject musicSlider = pauseMenu.transform.Find("BG Panel").Find("Panel").Find("MusicSlider").gameObject;
-		musicSlider.GetComponent<Slider>().value = PlayerPrefs.GetFloat("MusicVolume");
+		musicSlider.GetComponent<Slider>().value = PlayerPrefs.GetFloat("MusicVolume", 0.2F); //0.2F
 		GameObject soundSlider = pauseMenu.transform.Find("BG Panel").Find("Panel").Find("SoundSlider").gameObject;
-		soundSlider.GetComponent<Slider>().value = PlayerPrefs.GetFloat("SoundVolume");
-		Debug.Log ("Soundvolume " + PlayerPrefs.GetFloat("SoundVolume"));
+		soundSlider.GetComponent<Slider>().value = PlayerPrefs.GetFloat("SoundVolume", 0.5F); //0.5F
 
 		if (PlayerPrefs.GetInt("Level Unlocked") > 1) //if there are more levels unlocked than level 1, let him play them
 		{
@@ -74,6 +73,7 @@ public class GameManager : MonoBehaviour {
 		} else {
 			currentLevel = 1;
 		}
+		SaveGame ();
 	}
 	
 	public void CompleteLevel()

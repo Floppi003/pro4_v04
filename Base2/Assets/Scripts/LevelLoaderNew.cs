@@ -13,15 +13,15 @@ public class LevelLoaderNew : MonoBehaviour {
 	void Start()
 	{
 		unlockedLevel = PlayerPrefs.GetInt ("Level Unlocked");
-		PlayerPrefs.SetInt("Chosen Level", unlockedLevel);
-
-		doorText = "Level " + unlockedLevel + " fortsetzen";
-		GameObject.Find("ContinueDoor").GetComponent<TextMesh>().text = doorText;
 
 		if (unlockedLevel == 0) 
 		{
 			unlockedLevel = 1;
 		}
+
+		PlayerPrefs.SetInt("Chosen Level", unlockedLevel);
+		doorText = "Level " + unlockedLevel + " fortsetzen";
+		GameObject.Find("ContinueDoor").GetComponent<TextMesh>().text = doorText;
 
 		canLoadLevel = levelToLoad <= unlockedLevel ? true : false;
 		if (canLoadLevel) {
