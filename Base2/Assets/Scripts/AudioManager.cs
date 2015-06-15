@@ -121,7 +121,6 @@ public class AudioManager : MonoBehaviour {
 		//change volume of sound effects (speech)
 		//AudioListener audioListner = GameObject.Find ("Main Camera").GetComponent<AudioListener> ();
 		//AudioListener.volume = soundVolume;
-		Debug.Log ("Sound Volume changed!");
 		audioSource.volume = soundVolume;
 		footStepsAudioSource.volume = soundVolume;
 		PlayerPrefs.SetFloat("SoundVolume", (float) soundVolume);
@@ -131,7 +130,6 @@ public class AudioManager : MonoBehaviour {
 
 	public void ChangeMusicVolume(float musicVolume){ // between 0 and 1
 		//change volume of background music
-		Debug.Log ("Music volume changed!");
 		backgroundAudioSource.volume = musicVolume;
 		PlayerPrefs.SetFloat("MusicVolume", (float) musicVolume);
 		// Best tutorial:
