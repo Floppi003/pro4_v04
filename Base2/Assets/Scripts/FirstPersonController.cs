@@ -27,6 +27,7 @@ public class FirstPersonController : MonoBehaviour {
 	// public vars
 	public float mouseSensitivityX = 250;
 	public float mouseSensitivityY = 250;
+	public float jumpCD = 0.0F;
 	public float walkSpeed = 6; //movement/walking speed
 	public float jumpForce = 260; //jump height/strength
 	public float jumpDamping = 3.5f; // reduced movement while jumping
@@ -139,7 +140,7 @@ public class FirstPersonController : MonoBehaviour {
 			jumpWidth = (jumpEnd - jumpStart).magnitude;
 		}
 		
-		if (Input.GetButtonDown("Jump")) {
+		if (Input.GetButtonDown("Jump") && jumpCD <= 0) {
 			if (IsGrounded()) {
 				jumpStart = GetComponent<Rigidbody>().position; //-----------
 				inAir = true;
@@ -147,6 +148,8 @@ public class FirstPersonController : MonoBehaviour {
 
 				// also play audio sound
 				AudioManager.instance.playSoundEffect(audioFiles.jumpSound);
+
+				jumpCD = 0.3F;
 			}
 		}
 
@@ -185,6 +188,10 @@ public class FirstPersonController : MonoBehaviour {
 					time = 0;
 				}
 			}
+		}
+
+		if (jumpCD > 0) {
+			jumpCD -= Time.deltaTime;
 		}
 	}
 	
