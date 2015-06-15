@@ -18,7 +18,8 @@ public class AudioButton : MonoBehaviour {
 		active = 0;
 		buttonFrame = this.transform.GetChild (1);
 		buttonCenter = this.transform.GetChild (2);
-		door = GameObject.Find ("Door ColorButtons");
+		door = GameObject.Find ("Door AudioButtons");
+		Debug.LogError (door);
 		//defaultMaterial = this.transform.GetChild (1).GetChild(0).GetComponent<Renderer> ().material;
 	}
 	
@@ -34,15 +35,16 @@ public class AudioButton : MonoBehaviour {
 	}
 	
 	private void changeColor(Transform obj) {
-		
 		oldMaterial = obj.GetComponent<Renderer> ().material;
 		
 		obj.GetComponent<Renderer> ().material = activeMaterial;
 	}
 	
 	public void push() {
-		// animate rein
+		// animate rein und wieder raus
 		this.GetComponent<Animator> ().Play ("Push");
+		// send to AudioButtonManager
+		door.GetComponent<AudioButtonManager>().pushButton(activeMaterial);
 	}
 	
 	public void hit(Collider col) {

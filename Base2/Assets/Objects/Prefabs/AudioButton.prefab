@@ -13,7 +13,7 @@ GameObject:
   - 114: {fileID: 11418618}
   m_Layer: 0
   m_Name: AudioButton
-  m_TagString: ColorButton
+  m_TagString: AudioButton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -248,7 +248,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc2c0077a72d3b1498613aa5a5c84c60, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  activeMaterial: {fileID: 2100000, guid: 7ac67f36e89e50b48ac7f26478a30a41, type: 2}
+  activeMaterial: {fileID: 2100000, guid: 9edd85367553df44484f9e87e2a27cc1, type: 2}
   lifetime: .5
   door: {fileID: 0}
 --- !u!1001 &100100000

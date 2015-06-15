@@ -78,6 +78,8 @@ public class GazePointDataComponent : MonoBehaviour
 
 					//colorCollider.transform.position = gazeRaycastHit.transform.position;
 					//colliderAlive = 0.5f;
+				} else if (gazeRaycastHit.transform.gameObject.tag == "AudioButton") {
+					gazeRaycastHit.collider.gameObject.GetComponent<AudioButton>().hit(gazeRaycastHit.collider);
 				}
 
 				/*--------AudioFilesLevelFloppi afFloppi = GameObject.Find ("AudioFilesLevelFloppi").GetComponent<AudioFilesLevelFloppi>();
