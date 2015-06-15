@@ -66,10 +66,12 @@ public class EyePosition_L3 : MonoBehaviour {
 			} else if (lastEyePosition.LeftEye.IsValid && !lastEyePosition.RightEye.IsValid) {
 				// only left eye is opened
 				this.eyesOpenedQueue.Enqueue (EyesOpened.Left);
+				eyesClosedCounter = eyesClosedCounter / 3;
 			
 			} else if (!lastEyePosition.LeftEye.IsValid && lastEyePosition.RightEye.IsValid) {
 				// only right eye is opened
 				this.eyesOpenedQueue.Enqueue (EyesOpened.Right);
+				eyesClosedCounter = eyesClosedCounter / 3;
 			
 			} else {
 				// both eyes opened
