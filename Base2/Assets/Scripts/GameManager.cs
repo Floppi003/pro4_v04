@@ -57,6 +57,8 @@ public class GameManager : MonoBehaviour {
 		musicSlider.GetComponent<Slider>().value = PlayerPrefs.GetFloat("MusicVolume", 0.2F); //0.2F
 		GameObject soundSlider = pauseMenu.transform.Find("BG Panel").Find("Panel").Find("SoundSlider").gameObject;
 		soundSlider.GetComponent<Slider>().value = PlayerPrefs.GetFloat("SoundVolume", 0.5F); //0.5F
+		GameObject gammaSlider = pauseMenu.transform.Find("BG Panel").Find("Panel").Find("GammaSlider").gameObject;
+		gammaSlider.GetComponent<Slider>().value = PlayerPrefs.GetFloat("Gamma", 1.0F); //1.0F
 
 		if (PlayerPrefs.GetInt("Level Unlocked") > 1) //if there are more levels unlocked than level 1, let him play them
 		{
@@ -133,6 +135,11 @@ public class GameManager : MonoBehaviour {
 		SaveGame ();
 		Application.Quit ();
 		Time.timeScale = 1f;
+	}
+
+	public void ColorCorrection(float gamma){	//between 0.5 and 1
+		RenderSettings.ambientLight = new Color(gamma, gamma, gamma, 1.0f);	
+		PlayerPrefs.SetFloat("Gamma", (float) gamma);
 	}
 	
 	void OnGUI()
