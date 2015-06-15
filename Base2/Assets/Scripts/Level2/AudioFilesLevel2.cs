@@ -7,6 +7,7 @@ public class AudioFilesLevel2 : MonoBehaviour {
 	public AudioClip platformMovingSound;
 	public AudioClip buttonPressedSound;
 	public AudioClip buttonReleasedSound;
+	public AudioClip buttonGazedSound;
 
 	// Use this for initialization
 	void Start () {
