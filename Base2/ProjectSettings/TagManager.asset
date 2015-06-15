@@ -20,6 +20,7 @@ TagManager:
   - Exploder
   - WallLight_Level1
   - SavePoint
+  - AudioButton
   layers:
   - Default
   - TransparentFX
