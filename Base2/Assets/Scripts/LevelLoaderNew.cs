@@ -40,8 +40,9 @@ public class LevelLoaderNew : MonoBehaviour {
 	{
 		if (canLoadLevel) {
 			if (levelToLoad.ToString () == "0") {	//Reset Game
-				PlayerPrefs.SetInt("Level Unlocked", 1);
-				PlayerPrefs.SetInt ("Current Level", 1);
+				PlayerPrefs.DeleteAll (); // use this to clear your PlayerPrefs
+				//PlayerPrefs.SetInt("Level Unlocked", 1);
+				//PlayerPrefs.SetInt ("Current Level", 1);
 				Application.LoadLevel("Level 1");
 			} else {
 				PlayerPrefs.SetInt ("Current Level", levelToLoad);

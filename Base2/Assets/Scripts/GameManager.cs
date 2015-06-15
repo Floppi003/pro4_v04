@@ -7,7 +7,7 @@ public class GameManager : MonoBehaviour {
 	// Count
 	private int maxLevels = 4; //amount of levels in game (!=max id = maxLevels - 1)
 	private int currentLevel = 1; //start with 1 = id 0
-	private int unlockedLevel = 2; //start with 1 = id 0
+	private int unlockedLevel = 1; //start with 1 = id 0
 	
 	// Timer variables
 	//public Rect timerRect;
@@ -50,9 +50,9 @@ public class GameManager : MonoBehaviour {
 
 	void Cheat(){
 		if ((Input.GetButton ("ButtonPressed")) && (Input.GetButton ("Jump"))) {
-			unlockedLevel = maxLevels; //start with 1 = id 0
-			PlayerPrefs.SetInt ("Level Unlocked", unlockedLevel);
-			// updates for the next visit!
+			if(Application.loadedLevelName != "Central"){
+				CompleteLevel();
+			}
 		}
 	}
 
@@ -86,12 +86,10 @@ public class GameManager : MonoBehaviour {
 		if (PlayerPrefs.GetInt ("Current Level") == 0) {
 			if(Application.loadedLevelName == "Central"){
 				SaveGame ();
-				Debug.Log ("Whaat?: " + Application.loadedLevelName);
 				Application.LoadLevel("Level 1");
 			}
 		}
-		SaveGame ();	
-		//PlayerPrefs.DeleteAll (); // use this to clear your PlayerPrefs
+		SaveGame ();
 	}
 	
 	public void CompleteLevel()
