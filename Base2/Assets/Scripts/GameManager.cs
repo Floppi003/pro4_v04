@@ -51,8 +51,6 @@ public class GameManager : MonoBehaviour {
 	{
 		pauseMenu.enabled = false;
 
-		//PlayerPrefs.DeleteAll (); // use this to clear your PlayerPrefs
-
 		GameObject sensitivitySlider = pauseMenu.transform.Find("BG Panel").Find("Panel").Find("SensitivitySlider").gameObject;
 		sensitivitySlider.GetComponent<Slider>().value = PlayerPrefs.GetFloat("Sensitivity", 260.0F); //260.0F
 		GameObject musicSlider = pauseMenu.transform.Find("BG Panel").Find("Panel").Find("MusicSlider").gameObject;
@@ -73,7 +71,17 @@ public class GameManager : MonoBehaviour {
 		} else {
 			currentLevel = 1;
 		}
+
+		if (PlayerPrefs.GetInt ("Current Level") == 0) {
+			if(Application.loadedLevelName == "Central"){
+				SaveGame ();
+				Debug.Log ("Whaat?: " + Application.loadedLevelName);
+				Application.LoadLevel("Level 1");
+			}
+		}
 		SaveGame ();
+		
+		//PlayerPrefs.DeleteAll (); // use this to clear your PlayerPrefs
 	}
 	
 	public void CompleteLevel()
