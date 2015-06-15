@@ -2991,7 +2991,7 @@ TextMesh:
   m_TabSize: 4
   m_FontSize: 2000
   m_FontStyle: 0
-  m_RichText: 1
+  m_RichText: 0
   m_Font: {fileID: 12800000, guid: e4c1386c65d0a884db6cca05d50f9139, type: 3}
   m_Color:
     serializedVersion: 2
@@ -3003,14 +3003,14 @@ MeshRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 424541638}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
+  m_Enabled: 0
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
   m_Materials:
-  - {fileID: 2100000, guid: de8039f62a8c0404c8b0dfd3ad38ad24, type: 2}
+  - {fileID: 2100000, guid: 9271ec244d1101842add63defca6e040, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
-  m_UseLightProbes: 1
+  m_UseLightProbes: 0
   m_ReflectionProbeUsage: 1
   m_ProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
@@ -4691,10 +4691,10 @@ TextMesh:
   m_LineSpacing: 1
   m_Anchor: 1
   m_Alignment: 1
-  m_TabSize: 7
+  m_TabSize: 4
   m_FontSize: 2000
   m_FontStyle: 0
-  m_RichText: 1
+  m_RichText: 0
   m_Font: {fileID: 12800000, guid: e4c1386c65d0a884db6cca05d50f9139, type: 3}
   m_Color:
     serializedVersion: 2
@@ -4706,14 +4706,14 @@ MeshRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 697393527}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
+  m_Enabled: 0
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
   m_Materials:
-  - {fileID: 2100000, guid: de8039f62a8c0404c8b0dfd3ad38ad24, type: 2}
+  - {fileID: 2100000, guid: a4372f2b0f98b5c41937d99da728fa6b, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
-  m_UseLightProbes: 1
+  m_UseLightProbes: 0
   m_ReflectionProbeUsage: 1
   m_ProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
