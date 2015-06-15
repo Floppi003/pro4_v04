@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class AudioButton : MonoBehaviour {
+public class AudioColorButton : MonoBehaviour {
 	
 	public Material activeMaterial;
 	public Material highlightMaterial;
@@ -27,8 +27,7 @@ public class AudioButton : MonoBehaviour {
 		if (active > 0) {
 			active -= Time.deltaTime;
 			if (active <= 0) {
-				buttonFrame.GetComponent<Renderer>().material = oldMaterial;
-				oldMaterial = null;
+				resetColor ();
 			}
 		}
 	}
@@ -43,17 +42,26 @@ public class AudioButton : MonoBehaviour {
 		// animate rein und wieder raus
 		this.GetComponent<Animator> ().Play ("Push");
 		// send to AudioButtonManager
-		door.GetComponent<AudioButtonManager>().pushButton(activeMaterial);
+		door.GetComponent<AudioColorButtonManager>().pushButton(activeMaterial, this);
 	}
 	
 	public void hit(Collider col) {
-		if (active <= 0) {
+		active += 2 * Time.deltaTime;
+
+		if (active <= 1) {
 			if (oldMaterial == null) {
-				door.GetComponent<AudioButtonManager>().hitButton(activeMaterial);
+				door.GetComponent<AudioColorButtonManager>().hitButton(activeMaterial);
 				
 				changeColor (buttonFrame);
 				active = 0.5f;
 			}
+		}
+	}
+
+	public void resetColor() {
+		if (oldMaterial != null) {
+			buttonFrame.GetComponent<Renderer> ().material = oldMaterial;
+			oldMaterial = null;
 		}
 	}
 }

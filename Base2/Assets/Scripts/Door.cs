@@ -14,7 +14,7 @@ public class Door : MonoBehaviour {
 			if (time <= 1) {
 				time += Time.deltaTime/duration;
 			}
-			transform.localScale = new Vector3 (1, Mathf.Lerp (minimum, maximum, time), 1);
+			transform.localScale = new Vector3 (transform.localScale.x, Mathf.Lerp (minimum, maximum, time), transform.localScale.z);
 		}
 	}
 	

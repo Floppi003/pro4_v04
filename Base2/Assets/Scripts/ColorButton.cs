@@ -28,18 +28,19 @@ public class ColorButton : MonoBehaviour {
 	void Update () {
 		if (alive > 0) {
 			alive -= Time.deltaTime;
-			if (alive <= 0) {	
-				buttonFrame.GetComponent<Renderer> ().material = oldMaterial;
-				buttonCenter.GetComponent<Renderer> ().material = oldMaterial;
-				oldMaterial = null;
+			if (alive <= 0) {
+				resetColor ();
 			}
 		}
 	}
 
 	private void changeColor(Transform obj) {
+		string a = obj.name;
+		//Debug.LogError (activeMaterial);
+		//Debug.LogError (obj.GetComponent<Renderer> ());
+		//Debug.LogError (obj.GetComponent<Renderer> ().material.name);
 
 		oldMaterial = obj.GetComponent<Renderer> ().material;
-			
 		obj.GetComponent<Renderer> ().material = activeMaterial;
 	}
 
@@ -77,5 +78,11 @@ public class ColorButton : MonoBehaviour {
 				changeColor (buttonFrame);
 			}
 		}
+	}
+
+	public void resetColor() {
+		buttonFrame.GetComponent<Renderer> ().material = oldMaterial;
+		buttonCenter.GetComponent<Renderer> ().material = oldMaterial;
+		oldMaterial = null;
 	}
 }

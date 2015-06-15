@@ -50,15 +50,19 @@ public class CameraRaycast : MonoBehaviour {
 				loadPrompt = "[F]  Knopf drücken";
 				showHint = true;
 				if(Input.GetButtonDown ("ButtonPressed")) {
-					Debug.Log("active");
 					interactionRaycastHit.collider.gameObject.GetComponent<ColorButton>().push();
 				}
 			} else if(interactionRaycastHit.collider.gameObject.tag == "AudioButton") { 	// Color Buttons
 				loadPrompt = "[F]  Knopf drücken";
 				showHint = true;
 				if(Input.GetButtonDown ("ButtonPressed")) {
-					Debug.Log("active");
 					interactionRaycastHit.collider.gameObject.GetComponent<AudioButton>().push();
+				}
+			} else if(interactionRaycastHit.collider.gameObject.tag == "AudioColorButton") { 	// Color Buttons
+				loadPrompt = "[F]  Knopf drücken";
+				showHint = true;
+				if(Input.GetButtonDown ("ButtonPressed")) {
+					interactionRaycastHit.collider.gameObject.GetComponent<AudioColorButton>().push();
 				}
 			}else {
 				loadPrompt = "";

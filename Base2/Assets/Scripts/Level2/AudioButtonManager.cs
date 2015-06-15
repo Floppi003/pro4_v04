@@ -4,6 +4,8 @@ using System.Collections;
 public class AudioButtonManager : MonoBehaviour {
 
 	public Material[] colorCode; 
+	
+	private AudioFilesLevel2 audioFiles;
 
 	private int counter;
 	private bool open;
@@ -12,6 +14,7 @@ public class AudioButtonManager : MonoBehaviour {
 	void Start () {
 		counter = 0;
 		open = false;
+		audioFiles = GameObject.Find ("GM").GetComponent<AudioFilesLevel2>();
 	}
 	
 	// Update is called once per frame
@@ -20,16 +23,26 @@ public class AudioButtonManager : MonoBehaviour {
 
 	public void pushButton(Material mat) {
 		// add pushed button to counter
-		if (!open && colorCode[counter] == mat) {
+		if (open) {return;}
+		if (colorCode[counter] == mat) {
 			counter++;
-			Debug.Log (counter);
-			if (counter == colorCode.Length - 1) {
+			if (counter == colorCode.Length) {
 				this.GetComponent<Door>().move = true;
 				open = true;
+				//TODO: change audio
+				AudioManager.instance.playSoundEffect (audioFiles.firstRiddleSuccessSound);
 			}
 		} else {
 			counter = 0;
+			//TODO: change audio
+			AudioManager.instance.playSoundEffect (audioFiles.buttonPressedSound);
 			// TODO: Play Error Sound
 		}
+	}
+
+	public void hitButton(Material mat) {		
+		// play audio sound
+		AudioManager.instance.playSoundEffect (audioFiles.buttonGazedSound);
+
 	}
 }

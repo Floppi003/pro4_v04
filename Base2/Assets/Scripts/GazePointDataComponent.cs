@@ -80,6 +80,8 @@ public class GazePointDataComponent : MonoBehaviour
 					//colliderAlive = 0.5f;
 				} else if (gazeRaycastHit.transform.gameObject.tag == "AudioButton") {
 					gazeRaycastHit.collider.gameObject.GetComponent<AudioButton>().hit(gazeRaycastHit.collider);
+				} else if (gazeRaycastHit.transform.gameObject.tag == "AudioColorButton") {
+					gazeRaycastHit.collider.gameObject.GetComponent<AudioColorButton>().hit(gazeRaycastHit.collider);
 				}
 
 				/*--------AudioFilesLevelFloppi afFloppi = GameObject.Find ("AudioFilesLevelFloppi").GetComponent<AudioFilesLevelFloppi>();
@@ -123,3 +125,4 @@ public class GazePointDataComponent : MonoBehaviour
 		Debug.Log ("setButtonMeshVisible: " + i);
 	}
 }
+

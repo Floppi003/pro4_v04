@@ -156,7 +156,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_Materials:
-  - {fileID: 2100000, guid: 7ac67f36e89e50b48ac7f26478a30a41, type: 2}
+  - {fileID: 2100000, guid: e1e0f6606ab5c15429d074ddd6a55aeb, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 1
@@ -249,6 +249,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   activeMaterial: {fileID: 2100000, guid: 9edd85367553df44484f9e87e2a27cc1, type: 2}
+  highlightMaterial: {fileID: 2100000, guid: c69b0b39e50927440978b3254e36a903, type: 2}
   lifetime: .5
   door: {fileID: 0}
 --- !u!1001 &100100000

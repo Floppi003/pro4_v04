@@ -21,6 +21,7 @@ TagManager:
   - WallLight_Level1
   - SavePoint
   - AudioButton
+  - AudioColorButton
   layers:
   - Default
   - TransparentFX
