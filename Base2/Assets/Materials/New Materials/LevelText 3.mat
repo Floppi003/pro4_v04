@@ -7,7 +7,7 @@ Material:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: LevelText 3
-  m_Shader: {fileID: 4800000, guid: 9059da28e0cba4340908fe7e251aca5a, type: 3}
+  m_Shader: {fileID: 4800000, guid: 5db7271c6d2f45d4d9f5cc354ecd55f7, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 5
   m_CustomRenderQueue: -1
