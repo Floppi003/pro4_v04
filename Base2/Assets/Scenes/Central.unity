@@ -3003,7 +3003,7 @@ MeshRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 424541638}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_Materials:
@@ -4573,7 +4573,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 484466, guid: 84fb57e84b8eb9e44bbcf5189766c8c8, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -100
+      value: -57
       objectReference: {fileID: 0}
     - target: {fileID: 484466, guid: 84fb57e84b8eb9e44bbcf5189766c8c8, type: 2}
       propertyPath: m_LocalPosition.z
@@ -4706,7 +4706,7 @@ MeshRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 697393527}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_Materials:
@@ -12727,6 +12727,14 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 10292664, guid: 58451e3656bb00a419cf275d60b51e9b, type: 2}
       propertyPath: m_Alignment
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2333174, guid: 58451e3656bb00a419cf275d60b51e9b, type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 7d7118ec779d4db48b3da7213b1827a7, type: 2}
+    - target: {fileID: 2333174, guid: 58451e3656bb00a419cf275d60b51e9b, type: 2}
+      propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
