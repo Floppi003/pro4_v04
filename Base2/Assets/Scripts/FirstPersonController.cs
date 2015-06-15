@@ -21,6 +21,8 @@ public class FirstPersonController : MonoBehaviour {
 	// references
 	public GameManager manager;
 	private Vector3 spawn;
+	public Vector3 spawnGravity = new Vector3(0,1,0);
+	public Quaternion spawnRotation;
 	
 	// public vars
 	public float mouseSensitivityX = 250;
@@ -44,11 +46,8 @@ public class FirstPersonController : MonoBehaviour {
 	// General Audio
 	private AudioSource audioSource;
 	private GeneralAudioFiles audioFiles;
-
 	private Queue<float> walkingDistanceQueue;
-
 	private Vector3 previousPosition;
-
 	private float timeSinceLastButtonAudioPlay = 0.0f;
 
 	// System vars
@@ -74,6 +73,8 @@ public class FirstPersonController : MonoBehaviour {
 
 		this.audioSource = GetComponent<AudioSource> ();
 		this.audioFiles = GetComponent<GeneralAudioFiles> ();
+
+		spawnRotation = transform.rotation;
 	}
 	
 	void Update() {
@@ -119,7 +120,7 @@ public class FirstPersonController : MonoBehaviour {
 		// Look rotation:
 		transform.Rotate(Vector3.up * Input.GetAxis("Mouse X") * mouseSensitivityX * Time.deltaTime);
 		verticalLookRotation += Input.GetAxis("Mouse Y") * mouseSensitivityY * Time.deltaTime;
-		verticalLookRotation = Mathf.Clamp(verticalLookRotation,-60,60);
+		verticalLookRotation = Mathf.Clamp(verticalLookRotation,-60,80);
 		cameraTransform.localEulerAngles = Vector3.left * verticalLookRotation;
 		
 		// Calculate movement:
@@ -236,12 +237,27 @@ public class FirstPersonController : MonoBehaviour {
 		if (other.transform.tag == "SavePoint")
 		{
 			spawn = other.transform.position;
+			spawnGravity = transform.GetComponent<GravityBody>().gravityUp;
+			spawnRotation = transform.rotation;
+		}
+	}
+
+	void OnTriggerStay(Collider other)
+	{
+		if (other.transform.tag == "SavePoint")
+		{
+			spawn = other.transform.position;
+			spawnGravity = transform.GetComponent<GravityBody>().gravityUp;
+			spawnRotation = transform.rotation;
 		}
 	}
 
 	public void Die()
 	{		
+		transform.GetComponent<GravityBody> ().gravityUp = spawnGravity;
+		transform.rotation = spawnRotation;
 		transform.position = spawn;
+		transform.GetComponent<Rigidbody> ().velocity = new Vector3 (0,0,0);
 	}
 	
 	public void ChangeMouseSensitivity(float sensitivity){
