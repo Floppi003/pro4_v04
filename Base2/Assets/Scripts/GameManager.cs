@@ -30,6 +30,7 @@ public class GameManager : MonoBehaviour {
 		if (Input.GetButtonDown ("PauseMenu") && !completed) {
 			PauseMenu();
 		}
+		Cheat ();
 	}
 	
 	public void PauseMenu(){
@@ -44,6 +45,14 @@ public class GameManager : MonoBehaviour {
 			Cursor.visible = false;
 			Screen.lockCursor = true;
 			Time.timeScale = 1f;
+		}
+	}
+
+	void Cheat(){
+		if ((Input.GetButton ("ButtonPressed")) && (Input.GetButton ("Jump"))) {
+			unlockedLevel = maxLevels; //start with 1 = id 0
+			PlayerPrefs.SetInt ("Level Unlocked", unlockedLevel);
+			// updates for the next visit!
 		}
 	}
 
@@ -81,8 +90,7 @@ public class GameManager : MonoBehaviour {
 				Application.LoadLevel("Level 1");
 			}
 		}
-		SaveGame ();
-		
+		SaveGame ();	
 		//PlayerPrefs.DeleteAll (); // use this to clear your PlayerPrefs
 	}
 	
