@@ -130,16 +130,16 @@ PlayerSettings:
   - width: 320
     height: 180
     banner: {fileID: 0}
-  resolutionDialogBanner: {fileID: 2800000, guid: a6f7f8446485980468e6a16b79ebb606,
+  resolutionDialogBanner: {fileID: 2800000, guid: 4cd52cc7d44578a4ea5d9b376e654220,
     type: 3}
   m_BuildTargetIcons:
   - m_BuildTarget: 
     m_Icons:
-    - m_Icon: {fileID: 2800000, guid: a6f7f8446485980468e6a16b79ebb606, type: 3}
+    - m_Icon: {fileID: 2800000, guid: 4cd52cc7d44578a4ea5d9b376e654220, type: 3}
       m_Size: 128
   - m_BuildTarget: Standalone
     m_Icons:
-    - m_Icon: {fileID: 2800000, guid: a6f7f8446485980468e6a16b79ebb606, type: 3}
+    - m_Icon: {fileID: 2800000, guid: 4cd52cc7d44578a4ea5d9b376e654220, type: 3}
       m_Size: 1024
     - m_Icon: {fileID: 0}
       m_Size: 512
