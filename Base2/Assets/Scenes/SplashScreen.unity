@@ -182,8 +182,9 @@ GameObject:
   - 33: {fileID: 511812971}
   - 64: {fileID: 511812970}
   - 23: {fileID: 511812969}
-  - 114: {fileID: 511812972}
   - 114: {fileID: 511812973}
+  - 114: {fileID: 511812974}
+  - 114: {fileID: 511812972}
   m_Layer: 0
   m_Name: Television
   m_TagString: Untagged
@@ -254,11 +255,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 511812967}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 37166d5e141455445a2c37531e6688a8, type: 3}
+  m_Script: {fileID: 11500000, guid: 85dfdea0fe10f1b43a993ec777c0ecc8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  delayTime: 5
-  done: 0
+  delayTime: 2
 --- !u!114 &511812973
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -270,6 +270,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d817cfca5b7ea3249b8e5ead6dd0d2ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &511812974
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 511812967}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37166d5e141455445a2c37531e6688a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  delayTime: 5
+  done: 0
 --- !u!1 &847490310
 GameObject:
   m_ObjectHideFlags: 0

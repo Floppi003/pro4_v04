@@ -8,7 +8,7 @@ public class SplashScreenDelayed : MonoBehaviour {
 		yield return new WaitForSeconds (delayTime);
 		//Application.LoadLevel ("Central");
 
-		//AutoFade.LoadLevel("Central" ,1,10,Color.black);
+		AutoFade.LoadLevel("Central" ,1,10,Color.black);
 		//levelname, fadeouttime, fadeintime, fadecolor
 	}
 }

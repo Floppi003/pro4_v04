@@ -20,7 +20,7 @@ public class SplashScreenLoader : MonoBehaviour {
 			return;
 		}
 		if (done) {
-			//Application.LoadLevel ("Central");
+			Application.LoadLevel ("Central");
 		}
 	}
 
