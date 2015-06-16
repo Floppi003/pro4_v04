@@ -13,6 +13,9 @@ public class AudioColorButtonManager : MonoBehaviour {
 	private ColorButton[] colorButtons;
 	private GameObject buttons;
 	private AudioColorButton obj;
+
+	private AudioFilesLevel2 audioFiles;
+
 	
 	// Use this for initialization
 	void Start () {
@@ -22,6 +25,8 @@ public class AudioColorButtonManager : MonoBehaviour {
 		buttons = GameObject.Find ("ButtonWall");
 		audioButtons = buttons.GetComponentsInChildren<AudioColorButton>();
 		colorButtons = buttons.GetComponentsInChildren<ColorButton>();
+
+		audioFiles = GameObject.Find ("GM").GetComponent<AudioFilesLevel2>();
 	}
 	
 	// Update is called once per frame
@@ -42,10 +47,14 @@ public class AudioColorButtonManager : MonoBehaviour {
 
 	public void pushButton(Material mat, AudioColorButton obj) {
 		counterPressed++;
+		AudioManager.instance.playSoundEffect (audioFiles.buttonPressedSound);
 	}
 
 	public void hitButton(Material mat, AudioColorButton obj) {
 		counterHit++;
+		AudioManager.instance.playSoundEffect (audioFiles.buttonGazedSound);
+
+
 		if (counterHit >= tries) {
 			this.obj = obj;
 			timeToChange = delayTime;

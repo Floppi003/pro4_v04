@@ -7,6 +7,10 @@ public class AudioButton : MonoBehaviour {
 	public Material highlightMaterial;
 	public float lifetime = 1; // 0 = infinity
 	public GameObject door;
+	public GameObject gazePoint;
+	public float activationTime = 1;
+	public float lockTime = 2;
+	public float minActiveTime = 0.25f;
 	
 	private Material oldMaterial;
 	private Transform buttonFrame;
@@ -29,6 +33,7 @@ public class AudioButton : MonoBehaviour {
 			if (active <= 0) {
 				buttonFrame.GetComponent<Renderer>().material = oldMaterial;
 				oldMaterial = null;
+				gazePoint.GetComponent<GazePointDataComponent>().active = true;
 			}
 		}
 	}
@@ -47,12 +52,19 @@ public class AudioButton : MonoBehaviour {
 	}
 	
 	public void hit(Collider col) {
-		if (active <= 0) {
+		if (active <= activationTime) {
+			active += 2 * Time.deltaTime;
+			
 			if (oldMaterial == null) {
 				door.GetComponent<AudioButtonManager>().hitButton(activeMaterial);
-				
+
 				changeColor (buttonFrame);
-				active = 0.5f;
+				active = minActiveTime;
+			}
+			
+			if(active >= activationTime) {
+				active = lockTime;
+				gazePoint.GetComponent<GazePointDataComponent>().active = false;
 			}
 		}
 	}

@@ -24,6 +24,7 @@ public class AudioButtonManager : MonoBehaviour {
 	public void pushButton(Material mat) {
 		// add pushed button to counter
 		if (open) {return;}
+
 		if (colorCode[counter] == mat) {
 			counter++;
 			if (counter == colorCode.Length) {

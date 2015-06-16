@@ -8,6 +8,10 @@ public class AudioColorButton : MonoBehaviour {
 	public float lifetime = 1; // 0 = infinity
 	public GameObject door;
 	public GameObject gazePoint;
+	public float activationTime = 1;
+	public float lockTime = 2;
+	public float minActiveTime = 0.25f;
+
 	
 	private Material oldMaterial;
 	private Transform buttonFrame;
@@ -48,16 +52,16 @@ public class AudioColorButton : MonoBehaviour {
 	}
 	
 	public void hit(Collider col) {
-		if (active <= 1) {
+		if (active <= activationTime) {
 			active += 2 * Time.deltaTime;
 
 			if (oldMaterial == null) {
 				changeColor (buttonFrame);
-				active = 0.5f;
+				active = minActiveTime;
 			}
 
-			if(active >= 1) {
-				active = 3;
+			if(active >= activationTime) {
+				active = lockTime;
 				gazePoint.GetComponent<GazePointDataComponent>().active = false;
 				door.GetComponent<AudioColorButtonManager>().hitButton(activeMaterial, this);
 			}
