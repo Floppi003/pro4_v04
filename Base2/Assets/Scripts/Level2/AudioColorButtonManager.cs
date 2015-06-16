@@ -2,14 +2,26 @@
 using System.Collections;
 
 public class AudioColorButtonManager : MonoBehaviour {
+	public int tries = 2;
+	public float delayTime = 5;
+
 	private int counterPressed;
 	private int counterHit;
 	private float timeToChange = -1;
-
+	
+	private AudioColorButton[] audioButtons;
+	private ColorButton[] colorButtons;
+	private GameObject buttons;
+	private AudioColorButton obj;
+	
 	// Use this for initialization
 	void Start () {
 		counterPressed = 0;
 		counterHit = 0;
+		
+		buttons = GameObject.Find ("ButtonWall");
+		audioButtons = buttons.GetComponentsInChildren<AudioColorButton>();
+		colorButtons = buttons.GetComponentsInChildren<ColorButton>();
 	}
 	
 	// Update is called once per frame
@@ -17,7 +29,13 @@ public class AudioColorButtonManager : MonoBehaviour {
 		if (timeToChange > 0) {
 			timeToChange -= Time.deltaTime;
 			if (timeToChange <= 0) {
-
+				// activate color functionality
+				for (int i = 0; i < audioButtons.Length; i++) {
+					colorButtons[i].enabled = true;
+					buttons.transform.GetChild(i).tag = "ColorButton";
+				}
+				// enable highlighting
+				obj.gazePoint.GetComponent<GazePointDataComponent>().active = true;
 			}
 		}
 	}
@@ -28,21 +46,17 @@ public class AudioColorButtonManager : MonoBehaviour {
 
 	public void hitButton(Material mat, AudioColorButton obj) {
 		counterHit++;
-		Debug.LogError (counterHit);
+		if (counterHit >= tries) {
+			this.obj = obj;
+			timeToChange = delayTime;
 
-		if (counterHit >= 2) {
-			timeToChange = 5;
+			// reset Color and lock highlighting
 			obj.resetColor();
-			obj.gazePoint.GetComponent<GazePointDataComponent>().active = true;
-			
-			AudioColorButton[] audioButtons = GameObject.Find("ButtonWall").GetComponentsInChildren<AudioColorButton>();
-			ColorButton[] colorButtons = GameObject.Find("ButtonWall").GetComponentsInChildren<ColorButton>();
-			GameObject buttons = GameObject.Find ("ButtonWall");
+			obj.gazePoint.GetComponent<GazePointDataComponent>().active = false;
+
+			// deactivate audio functionality
 			for (int i = 0; i < audioButtons.Length; i++) {
-				
 				audioButtons[i].enabled = false;
-				colorButtons[i].enabled = true;
-				buttons.transform.GetChild(i).tag = "ColorButton";
 			}
 		}
 	}
