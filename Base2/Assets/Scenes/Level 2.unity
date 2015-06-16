@@ -156,6 +156,7 @@ MonoBehaviour:
   highlightMaterial: {fileID: 2100000, guid: c69b0b39e50927440978b3254e36a903, type: 2}
   lifetime: 1
   door: {fileID: 19977542}
+  gazePoint: {fileID: 875987839}
 --- !u!4 &16933220
 Transform:
   m_PrefabParentObject: {fileID: 414618, guid: d7df651f8ee614f4bb42bd99df09705f, type: 2}
@@ -272,6 +273,7 @@ MonoBehaviour:
   highlightMaterial: {fileID: 2100000, guid: c69b0b39e50927440978b3254e36a903, type: 2}
   lifetime: 1
   door: {fileID: 19977542}
+  gazePoint: {fileID: 875987839}
 --- !u!1001 &57788023
 Prefab:
   m_ObjectHideFlags: 0
@@ -519,6 +521,7 @@ MonoBehaviour:
   highlightMaterial: {fileID: 2100000, guid: c69b0b39e50927440978b3254e36a903, type: 2}
   lifetime: 1
   door: {fileID: 19977542}
+  gazePoint: {fileID: 875987839}
 --- !u!4 &112954386
 Transform:
   m_PrefabParentObject: {fileID: 414618, guid: d7df651f8ee614f4bb42bd99df09705f, type: 2}
@@ -542,6 +545,7 @@ MonoBehaviour:
   highlightMaterial: {fileID: 2100000, guid: c69b0b39e50927440978b3254e36a903, type: 2}
   lifetime: 1
   door: {fileID: 19977542}
+  gazePoint: {fileID: 875987839}
 --- !u!4 &114992421
 Transform:
   m_PrefabParentObject: {fileID: 414618, guid: d7df651f8ee614f4bb42bd99df09705f, type: 2}
@@ -669,6 +673,7 @@ MonoBehaviour:
   highlightMaterial: {fileID: 2100000, guid: c69b0b39e50927440978b3254e36a903, type: 2}
   lifetime: 1
   door: {fileID: 19977542}
+  gazePoint: {fileID: 875987839}
 --- !u!1001 &162182378
 Prefab:
   m_ObjectHideFlags: 0
@@ -758,6 +763,7 @@ MonoBehaviour:
   highlightMaterial: {fileID: 2100000, guid: c69b0b39e50927440978b3254e36a903, type: 2}
   lifetime: 1
   door: {fileID: 19977542}
+  gazePoint: {fileID: 875987839}
 --- !u!4 &169435959
 Transform:
   m_PrefabParentObject: {fileID: 487848, guid: a42dfa69a8e6b3a4cb205d2fcfccd7e1, type: 2}
@@ -928,6 +934,7 @@ MonoBehaviour:
   highlightMaterial: {fileID: 2100000, guid: c69b0b39e50927440978b3254e36a903, type: 2}
   lifetime: 1
   door: {fileID: 19977542}
+  gazePoint: {fileID: 875987839}
 --- !u!4 &211668681
 Transform:
   m_PrefabParentObject: {fileID: 487848, guid: a42dfa69a8e6b3a4cb205d2fcfccd7e1, type: 2}
@@ -1265,6 +1272,7 @@ MonoBehaviour:
   highlightMaterial: {fileID: 2100000, guid: c69b0b39e50927440978b3254e36a903, type: 2}
   lifetime: 1
   door: {fileID: 19977542}
+  gazePoint: {fileID: 875987839}
 --- !u!4 &258963618
 Transform:
   m_PrefabParentObject: {fileID: 424146, guid: 9f9650ce1de79ce4f8b84a5f6c319559, type: 2}
@@ -1458,6 +1466,7 @@ MonoBehaviour:
   highlightMaterial: {fileID: 2100000, guid: c69b0b39e50927440978b3254e36a903, type: 2}
   lifetime: 1
   door: {fileID: 19977542}
+  gazePoint: {fileID: 875987839}
 --- !u!1 &295128797
 GameObject:
   m_PrefabParentObject: {fileID: 121520, guid: d7df651f8ee614f4bb42bd99df09705f, type: 2}
@@ -1477,6 +1486,7 @@ MonoBehaviour:
   highlightMaterial: {fileID: 2100000, guid: c69b0b39e50927440978b3254e36a903, type: 2}
   lifetime: 1
   door: {fileID: 19977542}
+  gazePoint: {fileID: 875987839}
 --- !u!1001 &300467796
 Prefab:
   m_ObjectHideFlags: 0
@@ -1554,6 +1564,7 @@ MonoBehaviour:
   highlightMaterial: {fileID: 2100000, guid: c69b0b39e50927440978b3254e36a903, type: 2}
   lifetime: 1
   door: {fileID: 19977542}
+  gazePoint: {fileID: 875987839}
 --- !u!4 &308640314
 Transform:
   m_PrefabParentObject: {fileID: 447732, guid: 9724f5c58a4264f4495d3cd71e8bc822, type: 2}
@@ -1665,6 +1676,7 @@ MonoBehaviour:
   highlightMaterial: {fileID: 2100000, guid: c69b0b39e50927440978b3254e36a903, type: 2}
   lifetime: 1
   door: {fileID: 19977542}
+  gazePoint: {fileID: 875987839}
 --- !u!1001 &326517421
 Prefab:
   m_ObjectHideFlags: 0
@@ -1900,6 +1912,7 @@ MonoBehaviour:
   highlightMaterial: {fileID: 2100000, guid: c69b0b39e50927440978b3254e36a903, type: 2}
   lifetime: 1
   door: {fileID: 19977542}
+  gazePoint: {fileID: 875987839}
 --- !u!4 &367344112
 Transform:
   m_PrefabParentObject: {fileID: 484028, guid: af56d3bf48e76e0499f15651a7ec4068, type: 2}
@@ -1927,6 +1940,7 @@ MonoBehaviour:
   highlightMaterial: {fileID: 2100000, guid: c69b0b39e50927440978b3254e36a903, type: 2}
   lifetime: 1
   door: {fileID: 19977542}
+  gazePoint: {fileID: 875987839}
 --- !u!1001 &372952431
 Prefab:
   m_ObjectHideFlags: 0
@@ -2062,6 +2076,7 @@ MonoBehaviour:
   highlightMaterial: {fileID: 2100000, guid: c69b0b39e50927440978b3254e36a903, type: 2}
   lifetime: 1
   door: {fileID: 19977542}
+  gazePoint: {fileID: 875987839}
 --- !u!1001 &400214260
 Prefab:
   m_ObjectHideFlags: 0
@@ -2169,6 +2184,7 @@ MonoBehaviour:
   highlightMaterial: {fileID: 2100000, guid: c69b0b39e50927440978b3254e36a903, type: 2}
   lifetime: 1
   door: {fileID: 19977542}
+  gazePoint: {fileID: 875987839}
 --- !u!1001 &426171160
 Prefab:
   m_ObjectHideFlags: 0
@@ -2466,6 +2482,7 @@ MonoBehaviour:
   highlightMaterial: {fileID: 2100000, guid: c69b0b39e50927440978b3254e36a903, type: 2}
   lifetime: 1
   door: {fileID: 19977542}
+  gazePoint: {fileID: 875987839}
 --- !u!1001 &453630475
 Prefab:
   m_ObjectHideFlags: 0
@@ -3002,6 +3019,7 @@ MonoBehaviour:
   highlightMaterial: {fileID: 2100000, guid: c69b0b39e50927440978b3254e36a903, type: 2}
   lifetime: 1
   door: {fileID: 19977542}
+  gazePoint: {fileID: 875987839}
 --- !u!4 &520706927
 Transform:
   m_PrefabParentObject: {fileID: 447732, guid: 9724f5c58a4264f4495d3cd71e8bc822, type: 2}
@@ -3129,6 +3147,7 @@ MonoBehaviour:
   highlightMaterial: {fileID: 2100000, guid: c69b0b39e50927440978b3254e36a903, type: 2}
   lifetime: 1
   door: {fileID: 19977542}
+  gazePoint: {fileID: 875987839}
 --- !u!4 &546836394
 Transform:
   m_PrefabParentObject: {fileID: 414618, guid: d7df651f8ee614f4bb42bd99df09705f, type: 2}
@@ -3198,6 +3217,7 @@ MonoBehaviour:
   highlightMaterial: {fileID: 2100000, guid: c69b0b39e50927440978b3254e36a903, type: 2}
   lifetime: 1
   door: {fileID: 19977542}
+  gazePoint: {fileID: 875987839}
 --- !u!1 &569953165
 GameObject:
   m_PrefabParentObject: {fileID: 121520, guid: d7df651f8ee614f4bb42bd99df09705f, type: 2}
@@ -3217,6 +3237,7 @@ MonoBehaviour:
   highlightMaterial: {fileID: 2100000, guid: c69b0b39e50927440978b3254e36a903, type: 2}
   lifetime: 1
   door: {fileID: 19977542}
+  gazePoint: {fileID: 875987839}
 --- !u!4 &597950228
 Transform:
   m_PrefabParentObject: {fileID: 496146, guid: 6dd4619ac3135634095102d9d8ee68a7, type: 2}
@@ -3594,6 +3615,7 @@ MonoBehaviour:
   highlightMaterial: {fileID: 2100000, guid: c69b0b39e50927440978b3254e36a903, type: 2}
   lifetime: 1
   door: {fileID: 19977542}
+  gazePoint: {fileID: 875987839}
 --- !u!4 &727912955
 Transform:
   m_PrefabParentObject: {fileID: 414618, guid: d7df651f8ee614f4bb42bd99df09705f, type: 2}
@@ -3943,6 +3965,7 @@ MonoBehaviour:
   highlightMaterial: {fileID: 2100000, guid: c69b0b39e50927440978b3254e36a903, type: 2}
   lifetime: 1
   door: {fileID: 19977542}
+  gazePoint: {fileID: 875987839}
 --- !u!1001 &823912061
 Prefab:
   m_ObjectHideFlags: 0
@@ -4241,6 +4264,7 @@ MonoBehaviour:
   highlightMaterial: {fileID: 2100000, guid: c69b0b39e50927440978b3254e36a903, type: 2}
   lifetime: 1
   door: {fileID: 19977542}
+  gazePoint: {fileID: 875987839}
 --- !u!1001 &853459536
 Prefab:
   m_ObjectHideFlags: 0
@@ -4307,7 +4331,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gazePointDataMode: 2
-  colorCollider: {fileID: 0}
+  active: 1
 --- !u!114 &875987848
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4460,6 +4484,7 @@ MonoBehaviour:
   highlightMaterial: {fileID: 2100000, guid: c69b0b39e50927440978b3254e36a903, type: 2}
   lifetime: 1
   door: {fileID: 19977542}
+  gazePoint: {fileID: 875987839}
 --- !u!4 &912477883
 Transform:
   m_PrefabParentObject: {fileID: 487848, guid: a42dfa69a8e6b3a4cb205d2fcfccd7e1, type: 2}
@@ -4529,6 +4554,7 @@ MonoBehaviour:
   highlightMaterial: {fileID: 2100000, guid: c69b0b39e50927440978b3254e36a903, type: 2}
   lifetime: 1
   door: {fileID: 19977542}
+  gazePoint: {fileID: 875987839}
 --- !u!1001 &930538304
 Prefab:
   m_ObjectHideFlags: 0
@@ -4614,6 +4640,7 @@ MonoBehaviour:
   highlightMaterial: {fileID: 2100000, guid: c69b0b39e50927440978b3254e36a903, type: 2}
   lifetime: 1
   door: {fileID: 19977542}
+  gazePoint: {fileID: 875987839}
 --- !u!1001 &937494042
 Prefab:
   m_ObjectHideFlags: 0
@@ -5239,6 +5266,7 @@ MonoBehaviour:
   highlightMaterial: {fileID: 2100000, guid: c69b0b39e50927440978b3254e36a903, type: 2}
   lifetime: 1
   door: {fileID: 19977542}
+  gazePoint: {fileID: 875987839}
 --- !u!4 &1035087286
 Transform:
   m_PrefabParentObject: {fileID: 446908, guid: 8c402e19903378b48b09d0b2d75e8ec5, type: 2}
@@ -5708,6 +5736,7 @@ MonoBehaviour:
   highlightMaterial: {fileID: 2100000, guid: c69b0b39e50927440978b3254e36a903, type: 2}
   lifetime: 1
   door: {fileID: 19977542}
+  gazePoint: {fileID: 875987839}
 --- !u!1001 &1110175339
 Prefab:
   m_ObjectHideFlags: 0
@@ -6209,6 +6238,7 @@ MonoBehaviour:
   highlightMaterial: {fileID: 2100000, guid: c69b0b39e50927440978b3254e36a903, type: 2}
   lifetime: 1
   door: {fileID: 19977542}
+  gazePoint: {fileID: 875987839}
 --- !u!1 &1172338297
 GameObject:
   m_PrefabParentObject: {fileID: 121520, guid: d7df651f8ee614f4bb42bd99df09705f, type: 2}
@@ -6228,6 +6258,7 @@ MonoBehaviour:
   highlightMaterial: {fileID: 2100000, guid: c69b0b39e50927440978b3254e36a903, type: 2}
   lifetime: 1
   door: {fileID: 19977542}
+  gazePoint: {fileID: 875987839}
 --- !u!1001 &1178767889
 Prefab:
   m_ObjectHideFlags: 0
@@ -6383,6 +6414,7 @@ MonoBehaviour:
   highlightMaterial: {fileID: 2100000, guid: c69b0b39e50927440978b3254e36a903, type: 2}
   lifetime: 1
   door: {fileID: 19977542}
+  gazePoint: {fileID: 875987839}
 --- !u!1001 &1206152928
 Prefab:
   m_ObjectHideFlags: 0
@@ -6749,6 +6781,7 @@ MonoBehaviour:
   highlightMaterial: {fileID: 2100000, guid: c69b0b39e50927440978b3254e36a903, type: 2}
   lifetime: 1
   door: {fileID: 19977542}
+  gazePoint: {fileID: 875987839}
 --- !u!1001 &1295121552
 Prefab:
   m_ObjectHideFlags: 0
@@ -6864,6 +6897,7 @@ MonoBehaviour:
   highlightMaterial: {fileID: 2100000, guid: c69b0b39e50927440978b3254e36a903, type: 2}
   lifetime: 1
   door: {fileID: 19977542}
+  gazePoint: {fileID: 875987839}
 --- !u!4 &1314710296
 Transform:
   m_PrefabParentObject: {fileID: 487848, guid: a42dfa69a8e6b3a4cb205d2fcfccd7e1, type: 2}
@@ -7432,6 +7466,7 @@ MonoBehaviour:
   highlightMaterial: {fileID: 2100000, guid: c69b0b39e50927440978b3254e36a903, type: 2}
   lifetime: 1
   door: {fileID: 19977542}
+  gazePoint: {fileID: 875987839}
 --- !u!1001 &1374703752
 Prefab:
   m_ObjectHideFlags: 0
@@ -7931,6 +7966,7 @@ MonoBehaviour:
   highlightMaterial: {fileID: 2100000, guid: c69b0b39e50927440978b3254e36a903, type: 2}
   lifetime: 1
   door: {fileID: 19977542}
+  gazePoint: {fileID: 875987839}
 --- !u!4 &1449220936
 Transform:
   m_PrefabParentObject: {fileID: 487848, guid: a42dfa69a8e6b3a4cb205d2fcfccd7e1, type: 2}
@@ -8128,6 +8164,7 @@ MonoBehaviour:
   highlightMaterial: {fileID: 2100000, guid: c69b0b39e50927440978b3254e36a903, type: 2}
   lifetime: 1
   door: {fileID: 19977542}
+  gazePoint: {fileID: 875987839}
 --- !u!1001 &1497957835
 Prefab:
   m_ObjectHideFlags: 0
@@ -8704,6 +8741,7 @@ MonoBehaviour:
   highlightMaterial: {fileID: 2100000, guid: c69b0b39e50927440978b3254e36a903, type: 2}
   lifetime: 1
   door: {fileID: 19977542}
+  gazePoint: {fileID: 875987839}
 --- !u!1 &1582644855
 GameObject:
   m_PrefabParentObject: {fileID: 121520, guid: d7df651f8ee614f4bb42bd99df09705f, type: 2}
@@ -8723,6 +8761,7 @@ MonoBehaviour:
   highlightMaterial: {fileID: 2100000, guid: c69b0b39e50927440978b3254e36a903, type: 2}
   lifetime: 1
   door: {fileID: 19977542}
+  gazePoint: {fileID: 875987839}
 --- !u!1001 &1583484097
 Prefab:
   m_ObjectHideFlags: 0
@@ -9096,6 +9135,7 @@ MonoBehaviour:
   highlightMaterial: {fileID: 2100000, guid: c69b0b39e50927440978b3254e36a903, type: 2}
   lifetime: 1
   door: {fileID: 19977542}
+  gazePoint: {fileID: 875987839}
 --- !u!1001 &1638232425
 Prefab:
   m_ObjectHideFlags: 0
@@ -9555,6 +9595,7 @@ MonoBehaviour:
   highlightMaterial: {fileID: 2100000, guid: c69b0b39e50927440978b3254e36a903, type: 2}
   lifetime: 1
   door: {fileID: 19977542}
+  gazePoint: {fileID: 875987839}
 --- !u!1 &1746945891
 GameObject:
   m_PrefabParentObject: {fileID: 121520, guid: d7df651f8ee614f4bb42bd99df09705f, type: 2}
@@ -9574,6 +9615,7 @@ MonoBehaviour:
   highlightMaterial: {fileID: 2100000, guid: c69b0b39e50927440978b3254e36a903, type: 2}
   lifetime: 1
   door: {fileID: 19977542}
+  gazePoint: {fileID: 875987839}
 --- !u!1001 &1750418881
 Prefab:
   m_ObjectHideFlags: 0
@@ -9717,6 +9759,7 @@ MonoBehaviour:
   highlightMaterial: {fileID: 2100000, guid: c69b0b39e50927440978b3254e36a903, type: 2}
   lifetime: 1
   door: {fileID: 19977542}
+  gazePoint: {fileID: 875987839}
 --- !u!4 &1772178896
 Transform:
   m_PrefabParentObject: {fileID: 487848, guid: a42dfa69a8e6b3a4cb205d2fcfccd7e1, type: 2}
@@ -9848,6 +9891,7 @@ MonoBehaviour:
   highlightMaterial: {fileID: 2100000, guid: c69b0b39e50927440978b3254e36a903, type: 2}
   lifetime: 1
   door: {fileID: 19977542}
+  gazePoint: {fileID: 875987839}
 --- !u!4 &1785245517
 Transform:
   m_PrefabParentObject: {fileID: 457564, guid: c403932c1cb9f7a439e888999869efaa, type: 2}
@@ -10065,6 +10109,7 @@ MonoBehaviour:
   highlightMaterial: {fileID: 2100000, guid: c69b0b39e50927440978b3254e36a903, type: 2}
   lifetime: 1
   door: {fileID: 19977542}
+  gazePoint: {fileID: 875987839}
 --- !u!4 &1807710843
 Transform:
   m_PrefabParentObject: {fileID: 457564, guid: c403932c1cb9f7a439e888999869efaa, type: 2}
@@ -10267,6 +10312,7 @@ MonoBehaviour:
   highlightMaterial: {fileID: 2100000, guid: c69b0b39e50927440978b3254e36a903, type: 2}
   lifetime: 1
   door: {fileID: 19977542}
+  gazePoint: {fileID: 875987839}
 --- !u!1001 &1841908853
 Prefab:
   m_ObjectHideFlags: 0
@@ -10436,6 +10482,7 @@ MonoBehaviour:
   highlightMaterial: {fileID: 2100000, guid: c69b0b39e50927440978b3254e36a903, type: 2}
   lifetime: 1
   door: {fileID: 19977542}
+  gazePoint: {fileID: 875987839}
 --- !u!1001 &1866602170
 Prefab:
   m_ObjectHideFlags: 0
@@ -10532,6 +10579,7 @@ MonoBehaviour:
   highlightMaterial: {fileID: 2100000, guid: c69b0b39e50927440978b3254e36a903, type: 2}
   lifetime: 1
   door: {fileID: 19977542}
+  gazePoint: {fileID: 875987839}
 --- !u!4 &1892157424
 Transform:
   m_PrefabParentObject: {fileID: 484028, guid: af56d3bf48e76e0499f15651a7ec4068, type: 2}
@@ -10881,6 +10929,7 @@ MonoBehaviour:
   highlightMaterial: {fileID: 2100000, guid: c69b0b39e50927440978b3254e36a903, type: 2}
   lifetime: 1
   door: {fileID: 19977542}
+  gazePoint: {fileID: 875987839}
 --- !u!1001 &1954877771
 Prefab:
   m_ObjectHideFlags: 0
@@ -10946,6 +10995,7 @@ MonoBehaviour:
   highlightMaterial: {fileID: 2100000, guid: c69b0b39e50927440978b3254e36a903, type: 2}
   lifetime: 1
   door: {fileID: 19977542}
+  gazePoint: {fileID: 875987839}
 --- !u!4 &1965380623
 Transform:
   m_PrefabParentObject: {fileID: 414618, guid: d7df651f8ee614f4bb42bd99df09705f, type: 2}
@@ -11431,6 +11481,7 @@ MonoBehaviour:
   highlightMaterial: {fileID: 2100000, guid: c69b0b39e50927440978b3254e36a903, type: 2}
   lifetime: 1
   door: {fileID: 19977542}
+  gazePoint: {fileID: 875987839}
 --- !u!1001 &2062037064
 Prefab:
   m_ObjectHideFlags: 0
@@ -11692,6 +11743,7 @@ MonoBehaviour:
   highlightMaterial: {fileID: 2100000, guid: c69b0b39e50927440978b3254e36a903, type: 2}
   lifetime: 1
   door: {fileID: 19977542}
+  gazePoint: {fileID: 875987839}
 --- !u!1001 &2101254485
 Prefab:
   m_ObjectHideFlags: 0

@@ -62,6 +62,7 @@ public class ColorButton : MonoBehaviour {
 			this.GetComponent<Animator> ().Play ("Pop");
 			door.GetComponent<ColorButtonManager>().popButton(activeMaterial);
 
+			buttonCenter.GetComponent<Renderer> ().material = oldMaterial;
 			pushed = false;
 			alive = 0.001f;
 		}

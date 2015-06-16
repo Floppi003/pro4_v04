@@ -13,9 +13,10 @@ using System.Collections.Generic;
 public class GazePointDataComponent : MonoBehaviour
 {
     public GazePointDataMode gazePointDataMode = GazePointDataMode.LightlyFiltered;
-	public SphereCollider colorCollider;
+	public bool active = true;
+	//public SphereCollider colorCollider;
 
-	private float colliderAlive = 0;
+	//private float colliderAlive = 0;
     private EyeXHost _eyexHost;
     private IEyeXDataProvider<EyeXGazePoint> _dataProvider;
 	private RaycastHit gazeRaycastHit;
@@ -46,6 +47,10 @@ public class GazePointDataComponent : MonoBehaviour
 
     protected void Update()
     {
+		if (!active) {
+			return;
+		};
+
         LastGazePoint = _dataProvider.Last;
 
 		for (int i = 0; i < buttonList.Count; i++) {
@@ -113,12 +118,12 @@ public class GazePointDataComponent : MonoBehaviour
 			}
 		}
 
-		if (colliderAlive > 0) {
+		/*if (colliderAlive > 0) {
 			colliderAlive -= Time.deltaTime;
 			if (colliderAlive <= 0) {
 				colorCollider.transform.position = new Vector3(3, 4, -47);
 			}
-		}
+		}*/
     }
 
 	private void setButtonMeshVisible(int i) {
