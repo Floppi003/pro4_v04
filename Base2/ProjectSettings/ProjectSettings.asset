@@ -130,7 +130,7 @@ PlayerSettings:
   - width: 320
     height: 180
     banner: {fileID: 0}
-  resolutionDialogBanner: {fileID: 2800000, guid: 4cd52cc7d44578a4ea5d9b376e654220,
+  resolutionDialogBanner: {fileID: 2800000, guid: 5e22dccfcbbd62a4c96f932cd17cca89,
     type: 3}
   m_BuildTargetIcons:
   - m_BuildTarget: 
