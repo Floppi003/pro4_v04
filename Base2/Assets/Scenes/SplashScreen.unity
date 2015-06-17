@@ -258,7 +258,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85dfdea0fe10f1b43a993ec777c0ecc8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  delayTime: 2
 --- !u!114 &511812973
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -491,7 +490,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85dfdea0fe10f1b43a993ec777c0ecc8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  delayTime: 5
 --- !u!114 &1141429936
 MonoBehaviour:
   m_ObjectHideFlags: 0

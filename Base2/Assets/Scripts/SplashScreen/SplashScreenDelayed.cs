@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class SplashScreenDelayed : MonoBehaviour {
-	public float delayTime = 2;
+	float delayTime = 4;
 
 	IEnumerator Start(){
 		yield return new WaitForSeconds (delayTime);
