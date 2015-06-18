@@ -4463,6 +4463,57 @@ MonoBehaviour:
   buttonPressedSound: {fileID: 8300000, guid: efd2b0ab041a1fd48ae8e8624a3ffaf1, type: 3}
   buttonReleasedSound: {fileID: 8300000, guid: 8feef4f428c65c943859d5b224819e02, type: 3}
   buttonGazedSound: {fileID: 8300000, guid: 384301568d9d54d4a9ba727b74332e82, type: 3}
+  L2_Start: {fileID: 8300000, guid: 1c557e08400d8354289ecb7bdc1ee358, type: 3}
+  R1_DrueckDenSchalter:
+  - {fileID: 8300000, guid: 05d74f33e7959b744b93afd8ba81b50c, type: 3}
+  - {fileID: 8300000, guid: d4554b379801eb34eab5b59f2cfe3e8b, type: 3}
+  - {fileID: 8300000, guid: 6bfe9836ddcc64549861ba3c8745fd34, type: 3}
+  R1_Schalter: {fileID: 8300000, guid: c300fb148a79abd448d4ab7eaddba714, type: 3}
+  R2_GuteAlteSchalter: {fileID: 8300000, guid: 6acdb47202812104ebbd4626e9528824, type: 3}
+  R2_Start: {fileID: 8300000, guid: 70e0f15e99b17eb4081fe63e419010fb, type: 3}
+  R3_BlauerSchalter: {fileID: 8300000, guid: 89f688c39ad8d274a83c8d12b25762f3, type: 3}
+  Bombenentschaerfer: {fileID: 8300000, guid: d3edc069d423d004fb2a5eba34ad4fd5, type: 3}
+  R3_Blau:
+  - {fileID: 8300000, guid: 01a93a237da370a4797ac81e72382872, type: 3}
+  - {fileID: 8300000, guid: 8ff3e87b0aedc004db46b7e7ff5daa1f, type: 3}
+  - {fileID: 8300000, guid: 07df73fa28ebe484c9652083b29b92a0, type: 3}
+  - {fileID: 8300000, guid: f7dd8418c266bd342bca2c75be175dbd, type: 3}
+  - {fileID: 8300000, guid: 2ea318de96721b644bb5da2f71bd06fc, type: 3}
+  - {fileID: 8300000, guid: 1d3a15b8d8b4294489bf3e0be473bb96, type: 3}
+  - {fileID: 8300000, guid: 088200d51e473fa43b39882c369cba71, type: 3}
+  R3_Gelb:
+  - {fileID: 8300000, guid: 6172abf8db031a54c8ddc73414cfe043, type: 3}
+  - {fileID: 8300000, guid: 77fded20a782a7d439e62f01c5dd99fb, type: 3}
+  - {fileID: 8300000, guid: 99eec371bb3b90c439f3d3ea2abd0b62, type: 3}
+  - {fileID: 8300000, guid: 13d4f048c7f511e45980e6b22d618fcc, type: 3}
+  - {fileID: 8300000, guid: 2b3da295167d3fa4398297ebef87b8aa, type: 3}
+  - {fileID: 8300000, guid: 69f83e49e02bdac46a8b79680d89a173, type: 3}
+  - {fileID: 8300000, guid: 8ba8256bf89420646bdd433fc678e123, type: 3}
+  R3_Gruen:
+  - {fileID: 8300000, guid: 83a711e958b902242ae19100953fe2e3, type: 3}
+  - {fileID: 8300000, guid: b2b686d1c4a81d04c998534564f13c8a, type: 3}
+  - {fileID: 8300000, guid: 7cb4dbc52f8fbab429850c5cab029c99, type: 3}
+  - {fileID: 8300000, guid: 4144e595400024b4b9ee0bd9bf86f39c, type: 3}
+  - {fileID: 8300000, guid: aebaf68e00224974faac8233a0911993, type: 3}
+  - {fileID: 8300000, guid: 41be29b5fd2fc14488d9a405117890c0, type: 3}
+  - {fileID: 8300000, guid: 7417439dde6547a468c78d75448dfbe5, type: 3}
+  - {fileID: 8300000, guid: 97dc90677d3d51b48893852613eabcf7, type: 3}
+  - {fileID: 8300000, guid: c583629160e1a2f4caf0e9e7a0796ab6, type: 3}
+  R3_Rot:
+  - {fileID: 8300000, guid: 6653befaffa29544e9f4cccefb5b95f0, type: 3}
+  - {fileID: 8300000, guid: d0b5a302f9c910248bd1086d210d57cd, type: 3}
+  - {fileID: 8300000, guid: c47d63b3623dafc488454d4248f4ffb1, type: 3}
+  - {fileID: 8300000, guid: e756a30ca36df624b801257969ce82a3, type: 3}
+  - {fileID: 8300000, guid: 150769ad22caef6419daec1327b5c49a, type: 3}
+  - {fileID: 8300000, guid: fd2906b69579fac43b61337b6993a3f5, type: 3}
+  - {fileID: 8300000, guid: 052d8d40aa5e74e459c0a9542327acd3, type: 3}
+  R3_Geschafft: []
+  R3_Planaenderung: {fileID: 8300000, guid: a13185fc114d7204484c26ed81747922, type: 3}
+  R3_ZuerstBlau: {fileID: 8300000, guid: 8d183c1aa481c7249b6a2c3326461790, type: 3}
+  R4_MengeSchalter: {fileID: 8300000, guid: b0307e4d0b339684286d8beacb18fddb, type: 3}
+  R4_ReiseGehtWeiter: {fileID: 8300000, guid: c80d672d8f59b3740a2ee3f6e46d19cf, type: 3}
+  R4_SchonBesser: {fileID: 8300000, guid: 89841854b9be8004e873f6ece25831ad, type: 3}
+  R4_SoWirdDasNix: {fileID: 8300000, guid: d0e7fe92ca36d1e4d974770851b3450d, type: 3}
 --- !u!4 &882891496
 Transform:
   m_PrefabParentObject: {fileID: 487848, guid: a42dfa69a8e6b3a4cb205d2fcfccd7e1, type: 2}
@@ -6328,6 +6379,10 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 168210, guid: 86925217ef00c26489bfec73a81d6a13, type: 2}
       propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8237158, guid: 86925217ef00c26489bfec73a81d6a13, type: 2}
+      propertyPath: m_PlayOnAwake
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
