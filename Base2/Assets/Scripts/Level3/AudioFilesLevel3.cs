@@ -11,16 +11,10 @@ public class AudioFilesLevel3 : MonoBehaviour
 	public AudioClip Stop;
 	public AudioClip Wow;
 
-	// Use this for initialization
-	void Start ()
-	{
-	
-	}
-	
-	// Update is called once per frame
-	void Update ()
-	{
-	
+
+	public AudioClip getAudioClipBruecke() {
+		int index = Random.Range (0, Bruecke.Length);
+		return this.Bruecke[index];
 	}
 }
 

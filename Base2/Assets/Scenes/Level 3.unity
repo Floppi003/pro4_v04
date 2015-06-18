@@ -15147,6 +15147,58 @@ Transform:
 Transform:
   m_PrefabParentObject: {fileID: 466580, guid: 49bf5176c56b87441891c2e6ff4a9b05, type: 2}
   m_PrefabInternal: {fileID: 1044012197}
+--- !u!1 &1115121986
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1115121989}
+  - 65: {fileID: 1115121988}
+  - 114: {fileID: 1115121987}
+  m_Layer: 0
+  m_Name: StartSoundCollider
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1115121987
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1115121986}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 541e18cff5fb7424f9fb34a75267db4b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &1115121988
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1115121986}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!4 &1115121989
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1115121986}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.42999995, y: 1.71000004, z: -25.9400005}
+  m_LocalScale: {x: 3.79205847, y: 3.78727484, z: .238560528}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 16
 --- !u!1001 &1115361450
 Prefab:
   m_ObjectHideFlags: 0
@@ -15757,6 +15809,58 @@ Transform:
 Transform:
   m_PrefabParentObject: {fileID: 496146, guid: 6dd4619ac3135634095102d9d8ee68a7, type: 2}
   m_PrefabInternal: {fileID: 206265900}
+--- !u!1 &1144770403
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1144770406}
+  - 65: {fileID: 1144770405}
+  - 114: {fileID: 1144770404}
+  m_Layer: 0
+  m_Name: StopSoundCollider
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1144770404
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1144770403}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67a45f1417cf6764e904c65c3dc73ce8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &1144770405
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1144770403}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!4 &1144770406
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1144770403}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.34000003, y: 2.83999991, z: -42.4900017}
+  m_LocalScale: {x: 12.9146996, y: 4.21940565, z: .524273455}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 17
 --- !u!1001 &1145190100
 Prefab:
   m_ObjectHideFlags: 0
@@ -16659,7 +16763,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ea07fc1ced426f449aedfc10638086d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectName: Bridge
+  objectName: 
 --- !u!65 &1213586369
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -20387,6 +20491,10 @@ Prefab:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8237158, guid: 86925217ef00c26489bfec73a81d6a13, type: 2}
+      propertyPath: m_PlayOnAwake
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 11497280, guid: 86925217ef00c26489bfec73a81d6a13, type: 2}
     - {fileID: 11460482, guid: 86925217ef00c26489bfec73a81d6a13, type: 2}
@@ -22692,7 +22800,7 @@ MonoBehaviour:
   BrueckeGeschafft: {fileID: 8300000, guid: e987540fe5ab7624fb1a57f205b08e4d, type: 3}
   MitteAugenkraft: {fileID: 8300000, guid: 996f468f9e091ff469fafe1d9f8fc4a8, type: 3}
   HeyVertrauen:
-  - {fileID: 8300000, guid: 7bd1bac1efce3be4ebf9da0e1e756397, type: 3}
+  - {fileID: 8300000, guid: cf860a160aa3b0141a6d335ef01253ba, type: 3}
   - {fileID: 8300000, guid: cf860a160aa3b0141a6d335ef01253ba, type: 3}
   Stop: {fileID: 8300000, guid: 6bf322a553f7f1d4cae72436b21b1736, type: 3}
   Wow: {fileID: 8300000, guid: 03dbd4d3d1140b14994438e1b8eddf2c, type: 3}
@@ -26376,6 +26484,58 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 434002, guid: 46a1549ee8d0b29439f0e00d620b6b5e, type: 2}
   m_PrefabInternal: {fileID: 1820032090}
+--- !u!1 &1824427951
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1824427954}
+  - 65: {fileID: 1824427953}
+  - 114: {fileID: 1824427952}
+  m_Layer: 0
+  m_Name: MiddlePointDoneSoundCollider
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1824427952
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1824427951}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6efdec324e036ee43b23cdc27139f82f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &1824427953
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1824427951}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!4 &1824427954
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1824427951}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.55999994, y: 4.01000023, z: -96.8000031}
+  m_LocalScale: {x: 13.6800737, y: 6.80426788, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 19
 --- !u!1001 &1825162103
 Prefab:
   m_ObjectHideFlags: 0
@@ -29273,6 +29433,58 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 449872, guid: bfe675eb165621845979358a116e7fe9, type: 2}
   m_PrefabInternal: {fileID: 2035682696}
+--- !u!1 &2037265723
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 2037265725}
+  - 65: {fileID: 2037265724}
+  - 114: {fileID: 2037265726}
+  m_Layer: 0
+  m_Name: BridgeSoundCollider
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!65 &2037265724
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2037265723}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!4 &2037265725
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2037265723}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.26999998, y: 4.98999977, z: -69.9700012}
+  m_LocalScale: {x: 19.7202892, y: 10.5591707, z: 44.8309174}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 18
+--- !u!114 &2037265726
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2037265723}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9324b786fc892194dbdc829f24b4e9bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2038793425
 Prefab:
   m_ObjectHideFlags: 0
