@@ -76,19 +76,19 @@ public class AudioColorButtonManager : MonoBehaviour {
 			// tell button color
 			switch (mat.name) {
 			case "Red":
-				AudioManager.instance.playAudioClipForced (this.audioFiles.getAudioClipR3_Rot());
+				AudioManager.instance.playAudioClipIfFree (this.audioFiles.getAudioClipR3_Rot());
 				break;
 				
 			case "Green":
-				AudioManager.instance.playAudioClipForced (this.audioFiles.getAudioClipR3_Gruen());
+				AudioManager.instance.playAudioClipIfFree (this.audioFiles.getAudioClipR3_Gruen());
 				break;
 				
 			case "Blue":
-				AudioManager.instance.playAudioClipForced (this.audioFiles.getAudioClipR3_Blau());
+				AudioManager.instance.playAudioClipIfFree (this.audioFiles.getAudioClipR3_Blau());
 				break;
 				
 			case "Orange":
-				AudioManager.instance.playAudioClipForced (this.audioFiles.getAudioClipR3_Gelb());
+				AudioManager.instance.playAudioClipIfFree (this.audioFiles.getAudioClipR3_Gelb());
 				break;
 			}
 		}

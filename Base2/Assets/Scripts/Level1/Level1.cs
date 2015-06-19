@@ -226,10 +226,10 @@ public class Level1 : MonoBehaviour {
 		
 		if (timeEyesAreClosed > 1.0f) {
 			// show the walls
-			GameObject.Find ("Level_1_Obstacle_Wall_01").GetComponent<MeshRenderer>().enabled = true;
+			//GameObject.Find ("Level_1_Obstacle_Wall_01").GetComponent<MeshRenderer>().enabled = true;
 			GameObject.Find ("Level_1_Obstacle_Wall_02").GetComponent<MeshRenderer>().enabled = true;
 			GameObject.Find ("Level_1_Obstacle_Wall_03").GetComponent<MeshRenderer>().enabled = true;
-			GameObject.Find ("Level_1_Obstacle_Wall_04").GetComponent<MeshRenderer>().enabled = true;
+			//GameObject.Find ("Level_1_Obstacle_Wall_04").GetComponent<MeshRenderer>().enabled = true;
 			
 			// disable the wall collider
 			GameObject.Find ("WallCollider").GetComponent<BoxCollider>().enabled = false;

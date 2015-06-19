@@ -47,7 +47,7 @@ public class L2_R3Handler : MonoBehaviour
 		if (this.roomTwoStage == 0) {
 			// if stage 0 then voice should say you should press the blue button
 			if (this.buttonsPressed == 1) {
-				AudioManager.instance.playAudioClipForced(this.audioFiles.R3_BlauerSchalter);
+				AudioManager.instance.queueAudioClip(this.audioFiles.R3_BlauerSchalter);
 			}
 			
 			
