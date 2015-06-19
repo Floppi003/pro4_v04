@@ -16,5 +16,10 @@ public class AudioFilesLevel3 : MonoBehaviour
 		int index = Random.Range (0, Bruecke.Length);
 		return this.Bruecke[index];
 	}
+
+	public AudioClip getAudioClipHeyVertrauen() {
+		int index = Random.Range (0, HeyVertrauen.Length);
+		return this.HeyVertrauen [index];
+	}
 }
 
