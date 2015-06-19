@@ -5,6 +5,8 @@ public class L2_R3StartSoundCollider : MonoBehaviour
 {
 	private AudioFilesLevel2 audioFiles;
 	private bool didPlay = false;
+	private float soundDelay = 7.0f;
+	private bool didPlaySecondSound = false;
 	
 	// Use this for initialization
 	void Start () {
@@ -13,14 +15,23 @@ public class L2_R3StartSoundCollider : MonoBehaviour
 	
 	// Update is called once per frame
 	void Update () {
-		
+		if (didPlay) {
+			soundDelay -= Time.deltaTime;
+		}
+
+		if (soundDelay < 0.0f) {
+			if (!didPlaySecondSound) {
+				AudioManager.instance.queueAudioClip(audioFiles.R3_ZuerstBlau);
+				this.didPlaySecondSound = true;
+			}
+		}
 	}
 	
 	
 	void OnTriggerEnter() {
 		if (!didPlay) {
 			didPlay = true;
-			AudioManager.instance.playAudioClipForced (this.audioFiles.R3_BlauerSchalter);
+			AudioManager.instance.playAudioClipForced (this.audioFiles.R3_Start);
 		}
 	}
 	

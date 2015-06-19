@@ -16,6 +16,7 @@ public class AudioFilesLevel2 : MonoBehaviour {
 	public AudioClip R1_Schalter;
 	public AudioClip R2_GuteAlteSchalter;
 	public AudioClip R2_Start;
+	public AudioClip R3_Start;
 	public AudioClip R3_BlauerSchalter;
 	public AudioClip Bombenentschaerfer;
 	public AudioClip[] R3_Blau;
@@ -34,5 +35,25 @@ public class AudioFilesLevel2 : MonoBehaviour {
 	public AudioClip getAudioClipR1_DrueckDenschalter() {
 		int index = Random.Range (0, this.R1_DrueckDenSchalter.Length);
 		return this.R1_DrueckDenSchalter [index];
+	}
+
+	public AudioClip getAudioClipR3_Blau() {
+		int index = Random.Range (0, this.R3_Blau.Length);
+		return this.R3_Blau [index];
+	}
+
+	public AudioClip getAudioClipR3_Gelb() {
+		int index = Random.Range (0, this.R3_Gelb.Length);
+		return this.R3_Gelb [index];
+	}
+
+	public AudioClip getAudioClipR3_Gruen() {
+		int index = Random.Range (0, this.R3_Gruen.Length);
+		return this.R3_Gruen [index];
+	}
+
+	public AudioClip getAudioClipR3_Rot() {
+		int index = Random.Range (0, this.R3_Rot.Length);
+		return this.R3_Rot [index];
 	}
 }

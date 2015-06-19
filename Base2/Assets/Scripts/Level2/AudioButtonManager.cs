@@ -45,5 +45,22 @@ public class AudioButtonManager : MonoBehaviour {
 		// play audio sound
 		AudioManager.instance.playSoundEffect (audioFiles.buttonGazedSound);
 
+		switch (mat.name) {
+		case "Red":
+			AudioManager.instance.playAudioClipForced (this.audioFiles.getAudioClipR3_Rot());
+			break;
+
+		case "Green":
+			AudioManager.instance.playAudioClipForced (this.audioFiles.getAudioClipR3_Gruen());
+			break;
+
+		case "Blue":
+			AudioManager.instance.playAudioClipForced (this.audioFiles.getAudioClipR3_Blau());
+			break;
+
+		case "Orange":
+			AudioManager.instance.playAudioClipForced (this.audioFiles.getAudioClipR3_Gelb());
+			break;
+		}
 	}
 }

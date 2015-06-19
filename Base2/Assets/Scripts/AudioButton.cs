@@ -17,6 +17,7 @@ public class AudioButton : MonoBehaviour {
 	private Transform buttonCenter;
 
 	private float active;
+
 	
 	// Use this for initialization
 	void Start () {
@@ -49,6 +50,8 @@ public class AudioButton : MonoBehaviour {
 		this.GetComponent<Animator> ().Play ("Push");
 		// send to AudioButtonManager
 		door.GetComponent<AudioButtonManager>().pushButton(activeMaterial);
+
+		GameObject.Find ("R3Handler").GetComponent<L2_R3Handler> ().didPressAudioButton ();
 	}
 	
 	public void hit(Collider col) {
