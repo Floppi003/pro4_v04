@@ -19,6 +19,7 @@ public class AudioButton : MonoBehaviour {
 	private float active;
 
 	private AudioFilesLevel2 audioFiles;
+	private bool shouldAct = false;
 
 	
 	// Use this for initialization
@@ -58,6 +59,9 @@ public class AudioButton : MonoBehaviour {
 	}
 	
 	public void hit(Collider col) {
+		if (!shouldAct)
+			return;
+
 		if (active <= activationTime) {
 			active += 2 * Time.deltaTime;
 			
@@ -91,5 +95,9 @@ public class AudioButton : MonoBehaviour {
 				}
 			}
 		}
+	}
+
+	public void setShouldAct(bool shouldAct) {
+		this.shouldAct = shouldAct;
 	}
 }

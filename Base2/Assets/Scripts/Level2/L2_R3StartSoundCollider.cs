@@ -5,7 +5,7 @@ public class L2_R3StartSoundCollider : MonoBehaviour
 {
 	private AudioFilesLevel2 audioFiles;
 	private bool didPlay = false;
-	private float soundDelay = 7.0f;
+	private float soundDelay = 8.0f;
 	private bool didPlaySecondSound = false;
 	
 	// Use this for initialization
