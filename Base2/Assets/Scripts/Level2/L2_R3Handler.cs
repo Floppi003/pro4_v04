@@ -37,6 +37,8 @@ public class L2_R3Handler : MonoBehaviour
 				GameObject.Find ("AudioButton 1").GetComponent<AudioButton> ().setShouldAct (true);
 				GameObject.Find ("AudioButton 2").GetComponent<AudioButton> ().setShouldAct (true);
 				GameObject.Find ("AudioButton 3").GetComponent<AudioButton> ().setShouldAct (true);
+				GameObject.Find ("Door AudioButtons").GetComponent<AudioButtonManager>().resetCounter();
+				this.didEnableButtons = true;
 			}
 		}
 	}

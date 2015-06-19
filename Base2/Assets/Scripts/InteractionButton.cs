@@ -35,7 +35,7 @@ public class InteractionButton : MonoBehaviour {
 					// check if the door is already open
 					if (GameObject.Find ("Door").GetComponent<Door>().move && !this.didPlayGuteAlteSchalterClip) {
 						AudioFilesLevel2 audioFiles = GameObject.Find ("GM").GetComponent<AudioFilesLevel2>();
-						AudioManager.instance.playAudioClipIfFree(audioFiles.R2_GuteAlteSchalter);
+						AudioManager.instance.queueAudioClip(audioFiles.R2_GuteAlteSchalter, 1.0f);
 						this.didPlayGuteAlteSchalterClip = true;
 					}
 				}
@@ -71,19 +71,11 @@ public class InteractionButton : MonoBehaviour {
 			//wallDoor.transform.localScale.x += 5;
 			Debug.Log ("OPEN the door!");
 			wallDoor.GetComponent<Door>().move = true;
-
-			// play sound effect
-			Invoke ("playRiddleSolvedSoundDelayed", 3.0f);
 		}
 	}
 
 	private void playButtonReleaseDelayed() {
 		AudioFilesLevel2 audioFiles = GameObject.Find ("GM").GetComponent<AudioFilesLevel2>();
 		AudioManager.instance.playSoundEffect (audioFiles.buttonReleasedSound);
-	}
-
-	private void playRiddleSolvedSoundDelayed() {
-		AudioFilesLevel2 audioFiles = GameObject.Find ("GM").GetComponent<AudioFilesLevel2>();
-		AudioManager.instance.playSoundEffect (audioFiles.firstRiddleSuccessSound);
 	}
 }

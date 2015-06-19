@@ -4721,6 +4721,7 @@ MonoBehaviour:
   buttonPressedSound: {fileID: 8300000, guid: efd2b0ab041a1fd48ae8e8624a3ffaf1, type: 3}
   buttonReleasedSound: {fileID: 8300000, guid: 8feef4f428c65c943859d5b224819e02, type: 3}
   buttonGazedSound: {fileID: 8300000, guid: 384301568d9d54d4a9ba727b74332e82, type: 3}
+  doorOpenSound: {fileID: 8300000, guid: f63f0f59bc20d1540a8851b16a013b29, type: 3}
   L2_Start: {fileID: 8300000, guid: 1c557e08400d8354289ecb7bdc1ee358, type: 3}
   R1_DrueckDenSchalter:
   - {fileID: 8300000, guid: 05d74f33e7959b744b93afd8ba81b50c, type: 3}
@@ -5260,7 +5261,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 182212, guid: dcc12297069952b468ddcdfd65c01cc5, type: 2}
       propertyPath: m_Name
-      value: 'Door AudioButtons '
+      value: Door AudioButtons
       objectReference: {fileID: 0}
     - target: {fileID: 2354884, guid: dcc12297069952b468ddcdfd65c01cc5, type: 2}
       propertyPath: m_Materials.Array.data[0]
@@ -6636,11 +6637,11 @@ Prefab:
       objectReference: {fileID: 8300000, guid: c4195fdd7a0350c41ba86f3b4c8697f9, type: 3}
     - target: {fileID: 455906, guid: 86925217ef00c26489bfec73a81d6a13, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 2.70000005
+      value: .5
       objectReference: {fileID: 0}
     - target: {fileID: 455906, guid: 86925217ef00c26489bfec73a81d6a13, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 16.6000004
+      value: -.200000003
       objectReference: {fileID: 0}
     - target: {fileID: 455906, guid: 86925217ef00c26489bfec73a81d6a13, type: 2}
       propertyPath: m_LocalRotation.y
@@ -6652,7 +6653,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 455906, guid: 86925217ef00c26489bfec73a81d6a13, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 5.5
+      value: 1.80999994
       objectReference: {fileID: 0}
     - target: {fileID: 413452, guid: 86925217ef00c26489bfec73a81d6a13, type: 2}
       propertyPath: m_LocalPosition.y

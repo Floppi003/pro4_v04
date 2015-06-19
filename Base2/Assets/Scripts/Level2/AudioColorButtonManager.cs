@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class AudioColorButtonManager : MonoBehaviour {
-	public int tries = 2;
+	public int tries = 3;
 	public float delayTime = 5;
 
 	private int counterPressed;

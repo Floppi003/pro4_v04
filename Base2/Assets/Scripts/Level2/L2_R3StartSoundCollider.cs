@@ -21,7 +21,7 @@ public class L2_R3StartSoundCollider : MonoBehaviour
 
 		if (soundDelay < 0.0f) {
 			if (!didPlaySecondSound) {
-				AudioManager.instance.playAudioClipIfFree(audioFiles.R3_ZuerstBlau);
+				AudioManager.instance.queueAudioClip(audioFiles.R3_ZuerstBlau);
 				this.didPlaySecondSound = true;
 			}
 		}

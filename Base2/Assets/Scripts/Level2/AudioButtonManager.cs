@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 
 public class AudioButtonManager : MonoBehaviour {
@@ -30,8 +30,6 @@ public class AudioButtonManager : MonoBehaviour {
 			if (counter == colorCode.Length) {
 				this.GetComponent<Door>().move = true;
 				open = true;
-				//TODO: change audio
-				AudioManager.instance.playSoundEffect (audioFiles.firstRiddleSuccessSound);
 				AudioManager.instance.playAudioClipForced (audioFiles.getAudioClipR3_Geschafft());
 			}
 		} else {
@@ -45,5 +43,9 @@ public class AudioButtonManager : MonoBehaviour {
 	public void hitButton(Material mat) {		
 		// play audio sound
 		AudioManager.instance.playSoundEffect (audioFiles.buttonGazedSound);
+	}
+
+	public void resetCounter() {
+		this.counter = 0;
 	}
 }
