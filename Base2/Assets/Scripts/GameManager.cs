@@ -8,6 +8,9 @@ public class GameManager : MonoBehaviour {
 	private int maxLevels = 4; //amount of levels in game (!=max id = maxLevels - 1)
 	private int currentLevel = 1; //start with 1 = id 0
 	private int unlockedLevel = 1; //start with 1 = id 0
+
+	// variable to pause raycast
+	private GameObject player;
 	
 	// Timer variables
 	//public Rect timerRect;
@@ -36,11 +39,13 @@ public class GameManager : MonoBehaviour {
 	public void PauseMenu(){
 		showPauseMenu = !showPauseMenu;
 		if(showPauseMenu){
+			player.GetComponent<CameraRaycast>().enabled = false;
 			pauseMenu.enabled = true;
 			Cursor.visible = true;
 			Screen.lockCursor = false;
 			Time.timeScale = 0f;
 		}else{
+			player.GetComponent<CameraRaycast>().enabled = true;
 			pauseMenu.enabled = false;
 			Cursor.visible = false;
 			Screen.lockCursor = true;
@@ -58,6 +63,8 @@ public class GameManager : MonoBehaviour {
 
 	void Start()
 	{
+		player = GameObject.Find ("Player");
+
 		pauseMenu.enabled = false;
 
 		GameObject sensitivitySlider = pauseMenu.transform.Find("BG Panel").Find("Panel").Find("SensitivitySlider").gameObject;
