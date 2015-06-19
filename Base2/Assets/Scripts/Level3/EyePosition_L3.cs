@@ -14,6 +14,7 @@ public class EyePosition_L3 : MonoBehaviour {
 
 	private Queue<EyesOpened> eyesOpenedQueue;
 	private int eyesClosedCounter;
+	private float eyesClosedDuration;
 
 	protected void Awake () {
 		Debug.Log ("awake");
@@ -62,6 +63,7 @@ public class EyePosition_L3 : MonoBehaviour {
 				// Eyes closed
 				this.eyesOpenedQueue.Enqueue (EyesOpened.None);
 				eyesClosedCounter++;
+				eyesClosedDuration += Time.deltaTime;
 			
 			} else if (lastEyePosition.LeftEye.IsValid && !lastEyePosition.RightEye.IsValid) {
 				// only left eye is opened
@@ -207,5 +209,9 @@ public class EyePosition_L3 : MonoBehaviour {
 				meshRenderer.enabled = false;
 			}
 		}
+	}
+
+	public float getEyesClosedDuration() {
+		return eyesClosedDuration;
 	}
 }
