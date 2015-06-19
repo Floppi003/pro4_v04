@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 
 public class InteractionButton : MonoBehaviour {
@@ -10,6 +10,8 @@ public class InteractionButton : MonoBehaviour {
 	public GameObject platform;
 	public GameObject wallDoor;
 	public bool pushPop;
+
+	private bool didPlayGuteAlteSchalterClip = false;
 
 	// Use this for initialization
 	void Start () {
@@ -25,6 +27,18 @@ public class InteractionButton : MonoBehaviour {
 				transform.gameObject.GetComponentInParent<Animator> ().Play ("Push");
 			}else{
 				transform.gameObject.GetComponentInParent<Animator> ().Play ("PushStay");
+			}
+
+			// if it is the plattform button from level 2 also check if the door is already open, then play an audio file
+			if (this.platform != null) {
+				if (this.platform.name.Equals ("Plattform 4x4")) {
+					// check if the door is already open
+					if (GameObject.Find ("Door").GetComponent<Door>().move && !this.didPlayGuteAlteSchalterClip) {
+						AudioFilesLevel2 audioFiles = GameObject.Find ("GM").GetComponent<AudioFilesLevel2>();
+						AudioManager.instance.playAudioClipIfFree(audioFiles.R2_GuteAlteSchalter);
+						this.didPlayGuteAlteSchalterClip = true;
+					}
+				}
 			}
 		}
 	}
