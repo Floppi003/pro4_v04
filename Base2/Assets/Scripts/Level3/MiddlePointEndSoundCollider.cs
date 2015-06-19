@@ -3,7 +3,7 @@ using System.Collections;
 
 public class MiddlePointEndSoundCollider : MonoBehaviour
 {
-	public float eyesClosedDuration = 2;
+	public float eyesClosedDuration = 1;
 
 	private AudioFilesLevel3 audioFiles;
 	private EyePosition_L3 eyePosition;
