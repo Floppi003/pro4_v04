@@ -14,7 +14,7 @@ public class EyePosition_L3 : MonoBehaviour {
 
 	private Queue<EyesOpened> eyesOpenedQueue;
 	private int eyesClosedCounter;
-	private float eyesClosedDuration;
+	private float eyesClosedDuration = 0;
 
 	protected void Awake () {
 		Debug.Log ("awake");

@@ -18,7 +18,7 @@ public class MiddlePointDoneSoundCollider : MonoBehaviour
 	}
 
 	public void Update() {
-		if (activate && eyePosition <= 0) {
+		if (activate && eyePosition.getEyesClosedDuration <= 0) {
 			middlePointCollider.GetComponent<BoxCollider> ().enabled = true;
 		}
 	}
