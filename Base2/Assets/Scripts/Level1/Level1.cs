@@ -464,6 +464,7 @@ public class Level1 : MonoBehaviour {
 	private void openGoalDoor() {
 		GameObject.Find ("GoalDoor").GetComponent<Animator> ().Play ("Open");
 		// Play sound
+		GameObject.Find ("Teleporter").GetComponent<AudioSource> ().Play();
 		AudioManager.instance.playSoundEffect (this.audioFiles.doorOpens);
 	}
 	
