@@ -14,10 +14,11 @@ public class MiddlePointEndSoundCollider : MonoBehaviour
 		this.eyePosition = GameObject.Find ("GM").GetComponent<EyePosition_L3> ();
 	}
 	
-	protected void OnTriggerEnter() {
-		if ( eyePosition.getEyesClosedDuration() > eyesClosedDuration && !didPlay) {
+	protected void OnTriggerStay() {
+		if (eyePosition.getEyesClosedDuration() > eyesClosedDuration && !didPlay) {
 			AudioManager.instance.playAudioClipForced (this.audioFiles.MitteAugenkraft);
 			didPlay = true;
+			this.gameObject.GetComponent<BoxCollider>().enabled = false;
 		}
 	}
 }

@@ -10,7 +10,8 @@ public class BridgeDeathSoundCollider : MonoBehaviour
 	}
 	
 	protected void OnTriggerEnter() {
-		AudioManager.instance.playAudioClipForced (this.audioFiles.getAudioClipHeyVertrauen());
+		//AudioManager.instance.playAudioClipForced (this.audioFiles.getAudioClipHeyVertrauen());
+		AudioManager.instance.queueAudioClip (this.audioFiles.getAudioClipHeyVertrauen (), 1);
 	}
 }
 
