@@ -42,6 +42,7 @@ public class EyePosition_L3 : MonoBehaviour {
 	void Update () {
 		lastEyePosition = dataProvider.Last;
 		//EyeXEyePosition lastEyePosition = GetComponent<EyePositionDataComponent>().LastEyePosition;
+		eyesClosedDuration -= Time.deltaTime;
 
 		if (lastEyePosition.IsValid) {
 			// Get the position of the left eye.
@@ -63,22 +64,25 @@ public class EyePosition_L3 : MonoBehaviour {
 				// Eyes closed
 				this.eyesOpenedQueue.Enqueue (EyesOpened.None);
 				eyesClosedCounter++;
-				eyesClosedDuration += Time.deltaTime;
+				eyesClosedDuration += 2 * Time.deltaTime;
 			
 			} else if (lastEyePosition.LeftEye.IsValid && !lastEyePosition.RightEye.IsValid) {
 				// only left eye is opened
 				this.eyesOpenedQueue.Enqueue (EyesOpened.Left);
 				eyesClosedCounter = eyesClosedCounter / 3;
-			
+				eyesClosedDuration = 0;
+
 			} else if (!lastEyePosition.LeftEye.IsValid && lastEyePosition.RightEye.IsValid) {
 				// only right eye is opened
 				this.eyesOpenedQueue.Enqueue (EyesOpened.Right);
 				eyesClosedCounter = eyesClosedCounter / 3;
-			
+				eyesClosedDuration = 0;
+
 			} else {
 				// both eyes opened
 				this.eyesOpenedQueue.Enqueue (EyesOpened.Both);
 				eyesClosedCounter = eyesClosedCounter / 3;
+				eyesClosedDuration = 0;
 			}
 
 			// calculate the amount of each eye-State in the queue!

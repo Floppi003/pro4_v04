@@ -7,18 +7,27 @@ public class MiddlePointDoneSoundCollider : MonoBehaviour
 	private AudioFilesLevel3 audioFiles;
 	private GameObject bridgeDeathCollider;
 	private GameObject middlePointCollider;
+	private EyePosition_L3 eyePosition;
+	private bool activate = false;
 	
 	public void Start() {
 		this.audioFiles = GameObject.Find ("GM").GetComponent<AudioFilesLevel3> ();
-		bridgeDeathCollider = GameObject.Find ("BridgeDeathSoundCollider");
-		middlePointCollider = GameObject.Find ("MiddlePointEndSoundCollider");
+		this.bridgeDeathCollider = GameObject.Find ("BridgeDeathSoundCollider");
+		this.middlePointCollider = GameObject.Find ("MiddlePointEndSoundCollider");
+		this.eyePosition = GameObject.Find ("GM").GetComponent<EyePosition_L3> ();
+	}
+
+	public void Update() {
+		if (activate && eyePosition <= 0) {
+			middlePointCollider.GetComponent<BoxCollider> ().enabled = true;
+		}
 	}
 	
 	protected void OnTriggerEnter() {
 		if (!didPlay) {
 			AudioManager.instance.playAudioClipForced (this.audioFiles.BrueckeGeschafft);
 			bridgeDeathCollider.GetComponent<BoxCollider>().enabled = false;
-			middlePointCollider.GetComponent<BoxCollider>().enabled = true;
+			activate = true;
 			didPlay = true;
 		}
 	}
