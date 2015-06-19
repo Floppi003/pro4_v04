@@ -32,6 +32,7 @@ public class AudioButtonManager : MonoBehaviour {
 				open = true;
 				//TODO: change audio
 				AudioManager.instance.playSoundEffect (audioFiles.firstRiddleSuccessSound);
+				AudioManager.instance.playAudioClipForced (audioFiles.getAudioClipR3_Geschafft());
 			}
 		} else {
 			counter = 0;
@@ -44,23 +45,5 @@ public class AudioButtonManager : MonoBehaviour {
 	public void hitButton(Material mat) {		
 		// play audio sound
 		AudioManager.instance.playSoundEffect (audioFiles.buttonGazedSound);
-
-		switch (mat.name) {
-		case "Red":
-			AudioManager.instance.playAudioClipForced (this.audioFiles.getAudioClipR3_Rot());
-			break;
-
-		case "Green":
-			AudioManager.instance.playAudioClipForced (this.audioFiles.getAudioClipR3_Gruen());
-			break;
-
-		case "Blue":
-			AudioManager.instance.playAudioClipForced (this.audioFiles.getAudioClipR3_Blau());
-			break;
-
-		case "Orange":
-			AudioManager.instance.playAudioClipForced (this.audioFiles.getAudioClipR3_Gelb());
-			break;
-		}
 	}
 }

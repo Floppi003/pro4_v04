@@ -60,12 +60,36 @@ public class AudioColorButtonManager : MonoBehaviour {
 			timeToChange = delayTime;
 
 			// reset Color and lock highlighting
-			obj.resetColor();
-			obj.gazePoint.GetComponent<GazePointDataComponent>().active = false;
+			obj.resetColor ();
+			obj.gazePoint.GetComponent<GazePointDataComponent> ().active = false;
 
 			// deactivate audio functionality
 			for (int i = 0; i < audioButtons.Length; i++) {
-				audioButtons[i].enabled = false;
+				audioButtons [i].enabled = false;
+			}
+
+			// play sound effect saying that this doesn't work
+			AudioManager.instance.playAudioClipForced (this.audioFiles.R4_SoWirdDasNix);
+			AudioManager.instance.queueAudioClip(this.audioFiles.R4_SchonBesser, 2);
+		
+		} else {
+			// tell button color
+			switch (mat.name) {
+			case "Red":
+				AudioManager.instance.playAudioClipForced (this.audioFiles.getAudioClipR3_Rot());
+				break;
+				
+			case "Green":
+				AudioManager.instance.playAudioClipForced (this.audioFiles.getAudioClipR3_Gruen());
+				break;
+				
+			case "Blue":
+				AudioManager.instance.playAudioClipForced (this.audioFiles.getAudioClipR3_Blau());
+				break;
+				
+			case "Orange":
+				AudioManager.instance.playAudioClipForced (this.audioFiles.getAudioClipR3_Gelb());
+				break;
 			}
 		}
 	}

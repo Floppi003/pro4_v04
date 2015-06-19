@@ -18,6 +18,8 @@ public class AudioButton : MonoBehaviour {
 
 	private float active;
 
+	private AudioFilesLevel2 audioFiles;
+
 	
 	// Use this for initialization
 	void Start () {
@@ -25,6 +27,7 @@ public class AudioButton : MonoBehaviour {
 		buttonFrame = this.transform.GetChild (1);
 		buttonCenter = this.transform.GetChild (2);
 		//door = GameObject.Find ("Door AudioButtons");
+		this.audioFiles = GameObject.Find ("GM").GetComponent<AudioFilesLevel2> ();
 	}
 	
 	// Update is called once per frame
@@ -68,6 +71,24 @@ public class AudioButton : MonoBehaviour {
 			if(active >= activationTime) {
 				active = lockTime;
 				gazePoint.GetComponent<GazePointDataComponent>().active = false;
+
+				switch (activeMaterial.name) {
+				case "Red":
+					AudioManager.instance.playAudioClipForced (this.audioFiles.getAudioClipR3_Rot());
+					break;
+					
+				case "Green":
+					AudioManager.instance.playAudioClipForced (this.audioFiles.getAudioClipR3_Gruen());
+					break;
+					
+				case "Blue":
+					AudioManager.instance.playAudioClipForced (this.audioFiles.getAudioClipR3_Blau());
+					break;
+					
+				case "Orange":
+					AudioManager.instance.playAudioClipForced (this.audioFiles.getAudioClipR3_Gelb());
+					break;
+				}
 			}
 		}
 	}

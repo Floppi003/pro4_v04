@@ -56,4 +56,9 @@ public class AudioFilesLevel2 : MonoBehaviour {
 		int index = Random.Range (0, this.R3_Rot.Length);
 		return this.R3_Rot [index];
 	}
+
+	public AudioClip getAudioClipR3_Geschafft() {
+		int index = Random.Range (0, this.R3_Geschafft.Length);
+		return this.R3_Geschafft[index];
+	}
 }
