@@ -113,10 +113,10 @@ public class Level1 : MonoBehaviour {
 		this.previousGazePoint = this.gazePointDataProvider.Last;
 		
 		// disable the rendering of the invisible walls
-		GameObject.Find ("Level_1_Obstacle_Wall_01").GetComponent<MeshRenderer>().enabled = false;
+		//GameObject.Find ("Level_1_Obstacle_Wall_01").GetComponent<MeshRenderer>().enabled = false;
 		GameObject.Find ("Level_1_Obstacle_Wall_02").GetComponent<MeshRenderer>().enabled = false;
 		GameObject.Find ("Level_1_Obstacle_Wall_03").GetComponent<MeshRenderer>().enabled = false;
-		GameObject.Find ("Level_1_Obstacle_Wall_04").GetComponent<MeshRenderer>().enabled = false;
+		//GameObject.Find ("Level_1_Obstacle_Wall_04").GetComponent<MeshRenderer>().enabled = false;
 		
 		// set all wall lights to first color
 		GameObject[] wallLights = GameObject.FindGameObjectsWithTag ("WallLight_Level1");

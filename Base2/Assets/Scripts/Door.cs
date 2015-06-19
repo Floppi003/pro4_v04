@@ -15,6 +15,9 @@ public class Door : MonoBehaviour {
 				time += Time.deltaTime/duration;
 			}
 			transform.localScale = new Vector3 (transform.localScale.x, Mathf.Lerp (minimum, maximum, time), transform.localScale.z);
+
+			// tell the L2_R1SchalterSoundCollider Script that the player solved the riddle!
+			GameObject.Find ("R1SchalterSoundCollider").GetComponent<L2_R1SchalterSoundCollider>().setDidSolveRiddle(true);
 		}
 	}
 	

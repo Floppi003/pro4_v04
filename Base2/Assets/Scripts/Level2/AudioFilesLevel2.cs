@@ -31,14 +31,8 @@ public class AudioFilesLevel2 : MonoBehaviour {
 	public AudioClip R4_SoWirdDasNix;
 
 
-
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
+	public AudioClip getAudioClipR1_DrueckDenschalter() {
+		int index = Random.Range (0, this.R1_DrueckDenSchalter.Length);
+		return this.R1_DrueckDenSchalter [index];
 	}
 }
