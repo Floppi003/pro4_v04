@@ -3052,7 +3052,7 @@ TextMesh:
   m_Anchor: 1
   m_Alignment: 1
   m_TabSize: 4
-  m_FontSize: 2000
+  m_FontSize: 500
   m_FontStyle: 0
   m_RichText: 0
   m_Font: {fileID: 12800000, guid: e4c1386c65d0a884db6cca05d50f9139, type: 3}
@@ -3092,7 +3092,7 @@ Transform:
   m_GameObject: {fileID: 424541638}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: -1.62920685e-07}
   m_LocalPosition: {x: -64.9400024, y: 5.5, z: -13.9799995}
-  m_LocalScale: {x: .00460913405, y: .00460913405, z: .0115228323}
+  m_LocalScale: {x: .0199999996, y: .0199999996, z: .0199999996}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 8
@@ -4759,7 +4759,7 @@ TextMesh:
   m_Anchor: 1
   m_Alignment: 1
   m_TabSize: 4
-  m_FontSize: 2000
+  m_FontSize: 500
   m_FontStyle: 0
   m_RichText: 0
   m_Font: {fileID: 12800000, guid: e4c1386c65d0a884db6cca05d50f9139, type: 3}
@@ -4799,7 +4799,7 @@ Transform:
   m_GameObject: {fileID: 697393527}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -65, y: 9.5, z: 4.98999977}
-  m_LocalScale: {x: .00460913405, y: .00460913405, z: .0115228323}
+  m_LocalScale: {x: .0199999996, y: .0199999996, z: .0199999996}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 7
@@ -12855,23 +12855,23 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 484942, guid: 58451e3656bb00a419cf275d60b51e9b, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 1.24800003
+      value: 1.22399998
       objectReference: {fileID: 0}
     - target: {fileID: 484942, guid: 58451e3656bb00a419cf275d60b51e9b, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 1.31700003
+      value: 1.29299998
       objectReference: {fileID: 0}
     - target: {fileID: 484942, guid: 58451e3656bb00a419cf275d60b51e9b, type: 2}
       propertyPath: m_LocalScale.x
-      value: .00257542962
+      value: .00999999978
       objectReference: {fileID: 0}
     - target: {fileID: 484942, guid: 58451e3656bb00a419cf275d60b51e9b, type: 2}
       propertyPath: m_LocalScale.y
-      value: .00257542962
+      value: .00999999978
       objectReference: {fileID: 0}
     - target: {fileID: 484942, guid: 58451e3656bb00a419cf275d60b51e9b, type: 2}
       propertyPath: m_LocalScale.z
-      value: .00643857336
+      value: .00999999978
       objectReference: {fileID: 0}
     - target: {fileID: 10292664, guid: 58451e3656bb00a419cf275d60b51e9b, type: 2}
       propertyPath: m_LineSpacing
@@ -12888,6 +12888,10 @@ Prefab:
     - target: {fileID: 2333174, guid: 58451e3656bb00a419cf275d60b51e9b, type: 2}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 10292664, guid: 58451e3656bb00a419cf275d60b51e9b, type: 2}
+      propertyPath: m_FontSize
+      value: 500
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 58451e3656bb00a419cf275d60b51e9b, type: 2}
