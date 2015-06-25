@@ -17,7 +17,11 @@ public class LevelPortal : MonoBehaviour {
 		if (other.tag == "Player") {
 			Debug.Log ("Player detected");
 
-			Application.LoadLevel ("Level " + PlayerPrefs.GetInt("Chosen Level"));
+			if(PlayerPrefs.GetInt ("Chosen Level") == 8){			
+				AutoFade.LoadLevel("Level " + PlayerPrefs.GetInt("Chosen Level"), 1, 1, Color.white);
+			}else{
+				AutoFade.LoadLevel("Level " + PlayerPrefs.GetInt("Chosen Level"), 1, 1, Color.black);
+			}
 		}
 		Debug.Log ("OnTriggerEnter");
 		//other.gameObject.GetComponent<AudioSource> ().PlayOneShot (other.gameObject.GetComponent<FirstPersonController>().helloClip);

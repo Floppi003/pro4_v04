@@ -22652,7 +22652,7 @@ Transform:
   - {fileID: 1076829192}
   - {fileID: 200091104}
   m_Father: {fileID: 0}
-  m_RootOrder: 28
+  m_RootOrder: 32
 --- !u!1001 &1197988139
 Prefab:
   m_ObjectHideFlags: 0
@@ -23338,7 +23338,7 @@ Transform:
   - {fileID: 1008615216}
   - {fileID: 689107392}
   m_Father: {fileID: 0}
-  m_RootOrder: 32
+  m_RootOrder: 33
 --- !u!1001 &1229229386
 Prefab:
   m_ObjectHideFlags: 0
@@ -30315,7 +30315,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!131 &1600371947
 GUITexture:
   m_ObjectHideFlags: 0
