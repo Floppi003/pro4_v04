@@ -28,7 +28,7 @@ public class EyePositionScript : MonoBehaviour {
 	void Start () {
 		// add default values
 		for (int i = 0; i < this.smoothValue; i++) {
-			this.lastGazePoints.Enqueue (new Vector2(0, 0, 0));
+			this.lastGazePoints.Enqueue (new Vector2(0, 0));
 		}
 	}
 	
