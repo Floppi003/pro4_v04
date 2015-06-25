@@ -44,7 +44,6 @@ public class TriggerColliderLevel1 : MonoBehaviour {
 			}
 			
 		} else if (this.name.Equals ("WallLightsCollider")) {
-			Debug.Log ("JAJAJAJAJAJJAA");
 			level1.setPlayerInWallLightsArea (true);
 			level1.setPlayerInPanelArea(false);
 			

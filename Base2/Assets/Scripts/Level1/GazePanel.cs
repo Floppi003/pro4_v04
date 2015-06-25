@@ -6,8 +6,8 @@ public class GazePanel : MonoBehaviour {
 	public Color standardGazePanelColor = Color.gray;
 	public Color highlightedGazePanelColor = Color.cyan;
 
-	public float highlightTime = 0.5f;
-	private float leftHighlightTime = 0.1f; //the current highlight time that is left before it will de-colorize
+	private float standardLeftHighlightTime = 0.15f;
+	private float leftHighlightTime = 0.15f; //the current highlight time that is left before it will de-colorize
 
 	// Use this for initialization
 	void Start () {
@@ -32,6 +32,6 @@ public class GazePanel : MonoBehaviour {
 
 	public void didGazePanel() {
 		this.transform.FindChild ("pCube4").GetComponent<MeshRenderer> ().material.color = this.highlightedGazePanelColor;
-		this.leftHighlightTime = this.highlightTime;
+		this.leftHighlightTime = this.standardLeftHighlightTime;
 	}
 }
