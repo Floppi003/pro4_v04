@@ -6676,7 +6676,7 @@ Transform:
   - {fileID: 1216964663}
   - {fileID: 1668812964}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 8
 --- !u!1001 &391699137
 Prefab:
   m_ObjectHideFlags: 0
@@ -17959,7 +17959,7 @@ Transform:
   - {fileID: 1274457652}
   - {fileID: 1714587029}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 9
 --- !u!1001 &947014948
 Prefab:
   m_ObjectHideFlags: 0
@@ -20638,7 +20638,7 @@ Transform:
   - {fileID: 2104090849}
   - {fileID: 471288569}
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 10
 --- !u!1 &1076829191
 GameObject:
   m_PrefabParentObject: {fileID: 100000, guid: 4f9156fce5c6b2e4889d8953c6c8d338, type: 3}
