@@ -6,7 +6,7 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/PIE.unity
+    path: Assets/Scenes/PIEScreen.unity
   - enabled: 1
     path: Assets/Scenes/SplashScreen.unity
   - enabled: 1
