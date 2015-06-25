@@ -242,18 +242,21 @@ public class Level1 : MonoBehaviour {
 	}
 	
 	private void handlePanelRiddle() {
-
+		Debug.Log ("handlePanelRiddle");
 		this.timeSinceLastPanelRiddleHint += Time.deltaTime;
 		
 		EyeXGazePoint gazePoint = gazePointDataProvider.Last;
 		EyeXEyePosition eyePosition = this.eyePositionDataProvider.Last;
 		
 		// check if both eyes are opened, only then retreive the last gazePoint
-		if (!gazePoint.Screen.Equals (this.previousGazePoint.Screen)) {
+		if (/*!gazePoint.Screen.Equals (this.previousGazePoint.Screen)*/true) {
 			Vector2 screenCoordinates = gazePoint.Screen;
 			
 			Ray gazeRay = Camera.main.ScreenPointToRay (new Vector3 (screenCoordinates.x, screenCoordinates.y, 0));
 			Debug.DrawRay (gazeRay.origin, gazeRay.direction, Color.magenta, 120.0f);
+
+			//Ray debugRay = Camera.main.ScreenPointToRay (new Vector3(Screen.width / 2.0f, Screen.height / 2.0f, 0.0f));
+			//Debug.DrawRay (debugRay.origin, debugRay.direction, Color.magenta, 120.0f);
 			
 			if (Physics.Raycast (gazeRay.origin, gazeRay.direction, out gazeRaycastHit, 40.0f)) {
 				
@@ -262,12 +265,15 @@ public class Level1 : MonoBehaviour {
 				// colorize the border of the wall-panel
 				if (gazedObject.Contains ("Panel")) {
 					gazeRaycastHit.collider.gameObject.GetComponent<GazePanel>().didGazePanel();
+					Debug.Log ("didGazePanel");
 				}
 
 
 				// check if the gazed panel is the one that is currently lerping
 				if (gazedObject == ((GameObject)blinkingLights [blinkingLightIndex]).name) {
 					// the gazed object is the one that is currently lerping
+					Debug.Log ("gazing currently lerped panel");
+
 					if (currentLerpTimePaused == false) {
 						currentLerpTimePaused = true;
 						gazeStartedPanelColor = ((GameObject)blinkingLights [blinkingLightIndex]).GetComponentInChildren<MeshRenderer> ().material.color;
@@ -350,7 +356,7 @@ public class Level1 : MonoBehaviour {
 		
 		
 		/*
-			// version where you stare at the light and it lerps
+				// version where you stare at the light and it lerps
 			if (!currentLerpTimePaused) {
 				currentLerpTime += Time.deltaTime;
 				if (currentLerpTime > standardColorLerpTime) {
