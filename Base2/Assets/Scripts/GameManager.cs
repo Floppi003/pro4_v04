@@ -122,7 +122,7 @@ public class GameManager : MonoBehaviour {
 			Application.LoadLevel("Level " + currentLevel); //level name
 			//DontDestroyOnLoad() - don't reset value with new scene
 		} else {
-			Application.LoadLevel("Central");
+			AutoFade.LoadLevel("EndScreen" ,1, 1, Color.black);
 			Screen.lockCursor = false;
 			print ("You win!");
 		}
