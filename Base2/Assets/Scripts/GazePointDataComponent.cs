@@ -79,14 +79,14 @@ public class GazePointDataComponent : MonoBehaviour
 				// set collider to gazed position (used for multiple buttons that will be colored due to the collider then)
 				if (gazeRaycastHit.transform.gameObject.tag == "ColorButton") {
 					gazeRaycastHit.collider.gameObject.GetComponent<ColorButton>().hit(gazeRaycastHit.collider);
-				
-
 					//colorCollider.transform.position = gazeRaycastHit.transform.position;
 					//colliderAlive = 0.5f;
 				} else if (gazeRaycastHit.transform.gameObject.tag == "AudioButton") {
 					gazeRaycastHit.collider.gameObject.GetComponent<AudioButton>().hit(gazeRaycastHit.collider);
 				} else if (gazeRaycastHit.transform.gameObject.tag == "AudioColorButton") {
 					gazeRaycastHit.collider.gameObject.GetComponent<AudioColorButton>().hit(gazeRaycastHit.collider);
+				} else if (gazeRaycastHit.transform.gameObject.name == "Logo") {
+					gazeRaycastHit.collider.gameObject.GetComponent<HubLogo>().hit(gazeRaycastHit.collider);
 				}
 
 				/*--------AudioFilesLevelFloppi afFloppi = GameObject.Find ("AudioFilesLevelFloppi").GetComponent<AudioFilesLevelFloppi>();
@@ -130,4 +130,3 @@ public class GazePointDataComponent : MonoBehaviour
 		Debug.Log ("setButtonMeshVisible: " + i);
 	}
 }
-
