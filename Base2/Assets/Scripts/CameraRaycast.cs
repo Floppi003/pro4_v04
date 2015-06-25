@@ -83,4 +83,9 @@ public class CameraRaycast : MonoBehaviour {
 			hintMenu.GetComponent<Canvas>().enabled = false;
 		}
 	}
+
+	void getActionButton () {
+		Input.GetButtonDown ("ButtonPressed");
+
+	}
 }

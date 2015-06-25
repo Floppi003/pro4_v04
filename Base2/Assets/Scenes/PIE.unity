@@ -214,7 +214,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_Materials:
-  - {fileID: 2100000, guid: 8667f8737dd53d74eb68f71acba49d1e, type: 2}
+  - {fileID: 2100000, guid: 505e2360c63ed1d488e8a141f7546fb0, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 1
@@ -258,8 +258,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85dfdea0fe10f1b43a993ec777c0ecc8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  delayTime: 3.29999995
-  nextLevel: Central
+  delayTime: 1.5
+  nextLevel: SplashScreen
 --- !u!114 &511812973
 MonoBehaviour:
   m_ObjectHideFlags: 0

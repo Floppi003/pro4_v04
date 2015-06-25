@@ -2,13 +2,14 @@
 using System.Collections;
 
 public class SplashScreenDelayed : MonoBehaviour {
-	float delayTime = 4;
+	public float delayTime = 4;
+	public string nextLevel;
 
 	IEnumerator Start(){
 		yield return new WaitForSeconds (delayTime);
 		//Application.LoadLevel ("Central");
 
-		AutoFade.LoadLevel("Central" ,1,10,Color.black);
+		AutoFade.LoadLevel(nextLevel ,1,10,Color.black);
 		//levelname, fadeouttime, fadeintime, fadecolor
 	}
 }
