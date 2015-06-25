@@ -14,6 +14,7 @@ public class EyePositionScript : MonoBehaviour {
 
 	private Queue<Vector2> lastGazePoints;
 	private int smoothValue = 8;
+	private bool showEyePosition = false; //indicates whether the point indicating the eyeposition should be visible
 
 
 	void Awake() {
@@ -49,12 +50,26 @@ public class EyePositionScript : MonoBehaviour {
 
 		x = x / lastScreenPoints.Length;
 		y = y / lastScreenPoints.Length;
-
+		
 		// set the eyeposition to the screen point
-		GameObject.Find ("EyePosition").transform.position = new Vector3 (x, y, 0);
+		GameObject eyePosition = GameObject.Find ("EyePosition");
+		if (eyePosition != null) {
+			// if the eyeposition image should not be shown place it at -10000 -10000 0 position
+			if (this.showEyePosition) {
+				eyePosition.transform.position = new Vector3(x, y, 0);
+			} else {
+				eyePosition.transform.position = new Vector3(-10000, -10000, 0);
+			}
+		}
 
 		// dequeue the last screen position
 		this.lastGazePoints.Dequeue ();
+
+
+		// check key input
+		if (Input.GetKeyDown ("p")) {
+			this.showEyePosition = !this.showEyePosition;
+		}
 	}
 
 	protected void OnEnable() {
