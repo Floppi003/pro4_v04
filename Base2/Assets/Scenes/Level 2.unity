@@ -6959,7 +6959,9 @@ Prefab:
       propertyPath: MaxDistance
       value: 20
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 11452524, guid: 86925217ef00c26489bfec73a81d6a13, type: 2}
+    - {fileID: 11429726, guid: 86925217ef00c26489bfec73a81d6a13, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 86925217ef00c26489bfec73a81d6a13, type: 2}
   m_IsPrefabParent: 0
 --- !u!1001 &1138441883
@@ -10079,6 +10081,14 @@ Prefab:
     - target: {fileID: 22460768, guid: 7a62efcb6e7b74e408ae2996adbe064c, type: 2}
       propertyPath: m_Pivot.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22415986, guid: 7a62efcb6e7b74e408ae2996adbe064c, type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: -10000
+      objectReference: {fileID: 0}
+    - target: {fileID: 22415986, guid: 7a62efcb6e7b74e408ae2996adbe064c, type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: -10000
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7a62efcb6e7b74e408ae2996adbe064c, type: 2}
