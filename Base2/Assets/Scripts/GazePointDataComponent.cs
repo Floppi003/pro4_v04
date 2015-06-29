@@ -87,8 +87,9 @@ public class GazePointDataComponent : MonoBehaviour
 				} else if (gazeRaycastHit.transform.gameObject.name == "Logo") {
 					gazeRaycastHit.collider.gameObject.GetComponent<HubLogo>().hit(gazeRaycastHit.collider);
 				} else if (gazeRaycastHit.transform.gameObject.name == "Arrow") {
-					Debug.Log ("Arrow hit!");
 					gazeRaycastHit.collider.gameObject.GetComponent<GravityButton>().hit(gazeRaycastHit.collider);
+				} else if (gazeRaycastHit.transform.gameObject.tag == "Exploder") {
+					gazeRaycastHit.collider.gameObject.GetComponent<Explosion>().hit(gazeRaycastHit.collider);
 				}
 
 				/*--------AudioFilesLevelFloppi afFloppi = GameObject.Find ("AudioFilesLevelFloppi").GetComponent<AudioFilesLevelFloppi>();

@@ -26,7 +26,6 @@ public class GravityButton : MonoBehaviour {
 
 	public void hit(Collider col) {
 		timer = 2.0F;
-		Debug.Log ("Arrow2 hit!");
 		particles.enableEmission = true;
 	}
 

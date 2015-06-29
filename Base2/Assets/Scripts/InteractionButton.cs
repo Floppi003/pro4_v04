@@ -44,9 +44,11 @@ public class InteractionButton : MonoBehaviour {
 	}
 
 	public void TriggerExploder() {
+		/*
 		if (exploder != null) {
-			exploder.GetComponent<Explosion>().Explode();
+			exploder.GetComponent<Explosion>().hit();
 		}
+		*/
 	}
 
 	public void TriggerGoal() {

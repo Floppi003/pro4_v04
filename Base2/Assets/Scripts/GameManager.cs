@@ -127,7 +127,7 @@ public class GameManager : MonoBehaviour {
 		} else {
 			AutoFade.LoadLevel("EndScreen", 1, 1, Color.black);
 			Screen.lockCursor = false;
-			print ("You win!");
+			//print ("You win!");
 		}
 	}
 	

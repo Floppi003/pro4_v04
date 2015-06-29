@@ -41,11 +41,6 @@ public class CameraRaycast : MonoBehaviour {
 					interactionRaycastHit.collider.gameObject.GetComponent<LevelLoaderNew>().LevelButtonPressed();
 				}
 
-			} else if (interactionRaycastHit.collider.gameObject.tag == "Exploder"){
-				loadPrompt = "[F]  Explosion";
-				showHint = true;
-				interactionRaycastHit.collider.gameObject.GetComponent<Explosion>().Explode();
-		
 			} else if(interactionRaycastHit.collider.gameObject.tag == "ColorButton") { 	// Color Buttons
 				loadPrompt = "[F]  Knopf drücken";
 				showHint = true;

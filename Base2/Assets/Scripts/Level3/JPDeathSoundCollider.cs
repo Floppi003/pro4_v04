@@ -14,4 +14,3 @@ public class JPDeathSoundCollider : MonoBehaviour
 		Debug.LogError ("DEAD");
 	}
 }
-
