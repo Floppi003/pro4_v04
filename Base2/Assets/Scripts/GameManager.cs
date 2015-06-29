@@ -4,6 +4,7 @@ using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour {
 	public Canvas pauseMenu;
+	public bool cheatOnce = false;
 	// Count
 	private int maxLevels = 4; //amount of levels in game (!=max id = maxLevels - 1)
 	private int currentLevel = 1; //start with 1 = id 0
@@ -55,17 +56,24 @@ public class GameManager : MonoBehaviour {
 
 	void Cheat(){
 		if ((Input.GetButton ("ButtonPressed")) && (Input.GetButton ("Jump"))) {
-			if(Application.loadedLevelName != "Central"){
+			if(Application.loadedLevelName != "Central" && cheatOnce){
 				CompleteLevel();
+				cheatOnce = false;
+				Debug.Log ("Cheat!");
 			}
 		}
 	}
 
 	void Start()
 	{
+		Debug.Log ("Current level PlayerPrefs: " + PlayerPrefs.GetInt ("Current Level"));
+		Debug.Log ("Current level now : " + currentLevel);	
+		Debug.Log ("Unlocked level : " + PlayerPrefs.GetInt("Level Unlocked"));
+
 		BlackFades.FadeIn (1.0F, 1.0F, Color.black);
 		player = GameObject.Find ("Player");
 
+		cheatOnce = true;
 		pauseMenu.enabled = false;
 
 		GameObject sensitivitySlider = pauseMenu.transform.Find("BG Panel").Find("Panel").Find("SensitivitySlider").gameObject;
@@ -113,10 +121,7 @@ public class GameManager : MonoBehaviour {
 		Time.timeScale = 1f;
 		if (currentLevel < maxLevels) //current level id (-1) < max level id (-1)
 		{
-			print ("currentLevel before: " + currentLevel);
 			currentLevel += 1;
-			print ("currentLevel after: " + currentLevel);
-			print (currentLevel);
 			SaveGame();
 			//Application.LoadLevel ("Level " + currentLevel.ToString ()); //load by name instead of id
 			//int nextLevel = currentLevel-1;

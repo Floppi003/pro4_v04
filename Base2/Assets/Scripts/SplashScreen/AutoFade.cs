@@ -53,7 +53,6 @@ public class AutoFade : MonoBehaviour
 		float t = 0.0f;
 		while (t<1.0f)
 		{
-			Debug.Log ("Fade in");
 			yield return new WaitForEndOfFrame();
 			t = Mathf.Clamp01(t + Time.deltaTime / aFadeOutTime);
 			DrawQuad(aColor,t);
@@ -64,10 +63,8 @@ public class AutoFade : MonoBehaviour
 			Application.LoadLevel(m_LevelIndex);
 		while (t>0.0f)
 		{
-			Debug.Log ("Fade out before t: " + t);
 			yield return new WaitForEndOfFrame();
 			t = Mathf.Clamp01(t - Time.deltaTime / aFadeInTime);
-			Debug.Log ("Fade out after t: " + t);
 			DrawQuad(aColor,t);
 		}
 		m_Fading = false;

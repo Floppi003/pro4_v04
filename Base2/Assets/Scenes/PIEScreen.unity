@@ -258,7 +258,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85dfdea0fe10f1b43a993ec777c0ecc8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  delayTime: 1.5
+  delayTime: 2.5
   nextLevel: SplashScreen
 --- !u!114 &511812973
 MonoBehaviour:
