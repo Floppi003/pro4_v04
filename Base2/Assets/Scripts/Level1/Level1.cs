@@ -114,8 +114,8 @@ public class Level1 : MonoBehaviour {
 		
 		// disable the rendering of the invisible walls
 		//GameObject.Find ("Level_1_Obstacle_Wall_01").GetComponent<MeshRenderer>().enabled = false;
-		//GameObject.Find ("Level_1_Obstacle_Wall_02").GetComponent<MeshRenderer>().enabled = false;
-		//GameObject.Find ("Level_1_Obstacle_Wall_03").GetComponent<MeshRenderer>().enabled = false;
+		GameObject.Find ("Level_1_Obstacle_Wall_02").GetComponent<MeshRenderer>().enabled = false;
+		GameObject.Find ("Level_1_Obstacle_Wall_03").GetComponent<MeshRenderer>().enabled = false;
 		//GameObject.Find ("Level_1_Obstacle_Wall_04").GetComponent<MeshRenderer>().enabled = false;
 		
 		// set all wall lights to first color
@@ -208,7 +208,7 @@ public class Level1 : MonoBehaviour {
 	}
 	
 	public void pushPlayerBack() {
-		GameObject.Find ("Player").GetComponent<Rigidbody>().AddForce((transform.forward) * 1500);
+		GameObject.Find ("Player").GetComponent<Rigidbody>().AddForce(new Vector3(1, 0, 0) * 1500);
 	}
 	
 	// shows the invisible walls when the user closed his eyes
