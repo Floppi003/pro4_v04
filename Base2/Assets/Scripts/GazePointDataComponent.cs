@@ -73,7 +73,7 @@ public class GazePointDataComponent : MonoBehaviour
 			Ray gazeRay = Camera.main.ScreenPointToRay (new Vector3 (screenCoordinates.x, screenCoordinates.y, 0));
 
 			if (Physics.Raycast (gazeRay.origin, gazeRay.direction, out gazeRaycastHit, 30)) {
-				//Debug.Log ("I gazed: " + gazeRaycastHit.collider.gameObject.name);
+				Debug.Log ("I gazed: " + gazeRaycastHit.collider.gameObject.name);
 				string gazedObject = gazeRaycastHit.collider.gameObject.name;
 
 				// set collider to gazed position (used for multiple buttons that will be colored due to the collider then)
@@ -87,6 +87,9 @@ public class GazePointDataComponent : MonoBehaviour
 					gazeRaycastHit.collider.gameObject.GetComponent<AudioColorButton>().hit(gazeRaycastHit.collider);
 				} else if (gazeRaycastHit.transform.gameObject.name == "Logo") {
 					gazeRaycastHit.collider.gameObject.GetComponent<HubLogo>().hit(gazeRaycastHit.collider);
+				} else if (gazeRaycastHit.transform.gameObject.name == "Arrow") {
+					Debug.Log ("Arrow hit!");
+					gazeRaycastHit.collider.gameObject.GetComponent<GravityButton>().hit(gazeRaycastHit.collider);
 				}
 
 				/*--------AudioFilesLevelFloppi afFloppi = GameObject.Find ("AudioFilesLevelFloppi").GetComponent<AudioFilesLevelFloppi>();
