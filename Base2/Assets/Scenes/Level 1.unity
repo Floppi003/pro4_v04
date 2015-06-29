@@ -165,7 +165,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1001 &1289677
 Prefab:
@@ -232,8 +232,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
-  gazedColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
+  gazedColor: {r: .615686297, g: .160784319, b: .117647067, a: 0}
 --- !u!1 &5422630
 GameObject:
   m_PrefabParentObject: {fileID: 180082, guid: 49c86870cff89e34ba4045640d543dab, type: 2}
@@ -266,7 +266,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1001 &6416913
 Prefab:
@@ -383,7 +383,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &8469485
 GameObject:
@@ -400,7 +400,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &10511351
 GameObject:
@@ -417,8 +417,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
-  gazedColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
+  gazedColor: {r: .521568656, g: .501960814, b: .0941176564, a: 0}
 --- !u!1001 &14019147
 Prefab:
   m_ObjectHideFlags: 0
@@ -484,7 +484,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!4 &18828730
 Transform:
@@ -555,8 +555,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
-  gazedColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
+  gazedColor: {r: .960784376, g: .858823597, b: 0, a: 0}
 --- !u!1 &19581530
 GameObject:
   m_PrefabParentObject: {fileID: 180082, guid: 49c86870cff89e34ba4045640d543dab, type: 2}
@@ -589,7 +589,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1001 &20559576
 Prefab:
@@ -1091,8 +1091,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
-  gazedColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
+  gazedColor: {r: .968627512, g: .854902029, b: 0, a: 0}
 --- !u!4 &43316124
 Transform:
   m_PrefabParentObject: {fileID: 447732, guid: 9724f5c58a4264f4495d3cd71e8bc822, type: 2}
@@ -1112,7 +1112,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &43983877
 GameObject:
@@ -1430,7 +1430,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1001 &53272578
 Prefab:
@@ -1547,7 +1547,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &55730773
 GameObject:
@@ -1564,8 +1564,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
-  gazedColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
+  gazedColor: {r: .713725507, g: .776470661, b: .011764707, a: 0}
 --- !u!1001 &58440482
 Prefab:
   m_ObjectHideFlags: 0
@@ -1631,8 +1631,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
-  gazedColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
+  gazedColor: {r: 0, g: .46274513, b: .568627477, a: 0}
 --- !u!1 &61779328
 GameObject:
   m_PrefabParentObject: {fileID: 180082, guid: 49c86870cff89e34ba4045640d543dab, type: 2}
@@ -1648,7 +1648,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1001 &62542584
 Prefab:
@@ -1765,8 +1765,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
-  gazedColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
+  gazedColor: {r: .00392156886, g: .36470589, b: .666666687, a: 0}
 --- !u!1001 &65929102
 Prefab:
   m_ObjectHideFlags: 0
@@ -1828,7 +1828,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1001 &70622970
 Prefab:
@@ -1895,7 +1895,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1001 &73014961
 Prefab:
@@ -2445,7 +2445,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1001 &85819758
 Prefab:
@@ -2512,8 +2512,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
-  gazedColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
+  gazedColor: {r: .623529434, g: .160784319, b: .113725498, a: 0}
 --- !u!1001 &86953538
 Prefab:
   m_ObjectHideFlags: 0
@@ -2625,7 +2625,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &87877643
 GameObject:
@@ -2642,7 +2642,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &89280985
 GameObject:
@@ -3023,7 +3023,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &104945087
 GameObject:
@@ -3040,7 +3040,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1001 &105158647
 Prefab:
@@ -3257,7 +3257,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &108940213
 GameObject:
@@ -3274,8 +3274,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
-  gazedColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
+  gazedColor: {r: 0, g: .541176498, b: .694117665, a: 0}
 --- !u!1001 &109558175
 Prefab:
   m_ObjectHideFlags: 0
@@ -3395,7 +3395,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!4 &115415703
 Transform:
@@ -3512,7 +3512,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!4 &121223320
 Transform:
@@ -3900,8 +3900,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
-  gazedColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
+  gazedColor: {r: .92549026, g: .43921572, b: .0274509825, a: 0}
 --- !u!1001 &133481333
 Prefab:
   m_ObjectHideFlags: 0
@@ -4101,7 +4101,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1001 &143760384
 Prefab:
@@ -4268,8 +4268,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
-  gazedColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
+  gazedColor: {r: .549019635, g: .690196097, b: .0705882385, a: 0}
 --- !u!1 &148587656
 GameObject:
   m_PrefabParentObject: {fileID: 180082, guid: 49c86870cff89e34ba4045640d543dab, type: 2}
@@ -4352,8 +4352,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
-  gazedColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
+  gazedColor: {r: .709803939, g: .784313798, b: 0, a: 0}
 --- !u!1 &153781373
 GameObject:
   m_PrefabParentObject: {fileID: 180082, guid: 49c86870cff89e34ba4045640d543dab, type: 2}
@@ -4440,8 +4440,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
-  gazedColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
+  gazedColor: {r: .00784313772, g: .541176498, b: .698039234, a: 0}
 --- !u!1 &156448430
 GameObject:
   m_PrefabParentObject: {fileID: 180082, guid: 49c86870cff89e34ba4045640d543dab, type: 2}
@@ -4595,7 +4595,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &166779042
 GameObject:
@@ -4612,8 +4612,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
-  gazedColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
+  gazedColor: {r: .823529482, g: .831372619, b: .0156862754, a: 0}
 --- !u!1 &167329625
 GameObject:
   m_PrefabParentObject: {fileID: 180082, guid: 49c86870cff89e34ba4045640d543dab, type: 2}
@@ -4696,7 +4696,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1001 &175736102
 Prefab:
@@ -4767,7 +4767,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &179312272
 GameObject:
@@ -5014,7 +5014,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &185924125
 GameObject:
@@ -5048,7 +5048,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &187276861
 GameObject:
@@ -5065,8 +5065,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
-  gazedColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
+  gazedColor: {r: .78039223, g: .356862754, b: .101960793, a: 0}
 --- !u!1 &187485286
 GameObject:
   m_PrefabParentObject: {fileID: 180082, guid: 49c86870cff89e34ba4045640d543dab, type: 2}
@@ -5518,7 +5518,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1001 &197055955
 Prefab:
@@ -5956,7 +5956,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &212916147
 GameObject:
@@ -5973,7 +5973,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &213790413
 GameObject:
@@ -5990,7 +5990,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1001 &214241675
 Prefab:
@@ -6317,7 +6317,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!4 &229169498
 Transform:
@@ -6534,7 +6534,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1001 &236357375
 Prefab:
@@ -6718,7 +6718,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &243722301
 GameObject:
@@ -6735,8 +6735,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
-  gazedColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
+  gazedColor: {r: .654901981, g: .43921572, b: .117647067, a: 0}
 --- !u!1001 &245375058
 Prefab:
   m_ObjectHideFlags: 0
@@ -6906,7 +6906,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &248620647
 GameObject:
@@ -6923,7 +6923,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &252489495
 GameObject:
@@ -6940,8 +6940,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
-  gazedColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
+  gazedColor: {r: .0352941193, g: .639215708, b: .356862754, a: 0}
 --- !u!1001 &253714753
 Prefab:
   m_ObjectHideFlags: 0
@@ -7057,8 +7057,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
-  gazedColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
+  gazedColor: {r: .011764707, g: .619607866, b: .352941185, a: 0}
 --- !u!1001 &257643298
 Prefab:
   m_ObjectHideFlags: 0
@@ -7370,8 +7370,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
-  gazedColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
+  gazedColor: {r: .623529434, g: .160784319, b: .113725498, a: 0}
 --- !u!1001 &273503945
 Prefab:
   m_ObjectHideFlags: 0
@@ -7642,7 +7642,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &278108833
 GameObject:
@@ -7659,8 +7659,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
-  gazedColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
+  gazedColor: {r: .815686345, g: .835294187, b: 0, a: 0}
 --- !u!4 &279736849
 Transform:
   m_PrefabParentObject: {fileID: 496146, guid: 6dd4619ac3135634095102d9d8ee68a7, type: 2}
@@ -7948,7 +7948,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &294080582
 GameObject:
@@ -7965,7 +7965,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1001 &294091149
 Prefab:
@@ -8032,8 +8032,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
-  gazedColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
+  gazedColor: {r: .694117665, g: .741176486, b: .00392156886, a: 0}
 --- !u!1001 &295587024
 Prefab:
   m_ObjectHideFlags: 0
@@ -8095,7 +8095,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &299810733
 GameObject:
@@ -8330,7 +8330,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!4 &311189358
 Transform:
@@ -8568,7 +8568,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &317736290
 GameObject:
@@ -8602,7 +8602,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1001 &320620688
 Prefab:
@@ -8937,7 +8937,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &334187127
 GameObject:
@@ -8954,7 +8954,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!4 &334939340
 Transform:
@@ -8975,7 +8975,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!4 &340807539
 Transform:
@@ -8996,7 +8996,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1001 &343894893
 Prefab:
@@ -9063,7 +9063,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &347607842
 GameObject:
@@ -9080,7 +9080,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1001 &347731358
 Prefab:
@@ -9678,7 +9678,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &375590249
 GameObject:
@@ -9783,8 +9783,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
-  gazedColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
+  gazedColor: {r: .937254965, g: .478431404, b: 0, a: 0}
 --- !u!1 &379711957
 GameObject:
   m_PrefabParentObject: {fileID: 180082, guid: 49c86870cff89e34ba4045640d543dab, type: 2}
@@ -9800,7 +9800,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1001 &379737219
 Prefab:
@@ -9884,7 +9884,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &381663297
 GameObject:
@@ -9935,7 +9935,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1001 &384265156
 Prefab:
@@ -10211,7 +10211,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &391291457
 GameObject:
@@ -10399,8 +10399,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
-  gazedColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
+  gazedColor: {r: .729411781, g: .800000072, b: .0235294141, a: 0}
 --- !u!1 &394346291
 GameObject:
   m_PrefabParentObject: {fileID: 180082, guid: 49c86870cff89e34ba4045640d543dab, type: 2}
@@ -10433,7 +10433,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1001 &395692925
 Prefab:
@@ -10592,7 +10592,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1001 &398248537
 Prefab:
@@ -10709,8 +10709,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
-  gazedColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
+  gazedColor: {r: .427451015, g: .70588237, b: .337254912, a: 0}
 --- !u!1 &399456087
 GameObject:
   m_PrefabParentObject: {fileID: 180082, guid: 49c86870cff89e34ba4045640d543dab, type: 2}
@@ -10726,7 +10726,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &399497043
 GameObject:
@@ -10786,7 +10786,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &400581292
 GameObject:
@@ -10803,7 +10803,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &402146855
 GameObject:
@@ -10820,8 +10820,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
-  gazedColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
+  gazedColor: {r: 0, g: .494117677, b: .631372571, a: 0}
 --- !u!1001 &404097168
 Prefab:
   m_ObjectHideFlags: 0
@@ -11075,8 +11075,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
-  gazedColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
+  gazedColor: {r: 0, g: .662745118, b: .345098048, a: 0}
 --- !u!1 &412302021
 GameObject:
   m_PrefabParentObject: {fileID: 180082, guid: 49c86870cff89e34ba4045640d543dab, type: 2}
@@ -11159,7 +11159,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1001 &413360716
 Prefab:
@@ -11226,7 +11226,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!4 &416187786
 Transform:
@@ -11423,7 +11423,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &427948772
 GameObject:
@@ -11503,8 +11503,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
-  gazedColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
+  gazedColor: {r: .654901981, g: .443137288, b: .105882362, a: 0}
 --- !u!1001 &428861227
 Prefab:
   m_ObjectHideFlags: 0
@@ -11570,7 +11570,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &430621401
 GameObject:
@@ -11587,7 +11587,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &430790055
 GameObject:
@@ -11751,7 +11751,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &437586580
 GameObject:
@@ -11768,7 +11768,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &437870778
 GameObject:
@@ -11965,7 +11965,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1001 &446204031
 Prefab:
@@ -12078,7 +12078,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1001 &451019333
 Prefab:
@@ -12645,7 +12645,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1001 &463868938
 Prefab:
@@ -12792,8 +12792,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 1, g: 1, b: 1, a: 0}
-  gazedColor: {r: 0, g: 1, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
+  gazedColor: {r: 0, g: .552941203, b: .678431392, a: 0}
 --- !u!1001 &471036153
 Prefab:
   m_ObjectHideFlags: 0
@@ -12911,8 +12911,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
-  gazedColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
+  gazedColor: {r: .00784313772, g: .596078455, b: .650980413, a: 0}
 --- !u!1001 &475658912
 Prefab:
   m_ObjectHideFlags: 0
@@ -13278,7 +13278,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &484946824
 GameObject:
@@ -13295,7 +13295,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1001 &485776525
 Prefab:
@@ -13379,7 +13379,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &487394764
 GameObject:
@@ -13413,7 +13413,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &490276083
 GameObject:
@@ -13501,7 +13501,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1001 &492953258
 Prefab:
@@ -13852,8 +13852,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
-  gazedColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
+  gazedColor: {r: .694117665, g: .623529434, b: .0588235334, a: 0}
 --- !u!1001 &506493565
 Prefab:
   m_ObjectHideFlags: 0
@@ -13940,7 +13940,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &510081333
 GameObject:
@@ -13991,7 +13991,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1001 &512991400
 Prefab:
@@ -14259,8 +14259,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
-  gazedColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
+  gazedColor: {r: .00392156886, g: .549019635, b: .678431392, a: 0}
 --- !u!1001 &518337027
 Prefab:
   m_ObjectHideFlags: 0
@@ -14714,7 +14714,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &534523350
 GameObject:
@@ -14999,7 +14999,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1001 &543215511
 Prefab:
@@ -15270,7 +15270,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &546785502
 GameObject:
@@ -15364,8 +15364,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
-  gazedColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
+  gazedColor: {r: .921568692, g: .43921572, b: .0313725509, a: 0}
 --- !u!1 &549138431
 GameObject:
   m_PrefabParentObject: {fileID: 180082, guid: 49c86870cff89e34ba4045640d543dab, type: 2}
@@ -15628,7 +15628,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1001 &559694305
 Prefab:
@@ -15762,7 +15762,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!4 &564745954
 Transform:
@@ -15984,8 +15984,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
-  gazedColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
+  gazedColor: {r: .549019635, g: .690196097, b: .0627451017, a: 0}
 --- !u!1 &572229001
 GameObject:
   m_PrefabParentObject: {fileID: 180082, guid: 49c86870cff89e34ba4045640d543dab, type: 2}
@@ -16001,7 +16001,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1001 &573135701
 Prefab:
@@ -16222,7 +16222,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &585179606
 GameObject:
@@ -16473,7 +16473,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &596825887
 GameObject:
@@ -16611,7 +16611,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &603326918
 GameObject:
@@ -16645,7 +16645,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1001 &606152441
 Prefab:
@@ -17259,8 +17259,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
-  gazedColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
+  gazedColor: {r: .549019635, g: .686274529, b: .0745098069, a: 0}
 --- !u!1001 &625319071
 Prefab:
   m_ObjectHideFlags: 0
@@ -17476,8 +17476,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
-  gazedColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
+  gazedColor: {r: 1, g: 1, b: 1, a: 0}
 --- !u!1001 &629914713
 Prefab:
   m_ObjectHideFlags: 0
@@ -17543,8 +17543,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
-  gazedColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
+  gazedColor: {r: .48627454, g: .611764729, b: .0901960805, a: 0}
 --- !u!1001 &633235475
 Prefab:
   m_ObjectHideFlags: 0
@@ -17986,7 +17986,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1001 &648590360
 Prefab:
@@ -18439,7 +18439,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1001 &658141731
 Prefab:
@@ -18606,7 +18606,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &660463767
 GameObject:
@@ -18623,8 +18623,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
-  gazedColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
+  gazedColor: {r: .368627459, g: .576470613, b: .129411772, a: 0}
 --- !u!1001 &660717053
 Prefab:
   m_ObjectHideFlags: 0
@@ -18740,7 +18740,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &665891963
 GameObject:
@@ -18824,8 +18824,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
-  gazedColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
+  gazedColor: {r: .670588255, g: .521568656, b: .0941176564, a: 0}
 --- !u!1001 &669025074
 Prefab:
   m_ObjectHideFlags: 0
@@ -18891,8 +18891,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
-  gazedColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
+  gazedColor: {r: .631372571, g: .160784319, b: .0980392247, a: 0}
 --- !u!1 &671038689
 GameObject:
   m_PrefabParentObject: {fileID: 180082, guid: 49c86870cff89e34ba4045640d543dab, type: 2}
@@ -19022,8 +19022,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
-  gazedColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
+  gazedColor: {r: .937254965, g: .498039246, b: .00392156886, a: 0}
 --- !u!1001 &680825941
 Prefab:
   m_ObjectHideFlags: 0
@@ -19089,7 +19089,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1001 &681262574
 Prefab:
@@ -19539,8 +19539,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
-  gazedColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
+  gazedColor: {r: .623529434, g: .160784319, b: .113725498, a: 0}
 --- !u!1001 &691938865
 Prefab:
   m_ObjectHideFlags: 0
@@ -19752,7 +19752,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &702539945
 GameObject:
@@ -19991,8 +19991,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
-  gazedColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
+  gazedColor: {r: .843137324, g: .82745105, b: 0, a: 0}
 --- !u!1001 &713869182
 Prefab:
   m_ObjectHideFlags: 0
@@ -20555,7 +20555,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &718924997
 GameObject:
@@ -20572,7 +20572,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1001 &720607173
 Prefab:
@@ -20739,7 +20739,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1001 &722951361
 Prefab:
@@ -20902,7 +20902,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &728253443
 GameObject:
@@ -20919,7 +20919,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &728512462
 GameObject:
@@ -21141,7 +21141,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &735859777
 GameObject:
@@ -21342,7 +21342,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1001 &752193225
 Prefab:
@@ -21409,7 +21409,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1001 &754486773
 Prefab:
@@ -21911,7 +21911,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!4 &771704902
 Transform:
@@ -21932,7 +21932,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1001 &775374939
 Prefab:
@@ -21995,7 +21995,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1001 &775648712
 Prefab:
@@ -22112,7 +22112,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1001 &780055105
 Prefab:
@@ -22179,8 +22179,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
-  gazedColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
+  gazedColor: {r: .552941203, g: .68235296, b: .0980392247, a: 0}
 --- !u!1001 &781882893
 Prefab:
   m_ObjectHideFlags: 0
@@ -22292,8 +22292,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
-  gazedColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
+  gazedColor: {r: .764705956, g: .125490203, b: .372549027, a: 0}
 --- !u!1 &782680782
 GameObject:
   m_PrefabParentObject: {fileID: 180082, guid: 49c86870cff89e34ba4045640d543dab, type: 2}
@@ -22309,8 +22309,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
-  gazedColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
+  gazedColor: {r: .00392156886, g: .572549045, b: .356862754, a: 0}
 --- !u!1001 &783693032
 Prefab:
   m_ObjectHideFlags: 0
@@ -22902,7 +22902,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &806977562
 GameObject:
@@ -22919,8 +22919,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
-  gazedColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
+  gazedColor: {r: .427451015, g: .70588237, b: .337254912, a: 0}
 --- !u!1 &807109159
 GameObject:
   m_ObjectHideFlags: 0
@@ -23054,8 +23054,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
-  gazedColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
+  gazedColor: {r: .713725507, g: .776470661, b: .00392156886, a: 0}
 --- !u!1 &811980353
 GameObject:
   m_PrefabParentObject: {fileID: 180082, guid: 49c86870cff89e34ba4045640d543dab, type: 2}
@@ -23238,7 +23238,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1001 &820479112
 Prefab:
@@ -23305,7 +23305,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &822305162
 GameObject:
@@ -23403,7 +23403,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &825885955
 GameObject:
@@ -23487,7 +23487,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &830751763
 GameObject:
@@ -23504,7 +23504,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1001 &834722883
 Prefab:
@@ -24008,7 +24008,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &842243057
 GameObject:
@@ -24142,7 +24142,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &847447256
 GameObject:
@@ -24159,7 +24159,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1001 &849421653
 Prefab:
@@ -24339,7 +24339,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1001 &853973408
 Prefab:
@@ -24744,7 +24744,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &865528234
 GameObject:
@@ -24799,7 +24799,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &869486857
 GameObject:
@@ -24816,8 +24816,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
-  gazedColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
+  gazedColor: {r: .694117665, g: .784313798, b: 0, a: 0}
 --- !u!1 &869622020
 GameObject:
   m_PrefabParentObject: {fileID: 180082, guid: 49c86870cff89e34ba4045640d543dab, type: 2}
@@ -24833,8 +24833,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
-  gazedColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
+  gazedColor: {r: .968627512, g: .698039234, b: .00392156886, a: 0}
 --- !u!1 &870376684
 GameObject:
   m_PrefabParentObject: {fileID: 180082, guid: 49c86870cff89e34ba4045640d543dab, type: 2}
@@ -25098,8 +25098,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
-  gazedColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
+  gazedColor: {r: .00392156886, g: .572549045, b: .356862754, a: 0}
 --- !u!1001 &882004677
 Prefab:
   m_ObjectHideFlags: 0
@@ -25215,8 +25215,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
-  gazedColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
+  gazedColor: {r: .623529434, g: .160784319, b: .113725498, a: 0}
 --- !u!1001 &889214230
 Prefab:
   m_ObjectHideFlags: 0
@@ -25939,7 +25939,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1001 &909524459
 Prefab:
@@ -26240,7 +26240,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1001 &924546658
 Prefab:
@@ -27061,7 +27061,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1001 &946723254
 Prefab:
@@ -27335,8 +27335,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
-  gazedColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
+  gazedColor: {r: .709803939, g: .0431372561, b: .0862745121, a: 0}
 --- !u!1 &950025850
 GameObject:
   m_PrefabParentObject: {fileID: 180082, guid: 49c86870cff89e34ba4045640d543dab, type: 2}
@@ -27369,7 +27369,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &952378052
 GameObject:
@@ -27403,7 +27403,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1001 &953164640
 Prefab:
@@ -27767,7 +27767,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1001 &968648521
 Prefab:
@@ -27834,8 +27834,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
-  gazedColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
+  gazedColor: {r: .00392156886, g: .545098066, b: .690196097, a: 0}
 --- !u!1 &973671384
 GameObject:
   m_PrefabParentObject: {fileID: 180082, guid: 49c86870cff89e34ba4045640d543dab, type: 2}
@@ -27851,7 +27851,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!4 &975758269
 Transform:
@@ -27972,8 +27972,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
-  gazedColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
+  gazedColor: {r: .82745105, g: .321568638, b: .0980392247, a: 0}
 --- !u!1 &977235500
 GameObject:
   m_PrefabParentObject: {fileID: 180082, guid: 49c86870cff89e34ba4045640d543dab, type: 2}
@@ -28006,8 +28006,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
-  gazedColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
+  gazedColor: {r: .00784313772, g: .36470589, b: .643137276, a: 0}
 --- !u!1001 &979800804
 Prefab:
   m_ObjectHideFlags: 0
@@ -28261,7 +28261,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &985672956
 GameObject:
@@ -28909,8 +28909,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
-  gazedColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
+  gazedColor: {r: .745098054, g: .0156862754, b: .105882362, a: 0}
 --- !u!1001 &1005980068
 Prefab:
   m_ObjectHideFlags: 0
@@ -29193,7 +29193,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1001 &1022271598
 Prefab:
@@ -29786,7 +29786,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1001 &1038162455
 Prefab:
@@ -29870,7 +29870,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!4 &1041496794
 Transform:
@@ -30199,7 +30199,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!4 &1046274611
 Transform:
@@ -30304,8 +30304,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
-  gazedColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
+  gazedColor: {r: 0, g: .200000018, b: .376470625, a: 0}
 --- !u!1001 &1051421540
 Prefab:
   m_ObjectHideFlags: 0
@@ -30371,7 +30371,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!4 &1053121876
 Transform:
@@ -30542,7 +30542,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &1059155690
 GameObject:
@@ -30559,8 +30559,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
-  gazedColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
+  gazedColor: {r: .70588237, g: .615686297, b: .0588235334, a: 0}
 --- !u!1 &1059404665
 GameObject:
   m_PrefabParentObject: {fileID: 180082, guid: 49c86870cff89e34ba4045640d543dab, type: 2}
@@ -30576,7 +30576,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1001 &1059875406
 Prefab:
@@ -30693,7 +30693,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1001 &1061200624
 Prefab:
@@ -30906,7 +30906,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &1064709766
 GameObject:
@@ -30923,7 +30923,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1001 &1065160497
 Prefab:
@@ -30994,7 +30994,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1001 &1069041786
 Prefab:
@@ -31111,8 +31111,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
-  gazedColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
+  gazedColor: {r: 0, g: .368627459, b: .65882355, a: 0}
 --- !u!1 &1076829191
 GameObject:
   m_PrefabParentObject: {fileID: 100000, guid: 4f9156fce5c6b2e4889d8953c6c8d338, type: 3}
@@ -31315,7 +31315,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &1079435384
 GameObject:
@@ -31399,7 +31399,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1001 &1083100802
 Prefab:
@@ -31793,8 +31793,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
-  gazedColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
+  gazedColor: {r: .972549081, g: .854902029, b: 0, a: 0}
 --- !u!1001 &1104519741
 Prefab:
   m_ObjectHideFlags: 0
@@ -31919,7 +31919,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &1105757324
 GameObject:
@@ -31936,7 +31936,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1001 &1106136770
 Prefab:
@@ -32003,7 +32003,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &1106866250
 GameObject:
@@ -32154,7 +32154,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &1112552186
 GameObject:
@@ -32351,7 +32351,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1001 &1121682333
 Prefab:
@@ -32923,7 +32923,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1001 &1147349360
 Prefab:
@@ -33007,8 +33007,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
-  gazedColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
+  gazedColor: {r: .0901960805, g: .53725493, b: .160784319, a: 0}
 --- !u!1 &1152270733
 GameObject:
   m_PrefabParentObject: {fileID: 180082, guid: 49c86870cff89e34ba4045640d543dab, type: 2}
@@ -33091,8 +33091,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
-  gazedColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
+  gazedColor: {r: .372549027, g: .101960793, b: .0823529437, a: 0}
 --- !u!1001 &1154719774
 Prefab:
   m_ObjectHideFlags: 0
@@ -33204,8 +33204,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
-  gazedColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
+  gazedColor: {r: .011764707, g: .349019617, b: .643137276, a: 0}
 --- !u!1001 &1160384106
 Prefab:
   m_ObjectHideFlags: 0
@@ -33288,7 +33288,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1001 &1163790209
 Prefab:
@@ -33689,7 +33689,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1001 &1177251451
 Prefab:
@@ -33969,8 +33969,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
-  gazedColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
+  gazedColor: {r: .745098054, g: .0156862754, b: .101960793, a: 0}
 --- !u!1001 &1189218072
 Prefab:
   m_ObjectHideFlags: 0
@@ -34086,7 +34086,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &1190251782
 GameObject:
@@ -34103,8 +34103,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
-  gazedColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
+  gazedColor: {r: .792156935, g: .36470589, b: .10980393, a: 0}
 --- !u!1001 &1190697624
 Prefab:
   m_ObjectHideFlags: 0
@@ -34572,8 +34572,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
-  gazedColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
+  gazedColor: {r: .545098066, g: .690196097, b: .0823529437, a: 0}
 --- !u!1 &1210026285
 GameObject:
   m_PrefabParentObject: {fileID: 180082, guid: 49c86870cff89e34ba4045640d543dab, type: 2}
@@ -34877,8 +34877,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
-  gazedColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
+  gazedColor: {r: .831372619, g: .31764707, b: .113725498, a: 0}
 --- !u!1 &1226487713
 GameObject:
   m_PrefabParentObject: {fileID: 180082, guid: 49c86870cff89e34ba4045640d543dab, type: 2}
@@ -34894,7 +34894,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &1227195232
 GameObject:
@@ -34911,7 +34911,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &1227947742
 GameObject:
@@ -35596,7 +35596,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &1232344572
 GameObject:
@@ -35630,7 +35630,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &1237557857
 GameObject:
@@ -35647,7 +35647,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1001 &1238068902
 Prefab:
@@ -35860,7 +35860,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &1246924816
 GameObject:
@@ -36011,8 +36011,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
-  gazedColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
+  gazedColor: {r: .552941203, g: .686274529, b: .0705882385, a: 0}
 --- !u!1 &1251708352
 GameObject:
   m_PrefabParentObject: {fileID: 180082, guid: 49c86870cff89e34ba4045640d543dab, type: 2}
@@ -36045,7 +36045,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1001 &1252954789
 Prefab:
@@ -36275,8 +36275,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
-  gazedColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
+  gazedColor: {r: .325490206, g: .666666687, b: .156862751, a: 0}
 --- !u!1 &1266799905
 GameObject:
   m_PrefabParentObject: {fileID: 180082, guid: 49c86870cff89e34ba4045640d543dab, type: 2}
@@ -36292,7 +36292,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &1267159685
 GameObject:
@@ -36309,7 +36309,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1001 &1268077722
 Prefab:
@@ -36376,7 +36376,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1001 &1271179645
 Prefab:
@@ -36760,7 +36760,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &1277107138
 GameObject:
@@ -37302,7 +37302,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1001 &1294826321
 Prefab:
@@ -38370,8 +38370,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
-  gazedColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
+  gazedColor: {r: .847058892, g: .796078503, b: .00392156886, a: 0}
 --- !u!1001 &1329476513
 Prefab:
   m_ObjectHideFlags: 0
@@ -38437,7 +38437,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &1332085407
 GameObject:
@@ -38471,7 +38471,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1001 &1339118735
 Prefab:
@@ -38605,8 +38605,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
-  gazedColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
+  gazedColor: {r: 1, g: 1, b: 1, a: 0}
 --- !u!1 &1341776070
 GameObject:
   m_PrefabParentObject: {fileID: 180082, guid: 49c86870cff89e34ba4045640d543dab, type: 2}
@@ -38639,7 +38639,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1001 &1342532451
 Prefab:
@@ -38706,7 +38706,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1001 &1343726648
 Prefab:
@@ -38790,7 +38790,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &1347034782
 GameObject:
@@ -38874,7 +38874,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1001 &1350437515
 Prefab:
@@ -39208,7 +39208,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &1358994051
 GameObject:
@@ -39292,7 +39292,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &1364564886
 GameObject:
@@ -39469,7 +39469,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &1373851488
 GameObject:
@@ -39894,7 +39894,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!4 &1386103863
 Transform:
@@ -39965,8 +39965,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
-  gazedColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
+  gazedColor: {r: .929411829, g: .478431404, b: .011764707, a: 0}
 --- !u!1001 &1394176047
 Prefab:
   m_ObjectHideFlags: 0
@@ -40216,7 +40216,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1001 &1406033829
 Prefab:
@@ -40450,7 +40450,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &1415950100
 GameObject:
@@ -40467,7 +40467,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1001 &1417650867
 Prefab:
@@ -40584,7 +40584,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1001 &1421888859
 Prefab:
@@ -40801,7 +40801,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &1428345351
 GameObject:
@@ -40835,7 +40835,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1001 &1429093882
 Prefab:
@@ -40898,7 +40898,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1001 &1429408024
 Prefab:
@@ -40965,7 +40965,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1001 &1429986132
 Prefab:
@@ -41153,8 +41153,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
-  gazedColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
+  gazedColor: {r: .972549081, g: .709803939, b: .0235294141, a: 0}
 --- !u!1001 &1435248541
 Prefab:
   m_ObjectHideFlags: 0
@@ -41316,7 +41316,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &1437719508
 GameObject:
@@ -41333,7 +41333,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!4 &1439581239
 Transform:
@@ -41500,7 +41500,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1001 &1447995041
 Prefab:
@@ -41882,7 +41882,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1001 &1462764904
 Prefab:
@@ -42155,7 +42155,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &1471993054
 GameObject:
@@ -42189,7 +42189,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1001 &1473870916
 Prefab:
@@ -42465,7 +42465,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &1480908951
 GameObject:
@@ -42603,8 +42603,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
-  gazedColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
+  gazedColor: {r: .725490212, g: .800000072, b: .00392156886, a: 0}
 --- !u!1001 &1485655953
 Prefab:
   m_ObjectHideFlags: 0
@@ -42737,7 +42737,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1001 &1488911151
 Prefab:
@@ -42838,8 +42838,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
-  gazedColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
+  gazedColor: {r: .745098054, g: .125490203, b: .0823529437, a: 0}
 --- !u!1001 &1492926685
 Prefab:
   m_ObjectHideFlags: 0
@@ -43480,8 +43480,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
-  gazedColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
+  gazedColor: {r: .972549081, g: .713725507, b: 0, a: 0}
 --- !u!1 &1514664701
 GameObject:
   m_PrefabParentObject: {fileID: 180082, guid: 49c86870cff89e34ba4045640d543dab, type: 2}
@@ -43894,7 +43894,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1001 &1525444030
 Prefab:
@@ -44145,7 +44145,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1001 &1535965963
 Prefab:
@@ -44212,8 +44212,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
-  gazedColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
+  gazedColor: {r: .929411829, g: .48627454, b: 0, a: 0}
 --- !u!1001 &1538123896
 Prefab:
   m_ObjectHideFlags: 0
@@ -44356,8 +44356,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
-  gazedColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
+  gazedColor: {r: .00784313772, g: .541176498, b: .690196097, a: 0}
 --- !u!1001 &1544321703
 Prefab:
   m_ObjectHideFlags: 0
@@ -44511,7 +44511,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &1551212922
 GameObject:
@@ -44833,7 +44833,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &1560144980
 GameObject:
@@ -45222,7 +45222,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1001 &1571752780
 Prefab:
@@ -45393,7 +45393,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &1582733956
 GameObject:
@@ -45410,7 +45410,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &1582760892
 GameObject:
@@ -45427,7 +45427,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1001 &1583133572
 Prefab:
@@ -45590,7 +45590,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!4 &1590454507
 Transform:
@@ -46282,7 +46282,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &1607139574
 GameObject:
@@ -46299,7 +46299,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1001 &1607375420
 Prefab:
@@ -46362,7 +46362,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1001 &1608985308
 Prefab:
@@ -46429,7 +46429,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1001 &1612391333
 Prefab:
@@ -46496,8 +46496,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
-  gazedColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
+  gazedColor: {r: .788235366, g: .360784322, b: .105882362, a: 0}
 --- !u!1001 &1612628974
 Prefab:
   m_ObjectHideFlags: 0
@@ -46777,8 +46777,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
-  gazedColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
+  gazedColor: {r: .945098102, g: .82745105, b: 0, a: 0}
 --- !u!1001 &1626145135
 Prefab:
   m_ObjectHideFlags: 0
@@ -46945,7 +46945,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &1629747922
 GameObject:
@@ -46962,8 +46962,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
-  gazedColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
+  gazedColor: {r: .713725507, g: .776470661, b: .00392156886, a: 0}
 --- !u!1001 &1630175897
 Prefab:
   m_ObjectHideFlags: 0
@@ -47025,7 +47025,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &1631270406
 GameObject:
@@ -47042,7 +47042,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &1633510936
 GameObject:
@@ -47059,7 +47059,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &1636112537
 GameObject:
@@ -47093,7 +47093,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &1637731818
 GameObject:
@@ -47110,8 +47110,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
-  gazedColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
+  gazedColor: {r: .00392156886, g: .31764707, b: .564705908, a: 0}
 --- !u!1 &1637922803
 GameObject:
   m_PrefabParentObject: {fileID: 180082, guid: 49c86870cff89e34ba4045640d543dab, type: 2}
@@ -47127,7 +47127,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1001 &1638097695
 Prefab:
@@ -47361,7 +47361,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &1646958044
 GameObject:
@@ -47395,8 +47395,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
-  gazedColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
+  gazedColor: {r: .376470625, g: .101960793, b: .101960793, a: 0}
 --- !u!1001 &1649937146
 Prefab:
   m_ObjectHideFlags: 0
@@ -47996,7 +47996,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!4 &1668812964
 Transform:
@@ -48067,8 +48067,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
-  gazedColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
+  gazedColor: {r: .701960802, g: .619607866, b: .0588235334, a: 0}
 --- !u!1001 &1669493312
 Prefab:
   m_ObjectHideFlags: 0
@@ -48277,8 +48277,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
-  gazedColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
+  gazedColor: {r: .396078467, g: .576470613, b: .152941182, a: 0}
 --- !u!1 &1673771794
 GameObject:
   m_PrefabParentObject: {fileID: 180082, guid: 49c86870cff89e34ba4045640d543dab, type: 2}
@@ -48294,7 +48294,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1001 &1673842303
 Prefab:
@@ -48469,8 +48469,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
-  gazedColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
+  gazedColor: {r: 0, g: .58431375, b: .588235319, a: 0}
 --- !u!1001 &1676279690
 Prefab:
   m_ObjectHideFlags: 0
@@ -48537,7 +48537,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultColor: {r: 1, g: 1, b: 1, a: 0}
-  gazedColor: {r: 0, g: 0, b: 0, a: 0}
+  gazedColor: {r: 0, g: .305882365, b: .58431375, a: 0}
 --- !u!1 &1678016731
 GameObject:
   m_PrefabParentObject: {fileID: 180082, guid: 49c86870cff89e34ba4045640d543dab, type: 2}
@@ -48553,7 +48553,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1001 &1680340376
 Prefab:
@@ -48770,7 +48770,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1001 &1685640286
 Prefab:
@@ -48837,8 +48837,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
-  gazedColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
+  gazedColor: {r: .784313798, g: .360784322, b: .10980393, a: 0}
 --- !u!1001 &1687244462
 Prefab:
   m_ObjectHideFlags: 0
@@ -49140,7 +49140,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1001 &1695469383
 Prefab:
@@ -49482,7 +49482,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1001 &1709152143
 Prefab:
@@ -49853,8 +49853,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
-  gazedColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
+  gazedColor: {r: .686274529, g: .745098054, b: .00392156886, a: 0}
 --- !u!1 &1718743557
 GameObject:
   m_PrefabParentObject: {fileID: 180082, guid: 49c86870cff89e34ba4045640d543dab, type: 2}
@@ -50037,8 +50037,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
-  gazedColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
+  gazedColor: {r: .823529482, g: .835294187, b: .00784313772, a: 0}
 --- !u!1001 &1726927448
 Prefab:
   m_ObjectHideFlags: 0
@@ -50121,8 +50121,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
-  gazedColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
+  gazedColor: {r: .443137288, g: .698039234, b: .345098048, a: 0}
 --- !u!1001 &1729330123
 Prefab:
   m_ObjectHideFlags: 0
@@ -50188,7 +50188,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &1731614488
 GameObject:
@@ -50740,7 +50740,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1001 &1749521379
 Prefab:
@@ -50907,8 +50907,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
-  gazedColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
+  gazedColor: {r: .92549026, g: .643137276, b: .00784313772, a: 0}
 --- !u!1 &1752631039
 GameObject:
   m_PrefabParentObject: {fileID: 180082, guid: 49c86870cff89e34ba4045640d543dab, type: 2}
@@ -50941,7 +50941,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1001 &1753780708
 Prefab:
@@ -51246,7 +51246,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &1757050316
 GameObject:
@@ -51263,8 +51263,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
-  gazedColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
+  gazedColor: {r: .960784376, g: .721568644, b: 0, a: 0}
 --- !u!1001 &1757809968
 Prefab:
   m_ObjectHideFlags: 0
@@ -51497,7 +51497,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1001 &1762530926
 Prefab:
@@ -51769,8 +51769,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
-  gazedColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
+  gazedColor: {r: 1, g: 1, b: 1, a: 0}
 --- !u!1 &1775632641
 GameObject:
   m_PrefabParentObject: {fileID: 180082, guid: 49c86870cff89e34ba4045640d543dab, type: 2}
@@ -51853,8 +51853,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
-  gazedColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
+  gazedColor: {r: .976470649, g: .698039234, b: 0, a: 0}
 --- !u!1001 &1779884515
 Prefab:
   m_ObjectHideFlags: 0
@@ -52074,7 +52074,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &1783893892
 GameObject:
@@ -52091,7 +52091,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1001 &1785322122
 Prefab:
@@ -52258,7 +52258,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &1792015368
 GameObject:
@@ -52359,7 +52359,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1001 &1796592058
 Prefab:
@@ -53085,7 +53085,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &1815673038
 GameObject:
@@ -53311,7 +53311,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1001 &1822031154
 Prefab:
@@ -53378,7 +53378,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!4 &1824270778
 Transform:
@@ -53512,8 +53512,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
-  gazedColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
+  gazedColor: {r: .854902029, g: .796078503, b: 0, a: 0}
 --- !u!1 &1830099572
 GameObject:
   m_PrefabParentObject: {fileID: 180082, guid: 49c86870cff89e34ba4045640d543dab, type: 2}
@@ -53529,8 +53529,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
-  gazedColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
+  gazedColor: {r: .729411781, g: .796078503, b: .00392156886, a: 0}
 --- !u!1001 &1830233706
 Prefab:
   m_ObjectHideFlags: 0
@@ -53763,7 +53763,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1001 &1838556175
 Prefab:
@@ -54281,7 +54281,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!4 &1854394647
 Transform:
@@ -54302,7 +54302,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1001 &1857882672
 Prefab:
@@ -54369,7 +54369,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!4 &1860332608
 Transform:
@@ -54574,8 +54574,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
-  gazedColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
+  gazedColor: {r: .937254965, g: .498039246, b: .00392156886, a: 0}
 --- !u!1001 &1870312685
 Prefab:
   m_ObjectHideFlags: 0
@@ -54821,7 +54821,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1001 &1874902064
 Prefab:
@@ -54934,8 +54934,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
-  gazedColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
+  gazedColor: {r: .960784376, g: .858823597, b: .00784313772, a: 0}
 --- !u!1001 &1879194438
 Prefab:
   m_ObjectHideFlags: 0
@@ -55331,7 +55331,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &1892575764
 GameObject:
@@ -55348,7 +55348,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &1893566869
 GameObject:
@@ -55365,7 +55365,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &1898223066
 GameObject:
@@ -55382,8 +55382,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
-  gazedColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
+  gazedColor: {r: .980392218, g: .709803939, b: 0, a: 0}
 --- !u!1 &1900028518
 GameObject:
   m_PrefabParentObject: {fileID: 180082, guid: 49c86870cff89e34ba4045640d543dab, type: 2}
@@ -55416,7 +55416,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1001 &1901786549
 Prefab:
@@ -55898,7 +55898,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1001 &1917883000
 Prefab:
@@ -56011,7 +56011,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!4 &1921335213
 Transform:
@@ -56082,8 +56082,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
-  gazedColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
+  gazedColor: {r: .701960802, g: .784313798, b: .00392156886, a: 0}
 --- !u!1001 &1927826641
 Prefab:
   m_ObjectHideFlags: 0
@@ -56399,7 +56399,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &1935185700
 GameObject:
@@ -56433,7 +56433,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1001 &1936490679
 Prefab:
@@ -56550,7 +56550,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!4 &1939843844
 Transform:
@@ -56679,7 +56679,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &1945506221
 GameObject:
@@ -56971,7 +56971,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1001 &1950730150
 Prefab:
@@ -57038,7 +57038,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1001 &1951952335
 Prefab:
@@ -57126,8 +57126,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
-  gazedColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
+  gazedColor: {r: .854902029, g: .800000072, b: 0, a: 0}
 --- !u!1 &1955765606
 GameObject:
   m_PrefabParentObject: {fileID: 180082, guid: 49c86870cff89e34ba4045640d543dab, type: 2}
@@ -57210,7 +57210,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &1956366943
 GameObject:
@@ -57227,7 +57227,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &1956752635
 GameObject:
@@ -57278,7 +57278,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &1959963118
 GameObject:
@@ -57295,7 +57295,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1001 &1961086948
 Prefab:
@@ -57546,7 +57546,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &1967104997
 GameObject:
@@ -57563,7 +57563,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1001 &1971182834
 Prefab:
@@ -57897,8 +57897,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
-  gazedColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
+  gazedColor: {r: .741176486, g: .800000072, b: 0, a: 0}
 --- !u!1 &1976599114
 GameObject:
   m_PrefabParentObject: {fileID: 180082, guid: 49c86870cff89e34ba4045640d543dab, type: 2}
@@ -57914,7 +57914,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &1977269936
 GameObject:
@@ -57948,7 +57948,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1001 &1981532046
 Prefab:
@@ -58065,7 +58065,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &1983229546
 GameObject:
@@ -58099,7 +58099,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!4 &1983961105
 Transform:
@@ -58412,7 +58412,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &2002977686
 GameObject:
@@ -58521,7 +58521,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1001 &2007626696
 Prefab:
@@ -58688,7 +58688,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &2009865485
 GameObject:
@@ -58705,7 +58705,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1001 &2010444151
 Prefab:
@@ -58952,8 +58952,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
-  gazedColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
+  gazedColor: {r: .372549027, g: .58431375, b: .149019614, a: 0}
 --- !u!1001 &2016055348
 Prefab:
   m_ObjectHideFlags: 0
@@ -59228,8 +59228,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
-  gazedColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
+  gazedColor: {r: .701960802, g: .611764729, b: .054901965, a: 0}
 --- !u!1001 &2024517355
 Prefab:
   m_ObjectHideFlags: 0
@@ -59508,7 +59508,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1001 &2035640294
 Prefab:
@@ -59575,7 +59575,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1001 &2038061405
 Prefab:
@@ -59998,7 +59998,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1001 &2054088753
 Prefab:
@@ -60236,8 +60236,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
-  gazedColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
+  gazedColor: {r: 0, g: .356862754, b: .65882355, a: 0}
 --- !u!1001 &2059789267
 Prefab:
   m_ObjectHideFlags: 0
@@ -60299,7 +60299,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!4 &2061248670
 Transform:
@@ -60404,7 +60404,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1001 &2062249030
 Prefab:
@@ -60492,8 +60492,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
-  gazedColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
+  gazedColor: {r: .549019635, g: .686274529, b: .0745098069, a: 0}
 --- !u!1001 &2065502216
 Prefab:
   m_ObjectHideFlags: 0
@@ -60855,7 +60855,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &2080657738
 GameObject:
@@ -60872,7 +60872,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &2080835049
 GameObject:
@@ -61040,7 +61040,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1001 &2089730841
 Prefab:
@@ -61157,7 +61157,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1001 &2090769851
 Prefab:
@@ -61168,15 +61168,15 @@ Prefab:
     m_Modifications:
     - target: {fileID: 474702, guid: 49c86870cff89e34ba4045640d543dab, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -4.55287933
+      value: -4.55000019
       objectReference: {fileID: 0}
     - target: {fileID: 474702, guid: 49c86870cff89e34ba4045640d543dab, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -.0634746552
+      value: -.0599999987
       objectReference: {fileID: 0}
     - target: {fileID: 474702, guid: 49c86870cff89e34ba4045640d543dab, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 11.3910065
+      value: 11.4200001
       objectReference: {fileID: 0}
     - target: {fileID: 474702, guid: 49c86870cff89e34ba4045640d543dab, type: 2}
       propertyPath: m_LocalRotation.x
@@ -61487,8 +61487,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
-  gazedColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
+  gazedColor: {r: .00392156886, g: .46274513, b: .600000024, a: 0}
 --- !u!1 &2094712438
 GameObject:
   m_PrefabParentObject: {fileID: 180082, guid: 49c86870cff89e34ba4045640d543dab, type: 2}
@@ -61504,7 +61504,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &2094824503
 GameObject:
@@ -61581,7 +61581,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1001 &2095571698
 Prefab:
@@ -61698,7 +61698,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1001 &2099206292
 Prefab:
@@ -62163,7 +62163,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &2108265023
 GameObject:
@@ -62180,7 +62180,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1001 &2108291311
 Prefab:
@@ -62593,7 +62593,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1001 &2123454862
 Prefab:
@@ -63161,7 +63161,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1001 &2143589929
 Prefab:
@@ -63278,7 +63278,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1001 &2145972681
 Prefab:
@@ -63345,8 +63345,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
-  gazedColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
+  gazedColor: {r: .976470649, g: .713725507, b: 0, a: 0}
 --- !u!1001 &2146604260
 Prefab:
   m_ObjectHideFlags: 0
@@ -63412,5 +63412,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4b514c36272df44923f7f5126337cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
   gazedColor: {r: 0, g: 0, b: 0, a: 0}
