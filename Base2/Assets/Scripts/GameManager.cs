@@ -63,6 +63,7 @@ public class GameManager : MonoBehaviour {
 
 	void Start()
 	{
+		BlackFades.FadeIn (1.0F, 1.0F, Color.black);
 		player = GameObject.Find ("Player");
 
 		pauseMenu.enabled = false;
@@ -119,10 +120,12 @@ public class GameManager : MonoBehaviour {
 			SaveGame();
 			//Application.LoadLevel ("Level " + currentLevel.ToString ()); //load by name instead of id
 			//int nextLevel = currentLevel-1;
-			Application.LoadLevel("Level " + currentLevel); //level name
+			//Application.LoadLevel("Level " + currentLevel); //level name
+			
+			AutoFade.LoadLevel("Level " + currentLevel, 1, 1, Color.black);
 			//DontDestroyOnLoad() - don't reset value with new scene
 		} else {
-			AutoFade.LoadLevel("EndScreen" ,1, 1, Color.black);
+			AutoFade.LoadLevel("EndScreen", 1, 1, Color.black);
 			Screen.lockCursor = false;
 			print ("You win!");
 		}

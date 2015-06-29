@@ -1,25 +1,24 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class AutoFade : MonoBehaviour
+public class BlackFades : MonoBehaviour
 {
-	private static AutoFade m_Instance = null;
+	private static BlackFades m_Instance = null;
 	private Material m_Material = null;
-	private string m_LevelName = "";
-	private int m_LevelIndex = 0;
 	private bool m_Fading = false;
 	
-	private static AutoFade Instance
+	private static BlackFades Instance
 	{
 		get
 		{
 			if (m_Instance == null)
 			{
-				m_Instance = (new GameObject("AutoFade")).AddComponent<AutoFade>();
+				m_Instance = (new GameObject("BlackFades")).AddComponent<BlackFades>();
 			}
 			return m_Instance;
 		}
 	}
+
 	public static bool Fading
 	{
 		get { return Instance.m_Fading; }
@@ -48,20 +47,10 @@ public class AutoFade : MonoBehaviour
 		GL.PopMatrix();
 	}
 	
-	private IEnumerator Fade(float aFadeOutTime, float aFadeInTime, Color aColor)
+	private IEnumerator FadeInLoop(float aFadeOutTime, float aFadeInTime, Color aColor)
 	{
-		float t = 0.0f;
-		while (t<1.0f)
-		{
-			Debug.Log ("Fade in");
-			yield return new WaitForEndOfFrame();
-			t = Mathf.Clamp01(t + Time.deltaTime / aFadeOutTime);
-			DrawQuad(aColor,t);
-		}
-		if (m_LevelName != "")
-			Application.LoadLevel(m_LevelName);
-		else
-			Application.LoadLevel(m_LevelIndex);
+		float t = 1.0f;
+
 		while (t>0.0f)
 		{
 			Debug.Log ("Fade out before t: " + t);
@@ -73,24 +62,40 @@ public class AutoFade : MonoBehaviour
 		m_Fading = false;
 	}
 
-	private void StartFade(float aFadeOutTime, float aFadeInTime, Color aColor)
+	private IEnumerator FadeOutLoop(float aFadeOutTime, float aFadeInTime, Color aColor)
 	{
-		m_Fading = true;
-		StartCoroutine(Fade(aFadeOutTime, aFadeInTime, aColor));
-	}
-	
-	public static void LoadLevel(string aLevelName,float aFadeOutTime, float aFadeInTime, Color aColor)
-	{
-		if (Fading) return;
-		Instance.m_LevelName = aLevelName;
-		Instance.StartFade(aFadeOutTime, aFadeInTime, aColor);
+		float t = 0.0f;
+		while (t<1.0f)
+		{
+			Debug.Log ("Fade in");
+			yield return new WaitForEndOfFrame();
+			t = Mathf.Clamp01(t + Time.deltaTime / aFadeOutTime);
+			DrawQuad(aColor,t);
+		}
+		m_Fading = false;
 	}
 
-	public static void LoadLevel(int aLevelIndex,float aFadeOutTime, float aFadeInTime, Color aColor)
+	private void FadeInStart(float aFadeOutTime, float aFadeInTime, Color aColor)
+	{
+		m_Fading = true;
+		StartCoroutine(FadeInLoop(aFadeOutTime, aFadeInTime, aColor));
+	}
+
+	private void FadeOutStart(float aFadeOutTime, float aFadeInTime, Color aColor)
+	{
+		m_Fading = true;
+		StartCoroutine(FadeOutLoop(aFadeOutTime, aFadeInTime, aColor));
+	}
+
+	public static void FadeIn(float aFadeOutTime, float aFadeInTime, Color aColor)
 	{
 		if (Fading) return;
-		Instance.m_LevelName = "";
-		Instance.m_LevelIndex = aLevelIndex;
-		Instance.StartFade(aFadeOutTime, aFadeInTime, aColor);
+		Instance.FadeInStart(aFadeOutTime, aFadeInTime, aColor);
+	}
+
+	public static void FadeOut(float aFadeOutTime, float aFadeInTime, Color aColor)
+	{
+		if (Fading) return;
+		Instance.FadeOutStart(aFadeOutTime, aFadeInTime, aColor);
 	}
 }
