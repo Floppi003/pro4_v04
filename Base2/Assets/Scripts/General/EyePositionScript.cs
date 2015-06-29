@@ -13,7 +13,7 @@ public class EyePositionScript : MonoBehaviour {
 	private EyeXHost eyexHost;
 
 	private Queue<Vector2> lastGazePoints;
-	private int smoothValue = 8;
+	public int smoothValue = 5;
 	private bool showEyePosition = false; //indicates whether the point indicating the eyeposition should be visible
 
 
