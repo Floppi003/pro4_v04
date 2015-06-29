@@ -47,7 +47,7 @@ public class BlackFades : MonoBehaviour
 		GL.PopMatrix();
 	}
 	
-	private IEnumerator FadeInLoop(float aFadeOutTime, float aFadeInTime, Color aColor)
+	private IEnumerator FadeInLoop(float aFadeInTime, Color aColor)
 	{
 		float t = 1.0f;
 
@@ -60,7 +60,7 @@ public class BlackFades : MonoBehaviour
 		m_Fading = false;
 	}
 
-	private IEnumerator FadeOutLoop(float aFadeOutTime, float aFadeInTime, Color aColor)
+	private IEnumerator FadeOutLoop(float aFadeOutTime, Color aColor)
 	{
 		float t = 0.0f;
 		while (t<1.0f)
@@ -72,27 +72,66 @@ public class BlackFades : MonoBehaviour
 		m_Fading = false;
 	}
 
-	private void FadeInStart(float aFadeOutTime, float aFadeInTime, Color aColor)
+	private IEnumerator FadeInOutLoop(float aFadeOutTime, float aFadeInTime, Color aColor) {
+		// fade out
+		float t = 0.0f;
+		while (t<1.0f)
+		{
+			yield return new WaitForEndOfFrame();
+			t = Mathf.Clamp01(t + Time.deltaTime / aFadeOutTime);
+			DrawQuad(aColor,t);
+		}
+
+		// wait for x seconds
+		float x = aFadeOutTime / 2.0f;
+		while (x > 0.0f) {
+			yield return new WaitForEndOfFrame();
+			x -= Time.deltaTime;
+			DrawQuad (aColor, 1.0f);
+		}
+
+		// fade in
+		while (t>0.0f)
+		{
+			yield return new WaitForEndOfFrame();
+			t = Mathf.Clamp01(t - Time.deltaTime / aFadeInTime);
+			DrawQuad(aColor,t);
+		}
+		m_Fading = false;
+	}
+
+	private void FadeInStart(float aFadeInTime, Color aColor)
 	{
 		m_Fading = true;
-		StartCoroutine(FadeInLoop(aFadeOutTime, aFadeInTime, aColor));
+		StartCoroutine(FadeInLoop(aFadeInTime, aColor));
 	}
 
-	private void FadeOutStart(float aFadeOutTime, float aFadeInTime, Color aColor)
+	private void FadeOutStart(float aFadeOutTime, Color aColor)
 	{
 		m_Fading = true;
-		StartCoroutine(FadeOutLoop(aFadeOutTime, aFadeInTime, aColor));
+		StartCoroutine(FadeOutLoop(aFadeOutTime, aColor));
 	}
 
-	public static void FadeIn(float aFadeOutTime, float aFadeInTime, Color aColor)
-	{
-		if (Fading) return;
-		Instance.FadeInStart(aFadeOutTime, aFadeInTime, aColor);
+	private void FadeInOutStart(float aFadeInTime, float aFadeOutTime, Color aColor) {
+		m_Fading = true;
+		StartCoroutine (FadeInOutLoop (aFadeInTime, aFadeOutTime, aColor));
 	}
 
-	public static void FadeOut(float aFadeOutTime, float aFadeInTime, Color aColor)
+	public static void FadeIn(float aFadeInTime, Color aColor)
 	{
 		if (Fading) return;
-		Instance.FadeOutStart(aFadeOutTime, aFadeInTime, aColor);
+		Instance.FadeInStart(aFadeInTime, aColor);
+	}
+
+	public static void FadeOut(float aFadeOutTime, Color aColor)
+	{
+		if (Fading) return;
+		Instance.FadeOutStart(aFadeOutTime, aColor);
+	}
+
+	public static void FadeInOut(float aFadeInTime, float aFadeOutTime, Color aColor) {
+		if (Fading)
+			return;
+		Instance.FadeInOutStart (aFadeInTime, aFadeOutTime, aColor);
 	}
 }

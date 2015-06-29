@@ -6,7 +6,7 @@ public class SplashScreenDelayed : MonoBehaviour {
 	public string nextLevel;
 
 	void Awake(){
-		BlackFades.FadeIn (1.0F, 1.0F, Color.black);
+		BlackFades.FadeIn (1.0F, Color.black);
 	}
 
 	IEnumerator Start(){

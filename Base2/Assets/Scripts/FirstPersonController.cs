@@ -235,7 +235,7 @@ public class FirstPersonController : MonoBehaviour {
 	{
 		if (other.transform.tag == "Enemy")
 		{
-			Die ();
+			FadeDie();
 		}
 		if (other.transform.tag == "Goal")
 		{
@@ -259,12 +259,21 @@ public class FirstPersonController : MonoBehaviour {
 		}
 	}
 
+	public void FadeDie()
+	{	
+		BlackFades.FadeInOut (1.0f, 1.0f, Color.black);
+		Invoke ("Die", 1.0f);
+
+	}
+
 	public void Die()
-	{		
+	{	
 		transform.GetComponent<GravityBody> ().gravityUp = spawnGravity;
 		transform.rotation = spawnRotation;
 		transform.position = spawn;
-		transform.GetComponent<Rigidbody> ().velocity = new Vector3 (0,0,0);
+		transform.GetComponent<Rigidbody> ().velocity = new Vector3 (0,0,0);	
+		
+		BlackFades.FadeIn (1, Color.black);
 	}
 	
 	public void ChangeMouseSensitivity(float sensitivity){

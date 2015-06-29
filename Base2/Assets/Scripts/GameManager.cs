@@ -65,7 +65,7 @@ public class GameManager : MonoBehaviour {
 
 	void Start()
 	{
-		BlackFades.FadeIn (1.0F, 1.0F, Color.black);
+		BlackFades.FadeIn (1.0F, Color.black);
 		player = GameObject.Find ("Player");
 
 		cheatOnce = true;
