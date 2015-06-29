@@ -10,11 +10,17 @@ public class AudioButtonManager : MonoBehaviour {
 	private int counter;
 	private bool open;
 
+	private GameObject[] code = new GameObject[5];
+
 	// Use this for initialization
 	void Start () {
 		counter = 0;
 		open = false;
 		audioFiles = GameObject.Find ("GM").GetComponent<AudioFilesLevel2>();
+
+		for (int i = 0; i < 5; i++) {
+			code[i] = GameObject.Find ("CodeCube" + (i+1));
+		}
 	}
 	
 	// Update is called once per frame
@@ -26,6 +32,7 @@ public class AudioButtonManager : MonoBehaviour {
 		if (open) {return;}
 
 		if (colorCode[counter] == mat) {
+			code[counter].GetComponent<ColorCodeScript>().swapMaterials();
 			counter++;
 			if (counter == colorCode.Length) {
 				this.GetComponent<Door>().move = true;
@@ -33,7 +40,10 @@ public class AudioButtonManager : MonoBehaviour {
 				AudioManager.instance.playAudioClipForced (audioFiles.getAudioClipR3_Geschafft());
 			}
 		} else {
-			counter = 0;
+			while(counter > 0) {
+				counter--;
+				code[counter].GetComponent<ColorCodeScript>().swapMaterials();
+			}
 			//TODO: change audio
 			AudioManager.instance.playSoundEffect (audioFiles.buttonPressedSound);
 			// TODO: Play Error Sound
@@ -46,6 +56,9 @@ public class AudioButtonManager : MonoBehaviour {
 	}
 
 	public void resetCounter() {
-		this.counter = 0;
+		while(counter > 0) {
+			counter--;
+			code[counter].GetComponent<ColorCodeScript>().swapMaterials();
+		}
 	}
 }
