@@ -59,17 +59,12 @@ public class GameManager : MonoBehaviour {
 			if(Application.loadedLevelName != "Central" && cheatOnce){
 				CompleteLevel();
 				cheatOnce = false;
-				Debug.Log ("Cheat!");
 			}
 		}
 	}
 
 	void Start()
 	{
-		Debug.Log ("Current level PlayerPrefs: " + PlayerPrefs.GetInt ("Current Level"));
-		Debug.Log ("Current level now : " + currentLevel);	
-		Debug.Log ("Unlocked level : " + PlayerPrefs.GetInt("Level Unlocked"));
-
 		BlackFades.FadeIn (1.0F, 1.0F, Color.black);
 		player = GameObject.Find ("Player");
 

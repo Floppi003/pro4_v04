@@ -61,8 +61,7 @@ public class GazePointDataComponent : MonoBehaviour
 				buttonList.RemoveAt(i);
 				i--;
 			}
-		}
-		
+		}		
 
 		// Get the last fixation point.
 		EyeXGazePoint lastGazePoint = GetComponent<GazePointDataComponent>().LastGazePoint;
@@ -73,7 +72,7 @@ public class GazePointDataComponent : MonoBehaviour
 			Ray gazeRay = Camera.main.ScreenPointToRay (new Vector3 (screenCoordinates.x, screenCoordinates.y, 0));
 
 			if (Physics.Raycast (gazeRay.origin, gazeRay.direction, out gazeRaycastHit, 30)) {
-				Debug.Log ("I gazed: " + gazeRaycastHit.collider.gameObject.name);
+				//Debug.Log ("I gazed: " + gazeRaycastHit.collider.gameObject.name);
 				string gazedObject = gazeRaycastHit.collider.gameObject.name;
 
 				// set collider to gazed position (used for multiple buttons that will be colored due to the collider then)
