@@ -40,6 +40,7 @@ public class Level1 : MonoBehaviour {
 	
 	public float standardColorLerpTime = 4.0f;
 	public float gazedColorLerpTime = 0.8f;
+	public float gazeToLockTime = 0.7f;
 	private float currentLerpTime;
 	private float currentGazedLerpTime;
 	private bool currentLerpTimePaused;
@@ -208,6 +209,8 @@ public class Level1 : MonoBehaviour {
 	}
 	
 	public void pushPlayerBack() {
+		// play wall sound
+		AudioManager.instance.playSoundEffect (this.audioFiles.wallHit);
 		GameObject.Find ("Player").GetComponent<Rigidbody>().AddForce(new Vector3(1, 0, 0) * 1500);
 	}
 	
@@ -259,7 +262,7 @@ public class Level1 : MonoBehaviour {
 			//Debug.DrawRay (debugRay.origin, debugRay.direction, Color.magenta, 120.0f);
 			
 			if (Physics.Raycast (gazeRay.origin, gazeRay.direction, out gazeRaycastHit, 40.0f)) {
-				
+			//if (Physics.Raycast (debugRay.origin, debugRay.direction, out gazeRaycastHit, 40.0f)) {	
 				string gazedObject = gazeRaycastHit.collider.gameObject.name;
 
 				// colorize the border of the wall-panel
@@ -348,7 +351,7 @@ public class Level1 : MonoBehaviour {
 		if (currentLerpTimePaused) {
 			// lerp time paused, use the gazedLerpTime
 			this.currentGazedLerpTime += Time.deltaTime;
-			if (this.currentGazedLerpTime > gazedColorLerpTime) {
+			if (this.currentGazedLerpTime > this.gazeToLockTime) {
 				// call the method to delete the object from the array and mark it as done!
 				this.activatePanel();
 			}

@@ -28,9 +28,6 @@ public class TriggerColliderLevel1 : MonoBehaviour {
 	void OnTriggerEnter(Collider other) {
 
 		if (this.name.Equals ("WallCollider")) {
-			// play wall sound
-			AudioManager.instance.playSoundEffect (audioFiles.wallHit);
-			
 			// also change the value in level1 script
 			this.level1.setWallTriggerStarted (true);
 			
@@ -45,14 +42,17 @@ public class TriggerColliderLevel1 : MonoBehaviour {
 			
 		} else if (this.name.Equals ("WallLightsCollider")) {
 			level1.setPlayerInWallLightsArea (true);
-			level1.setPlayerInPanelArea(false);
+			level1.setPlayerInPanelArea (false);
 			
 		} else if (this.name.Equals ("PanelCollider")) {
 			level1.setPlayerInPanelArea (true);
-			level1.setPlayerInWallLightsArea(false);
+			level1.setPlayerInWallLightsArea (false);
 			
 		} else if (this.name.Equals ("CowCollider")) {
 			AudioManager.instance.playAudioClipIfFree (audioFiles.paula);
+		} else if (this.name.Contains ("PushBackCollider")) {
+			// push the player back!
+			level1.pushPlayerBack();
 		}
 	}
 	
