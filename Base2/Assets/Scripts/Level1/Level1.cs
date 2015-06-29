@@ -122,7 +122,8 @@ public class Level1 : MonoBehaviour {
 		// set all wall lights to first color
 		GameObject[] wallLights = GameObject.FindGameObjectsWithTag ("WallLight_Level1");
 		foreach (GameObject wallLight in wallLights) {
-			wallLight.GetComponentInChildren<MeshRenderer>().material.color = this.wallLightColor1;
+			ColorPanel colorPanelScript = wallLight.GetComponent<ColorPanel>();
+			wallLight.GetComponentInChildren<MeshRenderer>().material.color = colorPanelScript.defaultColor;
 		}
 	}
 	
@@ -394,10 +395,11 @@ public class Level1 : MonoBehaviour {
 			if (gazedObject.name.Contains ("Panel") && !gazedObject.name.Equals (this.lastGazedWallLightName)) {
 				// now check which color it has, set it to another color
 				Color gazedObjectColor = gazedObject.GetComponentInChildren<MeshRenderer>().material.color;
+				ColorPanel colorPanelScript = gazedObject.GetComponent<ColorPanel>();
 				
-				if (gazedObjectColor.Equals(this.wallLightColor1)) {
+				if (gazedObjectColor.Equals(colorPanelScript.defaultColor)) {
 					// color the wall light
-					gazedObject.GetComponentInChildren<MeshRenderer>().material.color = this.wallLightColor2;
+					gazedObject.GetComponentInChildren<MeshRenderer>().material.color = colorPanelScript.gazedColor;
 					// play audio sound
 					AudioManager.instance.playSoundEffect(this.audioFiles.clickSound);
 
@@ -416,15 +418,7 @@ public class Level1 : MonoBehaviour {
 					
 					// update the counter
 					wallLightsColored++;
-				}/* else if (gazedObjectColor.Equals (this.wallLightColor2)) {
-					gazedObject.GetComponentInChildren<MeshRenderer>().material.color = this.wallLightColor3;
-
-				}  else if (gazedObjectColor.Equals (this.wallLightColor3)) {
-					gazedObject.GetComponentInChildren<MeshRenderer>().material.color = this.wallLightColor4;
-
-				}  else if (gazedObjectColor.Equals (this.wallLightColor4)) {
-					gazedObject.GetComponentInChildren<MeshRenderer>().material.color = this.wallLightColor1;
-				}*/
+				}
 			}
 			
 			this.lastGazedWallLightName = gazedObject.name;
