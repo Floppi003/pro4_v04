@@ -16,6 +16,8 @@ public class AudioColorButtonManager : MonoBehaviour {
 
 	private AudioFilesLevel2 audioFiles;
 
+	private bool didStartCounterHitCounting = false;
+
 	
 	// Use this for initialization
 	void Start () {
@@ -51,6 +53,8 @@ public class AudioColorButtonManager : MonoBehaviour {
 	}
 
 	public void hitButton(Material mat, AudioColorButton obj) {
+		if (!this.didStartCounterHitCounting) {return;}
+
 		counterHit++;
 		AudioManager.instance.playSoundEffect (audioFiles.buttonGazedSound);
 
@@ -92,5 +96,10 @@ public class AudioColorButtonManager : MonoBehaviour {
 				break;
 			}
 		}
+	}
+
+	public void startCounterHitCounting() {
+		Debug.Log ("didStartCounterHitCounting");
+		this.didStartCounterHitCounting = true;
 	}
 }

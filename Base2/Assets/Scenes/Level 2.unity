@@ -207,7 +207,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b0571784b55a7741b26c5110fb298f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tries: 2
+  tries: 3
   delayTime: 5
 --- !u!1001 &37614331
 Prefab:

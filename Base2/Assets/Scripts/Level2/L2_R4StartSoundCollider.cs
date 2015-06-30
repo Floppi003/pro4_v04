@@ -21,11 +21,17 @@ public class L2_R4StartSoundCollider : MonoBehaviour
 		if (!didPlay) {
 			didPlay = true;
 			AudioManager.instance.playAudioClipForced (this.audioFiles.R4_MengeSchalter);
+			Invoke ("startCounterHitCounting", 10);
 		}
 	}
 	
 	void OnTriggerStay() {}
 	
 	void OnTriggerExit() {}
+
+	private void startCounterHitCounting() {
+		Debug.Log ("startCounterHitCounting");
+		GameObject.Find ("AudioColorButtonManager").GetComponent<AudioColorButtonManager> ().startCounterHitCounting ();
+	}
 }
 
