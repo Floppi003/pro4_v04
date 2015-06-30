@@ -10,6 +10,8 @@ public class ColorButtonManager : MonoBehaviour {
 	private int[] counter;
 	private bool open;
 
+	private bool didPlay = false;
+
 	// Use this for initialization
 	void Start () {
 		counter = new int[colors.Length];
@@ -54,6 +56,13 @@ public class ColorButtonManager : MonoBehaviour {
 			for (int i = 1; i < counter.Length; i++) {
 				if (counter[i] != 0) {
 					open = false;
+
+					// play audio clip that only red buttons should be pressed
+					if (!this.didPlay) {
+						AudioFilesLevel2 audioFiles = GameObject.Find ("GM").GetComponent<AudioFilesLevel2>();
+						AudioManager.instance.queueAudioClip(audioFiles.R4_NurRoteButtons, 3);
+					}
+
 					break;
 				}
 			}

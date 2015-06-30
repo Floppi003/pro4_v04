@@ -9,6 +9,7 @@ public class AudioButtonManager : MonoBehaviour {
 
 	private int counter;
 	private bool open;
+	private bool counterEnabled = false;
 
 	private GameObject[] code = new GameObject[5];
 
@@ -30,6 +31,7 @@ public class AudioButtonManager : MonoBehaviour {
 	public void pushButton(Material mat) {
 		// add pushed button to counter
 		if (open) {return;}
+		if (!this.counterEnabled) {Debug.Log ("counter disabled!"); return;}
 
 		if (colorCode[counter] == mat) {
 			code[counter].GetComponent<ColorCodeScript>().swapMaterials();
@@ -53,6 +55,11 @@ public class AudioButtonManager : MonoBehaviour {
 	public void hitButton(Material mat) {		
 		// play audio sound
 		AudioManager.instance.playSoundEffect (audioFiles.buttonGazedSound);
+	}
+
+	public void enableCounter() {
+		Debug.Log ("counter enabled!");
+		this.counterEnabled = true;
 	}
 
 	public void resetCounter() {

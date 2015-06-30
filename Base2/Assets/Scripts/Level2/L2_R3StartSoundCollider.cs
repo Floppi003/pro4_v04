@@ -15,9 +15,9 @@ public class L2_R3StartSoundCollider : MonoBehaviour
 	
 	// Update is called once per frame
 	void Update () {
-		if (didPlay) {
+		/*if (didPlay) {
 			soundDelay -= Time.deltaTime;
-		}
+		}*/
 
 		if (soundDelay < 0.0f) {
 			if (!didPlaySecondSound) {
@@ -32,6 +32,7 @@ public class L2_R3StartSoundCollider : MonoBehaviour
 		if (!didPlay) {
 			didPlay = true;
 			AudioManager.instance.playAudioClipForced (this.audioFiles.R3_Start);
+			AudioManager.instance.queueAudioClip (audioFiles.R3_ZuerstBlau);
 		}
 	}
 	

@@ -70,7 +70,7 @@ public class AudioColorButtonManager : MonoBehaviour {
 
 			// play sound effect saying that this doesn't work
 			AudioManager.instance.playAudioClipForced (this.audioFiles.R4_SoWirdDasNix);
-			AudioManager.instance.queueAudioClip(this.audioFiles.R4_SchonBesser, 2);
+			AudioManager.instance.queueAudioClip(this.audioFiles.R4_SchonBesser, 1);
 		
 		} else {
 			// tell button color

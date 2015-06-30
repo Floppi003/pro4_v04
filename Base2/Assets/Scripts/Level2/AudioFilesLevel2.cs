@@ -32,6 +32,7 @@ public class AudioFilesLevel2 : MonoBehaviour {
 	public AudioClip R4_ReiseGehtWeiter;
 	public AudioClip R4_SchonBesser;
 	public AudioClip R4_SoWirdDasNix;
+	public AudioClip R4_NurRoteButtons;
 
 	public AudioClip getAudioClipR1_DrueckDenschalter() {
 		int index = Random.Range (0, this.R1_DrueckDenSchalter.Length);
