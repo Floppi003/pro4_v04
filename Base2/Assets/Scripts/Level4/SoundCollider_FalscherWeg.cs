@@ -18,7 +18,6 @@ public class SoundCollider_FalscherWeg : MonoBehaviour {
 
 	void OnTriggerEnter() {
 		if (!this.didPlaySound) {
-			Debug.Log ("falscher Weg");
 			AudioManager.instance.queueAudioClip(this.audioFiles.falscherWeg);
 			this.didPlaySound = true;
 		}

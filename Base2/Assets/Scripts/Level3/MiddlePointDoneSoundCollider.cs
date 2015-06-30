@@ -29,7 +29,12 @@ public class MiddlePointDoneSoundCollider : MonoBehaviour
 			bridgeDeathCollider.GetComponent<BoxCollider>().enabled = false;
 			activate = true;
 			didPlay = true;
+			Invoke ("enableMiddlePointEndSoundCollider", 12);
 		}
+	}
+
+	private void enableMiddlePointEndSoundCollider() {
+		this.middlePointCollider.GetComponent<MiddlePointEndSoundCollider> ().setShouldBeActive (true);
 	}
 }
 

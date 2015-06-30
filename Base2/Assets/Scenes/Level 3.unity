@@ -14386,7 +14386,7 @@ Transform:
   m_LocalScale: {x: 135.352463, y: 111.271729, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
 --- !u!4 &889751930
 Transform:
   m_PrefabParentObject: {fileID: 496146, guid: 6dd4619ac3135634095102d9d8ee68a7, type: 2}
@@ -21279,10 +21279,10 @@ Transform:
   m_GameObject: {fileID: 1334455028}
   m_LocalRotation: {x: .707106829, y: 0, z: 0, w: .707106709}
   m_LocalPosition: {x: 1.60000002, y: -27.2000008, z: -77.1999969}
-  m_LocalScale: {x: 135.352463, y: 190.096436, z: 1}
+  m_LocalScale: {x: 135.352463, y: 155.007462, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
 --- !u!1 &1337566358
 GameObject:
   m_ObjectHideFlags: 0
@@ -21322,7 +21322,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 10
 --- !u!1 &1337866851
 GameObject:
   m_ObjectHideFlags: 0
@@ -22613,7 +22613,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 427088, guid: 86925217ef00c26489bfec73a81d6a13, type: 2}
       propertyPath: m_RootOrder
-      value: 7
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 455906, guid: 86925217ef00c26489bfec73a81d6a13, type: 2}
       propertyPath: m_LocalPosition.x
@@ -22621,7 +22621,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 455906, guid: 86925217ef00c26489bfec73a81d6a13, type: 2}
       propertyPath: m_LocalPosition.z
-      value: -102.199997
+      value: -17.0100002
       objectReference: {fileID: 0}
     - target: {fileID: 413452, guid: 86925217ef00c26489bfec73a81d6a13, type: 2}
       propertyPath: m_LocalPosition.z
@@ -25435,12 +25435,14 @@ MonoBehaviour:
   BrueckeGeschafft: {fileID: 8300000, guid: e987540fe5ab7624fb1a57f205b08e4d, type: 3}
   MitteAugenkraft: {fileID: 8300000, guid: 996f468f9e091ff469fafe1d9f8fc4a8, type: 3}
   HeyVertrauen:
-  - {fileID: 8300000, guid: cf860a160aa3b0141a6d335ef01253ba, type: 3}
+  - {fileID: 8300000, guid: 7bd1bac1efce3be4ebf9da0e1e756397, type: 3}
   - {fileID: 8300000, guid: cf860a160aa3b0141a6d335ef01253ba, type: 3}
   Stop: {fileID: 8300000, guid: 6bf322a553f7f1d4cae72436b21b1736, type: 3}
   Wow: {fileID: 8300000, guid: 03dbd4d3d1140b14994438e1b8eddf2c, type: 3}
   MitteAugenkraftRespawn: {fileID: 8300000, guid: 80b8e5ea05f56c44ebe1d7758f6b0da8,
     type: 3}
+  linkesRechtesAuge: {fileID: 8300000, guid: 0d14d12796e4ff54bb90b30eb8d7ba1c, type: 3}
+  aufpassen: {fileID: 8300000, guid: 99872fb91d0e9c24fa9c51ce01c3c13a, type: 3}
 --- !u!114 &1536390391
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28316,7 +28318,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6b3f2771962ad743864b75d071ca191, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  eyesClosedDuration: 2
+  eyesClosedDuration: 1
 --- !u!65 &1734680969
 BoxCollider:
   m_ObjectHideFlags: 0

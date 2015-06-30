@@ -11,6 +11,8 @@ public class AudioFilesLevel3 : MonoBehaviour
 	public AudioClip Stop;
 	public AudioClip Wow;
 	public AudioClip MitteAugenkraftRespawn;
+	public AudioClip linkesRechtesAuge;
+	public AudioClip aufpassen;
 
 
 	public AudioClip getAudioClipBruecke() {

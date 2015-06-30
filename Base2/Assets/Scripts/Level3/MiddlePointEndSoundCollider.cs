@@ -3,13 +3,14 @@ using System.Collections;
 
 public class MiddlePointEndSoundCollider : MonoBehaviour
 {
-	public float eyesClosedDuration = 1;
+	public float eyesClosedDuration = 0.5f;
 
 	private AudioFilesLevel3 audioFiles;
 	private EyePosition_L3 eyePosition;
 	private BoxCollider[] box;
 	private MeshCollider[] mesh;
 	private GameObject middlePointDeathCollider;
+	private bool shouldBeActive = false;
 	
 	public void Start() {
 		this.audioFiles = GameObject.Find ("GM").GetComponent<AudioFilesLevel3> ();
@@ -19,7 +20,7 @@ public class MiddlePointEndSoundCollider : MonoBehaviour
 		mesh = GameObject.Find ("Plattform 1").GetComponentsInChildren<MeshCollider>();
 
 		this.middlePointDeathCollider = GameObject.Find ("MiddleDeathSoundCollider");
-
+		
 
 		// disable first platform
 		for (int i = 0; i < box.Length; i++) {
@@ -30,8 +31,11 @@ public class MiddlePointEndSoundCollider : MonoBehaviour
 	
 	protected void OnTriggerStay() {
 		if (eyePosition.getEyesClosedDuration() > eyesClosedDuration) {
-			AudioManager.instance.playAudioClipForced (this.audioFiles.MitteAugenkraft);
-			this.gameObject.GetComponent<BoxCollider>().enabled = false;
+			if (!this.shouldBeActive) {
+				return;
+			}
+
+			AudioManager.instance.queueAudioClip (this.audioFiles.MitteAugenkraft);
 
 			// enable first platform
 			for (int i = 0; i < box.Length; i++) {
@@ -41,7 +45,13 @@ public class MiddlePointEndSoundCollider : MonoBehaviour
 
 			// disable 1 eye death notice
 			middlePointDeathCollider.GetComponent<BoxCollider>().enabled = true;
+
+			this.shouldBeActive = false;
 		}
+	}
+
+	public void setShouldBeActive(bool shouldBeActive) {
+		this.shouldBeActive = shouldBeActive;
 	}
 }
 
