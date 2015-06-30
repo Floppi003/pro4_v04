@@ -10,6 +10,7 @@ public class AudioFilesLevel3 : MonoBehaviour
 	public AudioClip[] HeyVertrauen;
 	public AudioClip Stop;
 	public AudioClip Wow;
+	public AudioClip MitteAugenkraftRespawn;
 
 
 	public AudioClip getAudioClipBruecke() {

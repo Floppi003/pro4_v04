@@ -10,7 +10,7 @@ public class JPDeathSoundCollider : MonoBehaviour
 	}
 	
 	protected void OnTriggerEnter() {
-		AudioManager.instance.queueAudioClip (/*choose audioClip*/ null, 1);
-		Debug.LogError ("DEAD");
+		// TODO: record death audio
+		//AudioManager.instance.queueAudioClip (/*choose audioClip*/ null, 1);
 	}
 }
