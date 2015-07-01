@@ -67,7 +67,7 @@ public class EyePositionScript : MonoBehaviour {
 
 
 		// check key input
-		if (Input.GetKeyDown ("p")) {
+		if (Input.GetButtonDown ("EyePoint")) {
 			this.showEyePosition = !this.showEyePosition;
 		}
 	}
