@@ -35,7 +35,7 @@ public class L2_R1SchalterSoundCollider : MonoBehaviour
 
 	void OnTriggerEnter() {
 		if (!didPlay) {
-			AudioManager.instance.queueAudioClip (this.audioFiles.R1_Schalter);
+			AudioManager.instance.playAudioClipForced (this.audioFiles.R1_Schalter);
 			didPlay = true;
 		}
 	}
