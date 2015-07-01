@@ -47,6 +47,7 @@ public class TriggerColliderLevel1 : MonoBehaviour {
 		} else if (this.name.Equals ("PanelCollider")) {
 			level1.setPlayerInPanelArea (true);
 			level1.setPlayerInWallLightsArea (false);
+			AudioManager.instance.queueAudioClip (audioFiles.pillarsSuspicious);
 			
 		} else if (this.name.Equals ("CowCollider")) {
 			AudioManager.instance.playAudioClipIfFree (audioFiles.paula);

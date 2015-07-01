@@ -126,7 +126,7 @@ public class Level1 : MonoBehaviour {
 		}
 
 		// load the number of wallLights
-		this.numberOfWallLights = GameObject.FindGameObjectsWithTag ("WallLight_Level1").GetLength ();
+		this.numberOfWallLights = GameObject.FindGameObjectsWithTag ("WallLight_Level1").Length;
 	}
 	
 	void Update() {
@@ -441,7 +441,10 @@ public class Level1 : MonoBehaviour {
 		this.currentLerpTimePaused = false;
 		this.blinkingLights.RemoveAt (this.blinkingLightIndex);
 		blinkLight ();
-		
+
+		// disable audio Collider
+		GameObject.Find ("FlashingLightsCollider").GetComponent<FlashingLightsAudio> ().disable ();
+
 		// if it was the last activated panel open the door and play special sound
 		if (this.blinkingLights.Count == 0) {
 			this.openGoalDoor ();

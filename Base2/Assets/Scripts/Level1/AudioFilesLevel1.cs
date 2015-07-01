@@ -13,6 +13,11 @@ public class AudioFilesLevel1 : MonoBehaviour {
 	public AudioClip doorOpens;
 	public AudioClip wakeupSound;
 	public AudioClip clickSound;
+
+	public AudioClip flashingLights;
+	public AudioClip flashingLightsLook;
+	public AudioClip dontPress;
+	public AudioClip pillarsSuspicious;
 	
 	
 	public AudioClip[] wakeupAudioClips_Stage01;

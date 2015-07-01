@@ -25420,7 +25420,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 455906, guid: 86925217ef00c26489bfec73a81d6a13, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -22.6000004
+      value: -171.300003
       objectReference: {fileID: 0}
     - target: {fileID: 455906, guid: 86925217ef00c26489bfec73a81d6a13, type: 2}
       propertyPath: m_LocalPosition.z
@@ -25462,6 +25462,22 @@ Prefab:
       propertyPath: m_PlayOnAwake
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 11429726, guid: 86925217ef00c26489bfec73a81d6a13, type: 2}
+      propertyPath: pillarsSuspicious
+      value: 
+      objectReference: {fileID: 8300000, guid: de04139c9e0b4324fad78a82c8531566, type: 3}
+    - target: {fileID: 11429726, guid: 86925217ef00c26489bfec73a81d6a13, type: 2}
+      propertyPath: dontPress
+      value: 
+      objectReference: {fileID: 8300000, guid: 0009e7ee7131573479cac6d7a3783d4a, type: 3}
+    - target: {fileID: 11429726, guid: 86925217ef00c26489bfec73a81d6a13, type: 2}
+      propertyPath: flashingLightsLook
+      value: 
+      objectReference: {fileID: 8300000, guid: 6dbe2b8e16380334185300c0fbb64fb1, type: 3}
+    - target: {fileID: 11429726, guid: 86925217ef00c26489bfec73a81d6a13, type: 2}
+      propertyPath: flashingLights
+      value: 
+      objectReference: {fileID: 8300000, guid: 96f9f884715577c42bfb584f83e66764, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 86925217ef00c26489bfec73a81d6a13, type: 2}
   m_IsPrefabParent: 0
@@ -32158,6 +32174,7 @@ Transform:
   - {fileID: 195898786}
   - {fileID: 2104090849}
   - {fileID: 471288569}
+  - {fileID: 1655714065}
   m_Father: {fileID: 0}
   m_RootOrder: 13
 --- !u!1 &1076002833
@@ -47931,6 +47948,61 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9f9650ce1de79ce4f8b84a5f6c319559, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1655714064
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1655714065}
+  - 65: {fileID: 1655714066}
+  - 114: {fileID: 1655714067}
+  m_Layer: 0
+  m_Name: FlashingLightsCollider
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1655714065
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1655714064}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -188.160004, y: 20.0400009, z: -34.5299988}
+  m_LocalScale: {x: 1, y: 10, z: 30}
+  m_Children: []
+  m_Father: {fileID: 1072997447}
+  m_RootOrder: 6
+--- !u!65 &1655714066
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1655714064}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1655714067
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1655714064}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbffd9eeca672c6419f760cb79c12d6a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  delayFirst: 1
+  delaySecond: 20
+  disableTries: 2
 --- !u!1001 &1655883490
 Prefab:
   m_ObjectHideFlags: 0
