@@ -60,12 +60,14 @@ public class Level1 : MonoBehaviour {
 	private string lastGazedWallLightName;
 	private bool playerInWallLightsArea;
 	private int wallLightsColored;
+	private int numberOfWallLights;
 
 	// variables for panel riddle
 	private int panelRiddleHintsPlayed;
 	private float timeSinceLastPanelRiddleHint;
 	private bool goalOpened = false;
 	private float timeSinceLastGoalOpenedClip;
+
 
 	protected void OnEnable() {
 		eyePositionDataProvider.Start();
@@ -122,6 +124,9 @@ public class Level1 : MonoBehaviour {
 			ColorPanel colorPanelScript = wallLight.GetComponent<ColorPanel>();
 			wallLight.GetComponentInChildren<MeshRenderer>().material.color = colorPanelScript.defaultColor;
 		}
+
+		// load the number of wallLights
+		this.numberOfWallLights = GameObject.FindGameObjectsWithTag ("WallLight_Level1").GetLength ();
 	}
 	
 	void Update() {
@@ -404,11 +409,11 @@ public class Level1 : MonoBehaviour {
 					if (wallLightsColored == 0) {
 						AudioManager.instance.playAudioClipForced(audioFiles.getWallOfLights_Stage01_AudioClip());
 						
-					} else if (wallLightsColored == 200) {
+					} else if (wallLightsColored == ((int)(this.numberOfWallLights/3))) {
 						// play a impatient audio clip
 						AudioManager.instance.playAudioClipForced(audioFiles.getWallOfLights_Stage02_AudioClip());
 						
-					} else if (wallLightsColored == 601) {
+					} else if (wallLightsColored == (this.numberOfWallLights-1)) {
 						// Play a special audio file cuz the player gazed ALL PANELS!!!
 						AudioManager.instance.queueAudioClip(audioFiles.getWallOfLightsOver_Stage01());
 					}			
