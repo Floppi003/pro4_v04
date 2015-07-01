@@ -51,6 +51,7 @@ GameObject:
   - 23: {fileID: 2357918}
   - 114: {fileID: 11483972}
   - 135: {fileID: 13504122}
+  - 82: {fileID: 8218502}
   m_Layer: 0
   m_Name: Arrow
   m_TagString: Untagged
@@ -282,6 +283,80 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 125638}
   m_Mesh: {fileID: 4300006, guid: deb687975958f924d93f94e5d29a1495, type: 3}
+--- !u!82 &8218502
+AudioSource:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 136970}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: ecdd0cd787bb2d14e89edd741a22af0e, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: .100000001
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Priority: 180
+  DopplerLevel: 0
+  MinDistance: 2
+  MaxDistance: 6
+  Pan2D: 0
+  rolloffMode: 2
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: .333333343
+      value: 1
+      inSlope: -3.00119948
+      outSlope: -3.00119948
+      tangentMode: 0
+    - time: .562236309
+      value: .406779677
+      inSlope: -1.72627068
+      outSlope: -1.72627068
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: -.333466381
+      outSlope: -.333466381
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1.10000002
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!95 &9506106
 Animator:
   serializedVersion: 3
