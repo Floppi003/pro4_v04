@@ -127,6 +127,8 @@ public class Level1 : MonoBehaviour {
 
 		// load the number of wallLights
 		this.numberOfWallLights = GameObject.FindGameObjectsWithTag ("WallLight_Level1").Length;
+
+		audioFiles = this.gameObject.GetComponent<AudioFilesLevel1> ();
 	}
 	
 	void Update() {
