@@ -68,6 +68,8 @@ public class Level1 : MonoBehaviour {
 	private bool goalOpened = false;
 	private float timeSinceLastGoalOpenedClip;
 
+	// raycast mask
+	public LayerMask raycastMask; 
 
 	protected void OnEnable() {
 		eyePositionDataProvider.Start();
@@ -266,7 +268,7 @@ public class Level1 : MonoBehaviour {
 			//Ray debugRay = Camera.main.ScreenPointToRay (new Vector3(Screen.width / 2.0f, Screen.height / 2.0f, 0.0f));
 			//Debug.DrawRay (debugRay.origin, debugRay.direction, Color.magenta, 120.0f);
 			
-			if (Physics.Raycast (gazeRay.origin, gazeRay.direction, out gazeRaycastHit, 40.0f)) {
+			if (Physics.Raycast (gazeRay.origin, gazeRay.direction, out gazeRaycastHit, 40.0f, ~raycastMask)) {
 			//if (Physics.Raycast (debugRay.origin, debugRay.direction, out gazeRaycastHit, 40.0f)) {	
 				string gazedObject = gazeRaycastHit.collider.gameObject.name;
 
@@ -392,7 +394,7 @@ public class Level1 : MonoBehaviour {
 		if (gazePoint.Equals (this.previousGazePoint)) {
 			return; // do nothing if no new gaze point is available
 		}
-		if (Physics.Raycast (gazeRay.origin, gazeRay.direction, out gazeRaycastHit, 40.0f)) {
+		if (Physics.Raycast (gazeRay.origin, gazeRay.direction, out gazeRaycastHit, 40.0f, ~raycastMask)) {
 			// get the gazed object
 			GameObject gazedObject = gazeRaycastHit.collider.gameObject;
 			
