@@ -72,7 +72,7 @@ public class Level1 : MonoBehaviour {
 		gazePointDataProvider.Start ();
 	}
 	
-	void Awake() {
+	void Awake() {		
 		eyexHost = EyeXHost.GetInstance();
 		gazePointDataProvider = eyexHost.GetGazePointDataProvider (GazePointDataMode.LightlyFiltered);
 		eyePositionDataProvider = eyexHost.GetEyePositionDataProvider();
@@ -104,10 +104,7 @@ public class Level1 : MonoBehaviour {
 		gazePointDataProvider.Stop ();
 	}
 	
-	void Start() {
-		Debug.Log ("Start()");
-		audioFiles = GameObject.Find ("GM").GetComponent<AudioFilesLevel1> ();
-		
+	void Start() {	
 		gazePointDataProvider.Start ();
 		eyePositionDataProvider.Start ();
 		
@@ -414,16 +411,13 @@ public class Level1 : MonoBehaviour {
 					} else if (wallLightsColored == 601) {
 						// Play a special audio file cuz the player gazed ALL PANELS!!!
 						AudioManager.instance.queueAudioClip(audioFiles.getWallOfLightsOver_Stage01());
-					}
-					
+					}			
 					// update the counter
 					wallLightsColored++;
 				}
-			}
-			
+			}			
 			this.lastGazedWallLightName = gazedObject.name;
-		}
-		
+		}		
 		this.previousGazePoint = gazePoint;
 	}
 	
