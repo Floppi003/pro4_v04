@@ -1222,7 +1222,7 @@ MeshCollider:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 176888}
-  m_Material: {fileID: 13400000, guid: bda6c42c396080b4bacb67e4cefd7ddb, type: 2}
+  m_Material: {fileID: 13400000, guid: ed0b8e47d56417e428c646db44979c65, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -1419,7 +1419,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 0013aa5faf91c2a4c9c9435363f0c733, type: 3}
-  m_PlayOnAwake: 0
+  m_PlayOnAwake: 1
   m_Volume: .100000001
   m_Pitch: 1
   Loop: 1
@@ -2081,6 +2081,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pauseMenu: {fileID: 22365600}
+  cheatOnce: 0
 --- !u!114 &11427778
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2443,6 +2444,7 @@ MonoBehaviour:
   timeTillFirstDoorOpens: 11
   standardColorLerpTime: 4
   gazedColorLerpTime: .800000012
+  gazeToLockTime: .699999988
   standardPanelColor: {r: .404411793, g: 0, b: 0, a: 0}
   highlightedPanelColor: {r: 1, g: .0509803928, b: 0, a: 0}
   gazePanelColor: {r: 0, g: 1, b: .00689673424, a: 0}
