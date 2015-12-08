@@ -63,7 +63,12 @@ public class LevelLoaderNew : MonoBehaviour {
 		if (levelToLoad.ToString () == "0") {
 			levelText = "[F]  Spielstand löschen";
 		}else if (canLoadLevel) {
-			levelText = "[F]  Level " + levelToLoad.ToString () + " laden";
+			if (levelToLoad == 8) {
+				levelText = "[F] Spiel starten";
+			} else {
+				levelText = "[F]  Level " + levelToLoad.ToString () + " laden";
+			}
+
 		} else {
 			levelText = "Level gesperrt";
 		}
