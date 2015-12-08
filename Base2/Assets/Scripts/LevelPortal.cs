@@ -17,7 +17,11 @@ public class LevelPortal : MonoBehaviour {
 		if (other.tag == "Player") {
 			Debug.Log ("Player detected");
 
-			if(PlayerPrefs.GetInt ("Chosen Level") == 8){			
+
+			if (PlayerPrefs.GetInt("Chosen Level") == 1) {
+				AutoFade.LoadLevel("Calibration" , 1, 1, Color.black);
+
+			} else if(PlayerPrefs.GetInt ("Chosen Level") == 8){			
 				AutoFade.LoadLevel("Level " + PlayerPrefs.GetInt("Chosen Level"), 1, 1, Color.white);
 			}else{
 				AutoFade.LoadLevel("Level " + PlayerPrefs.GetInt("Chosen Level"), 1, 1, Color.black);

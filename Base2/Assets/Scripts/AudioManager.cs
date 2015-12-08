@@ -61,8 +61,11 @@ public class AudioManager : MonoBehaviour {
 		backgroundAudioSource.Play ();
 	}
 
+	public void queueAudioClip(AudioClip audioClip) {
+		this.queueAudioClip (audioClip, 0.0f);
+	}
 
-	public void queueAudioClip(AudioClip audioClip, float delay = 0.0f) {
+	public void queueAudioClip(AudioClip audioClip, float delay) {
 		Debug.Log ("queue audio clip called");
 		// calculate time for next audio playback
 		AudioClip[] audioClips = audioQueue.ToArray();

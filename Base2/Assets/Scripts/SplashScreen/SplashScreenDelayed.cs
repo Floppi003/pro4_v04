@@ -13,6 +13,9 @@ public class SplashScreenDelayed : MonoBehaviour {
 		yield return new WaitForSeconds (delayTime);
 		//Application.LoadLevel ("Central");
 
+		PlayerPrefs.SetInt ("Level Unlocked", 1);
+		PlayerPrefs.SetInt ("Current Level", 1);
+		
 		AutoFade.LoadLevel(nextLevel, 1, 1, Color.black);
 		//levelname, fadeouttime, fadeintime, fadecolor
 	}

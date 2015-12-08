@@ -57,7 +57,13 @@ public class FirstPersonController : MonoBehaviour {
 	Vector3 smoothMoveVelocity;
 	float verticalLookRotation;
 	Transform cameraTransform;
-	
+
+	// find out if player is inactive for 30 seconds or more (to get back to the HUB)
+	private float inactiveSeconds = 0.0f;
+	private float maxInactiveSeconds = 50.0f;
+	private float lastMouseX = 0.0f;
+	private float lastMouseY = 0.0f;
+	private GameObject inactiveText;
 	
 	void Start() { //Awake
 		Cursor.visible = false;
@@ -76,8 +82,23 @@ public class FirstPersonController : MonoBehaviour {
 		this.audioFiles = GetComponent<GeneralAudioFiles> ();
 
 		spawnRotation = transform.rotation;
+
+		this.inactiveText = GameObject.Find ("InactiveText");
 	}
-	
+
+	private void OnGUI()
+	{
+		// Draw the title.
+		//GuiHelpers.DrawText("CALIBRATION", new Vector2(10, 10), 36, GuiHelpers.Magenta);
+		/*if (GUI.Button(new Rect(10, 70, 150, 30), "Recalibrate"))
+		{
+
+		}*/
+
+		//GUI.Box (new Rect (10, 70, 150, 30), "You have been inactive for quite a while. Game will reset automatically soon.");
+
+	}
+
 	void Update() {
 		// test for footstep sound
 		/*
@@ -97,6 +118,34 @@ public class FirstPersonController : MonoBehaviour {
 		// calculate average
 		float averageWalkingDistance = totalWalkingDistance / walkingDistanceQueue.Count;
 */
+
+		// check if player was inactive
+		float thisMouseX = Input.GetAxis ("Mouse X");
+		float thisMouseY = Input.GetAxis ("Mouse Y");
+
+		if (thisMouseX == this.lastMouseX &&
+			thisMouseY == this.lastMouseY) {
+
+			this.inactiveSeconds += Time.deltaTime;
+		} else {
+			this.inactiveSeconds = 0.0f;
+		}
+
+		// if too long inactive, show the warning on the bottom of the screen
+		if (this.inactiveSeconds > this.maxInactiveSeconds - 10) {
+			this.inactiveText.GetComponent<Text> ().enabled = true;
+		} else {
+			this.inactiveText.GetComponent<Text>().enabled = false;
+		}
+
+		// if too long inactive, go back to HUB
+		if (this.inactiveSeconds > this.maxInactiveSeconds) {
+			AutoFade.LoadLevel("Central" , 1, 1, Color.black);
+		}
+
+
+
+
 		// play the walking sound if player walked enough
 		if (IsGrounded() && ((Input.GetAxisRaw("Vertical")!= 0) || Input.GetAxisRaw("Horizontal")!= 0)) {
 			if (audioSource.isPlaying == false) {

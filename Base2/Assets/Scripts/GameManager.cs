@@ -96,8 +96,10 @@ public class GameManager : MonoBehaviour {
 
 		if (PlayerPrefs.GetInt ("Current Level") == 0) {
 			if(Application.loadedLevelName == "Central"){
+				unlockedLevel = 1;
+				currentLevel = 1;
 				SaveGame ();
-				Application.LoadLevel("Level 1");
+				Application.LoadLevel("Central");
 			}
 		}
 		SaveGame ();

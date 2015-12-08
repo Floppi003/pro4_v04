@@ -24,6 +24,10 @@ public class LevelLoaderNew : MonoBehaviour {
 		GameObject.Find("ContinueDoor").GetComponent<TextMesh>().text = doorText;
 
 		canLoadLevel = levelToLoad <= unlockedLevel ? true : false;
+
+		// if it is level 8 (meaning it is the calibration scene) then allow it as well
+		if (levelToLoad == 8) canLoadLevel = true;
+
 		if (canLoadLevel) {
 			//Instantiate (padlock, new Vector3(transform.position.x - 0.7f, 1.5f, transform.position.z), Quaternion.identity);
 			MeshRenderer rendererLock = transform.Find ("pCube1").Find ("LevelLock").GetComponent<MeshRenderer> ();
@@ -39,11 +43,11 @@ public class LevelLoaderNew : MonoBehaviour {
 	public void LevelButtonPressed()
 	{
 		if (canLoadLevel) {
-			if (levelToLoad.ToString () == "0") {	//Reset Game
+			if (levelToLoad.ToString () == "8") {	//Reset Game
 				PlayerPrefs.DeleteAll (); // use this to clear your PlayerPrefs
 				//PlayerPrefs.SetInt("Level Unlocked", 1);
 				//PlayerPrefs.SetInt ("Current Level", 1);	
-				AutoFade.LoadLevel("Level 1" , 1, 1, Color.black);
+				AutoFade.LoadLevel(levelToLoad , 1, 1, Color.black);
 			} else {
 				PlayerPrefs.SetInt ("Current Level", levelToLoad);
 				PlayerPrefs.SetInt("Chosen Level", levelToLoad);
